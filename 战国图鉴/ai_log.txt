@@ -1,0 +1,922 @@
+[10:35:46] START total=190
+[10:35:46] ROUND 1 left=190
+[10:35:53] 1/190 ok-turbo 管仲
+[10:36:14] 2/190 FAIL(turbo) 曹沫 <HTTPError 402: 'Payment Required'>
+[10:36:46] 3/190 ok-turbo 司马穰苴
+[10:37:03] 4/190 FAIL(turbo) 孙武 <HTTPError 402: 'Payment Required'>
+[10:37:39] 5/190 ok-turbo 伍子胥
+[10:38:00] 6/190 FAIL(turbo) 伯嚭 <HTTPError 402: 'Payment Required'>
+[10:38:35] 7/190 ok-turbo 夫概
+[10:38:55] 8/190 FAIL(turbo) 专诸 <HTTPError 402: 'Payment Required'>
+[10:39:27] 9/190 ok-turbo 越王句践
+[10:39:44] 10/190 FAIL(turbo) 吴王夫差 <HTTPError 402: 'Payment Required'>
+[10:40:15] 11/190 ok-turbo 范蠡
+[10:40:34] 12/190 FAIL(turbo) 大夫种 <HTTPError 402: 'Payment Required'>
+[10:41:12] 13/190 ok-turbo 孙叔敖
+[10:41:29] 14/190 FAIL(turbo) 先轸 <HTTPError 402: 'Payment Required'>
+[10:42:09] 15/190 ok-turbo 栾枝
+[10:42:29] 16/190 FAIL(turbo) 狐偃 <HTTPError 402: 'Payment Required'>
+[10:43:06] 17/190 ok-turbo 赵衰
+[10:43:28] 18/190 FAIL(turbo) 毕万 <HTTPError 402: 'Payment Required'>
+[10:44:05] 19/190 ok-turbo 赵夙
+[10:44:21] 20/190 FAIL(turbo) 魏武子 <HTTPError 402: 'Payment Required'>
+[10:44:59] 21/190 ok-turbo 百里奚
+[10:45:19] 22/190 FAIL(turbo) 由余 <HTTPError 402: 'Payment Required'>
+[10:45:51] 23/190 ok-turbo 孟明视
+[10:46:10] 24/190 FAIL(turbo) 西乞术 <HTTPError 402: 'Payment Required'>
+[10:46:43] 25/190 ok-turbo 白乙丙
+[10:47:02] 26/190 FAIL(turbo) 蹇叔 <HTTPError 402: 'Payment Required'>
+[10:47:40] 27/190 ok-turbo 子玉
+[10:48:01] 28/190 FAIL(turbo) 子反 <HTTPError 402: 'Payment Required'>
+[10:48:33] 29/190 ok-turbo 子常
+[10:48:53] 30/190 FAIL(turbo) 华元 <HTTPError 402: 'Payment Required'>
+[10:49:28] 31/190 ok-turbo 南宫万
+[10:49:44] 32/190 FAIL(turbo) 荀林父 <HTTPError 402: 'Payment Required'>
+[10:50:22] 33/190 ok-turbo 先縠
+[10:50:42] 34/190 FAIL(turbo) 随会 <HTTPError 402: 'Payment Required'>
+[10:51:20] 35/190 ok-turbo 郤克
+[10:51:36] 36/190 FAIL(turbo) 韩厥 <HTTPError 402: 'Payment Required'>
+[10:52:11] 37/190 ok-turbo 栾书
+[10:52:29] 38/190 FAIL(turbo) 郤至 <HTTPError 402: 'Payment Required'>
+[10:53:08] 39/190 ok-turbo 先蔑
+[10:53:27] 40/190 FAIL(turbo) 屠岸贾 <HTTPError 402: 'Payment Required'>
+[10:54:00] 41/190 ok-turbo 程婴
+[10:54:17] 42/190 FAIL(turbo) 公孙杵臼 <HTTPError 402: 'Payment Required'>
+[10:54:53] 43/190 ok-turbo 逢丑父
+[10:55:11] 44/190 FAIL(turbo) 王子城父 <HTTPError 402: 'Payment Required'>
+[10:55:43] 45/190 ok-turbo 皇父
+[10:56:04] 46/190 FAIL(turbo) 富父终甥 <HTTPError 402: 'Payment Required'>
+[10:56:40] 47/190 ok-turbo 赵简子
+[10:56:59] 48/190 FAIL(turbo) 赵襄子 <HTTPError 402: 'Payment Required'>
+[10:57:32] 49/190 ok-turbo 张孟同
+[10:57:52] 50/190 FAIL(turbo) 智伯 <HTTPError 402: 'Payment Required'>
+[10:58:23] 51/190 ok-turbo 孙膑
+[10:58:42] 52/190 FAIL(turbo) 田忌 <HTTPError 402: 'Payment Required'>
+[10:59:15] 53/190 ok-turbo 庞涓
+[10:59:36] 54/190 FAIL(turbo) 太子申 <HTTPError 402: 'Payment Required'>
+[11:00:14] 55/190 ok-turbo 商鞅
+[11:00:32] 56/190 FAIL(turbo) 吴起 <HTTPError 402: 'Payment Required'>
+[11:01:05] 57/190 ok-turbo 乐羊
+[11:01:23] 58/190 FAIL(turbo) 庞暖 <HTTPError 402: 'Payment Required'>
+[11:01:58] 59/190 ok-turbo 剧辛
+[11:02:18] 60/190 FAIL(turbo) 乐毅 <HTTPError 402: 'Payment Required'>
+[11:02:55] 61/190 ok-turbo 乐间
+[11:03:14] 62/190 FAIL(turbo) 乐乘 <HTTPError 402: 'Payment Required'>
+[11:03:47] 63/190 ok-turbo 骑劫
+[11:04:08] 64/190 FAIL(turbo) 栗腹 <HTTPError 402: 'Payment Required'>
+[11:04:41] 65/190 ok-turbo 将渠
+[11:04:58] 66/190 FAIL(turbo) 市被 <HTTPError 402: 'Payment Required'>
+[11:05:31] 67/190 ok-turbo 子之
+[11:05:49] 68/190 FAIL(turbo) 田单 <HTTPError 402: 'Payment Required'>
+[11:06:22] 69/190 ok-turbo 淖齿
+[11:06:39] 70/190 FAIL(turbo) 孟尝君 <HTTPError 402: 'Payment Required'>
+[11:07:13] 71/190 ok-turbo 平原君
+[11:07:32] 72/190 FAIL(turbo) 信陵君 <HTTPError 402: 'Payment Required'>
+[11:08:06] 73/190 ok-turbo 春申君
+[11:08:22] 74/190 FAIL(turbo) 李同 <HTTPError 402: 'Payment Required'>
+[11:08:54] 75/190 ok-turbo 郑安平
+[11:09:16] 76/190 FAIL(turbo) 胡阳 <HTTPError 402: 'Payment Required'>
+[11:09:56] 77/190 ok-turbo 白起
+[11:10:13] 78/190 FAIL(turbo) 王龁 <HTTPError 402: 'Payment Required'>
+[11:10:45] 79/190 ok-turbo 王陵
+[11:11:01] 80/190 FAIL(turbo) 公孙喜 <HTTPError 402: 'Payment Required'>
+[11:11:34] 81/190 ok-turbo 司马梗
+[11:11:52] 82/190 FAIL(turbo) 赵括 <HTTPError 402: 'Payment Required'>
+[11:12:21] 83/190 FAIL(turbo) 赵奢 <HTTPError 500: 'Internal Server Error'>
+[11:12:51] 84/190 FAIL(turbo) 许历 <HTTPError 402: 'Payment Required'>
+[11:13:22] 85/190 ok-turbo 廉颇
+[11:13:39] 86/190 FAIL(turbo) 蔺相如 <HTTPError 402: 'Payment Required'>
+[11:14:11] 87/190 ok-turbo 李牧
+[11:14:29] 88/190 FAIL(turbo) 司马尚 <HTTPError 402: 'Payment Required'>
+[11:15:04] 89/190 ok-turbo 赵葱
+[11:15:26] 90/190 FAIL(turbo) 颜聚 <HTTPError 402: 'Payment Required'>
+[11:15:58] 91/190 ok-turbo 扈辄
+[11:16:18] 92/190 FAIL(turbo) 桓齮 <HTTPError 402: 'Payment Required'>
+[11:16:51] 93/190 ok-turbo 燕周
+[11:17:10] 94/190 FAIL(turbo) 楼昌 <HTTPError 402: 'Payment Required'>
+[11:17:40] 95/190 ok-turbo 赵袑
+[11:18:02] 96/190 FAIL(turbo) 许钧 <HTTPError 402: 'Payment Required'>
+[11:18:42] 97/190 ok-turbo 牛翦
+[11:19:03] 98/190 FAIL(turbo) 赵希 <HTTPError 402: 'Payment Required'>
+[11:19:42] 99/190 ok-turbo 楼缓
+[11:20:00] 100/190 FAIL(turbo) 赵武灵王 <HTTPError 402: 'Payment Required'>
+[11:20:33] 101/190 ok-turbo 公子成
+[11:20:52] 102/190 FAIL(turbo) 李兑 <HTTPError 402: 'Payment Required'>
+[11:21:27] 103/190 ok-turbo 田儋
+[11:21:46] 104/190 FAIL(turbo) 田荣 <HTTPError 402: 'Payment Required'>
+[11:22:24] 105/190 ok-turbo 田横
+[11:22:43] 106/190 FAIL(turbo) 项燕 <HTTPError 402: 'Payment Required'>
+[11:23:17] 107/190 ok-turbo 项梁
+[11:23:38] 108/190 FAIL(turbo) 项籍 <HTTPError 402: 'Payment Required'>
+[11:24:09] 109/190 ok-turbo 项伯
+[11:24:29] 110/190 FAIL(turbo) 项庄 <HTTPError 402: 'Payment Required'>
+[11:25:06] 111/190 ok-turbo 龙且
+[11:25:24] 112/190 FAIL(turbo) 宋义 <HTTPError 402: 'Payment Required'>
+[11:26:01] 113/190 ok-turbo 范增
+[11:26:17] 114/190 FAIL(turbo) 蒲将军 <HTTPError 402: 'Payment Required'>
+[11:26:49] 115/190 ok-turbo 章邯
+[11:27:10] 116/190 FAIL(turbo) 王离 <HTTPError 402: 'Payment Required'>
+[11:27:49] 117/190 ok-turbo 苏角
+[11:28:07] 118/190 FAIL(turbo) 涉间 <HTTPError 402: 'Payment Required'>
+[11:28:39] 119/190 ok-turbo 司马欣
+[11:28:57] 120/190 FAIL(turbo) 董翳 <HTTPError 402: 'Payment Required'>
+[11:29:31] 121/190 ok-turbo 曹咎
+[11:29:48] 122/190 FAIL(turbo) 李由 <HTTPError 402: 'Payment Required'>
+[11:30:24] 123/190 ok-turbo 韩信
+[11:30:45] 124/190 FAIL(turbo) 彭越 <HTTPError 402: 'Payment Required'>
+[11:31:21] 125/190 ok-turbo 黥布
+[11:31:38] 126/190 FAIL(turbo) 田都 <HTTPError 402: 'Payment Required'>
+[11:32:14] 127/190 ok-turbo 田安
+[11:32:35] 128/190 FAIL(turbo) 臧荼 <HTTPError 402: 'Payment Required'>
+[11:33:07] 129/190 ok-turbo 张耳
+[11:33:26] 130/190 FAIL(turbo) 陈馀 <HTTPError 402: 'Payment Required'>
+[11:33:59] 131/190 ok-turbo 陈胜
+[11:34:20] 132/190 FAIL(turbo) 吴广 <HTTPError 402: 'Payment Required'>
+[11:34:51] 133/190 ok-turbo 周文
+[11:35:12] 134/190 FAIL(turbo) 吕臣 <HTTPError 402: 'Payment Required'>
+[11:35:41] 135/190 ok-turbo 秦嘉
+[11:35:58] 136/190 FAIL(turbo) 景驹 <HTTPError 402: 'Payment Required'>
+[11:36:35] 137/190 ok-turbo 田臧
+[11:36:52] 138/190 FAIL(turbo) 李归 <HTTPError 402: 'Payment Required'>
+[11:37:29] 139/190 FAIL(turbo) 武臣 <HTTPError 500: 'Internal Server Error'>
+[11:37:54] 140/190 FAIL(turbo) 周市 <HTTPError 402: 'Payment Required'>
+[11:38:37] 141/190 ok-turbo 庄蹻
+[11:38:54] 142/190 FAIL(turbo) 屠睢 <HTTPError 402: 'Payment Required'>
+[11:39:26] 143/190 ok-turbo 任嚣
+[11:39:47] 144/190 FAIL(turbo) 赵佗 <HTTPError 402: 'Payment Required'>
+[11:40:25] 145/190 ok-turbo 麃公
+[11:40:43] 146/190 FAIL(turbo) 杨端和 <HTTPError 402: 'Payment Required'>
+[11:41:17] 147/190 ok-turbo 羌瘣
+[11:41:36] 148/190 FAIL(turbo) 辛胜 <HTTPError 402: 'Payment Required'>
+[11:42:10] 149/190 ok-turbo 内史腾
+[11:42:31] 150/190 FAIL(turbo) 李信 <HTTPError 402: 'Payment Required'>
+[11:43:04] 151/190 ok-turbo 蒙骜
+[11:43:22] 152/190 FAIL(turbo) 蒙武 <HTTPError 402: 'Payment Required'>
+[11:44:00] 153/190 ok-turbo 蒙恬
+[11:44:22] 154/190 FAIL(turbo) 司马错 <HTTPError 402: 'Payment Required'>
+[11:45:01] 155/190 ok-turbo 樗里子
+[11:45:21] 156/190 FAIL(turbo) 甘茂 <HTTPError 402: 'Payment Required'>
+[11:45:53] 157/190 ok-turbo 魏章
+[11:46:11] 158/190 FAIL(turbo) 犀首 <HTTPError 402: 'Payment Required'>
+[11:46:47] 159/190 ok-turbo 荆轲
+[11:47:06] 160/190 FAIL(turbo) 聂政 <HTTPError 402: 'Payment Required'>
+[11:47:43] 161/190 ok-turbo 豫让
+[11:48:01] 162/190 FAIL(turbo) 樊於期 <HTTPError 402: 'Payment Required'>
+[11:48:39] 163/190 ok-turbo 晋鄙
+[11:48:58] 164/190 FAIL(turbo) 硃亥 <HTTPError 402: 'Payment Required'>
+[11:49:35] 165/190 ok-turbo 公孙痤
+[11:49:57] 166/190 FAIL(turbo) 芒卯 <HTTPError 402: 'Payment Required'>
+[11:50:31] 167/190 ok-turbo 龙贾
+[11:50:48] 168/190 FAIL(turbo) 申差 <HTTPError 402: 'Payment Required'>
+[11:51:25] 169/190 ok-turbo 公仲
+[11:51:47] 170/190 FAIL(turbo) 向寿 <HTTPError 402: 'Payment Required'>
+[11:52:22] 171/190 ok-turbo 屈丐
+[11:52:44] 172/190 FAIL(turbo) 逢侯丑 <HTTPError 402: 'Payment Required'>
+[11:53:24] 173/190 ok-turbo 景缺
+[11:53:40] 174/190 FAIL(turbo) 唐眛 <HTTPError 402: 'Payment Required'>
+[11:54:15] 175/190 ok-turbo 景阳
+[11:54:37] 176/190 FAIL(turbo) 王翦 <HTTPError 402: 'Payment Required'>
+[11:55:10] 177/190 ok-turbo 王贲
+[11:55:31] 178/190 FAIL(turbo) 司马靳 <HTTPError 402: 'Payment Required'>
+[11:56:07] 179/190 ok-turbo 李广利
+[11:56:28] 180/190 FAIL(turbo) 曹参 <HTTPError 402: 'Payment Required'>
+[11:57:04] 181/190 ok-turbo 樊哙
+[11:57:23] 182/190 FAIL(turbo) 灌婴 <HTTPError 402: 'Payment Required'>
+[11:57:56] 183/190 ok-turbo 周勃
+[11:58:17] 184/190 FAIL(turbo) 周亚夫 <HTTPError 402: 'Payment Required'>
+[11:58:55] 185/190 ok-turbo 郦商
+[11:59:16] 186/190 FAIL(turbo) 刘贾 <HTTPError 402: 'Payment Required'>
+[11:59:50] 187/190 ok-turbo 靳歙
+[12:00:11] 188/190 FAIL(turbo) 卫青 <HTTPError 402: 'Payment Required'>
+[12:00:48] 189/190 ok-turbo 霍去病
+[12:01:08] 190/190 FAIL(turbo) 李广 <HTTPError 402: 'Payment Required'>
+[12:01:39] ROUND DONE ok=93/190
+[12:02:29] ROUND 2 left=97
+[12:02:37] 1/97 ok-flux 曹沫
+[12:02:56] 2/97 FAIL(flux) 孙武 <HTTPError 402: 'Payment Required'>
+[12:03:37] 3/97 ok-flux 伯嚭
+[12:03:56] 4/97 FAIL(flux) 专诸 <HTTPError 402: 'Payment Required'>
+[12:04:31] 5/97 ok-flux 吴王夫差
+[12:04:51] 6/97 FAIL(flux) 大夫种 <HTTPError 402: 'Payment Required'>
+[12:05:25] 7/97 ok-flux 先轸
+[12:05:43] 8/97 FAIL(flux) 狐偃 <HTTPError 402: 'Payment Required'>
+[12:06:19] 9/97 ok-flux 毕万
+[12:06:40] 10/97 FAIL(flux) 魏武子 <HTTPError 402: 'Payment Required'>
+[12:07:16] 11/97 ok-flux 由余
+[12:07:35] 12/97 FAIL(flux) 西乞术 <HTTPError 402: 'Payment Required'>
+[12:08:12] 13/97 ok-flux 蹇叔
+[12:08:33] 14/97 FAIL(flux) 子反 <HTTPError 402: 'Payment Required'>
+[12:09:05] 15/97 ok-flux 华元
+[12:09:22] 16/97 FAIL(flux) 荀林父 <HTTPError 402: 'Payment Required'>
+[12:10:01] 17/97 ok-flux 随会
+[12:10:19] 18/97 FAIL(flux) 韩厥 <HTTPError 402: 'Payment Required'>
+[12:10:52] 19/97 ok-flux 郤至
+[12:11:11] 20/97 FAIL(flux) 屠岸贾 <HTTPError 402: 'Payment Required'>
+[12:11:42] 21/97 ok-flux 公孙杵臼
+[12:11:58] 22/97 FAIL(flux) 王子城父 <HTTPError 402: 'Payment Required'>
+[12:12:35] 23/97 ok-flux 富父终甥
+[12:12:54] 24/97 FAIL(flux) 赵襄子 <HTTPError 402: 'Payment Required'>
+[12:13:29] 25/97 ok-flux 智伯
+[12:13:49] 26/97 FAIL(flux) 田忌 <HTTPError 402: 'Payment Required'>
+[12:14:20] 27/97 ok-flux 太子申
+[12:14:41] 28/97 FAIL(flux) 吴起 <HTTPError 402: 'Payment Required'>
+[12:15:13] 29/97 ok-flux 庞暖
+[12:15:35] 30/97 FAIL(flux) 乐毅 <HTTPError 402: 'Payment Required'>
+[12:16:13] 31/97 ok-flux 乐乘
+[12:16:34] 32/97 FAIL(flux) 栗腹 <HTTPError 402: 'Payment Required'>
+[12:17:13] 33/97 ok-flux 市被
+[12:17:34] 34/97 FAIL(flux) 田单 <HTTPError 402: 'Payment Required'>
+[12:18:09] 35/97 ok-flux 孟尝君
+[12:18:26] 36/97 FAIL(flux) 信陵君 <HTTPError 402: 'Payment Required'>
+[12:19:02] 37/97 ok-flux 李同
+[12:19:24] 38/97 FAIL(flux) 胡阳 <HTTPError 402: 'Payment Required'>
+[12:20:03] 39/97 ok-flux 王龁
+[12:20:23] 40/97 FAIL(flux) 公孙喜 <HTTPError 402: 'Payment Required'>
+[12:20:54] 41/97 ok-flux 赵括
+[12:21:12] 42/97 FAIL(flux) 赵奢 <HTTPError 402: 'Payment Required'>
+[12:21:45] 43/97 ok-flux 许历
+[12:22:01] 44/97 FAIL(flux) 蔺相如 <HTTPError 402: 'Payment Required'>
+[12:22:37] 45/97 ok-flux 司马尚
+[12:22:53] 46/97 FAIL(flux) 颜聚 <HTTPError 402: 'Payment Required'>
+[12:23:30] 47/97 ok-flux 桓齮
+[12:23:51] 48/97 FAIL(flux) 楼昌 <HTTPError 402: 'Payment Required'>
+[12:24:28] 49/97 ok-flux 许钧
+[12:24:46] 50/97 FAIL(flux) 赵希 <HTTPError 402: 'Payment Required'>
+[12:25:21] 51/97 FAIL(flux) 赵武灵王 <HTTPError 500: 'Internal Server Error'>
+[12:25:47] 52/97 FAIL(flux) 李兑 <HTTPError 402: 'Payment Required'>
+[12:26:22] 53/97 ok-flux 田荣
+[12:26:42] 54/97 FAIL(flux) 项燕 <HTTPError 402: 'Payment Required'>
+[12:27:21] 55/97 ok-flux 项籍
+[12:27:39] 56/97 FAIL(flux) 项庄 <HTTPError 402: 'Payment Required'>
+[12:28:17] 57/97 ok-flux 宋义
+[12:28:34] 58/97 FAIL(flux) 蒲将军 <HTTPError 402: 'Payment Required'>
+[12:29:09] 59/97 ok-flux 王离
+[12:29:30] 60/97 FAIL(flux) 涉间 <HTTPError 402: 'Payment Required'>
+[12:30:03] 61/97 ok-flux 董翳
+[12:30:23] 62/97 FAIL(flux) 李由 <HTTPError 402: 'Payment Required'>
+[12:31:02] 63/97 ok-flux 彭越
+[12:31:24] 64/97 FAIL(flux) 田都 <HTTPError 402: 'Payment Required'>
+[12:32:09] 65/97 ok-flux 臧荼
+[12:32:30] 66/97 FAIL(flux) 陈馀 <HTTPError 402: 'Payment Required'>
+[12:33:01] 67/97 ok-flux 吴广
+[12:33:19] 68/97 FAIL(flux) 吕臣 <HTTPError 402: 'Payment Required'>
+[12:33:54] 69/97 ok-flux 景驹
+[12:34:12] 70/97 FAIL(flux) 李归 <HTTPError 402: 'Payment Required'>
+[12:34:50] 71/97 ok-flux 武臣
+[12:35:07] 72/97 FAIL(flux) 周市 <HTTPError 402: 'Payment Required'>
+[12:35:40] 73/97 ok-flux 屠睢
+[12:35:58] 74/97 FAIL(flux) 赵佗 <HTTPError 402: 'Payment Required'>
+[12:36:33] 75/97 ok-flux 杨端和
+[12:36:54] 76/97 FAIL(flux) 辛胜 <HTTPError 402: 'Payment Required'>
+[12:37:26] 77/97 ok-flux 李信
+[12:37:44] 78/97 FAIL(flux) 蒙武 <HTTPError 402: 'Payment Required'>
+[12:38:25] 79/97 ok-flux 司马错
+[12:38:42] 80/97 FAIL(flux) 甘茂 <HTTPError 402: 'Payment Required'>
+[12:39:14] 81/97 ok-flux 犀首
+[12:39:34] 82/97 FAIL(flux) 聂政 <HTTPError 402: 'Payment Required'>
+[12:40:08] 83/97 ok-flux 樊於期
+[12:40:30] 84/97 FAIL(flux) 硃亥 <HTTPError 402: 'Payment Required'>
+[12:41:09] 85/97 ok-flux 芒卯
+[12:41:29] 86/97 FAIL(flux) 申差 <HTTPError 402: 'Payment Required'>
+[12:42:03] 87/97 FAIL(flux) 向寿 <HTTPError 500: 'Internal Server Error'>
+[12:42:30] 88/97 FAIL(flux) 逢侯丑 <HTTPError 402: 'Payment Required'>
+[12:43:06] 89/97 ok-flux 唐眛
+[12:43:23] 90/97 FAIL(flux) 王翦 <HTTPError 402: 'Payment Required'>
+[12:43:56] 91/97 ok-flux 司马靳
+[12:44:13] 92/97 FAIL(flux) 曹参 <HTTPError 402: 'Payment Required'>
+[12:44:47] 93/97 ok-flux 灌婴
+[12:45:06] 94/97 FAIL(flux) 周亚夫 <HTTPError 402: 'Payment Required'>
+[12:45:42] 95/97 ok-flux 刘贾
+[12:46:03] 96/97 FAIL(flux) 卫青 <HTTPError 402: 'Payment Required'>
+[12:46:40] 97/97 ok-flux 李广
+[12:46:57] ROUND DONE ok=140/190
+[12:47:48] ROUND 3 left=50
+[12:47:54] 1/50 ok-turbo 孙武
+[12:48:14] 2/50 FAIL(turbo) 专诸 <HTTPError 402: 'Payment Required'>
+[12:48:52] 3/50 ok-turbo 大夫种
+[12:49:11] 4/50 FAIL(turbo) 狐偃 <HTTPError 402: 'Payment Required'>
+[12:49:42] 5/50 ok-turbo 魏武子
+[12:50:02] 6/50 FAIL(turbo) 西乞术 <HTTPError 402: 'Payment Required'>
+[12:50:40] 7/50 ok-turbo 子反
+[12:50:58] 8/50 FAIL(turbo) 荀林父 <HTTPError 402: 'Payment Required'>
+[12:51:31] 9/50 ok-turbo 韩厥
+[12:51:48] 10/50 FAIL(turbo) 屠岸贾 <HTTPError 402: 'Payment Required'>
+[12:52:26] 11/50 ok-turbo 王子城父
+[12:52:48] 12/50 FAIL(turbo) 赵襄子 <HTTPError 402: 'Payment Required'>
+[12:53:25] 13/50 ok-turbo 田忌
+[12:53:44] 14/50 FAIL(turbo) 吴起 <HTTPError 402: 'Payment Required'>
+[12:54:37] 15/50 FAIL(turbo) 乐毅 <HTTPError 500: 'Internal Server Error'>
+[12:55:16] 16/50 ok-turbo 栗腹
+[12:55:35] 17/50 FAIL(turbo) 田单 <HTTPError 402: 'Payment Required'>
+[12:56:10] 18/50 ok-turbo 信陵君
+[12:56:28] 19/50 FAIL(turbo) 胡阳 <HTTPError 402: 'Payment Required'>
+[12:57:03] 20/50 ok-turbo 公孙喜
+[12:57:23] 21/50 FAIL(turbo) 赵奢 <HTTPError 402: 'Payment Required'>
+[12:58:02] 22/50 ok-turbo 蔺相如
+[12:58:19] 23/50 FAIL(turbo) 颜聚 <HTTPError 402: 'Payment Required'>
+[12:58:55] 24/50 ok-turbo 楼昌
+[12:59:13] 25/50 FAIL(turbo) 赵希 <HTTPError 402: 'Payment Required'>
+[12:59:49] 26/50 ok-turbo 赵武灵王
+[13:00:06] 27/50 FAIL(turbo) 李兑 <HTTPError 402: 'Payment Required'>
+[13:00:44] 28/50 ok-turbo 项燕
+[13:01:03] 29/50 FAIL(turbo) 项庄 <HTTPError 402: 'Payment Required'>
+[13:01:40] 30/50 ok-turbo 蒲将军
+[13:02:01] 31/50 FAIL(turbo) 涉间 <HTTPError 402: 'Payment Required'>
+[13:02:36] 32/50 ok-turbo 李由
+[13:02:54] 33/50 FAIL(turbo) 田都 <HTTPError 402: 'Payment Required'>
+[13:03:32] 34/50 ok-turbo 陈馀
+[13:03:50] 35/50 FAIL(turbo) 吕臣 <HTTPError 402: 'Payment Required'>
+[13:04:23] 36/50 ok-turbo 李归
+[13:04:41] 37/50 FAIL(turbo) 周市 <HTTPError 402: 'Payment Required'>
+[13:05:18] 38/50 ok-turbo 赵佗
+[13:05:35] 39/50 FAIL(turbo) 辛胜 <HTTPError 402: 'Payment Required'>
+[13:06:14] 40/50 ok-turbo 蒙武
+[13:06:33] 41/50 FAIL(turbo) 甘茂 <HTTPError 402: 'Payment Required'>
+[13:07:13] 42/50 ok-turbo 聂政
+[13:07:35] 43/50 FAIL(turbo) 硃亥 <HTTPError 402: 'Payment Required'>
+[13:08:13] 44/50 ok-turbo 申差
+[13:08:31] 45/50 FAIL(turbo) 向寿 <HTTPError 402: 'Payment Required'>
+[13:09:06] 46/50 ok-turbo 逢侯丑
+[13:09:24] 47/50 FAIL(turbo) 王翦 <HTTPError 402: 'Payment Required'>
+[13:10:02] 48/50 ok-turbo 曹参
+[13:10:20] 49/50 FAIL(turbo) 周亚夫 <HTTPError 402: 'Payment Required'>
+[13:10:54] 50/50 ok-turbo 卫青
+[13:11:12] ROUND DONE ok=165/190
+[13:12:02] ROUND 4 left=25
+[13:12:09] 1/25 ok-flux 专诸
+[13:12:31] 2/25 FAIL(flux) 狐偃 <HTTPError 402: 'Payment Required'>
+[13:13:03] 3/25 ok-flux 西乞术
+[13:13:19] 4/25 FAIL(flux) 荀林父 <HTTPError 402: 'Payment Required'>
+[13:13:59] 5/25 ok-flux 屠岸贾
+[13:14:15] 6/25 FAIL(flux) 赵襄子 <HTTPError 402: 'Payment Required'>
+[13:14:46] 7/25 ok-flux 吴起
+[13:15:08] 8/25 FAIL(flux) 乐毅 <HTTPError 402: 'Payment Required'>
+[13:15:39] 9/25 ok-flux 田单
+[13:15:59] 10/25 FAIL(flux) 胡阳 <HTTPError 402: 'Payment Required'>
+[13:16:32] 11/25 ok-flux 赵奢
+[13:16:52] 12/25 FAIL(flux) 颜聚 <HTTPError 402: 'Payment Required'>
+[13:17:24] 13/25 ok-flux 赵希
+[13:17:45] 14/25 FAIL(flux) 李兑 <HTTPError 402: 'Payment Required'>
+[13:18:22] 15/25 ok-flux 项庄
+[13:18:38] 16/25 FAIL(flux) 涉间 <HTTPError 402: 'Payment Required'>
+[13:19:17] 17/25 ok-flux 田都
+[13:19:37] 18/25 FAIL(flux) 吕臣 <HTTPError 402: 'Payment Required'>
+[13:20:09] 19/25 ok-flux 周市
+[13:20:27] 20/25 FAIL(flux) 辛胜 <HTTPError 402: 'Payment Required'>
+[13:21:03] 21/25 ok-flux 甘茂
+[13:21:21] 22/25 FAIL(flux) 硃亥 <HTTPError 402: 'Payment Required'>
+[13:21:57] 23/25 ok-flux 向寿
+[13:22:13] 24/25 FAIL(flux) 王翦 <HTTPError 402: 'Payment Required'>
+[13:22:49] 25/25 ok-flux 周亚夫
+[13:23:07] ROUND DONE ok=178/190
+[13:23:57] ROUND 5 left=12
+[13:24:04] 1/12 ok-turbo 狐偃
+[13:24:22] 2/12 FAIL(turbo) 荀林父 <HTTPError 402: 'Payment Required'>
+[13:24:59] 3/12 ok-turbo 赵襄子
+[13:25:20] 4/12 FAIL(turbo) 乐毅 <HTTPError 402: 'Payment Required'>
+[13:25:55] 5/12 ok-turbo 胡阳
+[13:26:18] 6/12 FAIL(turbo) 颜聚 <HTTPError 402: 'Payment Required'>
+[13:26:53] 7/12 ok-turbo 李兑
+[13:27:10] 8/12 FAIL(turbo) 涉间 <HTTPError 402: 'Payment Required'>
+[13:27:41] 9/12 ok-turbo 吕臣
+[13:27:59] 10/12 FAIL(turbo) 辛胜 <HTTPError 402: 'Payment Required'>
+[13:28:38] 11/12 ok-turbo 硃亥
+[13:28:59] 12/12 FAIL(turbo) 王翦 <HTTPError 402: 'Payment Required'>
+[13:29:28] ROUND DONE ok=184/190
+[13:29:28] FINISH missing=6 ['荀林父', '乐毅', '颜聚', '涉间', '辛胜', '王翦']
+RETRY ['荀林父', '乐毅', '颜聚', '涉间', '辛胜', '王翦']
+RETRY ok 荀林父
+RETRY fail 乐毅 <HTTPError 402: 'Payment Required'>
+RETRY ok 颜聚
+RETRY fail 涉间 <HTTPError 402: 'Payment Required'>
+RETRY ok 辛胜
+RETRY fail 王翦 <HTTPError 402: 'Payment Required'>
+RETRY ok 乐毅
+RETRY fail 涉间 <HTTPError 402: 'Payment Required'>
+RETRY ok 王翦
+RETRY fail 涉间 <HTTPError 402: 'Payment Required'>
+RETRY ['荀林父', '乐毅', '颜聚', '涉间', '辛胜', '王翦']
+RETRY ok 涉间
+[14:12:20] backed up old gen_ai -> gen_ai_v1
+[14:12:20] START v2 total=190
+[14:12:20] ROUND 1 left=190
+[14:12:28] 1/190 ok-flux 管仲
+[14:12:46] 2/190 FAIL(flux) 曹沫 <HTTPError 402: 'Payment Required'>
+[14:13:25] 3/190 ok-flux 司马穰苴
+[14:13:47] 4/190 FAIL(flux) 孙武 <HTTPError 402: 'Payment Required'>
+[14:14:20] 5/190 ok-flux 伍子胥
+[14:14:37] 6/190 FAIL(flux) 伯嚭 <HTTPError 402: 'Payment Required'>
+[14:15:11] 7/190 ok-flux 夫概
+[14:15:31] 8/190 FAIL(flux) 专诸 <HTTPError 402: 'Payment Required'>
+[14:16:08] 9/190 ok-flux 越王句践
+[14:16:25] 10/190 FAIL(flux) 吴王夫差 <HTTPError 402: 'Payment Required'>
+[14:23:32] START v2 total=190
+[14:23:32] ROUND 1 left=190
+[14:23:41] 1/190 ok-flux 管仲
+[14:24:00] 2/190 FAIL(flux) 曹沫 <HTTPError 402: 'Payment Required'>
+[14:24:36] 3/190 ok-flux 司马穰苴
+[14:24:55] 4/190 FAIL(flux) 孙武 <HTTPError 402: 'Payment Required'>
+[14:25:30] 5/190 ok-flux 伍子胥
+[14:25:49] 6/190 FAIL(flux) 伯嚭 <HTTPError 402: 'Payment Required'>
+[14:26:25] 7/190 ok-flux 夫概
+[14:26:44] 8/190 FAIL(flux) 专诸 <HTTPError 402: 'Payment Required'>
+[14:27:19] 9/190 ok-flux 越王句践
+[14:27:38] 10/190 FAIL(flux) 吴王夫差 <HTTPError 402: 'Payment Required'>
+[14:28:10] 11/190 ok-flux 范蠡
+[14:28:32] 12/190 FAIL(flux) 大夫种 <HTTPError 402: 'Payment Required'>
+[14:29:05] 13/190 ok-flux 孙叔敖
+[14:29:26] 14/190 FAIL(flux) 先轸 <HTTPError 402: 'Payment Required'>
+[14:30:04] 15/190 ok-flux 栾枝
+[14:30:21] 16/190 FAIL(flux) 狐偃 <HTTPError 402: 'Payment Required'>
+[14:30:55] 17/190 ok-flux 赵衰
+[14:31:17] 18/190 FAIL(flux) 毕万 <HTTPError 402: 'Payment Required'>
+[14:31:52] 19/190 ok-flux 赵夙
+[14:32:10] 20/190 FAIL(flux) 魏武子 <HTTPError 402: 'Payment Required'>
+[14:32:44] 21/190 ok-flux 百里奚
+[14:33:01] 22/190 FAIL(flux) 由余 <HTTPError 402: 'Payment Required'>
+[14:33:40] 23/190 ok-flux 孟明视
+[14:33:59] 24/190 FAIL(flux) 西乞术 <HTTPError 402: 'Payment Required'>
+[14:34:37] 25/190 ok-flux 白乙丙
+[14:34:57] 26/190 FAIL(flux) 蹇叔 <HTTPError 402: 'Payment Required'>
+[14:35:28] 27/190 ok-flux 子玉
+[14:35:50] 28/190 FAIL(flux) 子反 <HTTPError 402: 'Payment Required'>
+[14:36:26] 29/190 ok-flux 子常
+[14:36:45] 30/190 FAIL(flux) 华元 <HTTPError 402: 'Payment Required'>
+[14:37:22] 31/190 ok-flux 南宫万
+[14:37:42] 32/190 FAIL(flux) 荀林父 <HTTPError 402: 'Payment Required'>
+[14:38:20] 33/190 ok-flux 先縠
+[14:38:37] 34/190 FAIL(flux) 随会 <HTTPError 402: 'Payment Required'>
+[14:39:12] 35/190 ok-flux 郤克
+[14:39:32] 36/190 FAIL(flux) 韩厥 <HTTPError 402: 'Payment Required'>
+[14:40:07] 37/190 ok-flux 栾书
+[14:40:25] 38/190 FAIL(flux) 郤至 <HTTPError 402: 'Payment Required'>
+[14:41:00] 39/190 ok-flux 先蔑
+[14:41:19] 40/190 FAIL(flux) 屠岸贾 <HTTPError 402: 'Payment Required'>
+[14:41:51] 41/190 ok-flux 程婴
+[14:42:12] 42/190 FAIL(flux) 公孙杵臼 <HTTPError 402: 'Payment Required'>
+[14:42:47] 43/190 ok-flux 逢丑父
+[14:43:06] 44/190 FAIL(flux) 王子城父 <HTTPError 402: 'Payment Required'>
+[14:43:39] 45/190 ok-flux 皇父
+[14:43:56] 46/190 FAIL(flux) 富父终甥 <HTTPError 402: 'Payment Required'>
+[14:44:28] 47/190 ok-flux 赵简子
+[14:44:48] 48/190 FAIL(flux) 赵襄子 <HTTPError 402: 'Payment Required'>
+[14:45:23] 49/190 ok-flux 张孟同
+[14:45:43] 50/190 FAIL(flux) 智伯 <HTTPError 402: 'Payment Required'>
+[14:46:20] 51/190 ok-flux 孙膑
+[14:46:43] 52/190 FAIL(flux) 田忌 <HTTPError 402: 'Payment Required'>
+[14:47:24] 53/190 ok-flux 庞涓
+[14:47:42] 54/190 FAIL(flux) 太子申 <HTTPError 402: 'Payment Required'>
+[14:48:21] 55/190 ok-flux 商鞅
+[14:48:43] 56/190 FAIL(flux) 吴起 <HTTPError 402: 'Payment Required'>
+[14:49:20] 57/190 ok-flux 乐羊
+[14:49:41] 58/190 FAIL(flux) 庞暖 <HTTPError 402: 'Payment Required'>
+[14:50:15] 59/190 ok-flux 剧辛
+[14:50:32] 60/190 FAIL(flux) 乐毅 <HTTPError 402: 'Payment Required'>
+[14:51:08] 61/190 ok-flux 乐间
+[14:51:26] 62/190 FAIL(flux) 乐乘 <HTTPError 402: 'Payment Required'>
+[14:51:58] 63/190 ok-flux 骑劫
+[14:52:20] 64/190 FAIL(flux) 栗腹 <HTTPError 402: 'Payment Required'>
+[14:52:57] 65/190 ok-flux 将渠
+[14:53:13] 66/190 FAIL(flux) 市被 <HTTPError 402: 'Payment Required'>
+[14:53:51] 67/190 ok-flux 子之
+[14:54:11] 68/190 FAIL(flux) 田单 <HTTPError 402: 'Payment Required'>
+[14:54:48] 69/190 ok-flux 淖齿
+[14:55:04] 70/190 FAIL(flux) 孟尝君 <HTTPError 402: 'Payment Required'>
+[14:55:44] 71/190 ok-flux 平原君
+[14:56:05] 72/190 FAIL(flux) 信陵君 <HTTPError 402: 'Payment Required'>
+[14:56:37] 73/190 ok-flux 春申君
+[14:56:54] 74/190 FAIL(flux) 李同 <HTTPError 402: 'Payment Required'>
+[14:57:33] 75/190 ok-flux 郑安平
+[14:57:54] 76/190 FAIL(flux) 胡阳 <HTTPError 402: 'Payment Required'>
+[14:58:29] 77/190 ok-flux 白起
+[14:58:50] 78/190 FAIL(flux) 王龁 <HTTPError 402: 'Payment Required'>
+[14:59:30] 79/190 ok-flux 王陵
+[14:59:50] 80/190 FAIL(flux) 公孙喜 <HTTPError 402: 'Payment Required'>
+[15:00:29] 81/190 ok-flux 司马梗
+[15:00:48] 82/190 FAIL(flux) 赵括 <HTTPError 402: 'Payment Required'>
+[15:01:27] 83/190 ok-flux 赵奢
+[15:01:44] 84/190 FAIL(flux) 许历 <HTTPError 402: 'Payment Required'>
+[15:02:18] 85/190 ok-flux 廉颇
+[15:02:37] 86/190 FAIL(flux) 蔺相如 <HTTPError 402: 'Payment Required'>
+[15:03:10] 87/190 ok-flux 李牧
+[15:03:27] 88/190 FAIL(flux) 司马尚 <HTTPError 402: 'Payment Required'>
+[15:04:01] 89/190 ok-flux 赵葱
+[15:04:20] 90/190 FAIL(flux) 颜聚 <HTTPError 402: 'Payment Required'>
+[15:04:58] 91/190 ok-flux 扈辄
+[15:05:17] 92/190 FAIL(flux) 桓齮 <HTTPError 402: 'Payment Required'>
+[15:05:50] 93/190 ok-flux 燕周
+[15:06:08] 94/190 FAIL(flux) 楼昌 <HTTPError 402: 'Payment Required'>
+[15:06:45] 95/190 ok-flux 赵袑
+[15:07:05] 96/190 FAIL(flux) 许钧 <HTTPError 402: 'Payment Required'>
+[15:07:37] 97/190 ok-flux 牛翦
+[15:07:55] 98/190 FAIL(flux) 赵希 <HTTPError 402: 'Payment Required'>
+[15:08:36] 99/190 ok-flux 楼缓
+[15:08:53] 100/190 FAIL(flux) 赵武灵王 <HTTPError 402: 'Payment Required'>
+[15:09:31] 101/190 ok-flux 公子成
+[15:09:52] 102/190 FAIL(flux) 李兑 <HTTPError 402: 'Payment Required'>
+[15:10:25] 103/190 ok-flux 田儋
+[15:10:42] 104/190 FAIL(flux) 田荣 <HTTPError 402: 'Payment Required'>
+[15:11:21] 105/190 ok-flux 田横
+[15:11:38] 106/190 FAIL(flux) 项燕 <HTTPError 402: 'Payment Required'>
+[15:12:09] 107/190 ok-flux 项梁
+[15:12:27] 108/190 FAIL(flux) 项籍 <HTTPError 402: 'Payment Required'>
+[15:13:04] 109/190 ok-flux 项伯
+[15:13:21] 110/190 FAIL(flux) 项庄 <HTTPError 402: 'Payment Required'>
+[15:13:54] 111/190 ok-flux 龙且
+[15:14:11] 112/190 FAIL(flux) 宋义 <HTTPError 402: 'Payment Required'>
+[15:14:48] 113/190 ok-flux 范增
+[15:15:07] 114/190 FAIL(flux) 蒲将军 <HTTPError 402: 'Payment Required'>
+[15:15:44] 115/190 ok-flux 章邯
+[15:16:04] 116/190 FAIL(flux) 王离 <HTTPError 402: 'Payment Required'>
+[15:16:41] 117/190 ok-flux 苏角
+[15:16:59] 118/190 FAIL(flux) 涉间 <HTTPError 402: 'Payment Required'>
+[15:17:55] 119/190 ok-flux 司马欣
+[15:18:20] 120/190 ok-flux 董翳
+[15:18:37] 121/190 FAIL(flux) 曹咎 <HTTPError 402: 'Payment Required'>
+[15:19:14] 122/190 ok-flux 李由
+[15:19:33] 123/190 FAIL(flux) 韩信 <HTTPError 402: 'Payment Required'>
+[15:20:12] 124/190 ok-flux 彭越
+[15:20:29] 125/190 FAIL(flux) 黥布 <HTTPError 402: 'Payment Required'>
+[15:21:08] 126/190 ok-flux 田都
+[15:21:26] 127/190 FAIL(flux) 田安 <HTTPError 402: 'Payment Required'>
+[15:21:58] 128/190 ok-flux 臧荼
+[15:22:17] 129/190 FAIL(flux) 张耳 <HTTPError 402: 'Payment Required'>
+[15:22:53] 130/190 ok-flux 陈馀
+[15:23:10] 131/190 FAIL(flux) 陈胜 <HTTPError 402: 'Payment Required'>
+[15:23:45] 132/190 ok-flux 吴广
+[15:24:04] 133/190 FAIL(flux) 周文 <HTTPError 402: 'Payment Required'>
+[15:24:40] 134/190 ok-flux 吕臣
+[15:24:58] 135/190 FAIL(flux) 秦嘉 <HTTPError 402: 'Payment Required'>
+[15:25:28] 136/190 ok-flux 景驹
+[15:25:48] 137/190 FAIL(flux) 田臧 <HTTPError 402: 'Payment Required'>
+[15:26:17] 138/190 FAIL(flux) 李归 <HTTPError 500: 'Internal Server Error'>
+[15:26:42] 139/190 FAIL(flux) 武臣 <HTTPError 402: 'Payment Required'>
+[15:27:21] 140/190 ok-flux 周市
+[15:27:37] 141/190 FAIL(flux) 庄蹻 <HTTPError 402: 'Payment Required'>
+[15:28:13] 142/190 ok-flux 屠睢
+[15:28:31] 143/190 FAIL(flux) 任嚣 <HTTPError 402: 'Payment Required'>
+[15:29:06] 144/190 ok-flux 赵佗
+[15:29:24] 145/190 FAIL(flux) 麃公 <HTTPError 402: 'Payment Required'>
+[15:29:56] 146/190 ok-flux 杨端和
+[15:30:18] 147/190 FAIL(flux) 羌瘣 <HTTPError 402: 'Payment Required'>
+[15:30:49] 148/190 ok-flux 辛胜
+[15:31:10] 149/190 FAIL(flux) 内史腾 <HTTPError 402: 'Payment Required'>
+[15:31:47] 150/190 ok-flux 李信
+[15:32:03] 151/190 FAIL(flux) 蒙骜 <HTTPError 402: 'Payment Required'>
+[15:32:43] 152/190 ok-flux 蒙武
+[15:33:04] 153/190 FAIL(flux) 蒙恬 <HTTPError 402: 'Payment Required'>
+[15:33:41] 154/190 ok-flux 司马错
+[15:34:00] 155/190 FAIL(flux) 樗里子 <HTTPError 402: 'Payment Required'>
+[15:34:32] 156/190 ok-flux 甘茂
+[15:34:52] 157/190 FAIL(flux) 魏章 <HTTPError 402: 'Payment Required'>
+[15:35:25] 158/190 ok-flux 犀首
+[15:35:46] 159/190 FAIL(flux) 荆轲 <HTTPError 402: 'Payment Required'>
+[15:36:19] 160/190 ok-flux 聂政
+[15:36:39] 161/190 FAIL(flux) 豫让 <HTTPError 402: 'Payment Required'>
+[15:37:18] 162/190 ok-flux 樊於期
+[15:37:38] 163/190 FAIL(flux) 晋鄙 <HTTPError 402: 'Payment Required'>
+[15:38:19] 164/190 ok-flux 硃亥
+[15:38:41] 165/190 FAIL(flux) 公孙痤 <HTTPError 402: 'Payment Required'>
+[15:39:14] 166/190 ok-flux 芒卯
+[15:39:32] 167/190 FAIL(flux) 龙贾 <HTTPError 402: 'Payment Required'>
+[15:40:08] 168/190 ok-flux 申差
+[15:40:28] 169/190 FAIL(flux) 公仲 <HTTPError 402: 'Payment Required'>
+[15:41:05] 170/190 ok-flux 向寿
+[15:41:26] 171/190 FAIL(flux) 屈丐 <HTTPError 402: 'Payment Required'>
+[15:42:01] 172/190 ok-flux 逢侯丑
+[15:42:17] 173/190 FAIL(flux) 景缺 <HTTPError 402: 'Payment Required'>
+[15:42:56] 174/190 ok-flux 唐眛
+[15:43:13] 175/190 FAIL(flux) 景阳 <HTTPError 402: 'Payment Required'>
+[15:43:48] 176/190 ok-flux 王翦
+[15:44:05] 177/190 FAIL(flux) 王贲 <HTTPError 402: 'Payment Required'>
+[15:44:39] 178/190 ok-flux 司马靳
+[15:44:56] 179/190 FAIL(flux) 李广利 <HTTPError 402: 'Payment Required'>
+[15:45:28] 180/190 ok-flux 曹参
+[15:45:47] 181/190 FAIL(flux) 樊哙 <HTTPError 402: 'Payment Required'>
+[15:46:19] 182/190 ok-flux 灌婴
+[15:46:35] 183/190 FAIL(flux) 周勃 <HTTPError 402: 'Payment Required'>
+[15:47:12] 184/190 ok-flux 周亚夫
+[15:47:30] 185/190 FAIL(flux) 郦商 <HTTPError 402: 'Payment Required'>
+[15:48:11] 186/190 ok-flux 刘贾
+[15:48:30] 187/190 FAIL(flux) 靳歙 <HTTPError 402: 'Payment Required'>
+[15:49:06] 188/190 ok-flux 卫青
+[15:49:24] 189/190 FAIL(flux) 霍去病 <HTTPError 402: 'Payment Required'>
+[15:49:57] 190/190 ok-flux 李广
+[15:50:18] ROUND DONE ok=95/190
+[15:51:08] ROUND 2 left=95
+[15:51:16] 1/95 ok-turbo 曹沫
+[15:51:35] 2/95 FAIL(turbo) 孙武 <HTTPError 402: 'Payment Required'>
+[15:52:13] 3/95 ok-turbo 伯嚭
+[15:52:30] 4/95 FAIL(turbo) 专诸 <HTTPError 402: 'Payment Required'>
+[15:53:01] 5/95 ok-turbo 吴王夫差
+[15:53:18] 6/95 FAIL(turbo) 大夫种 <HTTPError 402: 'Payment Required'>
+[15:53:56] 7/95 ok-turbo 先轸
+[15:54:18] 8/95 FAIL(turbo) 狐偃 <HTTPError 402: 'Payment Required'>
+[15:54:53] 9/95 ok-turbo 毕万
+[15:55:13] 10/95 FAIL(turbo) 魏武子 <HTTPError 402: 'Payment Required'>
+[15:55:45] 11/95 ok-turbo 由余
+[15:56:05] 12/95 FAIL(turbo) 西乞术 <HTTPError 402: 'Payment Required'>
+[15:56:44] 13/95 ok-turbo 蹇叔
+[15:57:03] 14/95 FAIL(turbo) 子反 <HTTPError 402: 'Payment Required'>
+[15:57:36] 15/95 ok-turbo 华元
+[15:57:54] 16/95 FAIL(turbo) 荀林父 <HTTPError 402: 'Payment Required'>
+[15:58:31] 17/95 ok-turbo 随会
+[15:58:47] 18/95 FAIL(turbo) 韩厥 <HTTPError 402: 'Payment Required'>
+[15:59:32] 19/95 ok-turbo 郤至
+[15:59:48] 20/95 FAIL(turbo) 屠岸贾 <HTTPError 402: 'Payment Required'>
+[16:00:28] 21/95 ok-turbo 公孙杵臼
+[16:00:48] 22/95 FAIL(turbo) 王子城父 <HTTPError 402: 'Payment Required'>
+[16:01:23] 23/95 FAIL(turbo) 富父终甥 <HTTPError 500: 'Internal Server Error'>
+[16:01:49] 24/95 FAIL(turbo) 赵襄子 <HTTPError 402: 'Payment Required'>
+[16:02:25] 25/95 ok-turbo 智伯
+[16:02:44] 26/95 FAIL(turbo) 田忌 <HTTPError 402: 'Payment Required'>
+[16:03:22] 27/95 ok-turbo 太子申
+[16:03:39] 28/95 FAIL(turbo) 吴起 <HTTPError 402: 'Payment Required'>
+[16:04:16] 29/95 ok-turbo 庞暖
+[16:04:38] 30/95 FAIL(turbo) 乐毅 <HTTPError 402: 'Payment Required'>
+[16:05:17] 31/95 ok-turbo 乐乘
+[16:05:35] 32/95 FAIL(turbo) 栗腹 <HTTPError 402: 'Payment Required'>
+[16:06:13] 33/95 ok-turbo 市被
+[16:06:30] 34/95 FAIL(turbo) 田单 <HTTPError 402: 'Payment Required'>
+[16:07:06] 35/95 ok-turbo 孟尝君
+[16:07:27] 36/95 FAIL(turbo) 信陵君 <HTTPError 402: 'Payment Required'>
+[16:08:03] 37/95 FAIL(turbo) 李同 <HTTPError 500: 'Internal Server Error'>
+[16:08:32] 38/95 FAIL(turbo) 胡阳 <HTTPError 402: 'Payment Required'>
+[16:09:12] 39/95 ok-turbo 王龁
+[16:09:30] 40/95 FAIL(turbo) 公孙喜 <HTTPError 402: 'Payment Required'>
+[16:10:10] 41/95 ok-turbo 赵括
+[16:10:29] 42/95 FAIL(turbo) 许历 <HTTPError 402: 'Payment Required'>
+[16:11:08] 43/95 ok-turbo 蔺相如
+[16:11:24] 44/95 FAIL(turbo) 司马尚 <HTTPError 402: 'Payment Required'>
+[16:12:01] 45/95 FAIL(turbo) 颜聚 <HTTPError 500: 'Internal Server Error'>
+[16:12:34] 46/95 FAIL(turbo) 桓齮 <HTTPError 402: 'Payment Required'>
+[16:13:06] 47/95 ok-turbo 楼昌
+[16:13:24] 48/95 FAIL(turbo) 许钧 <HTTPError 402: 'Payment Required'>
+[16:14:05] 49/95 ok-turbo 赵希
+[16:14:27] 50/95 FAIL(turbo) 赵武灵王 <HTTPError 402: 'Payment Required'>
+[16:15:04] 51/95 ok-turbo 李兑
+[16:15:22] 52/95 FAIL(turbo) 田荣 <HTTPError 402: 'Payment Required'>
+[16:15:57] 53/95 ok-turbo 项燕
+[16:16:18] 54/95 FAIL(turbo) 项籍 <HTTPError 402: 'Payment Required'>
+[16:17:16] 55/95 ok-turbo 项庄
+[16:18:36] 56/95 ok-turbo 宋义
+[16:19:04] 57/95 ok-turbo 蒲将军
+[16:19:24] 58/95 FAIL(turbo) 王离 <HTTPError 402: 'Payment Required'>
+[16:19:59] 59/95 ok-turbo 涉间
+[16:20:18] 60/95 FAIL(turbo) 曹咎 <HTTPError 402: 'Payment Required'>
+[16:20:59] 61/95 ok-turbo 韩信
+[16:21:19] 62/95 FAIL(turbo) 黥布 <HTTPError 402: 'Payment Required'>
+[16:21:57] 63/95 ok-turbo 田安
+[16:22:19] 64/95 FAIL(turbo) 张耳 <HTTPError 402: 'Payment Required'>
+[16:22:52] 65/95 ok-turbo 陈胜
+[16:23:09] 66/95 FAIL(turbo) 周文 <HTTPError 402: 'Payment Required'>
+[16:23:44] 67/95 ok-turbo 秦嘉
+[16:24:02] 68/95 FAIL(turbo) 田臧 <HTTPError 402: 'Payment Required'>
+[16:24:39] 69/95 ok-turbo 李归
+[16:24:59] 70/95 FAIL(turbo) 武臣 <HTTPError 402: 'Payment Required'>
+[16:25:38] 71/95 ok-turbo 庄蹻
+[16:26:00] 72/95 FAIL(turbo) 任嚣 <HTTPError 402: 'Payment Required'>
+[16:26:40] 73/95 ok-turbo 麃公
+[16:27:01] 74/95 FAIL(turbo) 羌瘣 <HTTPError 402: 'Payment Required'>
+[16:27:36] 75/95 ok-turbo 内史腾
+[16:27:55] 76/95 FAIL(turbo) 蒙骜 <HTTPError 402: 'Payment Required'>
+[16:28:30] 77/95 ok-turbo 蒙恬
+[16:28:48] 78/95 FAIL(turbo) 樗里子 <HTTPError 402: 'Payment Required'>
+[16:29:22] 79/95 ok-turbo 魏章
+[16:29:43] 80/95 FAIL(turbo) 荆轲 <HTTPError 402: 'Payment Required'>
+[16:30:22] 81/95 ok-turbo 豫让
+[16:30:41] 82/95 FAIL(turbo) 晋鄙 <HTTPError 402: 'Payment Required'>
+[16:31:15] 83/95 ok-turbo 公孙痤
+[16:31:36] 84/95 FAIL(turbo) 龙贾 <HTTPError 402: 'Payment Required'>
+[16:32:15] 85/95 ok-turbo 公仲
+[16:32:37] 86/95 FAIL(turbo) 屈丐 <HTTPError 402: 'Payment Required'>
+[16:33:11] 87/95 ok-turbo 景缺
+[16:33:31] 88/95 FAIL(turbo) 景阳 <HTTPError 402: 'Payment Required'>
+[16:34:08] 89/95 ok-turbo 王贲
+[16:34:27] 90/95 FAIL(turbo) 李广利 <HTTPError 402: 'Payment Required'>
+[16:35:03] 91/95 ok-turbo 樊哙
+[16:35:20] 92/95 FAIL(turbo) 周勃 <HTTPError 402: 'Payment Required'>
+[16:35:59] 93/95 ok-turbo 郦商
+[16:36:21] 94/95 FAIL(turbo) 靳歙 <HTTPError 402: 'Payment Required'>
+[16:37:01] 95/95 ok-turbo 霍去病
+[16:37:19] ROUND DONE ok=141/190
+[16:38:09] ROUND 3 left=49
+[16:38:09] 1/49 FAIL(flux) 孙武 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:38:37] 2/49 FAIL(flux) 专诸 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:39:04] 3/49 FAIL(flux) 大夫种 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:39:34] 4/49 FAIL(flux) 狐偃 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:40:03] 5/49 FAIL(flux) 魏武子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:40:27] 6/49 FAIL(flux) 西乞术 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:40:58] 7/49 FAIL(flux) 子反 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:41:26] 8/49 FAIL(flux) 荀林父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:41:51] 9/49 FAIL(flux) 韩厥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:42:18] 10/49 FAIL(flux) 屠岸贾 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:42:49] 11/49 FAIL(flux) 王子城父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:43:20] 12/49 FAIL(flux) 富父终甥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:43:49] 13/49 FAIL(flux) 赵襄子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:44:18] 14/49 FAIL(flux) 田忌 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:44:50] 15/49 FAIL(flux) 吴起 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:45:15] 16/49 FAIL(flux) 乐毅 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:45:46] 17/49 FAIL(flux) 栗腹 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:46:14] 18/49 FAIL(flux) 田单 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:46:43] 19/49 FAIL(flux) 信陵君 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:47:13] 20/49 FAIL(flux) 李同 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:47:44] 21/49 FAIL(flux) 胡阳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:48:11] 22/49 FAIL(flux) 公孙喜 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:48:41] 23/49 FAIL(flux) 许历 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:49:08] 24/49 FAIL(flux) 司马尚 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:49:34] 25/49 FAIL(flux) 颜聚 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:50:00] 26/49 FAIL(flux) 桓齮 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:50:30] 27/49 FAIL(flux) 许钧 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:50:59] 28/49 FAIL(flux) 赵武灵王 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:51:28] 29/49 FAIL(flux) 田荣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:51:58] 30/49 FAIL(flux) 项籍 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:52:26] 31/49 FAIL(flux) 王离 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:52:50] 32/49 FAIL(flux) 曹咎 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:53:17] 33/49 FAIL(flux) 黥布 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:53:46] 34/49 FAIL(flux) 张耳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:54:13] 35/49 FAIL(flux) 周文 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:54:44] 36/49 FAIL(flux) 田臧 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:55:10] 37/49 FAIL(flux) 武臣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:55:34] 38/49 FAIL(flux) 任嚣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:56:01] 39/49 FAIL(flux) 羌瘣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:56:26] 40/49 FAIL(flux) 蒙骜 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:56:53] 41/49 FAIL(flux) 樗里子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:57:20] 42/49 FAIL(flux) 荆轲 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:57:45] 43/49 FAIL(flux) 晋鄙 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:58:09] 44/49 FAIL(flux) 龙贾 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:58:35] 45/49 FAIL(flux) 屈丐 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:59:01] 46/49 FAIL(flux) 景阳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:59:25] 47/49 FAIL(flux) 李广利 URLError(gaierror(11001, 'getaddrinfo failed'))
+[16:59:57] 48/49 FAIL(flux) 周勃 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:00:26] 49/49 FAIL(flux) 靳歙 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:00:52] ROUND DONE ok=141/190
+[17:01:42] ROUND 4 left=49
+[17:01:42] 1/49 FAIL(turbo) 孙武 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:02:09] 2/49 FAIL(turbo) 专诸 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:02:38] 3/49 FAIL(turbo) 大夫种 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:03:04] 4/49 FAIL(turbo) 狐偃 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:03:35] 5/49 FAIL(turbo) 魏武子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:04:05] 6/49 FAIL(turbo) 西乞术 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:04:35] 7/49 FAIL(turbo) 子反 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:05:02] 8/49 FAIL(turbo) 荀林父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:05:30] 9/49 FAIL(turbo) 韩厥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:06:01] 10/49 FAIL(turbo) 屠岸贾 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:06:31] 11/49 FAIL(turbo) 王子城父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:06:56] 12/49 FAIL(turbo) 富父终甥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:07:21] 13/49 FAIL(turbo) 赵襄子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:07:51] 14/49 FAIL(turbo) 田忌 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:08:17] 15/49 FAIL(turbo) 吴起 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:08:44] 16/49 FAIL(turbo) 乐毅 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:09:16] 17/49 FAIL(turbo) 栗腹 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:09:46] 18/49 FAIL(turbo) 田单 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:10:16] 19/49 FAIL(turbo) 信陵君 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:10:43] 20/49 FAIL(turbo) 李同 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:11:13] 21/49 FAIL(turbo) 胡阳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:11:43] 22/49 FAIL(turbo) 公孙喜 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:12:14] 23/49 FAIL(turbo) 许历 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:12:40] 24/49 FAIL(turbo) 司马尚 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:13:09] 25/49 FAIL(turbo) 颜聚 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:13:34] 26/49 FAIL(turbo) 桓齮 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:14:06] 27/49 FAIL(turbo) 许钧 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:14:35] 28/49 FAIL(turbo) 赵武灵王 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:15:06] 29/49 FAIL(turbo) 田荣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:15:37] 30/49 FAIL(turbo) 项籍 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:16:07] 31/49 FAIL(turbo) 王离 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:16:34] 32/49 FAIL(turbo) 曹咎 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:16:59] 33/49 FAIL(turbo) 黥布 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:17:30] 34/49 FAIL(turbo) 张耳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:17:57] 35/49 FAIL(turbo) 周文 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:18:22] 36/49 FAIL(turbo) 田臧 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:18:53] 37/49 FAIL(turbo) 武臣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:19:19] 38/49 FAIL(turbo) 任嚣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:19:48] 39/49 FAIL(turbo) 羌瘣 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:20:19] 40/49 FAIL(turbo) 蒙骜 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:20:46] 41/49 FAIL(turbo) 樗里子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:21:17] 42/49 FAIL(turbo) 荆轲 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:21:43] 43/49 FAIL(turbo) 晋鄙 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:22:13] 44/49 FAIL(turbo) 龙贾 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:22:40] 45/49 FAIL(turbo) 屈丐 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:23:09] 46/49 FAIL(turbo) 景阳 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:23:36] 47/49 FAIL(turbo) 李广利 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:24:05] 48/49 FAIL(turbo) 周勃 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:24:34] 49/49 FAIL(turbo) 靳歙 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:25:04] ROUND DONE ok=141/190
+[17:25:54] ROUND 5 left=49
+[17:25:54] 1/49 FAIL(flux) 孙武 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:26:20] 2/49 FAIL(flux) 专诸 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:26:51] 3/49 FAIL(flux) 大夫种 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:27:20] 4/49 FAIL(flux) 狐偃 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:27:51] 5/49 FAIL(flux) 魏武子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:28:16] 6/49 FAIL(flux) 西乞术 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:28:43] 7/49 FAIL(flux) 子反 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:29:13] 8/49 FAIL(flux) 荀林父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:29:38] 9/49 FAIL(flux) 韩厥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:30:07] 10/49 FAIL(flux) 屠岸贾 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:30:36] 11/49 FAIL(flux) 王子城父 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:31:07] 12/49 FAIL(flux) 富父终甥 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:31:36] 13/49 FAIL(flux) 赵襄子 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:32:02] 14/49 FAIL(flux) 田忌 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:32:32] 15/49 FAIL(flux) 吴起 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:33:00] 16/49 FAIL(flux) 乐毅 URLError(gaierror(11001, 'getaddrinfo failed'))
+[17:33:38] 17/49 ok-flux 栗腹
+[17:34:23] 18/49 FAIL(flux) 田单 URLError(ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 1
+[17:36:49] 19/49 FAIL(flux) 信陵君 TimeoutError('The read operation timed out')
+[17:37:28] 20/49 ok-flux 李同
+[17:37:48] 21/49 FAIL(flux) 胡阳 <HTTPError 402: 'Payment Required'>
+[17:38:24] 22/49 ok-flux 公孙喜
+[17:38:46] 23/49 FAIL(flux) 许历 <HTTPError 402: 'Payment Required'>
+[17:39:24] 24/49 ok-flux 司马尚
+[17:39:42] 25/49 FAIL(flux) 颜聚 <HTTPError 402: 'Payment Required'>
+[17:40:13] 26/49 ok-flux 桓齮
+[17:40:36] 27/49 FAIL(flux) 许钧 <HTTPError 402: 'Payment Required'>
+[17:41:19] 28/49 ok-flux 赵武灵王
+[17:41:40] 29/49 FAIL(flux) 田荣 <HTTPError 402: 'Payment Required'>
+[17:42:13] 30/49 ok-flux 项籍
+[17:42:33] 31/49 FAIL(flux) 王离 <HTTPError 402: 'Payment Required'>
+[17:43:13] 32/49 ok-flux 曹咎
+[17:43:35] 33/49 FAIL(flux) 黥布 <HTTPError 402: 'Payment Required'>
+[17:44:15] 34/49 ok-flux 张耳
+[17:44:36] 35/49 FAIL(flux) 周文 <HTTPError 402: 'Payment Required'>
+[17:45:15] 36/49 ok-flux 田臧
+[17:45:36] 37/49 FAIL(flux) 武臣 <HTTPError 402: 'Payment Required'>
+[17:46:09] 38/49 ok-flux 任嚣
+[17:46:31] 39/49 FAIL(flux) 羌瘣 <HTTPError 402: 'Payment Required'>
+[17:47:06] 40/49 ok-flux 蒙骜
+[17:47:27] 41/49 FAIL(flux) 樗里子 <HTTPError 402: 'Payment Required'>
+[17:48:00] 42/49 ok-flux 荆轲
+[17:48:18] 43/49 FAIL(flux) 晋鄙 <HTTPError 402: 'Payment Required'>
+[17:48:55] 44/49 ok-flux 龙贾
+[17:49:14] 45/49 FAIL(flux) 屈丐 <HTTPError 402: 'Payment Required'>
+[17:49:51] 46/49 ok-flux 景阳
+[17:50:07] 47/49 FAIL(flux) 李广利 <HTTPError 402: 'Payment Required'>
+[17:50:47] 48/49 ok-flux 周勃
+[17:51:05] 49/49 FAIL(flux) 靳歙 <HTTPError 402: 'Payment Required'>
+[17:51:35] ROUND DONE ok=157/190
+[17:51:35] FINISH missing=33 ['孙武', '专诸', '大夫种', '狐偃', '魏武子', '西乞术', '子反', '荀林父', '韩厥', '屠岸贾', '王子城父', '富父终甥']
+RETRY ['孙武', '专诸', '大夫种', '狐偃', '魏武子', '西乞术', '子反', '荀林父', '韩厥', '屠岸贾', '王子城父', '富父终甥', '赵襄子', '田忌', '吴起', '乐毅', '田单', '信陵君', '胡阳', '许历', '颜聚', '许钧', '田荣', '王离', '黥布', '周文', '武臣', '羌瘣', '樗里子', '晋鄙', '屈丐', '李广利', '靳歙']
+RETRY ok 孙武
+RETRY fail 专诸 <HTTPError 402: 'Payment Required'>
+RETRY ok 大夫种
+RETRY fail 狐偃 <HTTPError 402: 'Payment Required'>
+RETRY ok 魏武子
+RETRY fail 西乞术 <HTTPError 402: 'Payment Required'>
+RETRY ok 子反
+RETRY fail 荀林父 <HTTPError 402: 'Payment Required'>
+RETRY ok 韩厥
+RETRY fail 屠岸贾 <HTTPError 402: 'Payment Required'>
+RETRY ok 王子城父
+RETRY fail 富父终甥 <HTTPError 402: 'Payment Required'>
+RETRY ok 赵襄子
+RETRY fail 田忌 <HTTPError 402: 'Payment Required'>
+RETRY ok 吴起
+RETRY fail 乐毅 <HTTPError 402: 'Payment Required'>
+RETRY ok 田单
+RETRY fail 信陵君 <HTTPError 402: 'Payment Required'>
+RETRY ok 胡阳
+RETRY fail 许历 <HTTPError 402: 'Payment Required'>
+RETRY ok 颜聚
+RETRY fail 许钧 <HTTPError 402: 'Payment Required'>
+RETRY ok 田荣
+RETRY fail 王离 <HTTPError 402: 'Payment Required'>
+RETRY ok 黥布
+RETRY fail 周文 <HTTPError 402: 'Payment Required'>
+RETRY ok 武臣
+RETRY fail 羌瘣 <HTTPError 402: 'Payment Required'>
+RETRY ok 樗里子
+RETRY fail 晋鄙 <HTTPError 402: 'Payment Required'>
+RETRY ok 屈丐
+RETRY fail 李广利 <HTTPError 402: 'Payment Required'>
+RETRY ok 靳歙
+RETRY fail 专诸 <HTTPError 402: 'Payment Required'>
+RETRY ok 狐偃
+RETRY fail 西乞术 <HTTPError 402: 'Payment Required'>
+RETRY ok 荀林父
+RETRY fail 屠岸贾 <HTTPError 402: 'Payment Required'>
+RETRY ok 富父终甥
+RETRY fail 田忌 <HTTPError 402: 'Payment Required'>
+RETRY ok 乐毅
+RETRY fail 信陵君 <HTTPError 402: 'Payment Required'>
+RETRY ok 许历
+RETRY fail 许钧 <HTTPError 402: 'Payment Required'>
+RETRY ok 王离
+RETRY fail 周文 <HTTPError 402: 'Payment Required'>
+RETRY ok 羌瘣
+RETRY fail 晋鄙 <HTTPError 402: 'Payment Required'>
+RETRY ok 李广利
+RETRY fail 专诸 <HTTPError 402: 'Payment Required'>
+RETRY ok 西乞术
+RETRY fail 屠岸贾 <HTTPError 402: 'Payment Required'>
+RETRY ok 田忌
+RETRY fail 信陵君 <HTTPError 402: 'Payment Required'>
+RETRY ok 许钧
+RETRY fail 周文 <HTTPError 402: 'Payment Required'>
+RETRY ok 晋鄙
+RETRY ['专诸', '屠岸贾', '信陵君', '周文']
+RETRY ok 专诸
+RETRY fail 屠岸贾 <HTTPError 402: 'Payment Required'>
+RETRY ok 信陵君
+RETRY fail 周文 <HTTPError 402: 'Payment Required'>
+RETRY ok 屠岸贾
+RETRY fail 周文 <HTTPError 402: 'Payment Required'>
+RETRY ok 周文

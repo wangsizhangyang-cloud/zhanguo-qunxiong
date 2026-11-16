@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="164" viewBox="0 0 150 164">
+<rect width="150" height="164" fill="#ffffff"/>
+<text x="75" y="16" text-anchor="middle" font-size="13" font-family="Microsoft YaHei,sans-serif" font-weight="bold" fill="#222">越君子军(亲军/死士)</text>
+<text x="75" y="31" text-anchor="middle" font-size="9" fill="#d63031" font-family="sans-serif">特种 · 春秋</text>
+<text x="75" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#d63031" font-family="sans-serif">费5 粮4 时5 · 维4</text>
+<polygon points="75.0,52.0 109.6,72.0 109.6,112.0 75.0,132.0 40.4,112.0 40.4,72.0" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<polygon points="75.0,68.0 95.8,80.0 95.8,104.0 75.0,116.0 54.2,104.0 54.2,80.0" fill="none" stroke="#e6eaee" stroke-width="0.7"/>
+<polygon points="75.0,80.0 85.4,86.0 85.4,98.0 75.0,104.0 64.6,98.0 64.6,86.0" fill="none" stroke="#eef1f4" stroke-width="0.5"/>
+<line x1="75" y1="92" x2="75.0" y2="52.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="109.6" y2="72.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="109.6" y2="112.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="75.0" y2="132.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="40.4" y2="112.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="40.4" y2="72.0" stroke="#eef1f4" stroke-width="0.7"/>
+<polygon points="75.0,56.0 99.2,78.0 88.9,100.0 75.0,100.0 50.8,106.0 59.4,83.0" fill="#d63031" fill-opacity="0.28" stroke="#d63031" stroke-width="2"/>
+<circle cx="75.0" cy="56.0" r="2.2" fill="#d63031"/>
+<circle cx="99.2" cy="78.0" r="2.2" fill="#d63031"/>
+<circle cx="88.9" cy="100.0" r="2.2" fill="#d63031"/>
+<circle cx="75.0" cy="100.0" r="2.2" fill="#d63031"/>
+<circle cx="50.8" cy="106.0" r="2.2" fill="#d63031"/>
+<circle cx="59.4" cy="83.0" r="2.2" fill="#d63031"/>
+<text x="75.0" y="44.0" text-anchor="middle" font-size="9" fill="#555" font-family="sans-serif">攻9</text>
+<text x="119.2" y="69.5" text-anchor="start" font-size="9" fill="#555" font-family="sans-serif">防7</text>
+<text x="119.2" y="120.5" text-anchor="start" font-size="9" fill="#555" font-family="sans-serif">机4</text>
+<text x="75.0" y="146.0" text-anchor="middle" font-size="9" fill="#555" font-family="sans-serif">远2</text>
+<text x="30.8" y="120.5" text-anchor="end" font-size="9" fill="#555" font-family="sans-serif">持7</text>
+<text x="30.8" y="69.5" text-anchor="end" font-size="9" fill="#555" font-family="sans-serif">效4</text>
+</svg>

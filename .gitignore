@@ -1,0 +1,24 @@
+# Godot 缓存与导出
+zhanguo-godot/.godot/
+zhanguo-godot/dist/
+
+# 工具链（下载的引擎与导出模板）
+_tools/
+
+# 密钥与本地环境
+*.key
+*_key.txt
+.env
+.env.*
+
+# 临时备份
+*.bak-*
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# Node / 测试
+node_modules/
+test-results/
+playwright-report/

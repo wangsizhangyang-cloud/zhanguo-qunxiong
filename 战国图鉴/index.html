@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>战国群雄图鉴 · 国风人物</title>
+<style>
+  :root{
+    --paper:#E9DDBE; --paper2:#E0CFA4; --paper-l:#F3EAD2; --ink:#2B2622; --ink-s:#4A4238;
+    --red:#A93A2B; --azure:#3A5F6F; --ochre:#8B5A2B; --gold:#B08A3E;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:#D8CBA4; color:var(--ink); font-family:"Noto Serif SC","Source Han Serif SC","STKaiti","KaiTi","SimSun",serif;}
+  .pagewrap{max-width:1240px; margin:0 auto; padding:28px 20px 70px;}
+  header{margin-bottom:24px;}
+  .title-row{display:flex; align-items:center; gap:16px;}
+  .stamp{width:54px; height:54px; background:var(--red); color:var(--paper-l); display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:700; border:2px solid var(--paper-l); outline:2px solid var(--red); letter-spacing:2px; writing-mode:vertical-rl;}
+  h1{font-size:30px; letter-spacing:8px; font-weight:700;}
+  .subtitle{margin-top:10px; color:var(--ink-s); font-size:13.5px; line-height:1.8;}
+  .subnote{margin-top:4px; color:var(--ink-s); opacity:.75; font-size:12px; line-height:1.7;}
+  .stats{margin-top:14px; display:flex; gap:26px; font-size:13px; color:var(--ink-s); flex-wrap:wrap;}
+  .stats b{color:var(--red); font-size:17px; margin-right:4px;}
+  section{margin-top:44px;}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:10px; margin-bottom:20px;}
+  .sec-head .no{color:var(--red); font-weight:700; font-size:14px; letter-spacing:2px;}
+  .sec-head h2{font-size:22px; letter-spacing:5px;}
+  .sec-head .hint{color:var(--ink-s); font-size:12.5px; opacity:.8; margin-left:auto; text-align:right;}
+  .card{background:var(--paper-l); border:1.5px solid rgba(43,38,34,.45); padding:14px; position:relative;}
+  .corner-i:before{content:""; position:absolute; top:0; left:0; width:14px; height:14px; border-top:2.5px solid var(--ink); border-left:2.5px solid var(--ink);}
+  .corner-i:after{content:""; position:absolute; bottom:0; right:0; width:14px; height:14px; border-bottom:2.5px solid var(--ink); border-right:2.5px solid var(--ink);}
+  #mapBox{padding:0; overflow:hidden;}
+  #mapBox svg{display:block; width:100%; height:auto;}
+  .nationBtn:hover .blob{fill-opacity:0.32 !important; stroke-opacity:0.95 !important;}
+  .cityBtn:hover{fill:rgba(169,58,43,.25) !important;}
+  #tip{position:fixed; max-width:360px; background:var(--paper-l); border:1.5px solid var(--ink); padding:10px 13px; font-size:12.5px; line-height:1.75; box-shadow:5px 5px 0 rgba(43,38,34,.22); pointer-events:none; z-index:60; display:none; color:var(--ink);}
+  #tip .t-caption{color:var(--red); font-size:10.5px; letter-spacing:1px; margin-bottom:2px;}
+  .unit-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(252px,1fr)); gap:18px;}
+  .unit-card img{width:100%; display:block; border:1px solid rgba(43,38,34,.35);}
+  .u-head{display:flex; justify-content:space-between; align-items:baseline; margin:10px 0 4px; gap:8px;}
+  .u-name{font-weight:700; font-size:15.5px;}
+  .u-cat{font-size:11px; color:var(--paper-l); background:var(--red); padding:2px 8px; white-space:nowrap;}
+  .u-meta{font-size:11.5px; color:var(--ink-s); line-height:1.65; margin-bottom:8px;}
+  .u-stats{display:grid; grid-template-columns:1fr 1fr; gap:3px 14px; margin:8px 0;}
+  .u-stat{display:grid; grid-template-columns:52px 1fr 22px; align-items:center; gap:5px; font-size:11px;}
+  .ubar{height:8px; background:rgba(43,38,34,.13); position:relative;}
+  .ubar i{position:absolute; left:0; top:0; bottom:0; background:var(--azure); opacity:.85;}
+  .u-stat:nth-child(2n) .ubar i{background:var(--ochre);}
+  .u-counter{font-size:11.5px; color:var(--ink-s); line-height:1.7; margin-top:8px; border-top:1px dashed rgba(43,38,34,.3); padding-top:8px;}
+  .u-counter b{color:var(--red);}
+  .u-cit{font-size:10.5px; color:var(--ink-s); opacity:.72; margin-top:7px; line-height:1.55;}
+  .filters{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px;}
+  .chip{border:1px solid var(--ink); background:transparent; padding:4px 12px; cursor:pointer; font-family:inherit; font-size:12.5px; color:var(--ink);}
+  .chip.on{background:var(--ink); color:var(--paper-l);}
+  .chip:hover{background:rgba(43,38,34,.08);}
+  .chip.on:hover{background:var(--ink);}
+  select,#gSearch{border:1px solid var(--ink); background:var(--paper-l); font-family:inherit; font-size:12.5px; padding:4px 8px; color:var(--ink);}
+  .gen-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:14px;}
+  .gen-card{cursor:pointer; transition:transform .12s; background:var(--paper-l); border:1px solid rgba(43,38,34,.32); padding:6px;}
+  .gen-card:hover{transform:translateY(-3px); border-color:var(--red);}
+  .gen-card img{width:100%; display:block;}
+  .g-foot{display:flex; justify-content:space-between; font-size:11px; color:var(--ink-s); margin-top:5px;}
+  .g-grade{font-weight:700;}
+  .count-label{margin-left:auto; font-size:12px; color:var(--ink-s); opacity:.8;}
+  #lightbox{position:fixed; inset:0; background:rgba(38,32,26,.78); display:none; z-index:80; align-items:center; justify-content:center; padding:30px;}
+  #lightbox.on{display:flex;}
+  .lb-panel{background:var(--paper-l); max-width:900px; width:100%; max-height:88vh; overflow:auto; display:grid; grid-template-columns:290px 1fr; gap:20px; padding:20px; border:2px solid var(--ink); position:relative;}
+  @media (max-width:700px){.lb-panel{grid-template-columns:1fr;}}
+  .lb-left img{width:100%; display:block; border:1px solid rgba(43,38,34,.3);}
+  .lb-radar{margin-top:10px; font-size:12.5px; text-align:center;}
+  .lb-radar img{width:100%; max-height:220px; object-fit:contain;}
+  .lb-close{position:absolute; top:8px; right:12px; font-size:20px; cursor:pointer; color:var(--ink-s); border:1px solid var(--ink); width:28px; height:28px; line-height:26px; text-align:center;}
+  .lb-name{font-size:24px; font-weight:700; letter-spacing:3px;}
+  .lb-tags{display:flex; gap:8px; margin:10px 0 14px; flex-wrap:wrap; font-size:12px;}
+  .lb-tag{border:1px solid var(--ink); padding:2px 10px;}
+  .lb-tag.red{background:var(--red); color:var(--paper-l); border-color:var(--red);}
+  .lb-block{margin-bottom:12px;}
+  .lb-block h4{font-size:13px; letter-spacing:2px; color:var(--red); border-bottom:1px dashed rgba(43,38,34,.35); padding-bottom:4px; margin-bottom:6px;}
+  .lb-block p{font-size:13px; line-height:1.8; color:var(--ink);}
+  .lb-block .rationale{font-size:12.5px; line-height:1.8; color:var(--ink-s);}
+  .battle-item{font-size:12.5px; line-height:1.7; color:var(--ink); margin-bottom:8px; padding-left:10px; border-left:2px solid rgba(169,58,43,.5);}
+  .battle-item .yr{color:var(--ink-s); font-size:11.5px;}
+  .battle-item .ct{color:var(--azure); font-size:11.5px;}
+  footer{margin-top:60px; text-align:center; color:var(--ink-s); opacity:.7; font-size:12px; line-height:2;}
+  .f-seal{display:inline-block; width:16px; height:16px; background:var(--red); margin:0 6px; vertical-align:-2px;}
+</style>
+</head>
+<body>
+<div class="pagewrap">
+  <header>
+    <div class="title-row">
+      <div class="stamp">战图</div>
+      <div>
+        <h1>战国群雄图鉴</h1>
+        <div class="subtitle">工笔重彩人物画像, 线条精细, 设色鲜明; 七雄尚色据《史记·苏秦列传》诸国地理国势与五行旧俗作艺术化演绎。</div>
+        <div class="subnote">人物之发型(束髻/双髻/椎髻/断发/辫披)·头饰(兜鍪/武冠/进贤冠/冕冠/帻)·服装(皮甲/札甲/鱼鳞铠/两裆/胡服/衮服/深衣/短褐/水军短打)与兵器, 依《史记》原文与人物身份·国别·时代(DB:general)逐一生成, 一人一样; 站姿/行姿/张弓姿态各异。</div>
+      </div>
+    </div>
+    <div class="stats">
+      <span><b id="cntGen">0</b>位 武将形象</span>
+      <span><b id="cntUnit">0</b>款 兵种形象</span>
+      <span><b>7</b>国 地图形势</span>
+      <span><b>15</b>城 关塞款目</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <span class="no">壹</span><h2>地图 · 战国七雄形势</h2>
+      <span class="hint">青色线为水道, 朱色折线为长城(赵/燕); 强界内色块 = 数据库约定疆域<br>悬停城邑与国域可览其《史记》本事, 点击国域可筛下方武将</span>
+    </div>
+    <div class="card corner-i" id="mapBox"><svg id="mapSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 780" width="100%" preserveAspectRatio="xMidYMid meet" font-family="STKaiti,KaiTi,'Noto Serif SC','Source Han Serif SC',SimSun,serif"><defs><linearGradient id="mp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE4C8"/><stop offset="1" stop-color="#E0CFA4"/></linearGradient></defs><rect width="1160" height="780" fill="url(#mp)"/><path d="M964 56 L1030 96 L1000 150 L1020 210 L986 280 L1012 340 L984 430 L1006 500 L972 586 L1002 640 L1010 720 L1010 780 L1160 780 L1160 56 Z" fill="#3A5F6F" opacity="0.38"/><path d="M1010 90 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1070 90 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1130 90 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M990 158 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1050 158 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1110 158 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1010 226 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1070 226 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1130 226 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M990 294 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1050 294 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1110 294 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1010 362 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1070 362 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1130 362 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M990 430 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1050 430 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1110 430 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1010 498 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1070 498 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1130 498 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M990 566 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1050 566 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1110 566 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1010 634 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1070 634 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1130 634 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M990 702 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1050 702 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><path d="M1110 702 q10 6 20 0" stroke="#F3EAD2" stroke-width="1.8" fill="none" opacity="0.3"/><text x="1106" y="120" font-size="20" fill="#F3EAD2" opacity="0.85" text-anchor="middle">渤</text><text x="1106" y="148" font-size="20" fill="#F3EAD2" opacity="0.85" text-anchor="middle">海</text><text x="1080" y="470" font-size="20" fill="#F3EAD2" opacity="0.85" text-anchor="middle">东</text><text x="1080" y="498" font-size="20" fill="#F3EAD2" opacity="0.85" text-anchor="middle">海</text><g class="nationBtn" data-nation="秦" data-note="秦地·据崤函之固,拥雍州之饶·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M96 258 L210 196 L304 186 L368 236 L352 306 L408 362 L436 470 L446 548 L436 646 L350 704 L236 728 L150 676 L96 568 L86 400 Z" fill="#33333E" fill-opacity="0.16" stroke="#33333E" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="230" y="430" font-size="30" fill="#33333E" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">秦</text></g><g class="nationBtn" data-nation="赵" data-note="赵地·带甲数十万,车千乘,骑万匹·《史记·赵世家》" style="cursor:pointer"><path class="blob" d="M352 214 L398 160 L486 128 L566 116 L640 142 L654 208 L634 252 L542 296 L430 300 L358 266 Z" fill="#8B5A2B" fill-opacity="0.16" stroke="#8B5A2B" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="548" y="252" font-size="30" fill="#8B5A2B" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">赵</text></g><g class="nationBtn" data-nation="燕" data-note="燕地·北有枣栗之利,民虽不佃作而足·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M664 56 L800 44 L930 52 L1006 120 L1026 176 L948 214 L810 232 L700 208 L662 128 Z" fill="#33567E" fill-opacity="0.16" stroke="#33567E" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="742" y="150" font-size="30" fill="#33567E" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">燕</text></g><g class="nationBtn" data-nation="齐" data-note="齐地·临淄之中七万户,粟如丘山·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M672 296 L736 258 L818 262 L886 296 L924 328 L900 368 L948 376 L922 398 L860 404 L742 414 L680 384 Z" fill="#6E4E79" fill-opacity="0.16" stroke="#6E4E79" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="748" y="346" font-size="30" fill="#6E4E79" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">齐</text></g><g class="nationBtn" data-nation="魏" data-note="魏地·武士苍头奋击各二十万·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M548 296 L618 270 L700 300 L712 398 L668 428 L580 428 L542 360 Z" fill="#3E6B4F" fill-opacity="0.16" stroke="#3E6B4F" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="600" y="346" font-size="30" fill="#3E6B4F" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">魏</text></g><g class="nationBtn" data-nation="韩" data-note="韩地·天下强弓劲弩皆从韩出·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M608 300 L676 306 L688 366 L664 404 L600 404 L586 360 L598 324 Z" fill="#8A6A2F" fill-opacity="0.16" stroke="#8A6A2F" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="706" y="354" font-size="30" fill="#8A6A2F" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">韩</text></g><g class="nationBtn" data-nation="楚" data-note="楚地·带甲百万,车千乘,骑万匹,粟支十年·《史记·苏秦列传》" style="cursor:pointer"><path class="blob" d="M446 478 L560 452 L700 424 L866 412 L938 470 L952 548 L922 632 L800 716 L640 748 L500 720 L444 652 L432 548 Z" fill="#A93A2B" fill-opacity="0.16" stroke="#A93A2B" stroke-width="2" stroke-dasharray="7 5" stroke-opacity="0.5"/><text x="622" y="504" font-size="30" fill="#A93A2B" opacity="0.92" font-weight="bold" text-anchor="middle" pointer-events="none">楚</text></g><path d="M780 596 L880 580 L930 640 L890 700 L820 716 L770 668 Z" fill="#46686A" fill-opacity="0.12" stroke="#46686A" stroke-width="1.6" stroke-dasharray="4 4" stroke-opacity="0.5"/><text x="856" y="652" font-size="15" fill="#4A4238" opacity="0.85" text-anchor="middle">吴越之地</text><path d="M330 110 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M368 100 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M406 110 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M444 100 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M482 110 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M520 100 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M558 110 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><text x="470" y="82" font-size="14.5" fill="#4A4238" opacity="0.9">阴山·北鄙</text><path d="M556 300 l23 -40 h46 Z" fill="#2B2622" opacity="0.30"/><path d="M566 334 l23 -40 h46 Z" fill="#2B2622" opacity="0.30"/><path d="M556 368 l23 -40 h46 Z" fill="#2B2622" opacity="0.30"/><path d="M566 402 l23 -40 h46 Z" fill="#2B2622" opacity="0.30"/><text x="578" y="286" font-size="14.5" fill="#4A4238" opacity="0.9">太行</text><path d="M236 452 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M274 442 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M312 452 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M350 442 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M388 452 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M426 442 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M464 452 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><text x="376" y="424" font-size="14.5" fill="#4A4238" opacity="0.9">秦岭</text><path d="M296 660 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M334 650 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M372 660 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M410 650 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M448 660 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M486 650 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><text x="416" y="632" font-size="14.5" fill="#4A4238" opacity="0.9">巴山</text><path d="M766 428 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M804 418 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M842 428 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><text x="826" y="400" font-size="14.5" fill="#4A4238" opacity="0.9">泰山</text><path d="M886 246 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><path d="M924 236 l28 -44 h56 Z" fill="#2B2622" opacity="0.30"/><text x="926" y="218" font-size="14.5" fill="#4A4238" opacity="0.9">齐鲁丘陵</text><path d="M372 148 C470 122 566 116 618 150 C664 180 650 238 600 278 C556 314 470 318 452 342 C440 372 540 366 622 372 C700 378 762 352 846 344" fill="none" stroke="#3A5F6F" stroke-width="4.2" opacity="0.85" stroke-linecap="round"/><text x="456" y="126" font-size="13.5" fill="#3A5F6F" opacity="0.95">黄河</text><path d="M170 348 C250 336 330 340 452 352" fill="none" stroke="#3A5F6F" stroke-width="2.8" opacity="0.85" stroke-linecap="round"/><text x="222" y="330" font-size="13.5" fill="#3A5F6F" opacity="0.95">渭水</text><path d="M560 218 C558 258 552 292 542 320" fill="none" stroke="#3A5F6F" stroke-width="2.2" opacity="0.85" stroke-linecap="round"/><text x="566" y="258" font-size="13.5" fill="#3A5F6F" opacity="0.95">汾水</text><path d="M446 436 C462 480 484 520 508 556" fill="none" stroke="#3A5F6F" stroke-width="2.4" opacity="0.85" stroke-linecap="round"/><text x="440" y="486" font-size="13.5" fill="#3A5F6F" opacity="0.95">汉水</text><path d="M268 626 C372 602 420 580 486 580 C566 580 556 606 646 622 C724 636 760 618 846 638" fill="none" stroke="#3A5F6F" stroke-width="4.4" opacity="0.85" stroke-linecap="round"/><text x="372" y="592" font-size="13.5" fill="#3A5F6F" opacity="0.95">大江</text><path d="M672 434 C726 452 784 470 846 502" fill="none" stroke="#3A5F6F" stroke-width="2.4" opacity="0.85" stroke-linecap="round"/><text x="742" y="448" font-size="13.5" fill="#3A5F6F" opacity="0.95">淮水</text><path d="M938 96 C972 128 966 176 948 214" fill="none" stroke="#3A5F6F" stroke-width="2.4" opacity="0.85" stroke-linecap="round"/><text x="968" y="150" font-size="13.5" fill="#3A5F6F" opacity="0.95">辽水</text><path d="M676 384 C742 392 792 390 846 384" fill="none" stroke="#3A5F6F" stroke-width="2.2" opacity="0.85" stroke-linecap="round"/><text x="742" y="376" font-size="13.5" fill="#3A5F6F" opacity="0.95">济水</text><path d="M324 172 C420 158 520 156 610 164" stroke="#A93A2B" stroke-width="3" stroke-dasharray="10 7" fill="none" opacity="0.7"/><path d="M656 128 C740 108 850 96 922 78" stroke="#A93A2B" stroke-width="3" stroke-dasharray="10 7" fill="none" opacity="0.7"/><text x="456" y="150" font-size="12.5" fill="#A93A2B" opacity="0.9">赵长城</text><text x="768" y="94" font-size="12.5" fill="#A93A2B" opacity="0.9">燕长城</text><circle cx="340" cy="318" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="340" cy="318" r="4.6" fill="#A93A2B"/><text x="354" y="323" font-size="14" fill="#2B2622" font-weight="bold">咸阳</text><circle class="cityBtn" data-tip="秦都·孝公「作为咸阳,筑冀阙,秦徙都之」(游戏:咸阳省)·《史记·秦本纪》" cx="340" cy="318" r="11" fill="transparent" style="cursor:help"/><rect x="447.5" y="331.5" width="9" height="9" transform="rotate(45 452 336)" fill="#4A4238"/><text x="466" y="341" font-size="12.5" fill="#4A4238">函谷</text><circle class="cityBtn" data-tip="秦·函谷关(游戏:函谷省)·据崤函之固「六国攻秦常自函谷而入」" cx="452" cy="336" r="11" fill="transparent" style="cursor:help"/><circle cx="564" cy="318" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="564" cy="318" r="4.6" fill="#A93A2B"/><text x="578" y="323" font-size="14" fill="#2B2622" font-weight="bold">安邑</text><circle class="cityBtn" data-tip="魏故都·吴起守河西(游戏:安邑省)·《孙子吴起列传》" cx="564" cy="318" r="11" fill="transparent" style="cursor:help"/><circle cx="656" cy="372" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="656" cy="372" r="4.6" fill="#A93A2B"/><text x="670" y="377" font-size="14" fill="#2B2622" font-weight="bold">大梁</text><circle class="cityBtn" data-tip="魏都·「秦之破梁,引河沟而灌大梁,三月城坏」(游戏:大梁省)·《魏世家》" cx="656" cy="372" r="11" fill="transparent" style="cursor:help"/><circle cx="676" cy="398" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="676" cy="398" r="4.6" fill="#A93A2B"/><text x="690" y="403" font-size="14" fill="#2B2622" font-weight="bold">新郑</text><circle class="cityBtn" data-tip="韩都·「天下之强弓劲弩皆从韩出」(游戏:新郑省)·《苏秦列传》" cx="676" cy="398" r="11" fill="transparent" style="cursor:help"/><rect x="607.5" y="415.5" width="9" height="9" transform="rotate(45 612 420)" fill="#4A4238"/><text x="626" y="425" font-size="12.5" fill="#4A4238">阳翟</text><circle class="cityBtn" data-tip="韩·大贾吕不韦居之(游戏:阳翟省)·《吕不韦列传》" cx="612" cy="420" r="11" fill="transparent" style="cursor:help"/><circle cx="496" cy="222" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="496" cy="222" r="4.6" fill="#A93A2B"/><text x="510" y="227" font-size="14" fill="#2B2622" font-weight="bold">邯郸</text><circle class="cityBtn" data-tip="赵都·「邯郸之战,平原君散家财,赴汤火者三千人」(游戏:邯郸省)" cx="496" cy="222" r="11" fill="transparent" style="cursor:help"/><rect x="601.5" y="159.5" width="9" height="9" transform="rotate(45 606 164)" fill="#4A4238"/><text x="620" y="169" font-size="12.5" fill="#4A4238">代</text><circle class="cityBtn" data-tip="赵·代地·李牧屯北边备匈奴(游戏:代省)·《廉颇蔺相如列传》" cx="606" cy="164" r="11" fill="transparent" style="cursor:help"/><circle cx="796" cy="318" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="796" cy="318" r="4.6" fill="#A93A2B"/><text x="810" y="323" font-size="14" fill="#2B2622" font-weight="bold">临淄</text><circle class="cityBtn" data-tip="齐都·「临淄之中七万户,其民无不吹竽鼓瑟」(游戏:临淄省)·《苏秦列传》" cx="796" cy="318" r="11" fill="transparent" style="cursor:help"/><rect x="867.5" y="381.5" width="9" height="9" transform="rotate(45 872 386)" fill="#4A4238"/><text x="886" y="391" font-size="12.5" fill="#4A4238">即墨</text><circle class="cityBtn" data-tip="齐·田单火牛阵却燕(游戏:即墨省)·《田单列传》" cx="872" cy="386" r="11" fill="transparent" style="cursor:help"/><circle cx="512" cy="556" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="512" cy="556" r="4.6" fill="#A93A2B"/><text x="526" y="561" font-size="14" fill="#2B2622" font-weight="bold">郢</text><circle class="cityBtn" data-tip="楚都·「秦拔郢,烧夷陵」(游戏:郢省)·《吴起列传》" cx="512" cy="556" r="11" fill="transparent" style="cursor:help"/><rect x="801.5" y="591.5" width="9" height="9" transform="rotate(45 806 596)" fill="#4A4238"/><text x="820" y="601" font-size="12.5" fill="#4A4238">宛陵</text><circle class="cityBtn" data-tip="楚·江南吴地·泰伯之墟(游戏:宛陵省)" cx="806" cy="596" r="11" fill="transparent" style="cursor:help"/><circle cx="852" cy="92" r="13" fill="none" stroke="#A93A2B" stroke-width="2" opacity="0.75"/><circle cx="852" cy="92" r="4.6" fill="#A93A2B"/><text x="866" y="97" font-size="14" fill="#2B2622" font-weight="bold">蓟</text><circle class="cityBtn" data-tip="燕都·乐毅伐齐自燕起兵(游戏:蓟省)·《乐毅列传》" cx="852" cy="92" r="11" fill="transparent" style="cursor:help"/><rect x="991.5" y="153.5" width="9" height="9" transform="rotate(45 996 158)" fill="#4A4238"/><text x="1010" y="163" font-size="12.5" fill="#4A4238">辽东</text><circle class="cityBtn" data-tip="燕·辽东郡·秦开却胡千里(游戏:辽东省)" cx="996" cy="158" r="11" fill="transparent" style="cursor:help"/><rect x="893.5" y="631.5" width="9" height="9" transform="rotate(45 898 636)" fill="#4A4238"/><text x="912" y="641" font-size="12.5" fill="#4A4238">姑苏</text><circle class="cityBtn" data-tip="吴·越王句践围吴之地·《越王句践世家》" cx="898" cy="636" r="11" fill="transparent" style="cursor:help"/><path d="M446 372 v-11 h-6 v-4 h12 v4 h-6 v11" fill="#4A4238"/><text x="428" y="356" font-size="12.5" fill="#A93A2B">函谷关</text><circle class="cityBtn" data-tip="秦之东门·六国合纵攻秦常自函谷而入·《楚世家》" cx="450" cy="366" r="10" fill="transparent" style="cursor:help"/><path d="M330 480 v-11 h-6 v-4 h12 v4 h-6 v11" fill="#4A4238"/><text x="312" y="464" font-size="12.5" fill="#A93A2B">武关</text><circle class="cityBtn" data-tip="秦·楚怀王会盟被执之地·《楚世家》「怀王与秦昭王会于武关」" cx="334" cy="474" r="10" fill="transparent" style="cursor:help"/><path d="M550 196 v-11 h-6 v-4 h12 v4 h-6 v11" fill="#4A4238"/><text x="532" y="180" font-size="12.5" fill="#A93A2B">井陉</text><circle class="cityBtn" data-tip="赵·井陉口·韩信以数万兵东下井陉击赵·《淮阴侯列传》" cx="554" cy="190" r="10" fill="transparent" style="cursor:help"/><path d="M880 130 v-11 h-6 v-4 h12 v4 h-6 v11" fill="#4A4238"/><text x="862" y="114" font-size="12.5" fill="#A93A2B">居庸</text><circle class="cityBtn" data-tip="燕·居庸塞·北防东胡之道·《苏秦列传》" cx="884" cy="124" r="10" fill="transparent" style="cursor:help"/><path d="M590 340 v-11 h-6 v-4 h12 v4 h-6 v11" fill="#4A4238"/><text x="572" y="324" font-size="12.5" fill="#A93A2B">虎牢</text><circle class="cityBtn" data-tip="周·虎牢之塞·秦置三川郡·《秦本纪》" cx="594" cy="334" r="10" fill="transparent" style="cursor:help"/><text x="520" y="52" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">匈奴</text><text x="206" y="254" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">义渠</text><text x="700" y="30" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">东胡</text><text x="940" y="706" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">百越</text><text x="196" y="708" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">巴蜀</text><text x="166" y="392" font-size="15" fill="#2B2622" opacity="0.55" text-anchor="middle" letter-spacing="6">氐羌</text><g><rect x="18" y="20" width="310" height="66" fill="#F3EAD2" opacity="0.55" stroke="#2B2622"/><rect x="24" y="26" width="298" height="54" fill="none" stroke="#2B2622" stroke-width="0.8" opacity="0.6"/><text x="36" y="56" font-size="23" font-weight="bold" fill="#2B2622">战国七雄形势图</text><text x="36" y="74" font-size="11" fill="#4A4238" opacity="0.8">诸色据五行尚色旧俗艺术演绎 · 非严格考古图</text></g><g transform="translate(20 628)"><rect width="240" height="118" fill="#F3EAD2" opacity="0.55" stroke="#2B2622" stroke-width="0.8"/><text x="10" y="18" font-size="12.5" font-weight="bold" fill="#2B2622">尚色(据旧俗意考)</text><rect x="12" y="34" width="12" height="12" fill="#33333E" stroke="#2B2622" stroke-width="0.8"/><text x="28" y="44.5" font-size="12" fill="#4A4238">秦(玄)</text><rect x="70" y="34" width="12" height="12" fill="#A93A2B" stroke="#2B2622" stroke-width="0.8"/><text x="86" y="44.5" font-size="12" fill="#4A4238">楚(赤)</text><rect x="128" y="34" width="12" height="12" fill="#6E4E79" stroke="#2B2622" stroke-width="0.8"/><text x="144" y="44.5" font-size="12" fill="#4A4238">齐(紫)</text><rect x="186" y="34" width="12" height="12" fill="#8B5A2B" stroke="#2B2622" stroke-width="0.8"/><text x="202" y="44.5" font-size="12" fill="#4A4238">赵(赭)</text><rect x="12" y="58" width="12" height="12" fill="#3E6B4F" stroke="#2B2622" stroke-width="0.8"/><text x="28" y="68.5" font-size="12" fill="#4A4238">魏(苍)</text><rect x="70" y="58" width="12" height="12" fill="#8A6A2F" stroke="#2B2622" stroke-width="0.8"/><text x="86" y="68.5" font-size="12" fill="#4A4238">韩(褐)</text><rect x="128" y="58" width="12" height="12" fill="#33567E" stroke="#2B2622" stroke-width="0.8"/><text x="144" y="68.5" font-size="12" fill="#4A4238">燕(蓝)</text><text x="10" y="108" font-size="10.5" fill="#4A4238" opacity="0.8">方标记 = 数据库15省款目</text></g></svg></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="no">贰</span><h2>兵种形象 × 十五款</h2>
+      <span class="hint">编制/费用/战力/克制, 皆录自兵种数据库 unit·counter 表(含原文出处)</span>
+    </div>
+    <div class="unit-grid" id="unitGrid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="no">叁</span><h2>武将形象 × 一百九十位</h2>
+      <span class="hint">皆据《史记》各传拔萃; 点击可览生平战绩与六维雷达图</span>
+    </div>
+    <div class="filters" id="genFilters"></div>
+    <div class="count-label" id="genCount"></div>
+    <div class="gen-grid" id="genGrid" style="margin-top:12px;"></div>
+  </section>
+
+  <footer>
+    资料源: 《史记》(中华书局点校本通说·E:\508fp\史记.txt全本) · 维基文库《左传》《战国策》《国语》《吴子》《荀子》辑校 2026<br>
+    数据库: 春秋战国武将数据库.db(190将/1215战绩/43外证) · 春秋战国兵种数据库.db(15兵种/13克制)<br>
+    服饰考据: 每位武将「服饰考据」栏依《服装考据报告.md》按时代（春秋/战国/秦/汉初）与国别（秦黑·汉赤·楚赤等）逐一标注，附原文出处；画像服装与时代统一
+    <br><span class="f-seal"></span>图鉴形象均为程序化国风人物原创     排 版 · 墨线朱印 · 统 一 风 格
+  </footer>
+</div>
+
+<div id="tip"></div>
+<div id="lightbox"><div class="lb-panel" id="lbPanel"></div></div>
+<script src="data.js"></script>
+<script>
+(function(){
+"use strict";
+var D=window.GALLERY_DATA; var g=D.generals,u=D.units;
+document.getElementById('cntGen').textContent=g.length;
+document.getElementById('cntUnit').textContent=u.length;
+const $=function(s){return document.querySelector(s);};
+const tip=document.getElementById('tip');
+function showTip(html,ev){tip.innerHTML=html;tip.style.display='block';moveTip(ev);}
+function moveTip(ev){var x=ev.clientX+16,y=ev.clientY+16;if(x>window.innerWidth-380)x=ev.clientX-360;if(y>window.innerHeight-140)y=ev.clientY-120;tip.style.left=x+'px';tip.style.top=y+'px';}
+function hideTip(){tip.style.display='none';}
+document.addEventListener('mousemove',function(ev){
+  var t=ev.target.closest?ev.target.closest('.cityBtn'):null;
+  if(t){showTip('<div class="t-caption">典 故</div><div>'+t.getAttribute('data-tip')+'</div>',ev);return;}
+  var nb=ev.target.closest?ev.target.closest('.nationBtn'):null;
+  if(nb){showTip('<div class="t-caption">'+nb.getAttribute('data-nation')+' 国 势</div><div>'+nb.getAttribute('data-note')+'</div>',ev);return;}
+  hideTip();
+},false);
+document.querySelectorAll('.nationBtn').forEach(function(nb){
+  nb.addEventListener('click',function(){
+    var n=nb.getAttribute('data-nation');
+    setEra('全部');setState(n);
+    document.getElementById('genFilters').scrollIntoView({behavior:'smooth'});
+  });
+});
+var STAT_KEYS=[['atk','攻击力'],['dfn','防御力'],['mob','机动性'],['ranged','远程火力'],['endurance','持久战力'],['eff','性价比']];
+var COST_KEYS=[['money','金钱'],['grain','粮草'],['time','时长'],['upkeep','维持']];
+function barRow(rowId,label,v){return '<div class="u-stat"><span>'+label+'</span><div class="ubar"><i style="width:'+(v*10)+'%"></i></div><span>'+Math.round(v)+'</span></div>';}
+function escHtml(s){return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+var unitHtml=u.map(function(x){
+  var stats=STAT_KEYS.map(function(k){return barRow(k[0],k[1],x[k[0]]);}).join('')
+    +COST_KEYS.map(function(k){return barRow('c_'+k[0],k[1]+'费',x[k[0]]);}).join('');
+  var counter=(x.counters&&x.counters.length)?'<div class="u-counter"><b>克制:</b> '+x.counters.map(function(c){return escHtml(typeof c==='string'?c:c.t);}).join(' · ')+'</div>':'';
+  return '<div class="card corner-i unit-card"><img src="'+x.img+'" alt="'+escHtml(x.name)+'">'
+    +'<div class="u-head"><span class="u-name">'+escHtml(x.name)+'</span><span class="u-cat">'+escHtml(x.category)+'</span></div>'
+    +'<div class="u-meta">'+escHtml(x.era)+' · '+escHtml(x.states)+'</div>'
+    +'<div class="u-stats">'+stats+'</div>'+counter
+    +'<div class="u-cit">'+escHtml(x.citations||'')+'</div>'
+    +'</div>';
+}).join('');
+document.getElementById('unitGrid').innerHTML=unitHtml;
+var stateMap={};var eraMap={};
+g.forEach(function(x){if(x.state){stateMap[x.state]=(stateMap[x.state]||0)+1;}if(x.era){eraMap[x.era]=(eraMap[x.era]||0)+1;}});
+var fEra='全部',fState='全部',fSearch='',fSort='rating';
+function setEra(v){fEra=v;renderChips();renderGen();}
+function setState(v){fState=v;renderChips();renderGen();}
+var eras=['全部'].concat(Object.keys(eraMap).sort(function(a,b){return (eraMap[b]||0)-(eraMap[a]||0);}));
+var states=['全部'].concat(Object.keys(stateMap).sort(function(a,b){return (stateMap[b]||0)-(stateMap[a]||0);}));
+var fwrap=document.getElementById('genFilters');
+function renderChips(){
+  var h='<select id="eraSel">';
+  eras.forEach(function(e){h+='<option'+(e===fEra?' selected':'')+' value="'+escHtml(e)+'">'+escHtml(e)+(eraMap[e]?'('+eraMap[e]+')':'')+'</option>';});
+  h+='</select><select id="stateSel">';
+  states.forEach(function(s){h+='<option'+(s===fState?' selected':'')+' value="'+escHtml(s)+'">'+escHtml(s)+(stateMap[s]?'('+stateMap[s]+')':'')+'</option>';});
+  h+='</select><input type="search" id="gSearch" placeholder="搜人名/别名/生卒地…" value="'+escHtml(fSearch)+'">';
+  h+='<select id="sortSel"><option value="rating"'+(fSort==='rating'?' selected':'')+'>按评分</option><option value="id"'+(fSort==='id'?' selected':'')+'>按史传序</option><option value="name"'+(fSort==='name'?' selected':'')+'>按人名</option></select>';
+  fwrap.innerHTML=h;
+  fwrap.querySelector('#eraSel').addEventListener('change',function(e){fEra=e.target.value;renderGen();});
+  fwrap.querySelector('#stateSel').addEventListener('change',function(e){fState=e.target.value;renderGen();});
+  fwrap.querySelector('#sortSel').addEventListener('change',function(e){fSort=e.target.value;renderGen();});
+  var se=fwrap.querySelector('#gSearch');
+  se.addEventListener('input',function(e){fSearch=e.target.value;renderGen();});
+}
+var list=g.slice();
+function es(x){return (x==null?'':String(x));}
+var GC={'S+':'#C9A34A','S':'#9A7B2E','A+':'#3A6F8F','A':'#4F7A6B','B+':'#8B5A2B','B':'#7A5A3A','C':'#8A8782','D':'#6E6A64'};
+function gradeColor(gr){return GC[gr]||'#8A8782';}
+function renderGen(){
+  list=g.filter(function(x){
+    if(fEra!=='全部'&&es(x.era)!==fEra)return false;
+    if(fState!=='全部'&&es(x.state)!==fState)return false;
+    return true;
+  });
+  if(fSearch)list=list.filter(function(x){return (es(x.name)+es(x.role)).indexOf(fSearch)>=0;});
+  if(fSort==='rating')list.sort(function(a,b){return (b.overall||0)-(a.overall||0);});
+  else if(fSort==='name')list.sort(function(a,b){return a.name.localeCompare(b.name,'zh');});
+  document.getElementById('genCount').textContent='共 '+list.length+' 位';
+  var html=list.map(function(x,i){
+    return '<div class="gen-card" data-i="'+i+'"><img src="'+x.img+'" alt="'+escHtml(x.name)+'" loading="lazy">'
+      +'<div class="g-foot"><span class="g-grade" style="color:'+gradeColor(x.grade)+'">'+escHtml(x.grade)+'</span><span>'+escHtml(x.state||'')+'</span></div></div>';
+  }).join('');
+  document.getElementById('genGrid').innerHTML=html;
+  document.querySelectorAll('.gen-card').forEach(function(c){
+    c.addEventListener('click',function(){openLb(list[+c.getAttribute('data-i')]);});
+  });
+}
+var lb=document.getElementById('lightbox');
+function openLb(x){
+  var bs=(x.battles||[]).map(function(b){
+    return '<div class="battle-item"><span class="yr">'+escHtml(b.year||'')+'</span> '+escHtml(b.event||'')+(b.result?' <span class="yr">['+escHtml(b.result)+']</span>':'')+'<br><span class="ct">'+escHtml(b.citation||'')+'</span></div>';
+  }).join('');
+  var stars=x.overall?('<span style="color:'+gradeColor(x.grade)+';font-weight:700">'+escHtml(x.grade)+'</span> · '+x.overall.toFixed(2)+'分'):'未评级';
+  var html='<div class="lb-left"><img src="'+x.img+'" alt="'+escHtml(x.name)+'">'
+    +'<div class="lb-radar"><a href="'+x.radar+'" target="_blank">六维雷达图 ↗</a><br><img src="'+x.radar+'" alt="雷达图" loading="lazy" style="margin-top:6px"></div></div>'
+    +'<div><div class="lb-close" id="lbClose">×</div>'
+    +'<div class="lb-name">'+escHtml(x.name)+'</div>'
+    +'<div class="lb-tags"><span class="lb-tag red">'+escHtml(x.era||'')+'</span><span class="lb-tag">'+escHtml(x.state||'')+'</span><span class="lb-tag">'+escHtml(x.role||'')+'</span><span class="lb-tag">'+stars+'</span></div>'
+    +'<div class="lb-block"><h4>名 战</h4><p>'+(escHtml(x.famous)||'—')+'</p></div>'
+    +'<div class="lb-block"><h4>生 平</h4><p>'+escHtml(x.bio||'—')+'</p></div>'
+    +(x.costume?'<div class="lb-block"><h4>服 饰 考 据</h4><p class="rationale">'+escHtml(x.costume)+'</p></div>':'')
+    +(bs?'<div class="lb-block"><h4>典战战绩</h4>'+bs+'</div>':'')
+    +(x.rationale?'<div class="lb-block"><h4>评 语</h4><p class="rationale">'+escHtml(x.rationale)+'</p></div>':'')
+    +'</div>';
+  document.getElementById('lbPanel').innerHTML=html;
+  lb.classList.add('on');
+  document.getElementById('lbClose').addEventListener('click',closeLb);
+}
+function closeLb(){lb.classList.remove('on');}
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
+renderChips();renderGen();
+})();
+</script>
+</body>
+</html>

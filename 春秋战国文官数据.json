@@ -1,0 +1,2468 @@
+{
+ "officials": [
+  {
+   "id": 1,
+   "name": "管仲",
+   "aliases": "管夷吾",
+   "era": "春秋",
+   "state": "齐",
+   "role": "相国",
+   "office": "相",
+   "bio": "颍上人。经鲍叔牙推荐相齐，通货积财、富国强兵，助桓公九合诸侯、一匡天下，为春秋首霸之谋主。",
+   "famous_deed": "相齐四十年，通货积财、作内政而寄军令，佐齐桓公成霸业",
+   "ending": "卒于齐相任上",
+   "source_chapter": "史记·管晏列传;左传·僖公七年",
+   "note": "春秋第一相",
+   "general_name": "管仲",
+   "rating": {
+    "politics": 9.6,
+    "diplomacy": 9.2,
+    "strategy": 9.4,
+    "governance": 9.7,
+    "learning": 9.0,
+    "influence": 9.9,
+    "overall": 9.5,
+    "grade": "S",
+    "rationale": "相齐定霸，通货积财、九合诸侯，政治、治理与历史影响均属顶级；外交与谋略亦为春秋典范。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "相齐任政",
+     "counterpart": "齐桓公",
+     "place": "齐",
+     "year": "前685—前645",
+     "result": "成功",
+     "original_text": "管仲既用，任政於齐，齐桓公以霸，九合诸侯，一匡天下，管仲之谋也。",
+     "source_chapter": "史记·管晏列传",
+     "citation": "《史记·管晏列传》"
+    },
+    {
+     "category": "经济",
+     "event": "通货积财、富国强兵",
+     "counterpart": "",
+     "place": "齐",
+     "year": "相齐期间",
+     "result": "成功",
+     "original_text": "管仲既任政相齐，以区区之齐在海滨，通货积财，富国彊兵，与俗同好恶。",
+     "source_chapter": "史记·管晏列传",
+     "citation": "《史记·管晏列传》"
+    },
+    {
+     "category": "外交",
+     "event": "以礼信属诸侯",
+     "counterpart": "郑伯",
+     "place": "齐",
+     "year": "僖公七年",
+     "result": "成功",
+     "original_text": "君以礼与信属诸侯，而以奸终之，无乃不可乎？",
+     "source_chapter": "左传·僖公七年",
+     "citation": "《左传·僖公七年》"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "鲍叔牙",
+   "aliases": "鲍叔",
+   "era": "春秋",
+   "state": "齐",
+   "role": "大夫",
+   "office": "大夫",
+   "bio": "齐大夫，与管仲为友。知管仲之贤，力荐于桓公，甘居其下，使齐得霸佐。",
+   "famous_deed": "让贤荐管仲，成就齐桓公霸业",
+   "ending": "卒于齐",
+   "source_chapter": "史记·管晏列传;史记·齐太公世家",
+   "note": "知人让贤",
+   "general_name": "",
+   "rating": {
+    "politics": 8.0,
+    "diplomacy": 8.2,
+    "strategy": 8.3,
+    "governance": 7.8,
+    "learning": 8.0,
+    "influence": 8.6,
+    "overall": 8.14,
+    "grade": "B+",
+    "rationale": "本人政绩不著，但以知人、让贤与稳定齐国内政见长，历史影响主要通过管仲放大。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "荐管仲于桓公",
+     "counterpart": "齐桓公",
+     "place": "齐",
+     "year": "前685",
+     "result": "成功",
+     "original_text": "鲍叔遂进管仲。管仲既用，任政於齐，齐桓公以霸，九合诸侯，一匡天下，管仲之谋也。",
+     "source_chapter": "史记·管晏列传",
+     "citation": "《史记·管晏列传》"
+    },
+    {
+     "category": "外交",
+     "event": "谏桓公勿杀管仲",
+     "counterpart": "齐桓公",
+     "place": "齐",
+     "year": "前685",
+     "result": "成功",
+     "original_text": "君且欲霸王，非管夷吾不可。夷吾所居国国重，不可失也。",
+     "source_chapter": "史记·齐太公世家",
+     "citation": "《史记·齐太公世家》"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "晏婴",
+   "aliases": "晏子、晏平仲",
+   "era": "春秋",
+   "state": "齐",
+   "role": "相国",
+   "office": "相",
+   "bio": "莱之夷维人。事齐灵公、庄公、景公，以节俭力行重于齐，既相齐，食不重肉、妾不衣帛，三世显名于诸侯。",
+   "famous_deed": "相齐三朝，节俭力行，直言谏君",
+   "ending": "卒于齐景公时",
+   "source_chapter": "史记·管晏列传;史记·齐太公世家;左传·襄公二十五年",
+   "note": "节俭名相",
+   "general_name": "",
+   "rating": {
+    "politics": 8.8,
+    "diplomacy": 8.7,
+    "strategy": 8.4,
+    "governance": 8.9,
+    "learning": 8.6,
+    "influence": 9.0,
+    "overall": 8.74,
+    "grade": "A",
+    "rationale": "三朝老相，节俭力行、直言谏君，外交辞令与内政治理俱佳；不尚空谈，重实际政务。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "以节俭力行相齐",
+     "counterpart": "",
+     "place": "齐",
+     "year": "灵公—景公",
+     "result": "成功",
+     "original_text": "晏平仲婴者，莱之夷维人也。事齐灵公、庄公、景公，以节俭力行重于齐。既相齐，食不重肉，妾不衣帛。",
+     "source_chapter": "史记·管晏列传",
+     "citation": "《史记·管晏列传》"
+    },
+    {
+     "category": "政治",
+     "event": "谏灵公勿弃城走",
+     "counterpart": "齐灵公",
+     "place": "齐",
+     "year": "灵公二十七年",
+     "result": "失败",
+     "original_text": "齐师败，灵公走入临菑。晏婴止灵公，灵公弗从。曰：君亦无勇矣！",
+     "source_chapter": "史记·齐太公世家",
+     "citation": "《史记·齐太公世家》"
+    },
+    {
+     "category": "外交",
+     "event": "论儒者不可尽用",
+     "counterpart": "齐景公",
+     "place": "齐",
+     "year": "景公时",
+     "result": "成功",
+     "original_text": "夫儒者滑稽而不可轨法；倨傲自顺，不可以为下；崇丧遂哀，破产厚葬，不可以为俗。",
+     "source_chapter": "史记·孔子世家",
+     "citation": "《史记·孔子世家》"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "子产",
+   "aliases": "公孙侨、国侨",
+   "era": "春秋",
+   "state": "郑",
+   "role": "执政",
+   "office": "卿",
+   "bio": "郑穆公之孙。执郑国之政，铸刑书、不毁乡校、择能而使，内修政事、外应诸侯，郑以小国称治。",
+   "famous_deed": "铸刑书、不毁乡校，郑国大治",
+   "ending": "卒于郑",
+   "source_chapter": "左传·襄公三十年;左传·襄公三十一年;左传·昭公六年",
+   "note": "春秋良相",
+   "general_name": "",
+   "rating": {
+    "politics": 9.4,
+    "diplomacy": 9.0,
+    "strategy": 9.2,
+    "governance": 9.6,
+    "learning": 9.0,
+    "influence": 9.3,
+    "overall": 9.29,
+    "grade": "A+",
+    "rationale": "小国执政的典范：以制度（刑书）、舆论（乡校）与用人之道治理郑国，治理与政治近满分。"
+   },
+   "deeds": [
+    {
+     "category": "法制",
+     "event": "铸刑书",
+     "counterpart": "",
+     "place": "郑",
+     "year": "昭公六年",
+     "result": "成功",
+     "original_text": "三月，郑人铸刑书。",
+     "source_chapter": "左传·昭公六年",
+     "citation": "《左传·昭公六年》"
+    },
+    {
+     "category": "政治",
+     "event": "不毁乡校",
+     "counterpart": "然明",
+     "place": "郑",
+     "year": "襄公三十一年",
+     "result": "成功",
+     "original_text": "夫人朝夕退而游焉，以议执政之善否。其所善者，吾则行之；其所恶者，吾则改之。是吾师也，若之何毁之？",
+     "source_chapter": "左传·襄公三十一年",
+     "citation": "《左传·襄公三十一年》"
+    },
+    {
+     "category": "政治",
+     "event": "择能而使",
+     "counterpart": "",
+     "place": "郑",
+     "year": "襄公三十一年",
+     "result": "成功",
+     "original_text": "子产之从政也，择能而使之。",
+     "source_chapter": "左传·襄公三十一年",
+     "citation": "《左传·襄公三十一年》"
+    },
+    {
+     "category": "治理",
+     "event": "都鄙有章、庐井有伍",
+     "counterpart": "",
+     "place": "郑",
+     "year": "襄公三十年",
+     "result": "成功",
+     "original_text": "子产使都鄙有章，上下有服，田有封洫，庐井有伍。",
+     "source_chapter": "左传·襄公三十年",
+     "citation": "《左传·襄公三十年》"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "叔向",
+   "aliases": "羊舌肸",
+   "era": "春秋",
+   "state": "晋",
+   "role": "大夫",
+   "office": "太傅",
+   "bio": "晋国大夫，博学多识，长于礼制与辞令。与子产论刑书，预判郑、晋之政，以学识与直谏著称。",
+   "famous_deed": "诒子产书论刑书；预言晋公室之衰",
+   "ending": "卒于晋",
+   "source_chapter": "左传·昭公六年;国语·晋语八",
+   "note": "博学直谏",
+   "general_name": "",
+   "rating": {
+    "politics": 8.6,
+    "diplomacy": 8.4,
+    "strategy": 8.7,
+    "governance": 8.3,
+    "learning": 9.2,
+    "influence": 8.5,
+    "overall": 8.57,
+    "grade": "A",
+    "rationale": "以礼制、辞令与政治判断见长，学识冠于晋国；实际执政与改革空间有限。"
+   },
+   "deeds": [
+    {
+     "category": "法制",
+     "event": "诒子产书论铸刑书",
+     "counterpart": "子产",
+     "place": "晋",
+     "year": "昭公六年",
+     "result": "失败",
+     "original_text": "始吾有虞於子，今则已矣。",
+     "source_chapter": "左传·昭公六年",
+     "citation": "《左传·昭公六年》"
+    },
+    {
+     "category": "政治",
+     "event": "论晋公室之衰",
+     "counterpart": "",
+     "place": "晋",
+     "year": "春秋后期",
+     "result": "判断",
+     "original_text": "公室将卑，其宗族枝叶先落，则公从之。",
+     "source_chapter": "左传·昭公三年",
+     "citation": "《左传·昭公三年》"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "季札",
+   "aliases": "延陵季子、公子札",
+   "era": "春秋",
+   "state": "吴",
+   "role": "公子/外交使节",
+   "office": "行人",
+   "bio": "吴王寿梦少子。让国不立，历聘中原，观周乐、论列国政，以礼乐学识与外交风度著称。",
+   "famous_deed": "观乐论政、挂剑徐君墓",
+   "ending": "封于延陵",
+   "source_chapter": "左传·襄公二十九年;史记·吴太伯世家",
+   "note": "礼乐外交",
+   "general_name": "",
+   "rating": {
+    "politics": 7.8,
+    "diplomacy": 9.0,
+    "strategy": 8.2,
+    "governance": 7.5,
+    "learning": 9.4,
+    "influence": 8.8,
+    "overall": 8.31,
+    "grade": "A",
+    "rationale": "外交与礼乐学识极突出，观乐知政传为典范；未执政，治理实绩较少。"
+   },
+   "deeds": [
+    {
+     "category": "文化",
+     "event": "聘鲁观周乐",
+     "counterpart": "鲁",
+     "place": "鲁",
+     "year": "襄公二十九年",
+     "result": "成功",
+     "original_text": "请观于周乐。",
+     "source_chapter": "左传·襄公二十九年",
+     "citation": "《左传·襄公二十九年》"
+    },
+    {
+     "category": "外交",
+     "event": "挂剑徐君墓",
+     "counterpart": "徐君",
+     "place": "徐",
+     "year": "春秋",
+     "result": "成功",
+     "original_text": "季札之初使，北过徐君。徐君好季札剑，口弗敢言。季札心知之，为使上国，未献。还至徐，徐君已死，於是乃解其宝剑，系之徐君冢树而去。",
+     "source_chapter": "史记·吴太伯世家",
+     "citation": "《史记·吴太伯世家》"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "百里奚",
+   "aliases": "百里傒、五羖大夫",
+   "era": "春秋",
+   "state": "虞→秦",
+   "role": "大夫",
+   "office": "相",
+   "bio": "虞国大夫，虞亡被虏，秦穆公以五羖羊皮赎之，授以国政。荐蹇叔，佐穆公并国二十、霸西戎。",
+   "famous_deed": "五羖大夫，佐秦穆公霸西戎",
+   "ending": "卒于秦",
+   "source_chapter": "史记·秦本纪;史记·李斯列传",
+   "note": "秦国名相",
+   "general_name": "百里奚",
+   "rating": {
+    "politics": 8.7,
+    "diplomacy": 8.3,
+    "strategy": 9.0,
+    "governance": 8.8,
+    "learning": 8.2,
+    "influence": 8.9,
+    "overall": 8.7,
+    "grade": "A",
+    "rationale": "起于俘囚而相秦，内修国政、外霸西戎，谋略与治理均高；外交声势稍逊。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "五羖羊皮赎相",
+     "counterpart": "秦穆公",
+     "place": "秦",
+     "year": "穆公时",
+     "result": "成功",
+     "original_text": "缪公释其囚，与语国事。谢曰：臣亡国之臣，何足问！缪公曰：虞君不用子，故亡，非子罪也。固问，语三日，缪公大说，授之国政，号曰五羖大夫。",
+     "source_chapter": "史记·秦本纪",
+     "citation": "《史记·秦本纪》"
+    },
+    {
+     "category": "政治",
+     "event": "荐蹇叔",
+     "counterpart": "秦穆公",
+     "place": "秦",
+     "year": "穆公时",
+     "result": "成功",
+     "original_text": "臣不及臣友蹇叔，蹇叔贤而世莫知。",
+     "source_chapter": "史记·秦本纪",
+     "citation": "《史记·秦本纪》"
+    },
+    {
+     "category": "谋略",
+     "event": "谏袭郑",
+     "counterpart": "秦穆公",
+     "place": "秦",
+     "year": "穆公三十二年",
+     "result": "失败",
+     "original_text": "径数国千里而袭人，希有得利者。且人卖郑，庸知我国人不有以我情告郑者乎？不可。",
+     "source_chapter": "史记·秦本纪",
+     "citation": "《史记·秦本纪》"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "蹇叔",
+   "aliases": "蹇叔",
+   "era": "春秋",
+   "state": "宋→秦",
+   "role": "大夫",
+   "office": "上大夫",
+   "bio": "百里奚之友，秦穆公厚币迎为上大夫。以远见谏阻袭郑，哭师预言崤之败，为秦国老成谋国者。",
+   "famous_deed": "谏袭郑、哭师论崤之败",
+   "ending": "卒于秦",
+   "source_chapter": "左传·僖公三十二年;史记·秦本纪",
+   "note": "老成谋国",
+   "general_name": "蹇叔",
+   "rating": {
+    "politics": 8.2,
+    "diplomacy": 8.0,
+    "strategy": 9.2,
+    "governance": 8.0,
+    "learning": 8.5,
+    "influence": 8.4,
+    "overall": 8.39,
+    "grade": "A",
+    "rationale": "谋略与判断极强，两次预言秦军之败；内政与外交实绩较少。"
+   },
+   "deeds": [
+    {
+     "category": "谋略",
+     "event": "谏穆公袭郑",
+     "counterpart": "秦穆公",
+     "place": "秦",
+     "year": "僖公三十二年",
+     "result": "失败",
+     "original_text": "劳师以袭远，非所闻也。师劳力竭，远主备之，无乃不可乎！",
+     "source_chapter": "左传·僖公三十二年",
+     "citation": "《左传·僖公三十二年》"
+    },
+    {
+     "category": "谋略",
+     "event": "哭师预言崤败",
+     "counterpart": "孟明视等",
+     "place": "秦",
+     "year": "僖公三十二年",
+     "result": "应验",
+     "original_text": "孟子，吾见师之出而不见其入也。",
+     "source_chapter": "左传·僖公三十二年",
+     "citation": "《左传·僖公三十二年》"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "狐偃",
+   "aliases": "子犯、咎犯",
+   "era": "春秋",
+   "state": "晋",
+   "role": "卿/谋臣",
+   "office": "上军将",
+   "bio": "晋文公重耳之舅，从亡十九年。佐文公返国、勤王、城濮之战，定霸诸侯，为晋国首霸核心谋臣。",
+   "famous_deed": "勤王定霸、城濮退避三舍",
+   "ending": "卒于晋",
+   "source_chapter": "左传·僖公二十五年;左传·僖公二十八年;史记·晋世家",
+   "note": "晋文公谋主",
+   "general_name": "狐偃",
+   "rating": {
+    "politics": 8.5,
+    "diplomacy": 8.6,
+    "strategy": 9.0,
+    "governance": 8.0,
+    "learning": 8.1,
+    "influence": 8.7,
+    "overall": 8.51,
+    "grade": "A",
+    "rationale": "以政治谋略与外交时机见长，勤王、退舍皆定霸关键；治理内政记载较少。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "劝晋文公勤王",
+     "counterpart": "晋文公",
+     "place": "晋",
+     "year": "僖公二十五年",
+     "result": "成功",
+     "original_text": "求诸侯，莫如勤王。诸侯信之，且大义也。",
+     "source_chapter": "左传·僖公二十五年",
+     "citation": "《左传·僖公二十五年》"
+    },
+    {
+     "category": "外交",
+     "event": "伐曹卫以救宋",
+     "counterpart": "晋文公",
+     "place": "晋",
+     "year": "僖公二十七年",
+     "result": "成功",
+     "original_text": "楚新得曹而初婚於卫，若伐曹、卫，楚必救之，则宋免矣。",
+     "source_chapter": "史记·晋世家",
+     "citation": "《史记·晋世家》"
+    },
+    {
+     "category": "军事",
+     "event": "城濮退避三舍",
+     "counterpart": "楚军",
+     "place": "晋",
+     "year": "僖公二十八年",
+     "result": "成功",
+     "original_text": "微楚之惠不及此，退三舍辟之，所以报也。",
+     "source_chapter": "左传·僖公二十八年",
+     "citation": "《左传·僖公二十八年》"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "赵衰",
+   "aliases": "赵成子、成季",
+   "era": "春秋",
+   "state": "晋",
+   "role": "卿",
+   "office": "卿",
+   "bio": "晋文公从亡五贤士之一。佐文公返国，举郤縠、让卿位，以知人谦让与稳定晋政著称。",
+   "famous_deed": "从亡十九年、举贤让卿",
+   "ending": "卒于晋",
+   "source_chapter": "左传·僖公二十七年;国语·晋语四;史记·晋世家",
+   "note": "知人让贤",
+   "general_name": "赵衰",
+   "rating": {
+    "politics": 8.8,
+    "diplomacy": 8.4,
+    "strategy": 8.6,
+    "governance": 8.5,
+    "learning": 8.7,
+    "influence": 8.8,
+    "overall": 8.63,
+    "grade": "A",
+    "rationale": "政治与学识俱高，知人让贤、稳定晋国卿族秩序；外交与军事非其主项。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "举郤縠为元帅",
+     "counterpart": "晋文公",
+     "place": "晋",
+     "year": "僖公二十七年",
+     "result": "成功",
+     "original_text": "郤縠可。臣亟闻其言矣，说礼乐而敦《诗》、《书》。",
+     "source_chapter": "左传·僖公二十七年",
+     "citation": "《左传·僖公二十七年》"
+    },
+    {
+     "category": "政治",
+     "event": "辞卿让贤",
+     "counterpart": "晋文公",
+     "place": "晋",
+     "year": "文公时",
+     "result": "成功",
+     "original_text": "公使赵衰为卿，辞曰：栾枝贞慎，先轸有谋，胥臣多闻，皆可以为辅佐，臣弗若也。",
+     "source_chapter": "国语·晋语四",
+     "citation": "《国语·晋语四》"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "向戌",
+   "aliases": "左师戌",
+   "era": "春秋",
+   "state": "宋",
+   "role": "大夫",
+   "office": "左师",
+   "bio": "宋国左师，与晋赵武、楚令尹子木友善。发起弭兵之会，使晋楚及诸侯暂息兵戈，为春秋外交大事。",
+   "famous_deed": "发起第二次弭兵之会",
+   "ending": "卒于宋",
+   "source_chapter": "左传·襄公二十七年;左传·襄公十年",
+   "note": "弭兵发起人",
+   "general_name": "",
+   "rating": {
+    "politics": 8.0,
+    "diplomacy": 9.2,
+    "strategy": 8.1,
+    "governance": 7.6,
+    "learning": 7.8,
+    "influence": 8.5,
+    "overall": 8.17,
+    "grade": "B+",
+    "rationale": "外交斡旋能力极强，弭兵之会惠及中原；内政治理与个人学识相对平常。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "发起弭兵之会",
+     "counterpart": "晋、楚",
+     "place": "宋",
+     "year": "襄公二十七年",
+     "result": "成功",
+     "original_text": "宋向戌善於赵文子，又善於令尹子木，欲弭诸侯之兵以为名。",
+     "source_chapter": "左传·襄公二十七年",
+     "citation": "《左传·襄公二十七年》"
+    },
+    {
+     "category": "政治",
+     "event": "辞偪阳之封",
+     "counterpart": "宋君",
+     "place": "宋",
+     "year": "襄公十年",
+     "result": "成功",
+     "original_text": "若专赐臣，是臣兴诸侯以自封也，其何罪大焉？敢以死请。",
+     "source_chapter": "左传·襄公十年",
+     "citation": "《左传·襄公十年》"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "孙叔敖",
+   "aliases": "蔿敖、孙叔",
+   "era": "春秋",
+   "state": "楚",
+   "role": "令尹",
+   "office": "令尹",
+   "bio": "楚之处士，虞丘相荐于楚庄王。三月为楚相，施教导民、政缓禁止，佐庄王邲之战败晋而霸。",
+   "famous_deed": "相楚致治、邲之战佐庄王称霸",
+   "ending": "卒于楚",
+   "source_chapter": "史记·循吏列传;左传·宣公十二年",
+   "note": "楚之良相",
+   "general_name": "孙叔敖",
+   "rating": {
+    "politics": 8.9,
+    "diplomacy": 8.4,
+    "strategy": 9.1,
+    "governance": 9.2,
+    "learning": 8.5,
+    "influence": 9.0,
+    "overall": 8.9,
+    "grade": "A+",
+    "rationale": "循吏典范：内政使吏无奸邪、盗贼不起，外佐邲之胜；政治、治理与谋略均高。"
+   },
+   "deeds": [
+    {
+     "category": "治理",
+     "event": "为楚相施教导民",
+     "counterpart": "楚庄王",
+     "place": "楚",
+     "year": "庄王时",
+     "result": "成功",
+     "original_text": "三月为楚相，施教导民，上下和合，世俗盛美，政缓禁止，吏无奸邪，盗贼不起。",
+     "source_chapter": "史记·循吏列传",
+     "citation": "《史记·循吏列传》"
+    },
+    {
+     "category": "军事",
+     "event": "邲之战先人夺人",
+     "counterpart": "晋军",
+     "place": "邲",
+     "year": "宣公十二年",
+     "result": "成功",
+     "original_text": "进之，宁我薄人，无人薄我。",
+     "source_chapter": "左传·宣公十二年",
+     "citation": "《左传·宣公十二年》"
+    },
+    {
+     "category": "政治",
+     "event": "三去相而不悔",
+     "counterpart": "",
+     "place": "楚",
+     "year": "相楚期间",
+     "result": "典故",
+     "original_text": "孙叔敖三去相而不悔。",
+     "source_chapter": "史记·鲁仲连邹阳列传",
+     "citation": "《史记·鲁仲连邹阳列传》"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "申包胥",
+   "aliases": "包胥、王孙包胥",
+   "era": "春秋",
+   "state": "楚",
+   "role": "大夫",
+   "office": "大夫",
+   "bio": "楚大夫，伍子胥故交。吴破郢后赴秦乞师，哭于秦廷七日七夜，秦哀公发兵救楚，楚得以复国。",
+   "famous_deed": "哭秦庭七日，乞师复楚",
+   "ending": "逃赏隐居",
+   "source_chapter": "史记·伍子胥列传;左传·定公四年;左传·定公五年",
+   "note": "忠臣复国",
+   "general_name": "",
+   "rating": {
+    "politics": 8.2,
+    "diplomacy": 9.0,
+    "strategy": 8.3,
+    "governance": 7.8,
+    "learning": 8.0,
+    "influence": 8.9,
+    "overall": 8.35,
+    "grade": "A",
+    "rationale": "外交乞师与忠义气节极突出，复楚之功巨大；内政治理与长期执政记载有限。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "哭秦庭乞师",
+     "counterpart": "秦哀公",
+     "place": "秦",
+     "year": "定公四年",
+     "result": "成功",
+     "original_text": "包胥立於秦廷，昼夜哭，七日七夜不绝其声。",
+     "source_chapter": "史记·伍子胥列传",
+     "citation": "《史记·伍子胥列传》"
+    },
+    {
+     "category": "外交",
+     "event": "与伍子胥存楚之誓",
+     "counterpart": "伍子胥",
+     "place": "楚",
+     "year": "定公四年",
+     "result": "应验",
+     "original_text": "子能复之，我必能兴之。",
+     "source_chapter": "左传·定公四年",
+     "citation": "《左传·定公四年》"
+    },
+    {
+     "category": "政治",
+     "event": "逃赏不居功",
+     "counterpart": "楚昭王",
+     "place": "楚",
+     "year": "定公五年",
+     "result": "成功",
+     "original_text": "吾为君也，非为身也。君既定矣，又何求？",
+     "source_chapter": "左传·定公五年",
+     "citation": "《左传·定公五年》"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "文种",
+   "aliases": "大夫种、少禽",
+   "era": "春秋",
+   "state": "楚→越",
+   "role": "大夫",
+   "office": "大夫",
+   "bio": "越大夫，与范蠡共佐句践。行成于吴以存越，主持国政、抚民富国，终助越灭吴；功成后为句践赐死。",
+   "famous_deed": "行成存越、佐句践灭吴",
+   "ending": "为越王句践赐剑自杀",
+   "source_chapter": "史记·越王句践世家;国语·越语",
+   "note": "越国谋臣",
+   "general_name": "大夫种",
+   "rating": {
+    "politics": 8.7,
+    "diplomacy": 8.5,
+    "strategy": 9.0,
+    "governance": 8.4,
+    "learning": 8.3,
+    "influence": 8.6,
+    "overall": 8.61,
+    "grade": "A",
+    "rationale": "内政抚民与外交存国并重，灭吴之谋多出其手；结局见功高震主之祸。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "行成于吴",
+     "counterpart": "吴王夫差",
+     "place": "吴",
+     "year": "前494",
+     "result": "成功",
+     "original_text": "大夫种行成於吴，膝行顿首曰：君王亡臣句践使陪臣种敢告下执事：句践请为臣，妻为妾。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    },
+    {
+     "category": "谋略",
+     "event": "诱贿太宰嚭",
+     "counterpart": "太宰嚭",
+     "place": "吴",
+     "year": "前494",
+     "result": "成功",
+     "original_text": "种止句践曰：夫吴太宰嚭贪，可诱以利，请间行言之。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    },
+    {
+     "category": "政治",
+     "event": "功成被赐死",
+     "counterpart": "越王句践",
+     "place": "越",
+     "year": "前472",
+     "result": "失败",
+     "original_text": "子教寡人伐吴七术，寡人用其三而败吴，其四在子，子为我从先王试之。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "范蠡",
+   "aliases": "陶朱公、鸱夷子皮",
+   "era": "春秋",
+   "state": "楚→越",
+   "role": "上将军/相",
+   "office": "上将军",
+   "bio": "宛人，佐越王句践二十余年，灭吴雪耻。功成身退，浮海至齐，治产至巨万，世称陶朱公。",
+   "famous_deed": "佐越灭吴、功成身退、三致千金",
+   "ending": "卒于陶",
+   "source_chapter": "史记·越王句践世家;史记·货殖列传",
+   "note": "谋臣兼商圣",
+   "general_name": "范蠡",
+   "rating": {
+    "politics": 9.0,
+    "diplomacy": 8.8,
+    "strategy": 9.5,
+    "governance": 9.2,
+    "learning": 9.0,
+    "influence": 9.4,
+    "overall": 9.17,
+    "grade": "A+",
+    "rationale": "谋略、政治与经营之才兼备，灭吴后全身而退、三致千金，历史影响跨越军政与商业。"
+   },
+   "deeds": [
+    {
+     "category": "谋略",
+     "event": "持满定倾之策",
+     "counterpart": "越王句践",
+     "place": "越",
+     "year": "前494",
+     "result": "成功",
+     "original_text": "持满者与天，定倾者与人，节事者以地。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    },
+    {
+     "category": "政治",
+     "event": "功成身退",
+     "counterpart": "越王句践",
+     "place": "越",
+     "year": "前473",
+     "result": "成功",
+     "original_text": "蜚鸟尽，良弓藏；狡兔死，走狗烹。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    },
+    {
+     "category": "经济",
+     "event": "治产三致千金",
+     "counterpart": "",
+     "place": "陶",
+     "year": "晚年",
+     "result": "成功",
+     "original_text": "候时转物，逐什一之利。居无何，则致赀累巨万。天下称陶硃公。",
+     "source_chapter": "史记·货殖列传",
+     "citation": "《史记·货殖列传》"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "计然",
+   "aliases": "计倪、计研",
+   "era": "春秋",
+   "state": "越",
+   "role": "谋士/经济家",
+   "office": "大夫",
+   "bio": "越国经济谋士，主张平粜齐物、农商俱利。越用其策，十年国富，佐句践灭吴。",
+   "famous_deed": "平粜齐物、农商俱利",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·货殖列传",
+   "note": "早期经济思想家",
+   "general_name": "",
+   "rating": {
+    "politics": 8.3,
+    "diplomacy": 7.5,
+    "strategy": 8.6,
+    "governance": 9.4,
+    "learning": 9.0,
+    "influence": 8.4,
+    "overall": 8.54,
+    "grade": "A",
+    "rationale": "以经济治理见长，平粜之策兼具民生与财政；外交与军事非其领域。"
+   },
+   "deeds": [
+    {
+     "category": "经济",
+     "event": "平粜齐物",
+     "counterpart": "",
+     "place": "越",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "夫粜，二十病农，九十病末。末病则财不出，农病则草不辟矣。上不过八十，下不减三十，则农末俱利，平粜齐物，关市不乏，治国之道也。",
+     "source_chapter": "史记·货殖列传",
+     "citation": "《史记·货殖列传》"
+    },
+    {
+     "category": "经济",
+     "event": "七策富越",
+     "counterpart": "越王句践",
+     "place": "越",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "计然之策七，越用其五而得意。",
+     "source_chapter": "史记·货殖列传",
+     "citation": "《史记·货殖列传》"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "name": "伯嚭",
+   "aliases": "太宰嚭",
+   "era": "春秋",
+   "state": "楚→吴",
+   "role": "太宰",
+   "office": "太宰",
+   "bio": "楚伯州犁之孙，奔吴为太宰。受越贿赂，谗害伍子胥，劝夫差许越和，终致吴亡。",
+   "famous_deed": "受贿谗子胥、误吴国政",
+   "ending": "吴亡后被越诛",
+   "source_chapter": "史记·越王句践世家;史记·伍子胥列传",
+   "note": "佞臣典型",
+   "general_name": "伯嚭",
+   "rating": {
+    "politics": 7.2,
+    "diplomacy": 7.8,
+    "strategy": 7.0,
+    "governance": 5.5,
+    "learning": 6.0,
+    "influence": 6.5,
+    "overall": 6.69,
+    "grade": "B",
+    "rationale": "位居太宰、外交周旋有术，但以私利坏国政，治理与历史评价为负面。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "受越贿赂",
+     "counterpart": "文种",
+     "place": "吴",
+     "year": "前494",
+     "result": "成功",
+     "original_text": "越王句践乃以甲兵五千人栖於会稽，使大夫种因吴太宰嚭而行成，请委国为臣妾。",
+     "source_chapter": "史记·吴太伯世家",
+     "citation": "《史记·吴太伯世家》"
+    },
+    {
+     "category": "政治",
+     "event": "劝吴王许越和",
+     "counterpart": "吴王夫差",
+     "place": "吴",
+     "year": "前494",
+     "result": "成功",
+     "original_text": "嚭因说吴王曰：越以服为臣，若将赦之，此国之利也。",
+     "source_chapter": "史记·越王句践世家",
+     "citation": "《史记·越王句践世家》"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "name": "伍子胥",
+   "aliases": "伍员、申胥",
+   "era": "春秋",
+   "state": "楚→吴",
+   "role": "大夫/谋臣",
+   "office": "行人",
+   "bio": "楚伍奢次子，父兄为平王所杀，奔吴佐阖庐破楚入郢。后谏夫差灭越、勿伐齐，被赐死。",
+   "famous_deed": "破楚入郢、谏吴王灭越",
+   "ending": "被夫差赐属镂剑自杀",
+   "source_chapter": "史记·伍子胥列传;史记·吴太伯世家",
+   "note": "复仇忠臣",
+   "general_name": "伍子胥",
+   "rating": {
+    "politics": 8.4,
+    "diplomacy": 8.2,
+    "strategy": 9.2,
+    "governance": 8.0,
+    "learning": 8.3,
+    "influence": 9.2,
+    "overall": 8.56,
+    "grade": "A",
+    "rationale": "战略眼光极准，破楚、防越皆见远略；性格刚烈，政治回旋不足。"
+   },
+   "deeds": [
+    {
+     "category": "谋略",
+     "event": "谏夫差先越后齐",
+     "counterpart": "吴王夫差",
+     "place": "吴",
+     "year": "前484",
+     "result": "失败",
+     "original_text": "越，腹心之病，今信其浮辞诈伪而贪齐。破齐，譬犹石田，无所用之。",
+     "source_chapter": "史记·伍子胥列传",
+     "citation": "《史记·伍子胥列传》"
+    },
+    {
+     "category": "政治",
+     "event": "属镂之剑",
+     "counterpart": "吴王夫差",
+     "place": "吴",
+     "year": "前484",
+     "result": "失败",
+     "original_text": "乃使使赐伍子胥属镂之剑，曰：子以此死。",
+     "source_chapter": "史记·吴太伯世家",
+     "citation": "《史记·吴太伯世家》"
+    },
+    {
+     "category": "外交",
+     "event": "与申包胥复仇存楚之誓",
+     "counterpart": "申包胥",
+     "place": "楚",
+     "year": "前506",
+     "result": "典故",
+     "original_text": "我必覆楚。",
+     "source_chapter": "史记·伍子胥列传",
+     "citation": "《史记·伍子胥列传》"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "name": "子贡",
+   "aliases": "端木赐",
+   "era": "春秋",
+   "state": "卫→鲁",
+   "role": "外交家/商人",
+   "office": "大夫",
+   "bio": "孔子弟子，利口巧辞。一出存鲁、乱齐、破吴、强晋而霸越；又善货殖，结驷连骑聘享诸侯。",
+   "famous_deed": "一出存鲁、乱齐、破吴、强晋而霸越",
+   "ending": "卒于齐",
+   "source_chapter": "史记·仲尼弟子列传;史记·货殖列传",
+   "note": "纵横家先驱",
+   "general_name": "",
+   "rating": {
+    "politics": 8.5,
+    "diplomacy": 9.6,
+    "strategy": 9.3,
+    "governance": 8.2,
+    "learning": 9.0,
+    "influence": 9.1,
+    "overall": 8.9,
+    "grade": "A+",
+    "rationale": "外交辞令与局势操盘能力近满分，兼擅货殖；内政治理实绩较少。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "一出而五国变局",
+     "counterpart": "齐、吴、越、晋",
+     "place": "中原",
+     "year": "前484",
+     "result": "成功",
+     "original_text": "子贡一出，存鲁，乱齐，破吴，强晋而霸越。",
+     "source_chapter": "史记·仲尼弟子列传",
+     "citation": "《史记·仲尼弟子列传》"
+    },
+    {
+     "category": "经济",
+     "event": "结驷连骑聘享诸侯",
+     "counterpart": "",
+     "place": "中原",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "子贡结驷连骑，束帛之币以聘享诸侯，所至，国君无不分庭与之抗礼。",
+     "source_chapter": "史记·货殖列传",
+     "citation": "《史记·货殖列传》"
+    },
+    {
+     "category": "外交",
+     "event": "说吴王存越伐齐",
+     "counterpart": "吴王夫差",
+     "place": "吴",
+     "year": "前484",
+     "result": "成功",
+     "original_text": "夫勇者不避难，仁者不穷约，智者不失时，王者不绝世，以立其义。",
+     "source_chapter": "史记·仲尼弟子列传",
+     "citation": "《史记·仲尼弟子列传》"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "name": "商鞅",
+   "aliases": "卫鞅、公孙鞅",
+   "era": "战国",
+   "state": "卫→秦",
+   "role": "大良造/相",
+   "office": "大良造",
+   "bio": "卫国公族，入秦说孝公变法。废井田、开阡陌、行县制、明军功，使秦富国强兵，为秦统一奠基。",
+   "famous_deed": "商鞅变法、徙木立信",
+   "ending": "秦孝公死后被车裂",
+   "source_chapter": "史记·商君列传;史记·秦本纪",
+   "note": "法家改革家",
+   "general_name": "商鞅",
+   "rating": {
+    "politics": 9.5,
+    "diplomacy": 8.8,
+    "strategy": 9.4,
+    "governance": 9.6,
+    "learning": 9.2,
+    "influence": 9.8,
+    "overall": 9.41,
+    "grade": "S",
+    "rationale": "变法重塑秦国制度，政治、治理与历史影响顶级；外交与个人结局受刚刻所限。"
+   },
+   "deeds": [
+    {
+     "category": "法制",
+     "event": "令民什伍、连坐告奸",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前356",
+     "result": "成功",
+     "original_text": "令民为什伍，而相牧司连坐。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    },
+    {
+     "category": "政治",
+     "event": "徙木立信",
+     "counterpart": "秦国民众",
+     "place": "秦",
+     "year": "前356",
+     "result": "成功",
+     "original_text": "乃立三丈之木於国都市南门，募民有能徙置北门者予十金。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    },
+    {
+     "category": "经济",
+     "event": "废井田、开阡陌",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前350",
+     "result": "成功",
+     "original_text": "为田开阡陌封疆，而赋税平。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    },
+    {
+     "category": "法制",
+     "event": "作法自毙",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前338",
+     "result": "失败",
+     "original_text": "商君之法，舍人无验者坐之。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "name": "申不害",
+   "aliases": "申子",
+   "era": "战国",
+   "state": "郑→韩",
+   "role": "相国",
+   "office": "相",
+   "bio": "郑之贱臣，学术干韩昭侯，用为相。内修政教、外应诸侯十五年，国治兵强，无侵韩者。",
+   "famous_deed": "相韩十五年，国治兵强",
+   "ending": "卒于韩",
+   "source_chapter": "史记·老子韩非列传;史记·韩世家",
+   "note": "术治代表",
+   "general_name": "",
+   "rating": {
+    "politics": 8.6,
+    "diplomacy": 8.3,
+    "strategy": 8.8,
+    "governance": 8.9,
+    "learning": 9.0,
+    "influence": 8.6,
+    "overall": 8.7,
+    "grade": "A",
+    "rationale": "以“术”治国，行政控制与吏治成效显著；韩国地小，外交与军事扩张有限。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "相韩内修政教",
+     "counterpart": "韩昭侯",
+     "place": "韩",
+     "year": "前351—前337",
+     "result": "成功",
+     "original_text": "内脩政教，外应诸侯，十五年。终申子之身，国治兵彊，无侵韩者。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "法制",
+     "event": "请仕从兄被拒",
+     "counterpart": "韩昭侯",
+     "place": "韩",
+     "year": "相韩期间",
+     "result": "典故",
+     "original_text": "所为学于子者，欲以治国也。今将听子之谒而废子之术乎？",
+     "source_chapter": "资治通鉴·周纪二",
+     "citation": "《资治通鉴·周纪二》"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "name": "邹忌",
+   "aliases": "驺忌子、成侯",
+   "era": "战国",
+   "state": "齐",
+   "role": "相国",
+   "office": "相",
+   "bio": "以鼓琴见齐威王，三月受相印。讽齐王纳谏，修法律而督奸吏，佐威王改革图强。",
+   "famous_deed": "讽齐王纳谏、相齐改革",
+   "ending": "封成侯，卒于齐",
+   "source_chapter": "战国策·齐策一;史记·田敬仲完世家",
+   "note": "讽谏名相",
+   "general_name": "",
+   "rating": {
+    "politics": 8.7,
+    "diplomacy": 8.5,
+    "strategy": 8.6,
+    "governance": 8.8,
+    "learning": 8.4,
+    "influence": 8.5,
+    "overall": 8.61,
+    "grade": "A",
+    "rationale": "以讽谏与制度建设见长，助齐威王开稷下、修法度；军事与外交实绩次之。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "讽齐王纳谏",
+     "counterpart": "齐威王",
+     "place": "齐",
+     "year": "威王时",
+     "result": "成功",
+     "original_text": "吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。",
+     "source_chapter": "战国策·齐策一",
+     "citation": "《战国策·齐策一》"
+    },
+    {
+     "category": "法制",
+     "event": "修法律而督奸吏",
+     "counterpart": "齐威王",
+     "place": "齐",
+     "year": "威王时",
+     "result": "成功",
+     "original_text": "谨受令，请谨脩法律而督奸吏。",
+     "source_chapter": "史记·田敬仲完世家",
+     "citation": "《史记·田敬仲完世家》"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "name": "淳于髡",
+   "aliases": "淳于子",
+   "era": "战国",
+   "state": "齐",
+   "role": "稷下学者/使节",
+   "office": "大夫",
+   "bio": "齐之赘婿，滑稽多辩，数使诸侯未尝屈辱。以隐语谏齐威王，使之一飞冲天；又善外交周旋。",
+   "famous_deed": "隐语谏威王、数使诸侯不辱命",
+   "ending": "终身不仕，卒于齐",
+   "source_chapter": "史记·滑稽列传;史记·孟子荀卿列传",
+   "note": "滑稽辩士",
+   "general_name": "",
+   "rating": {
+    "politics": 8.4,
+    "diplomacy": 9.0,
+    "strategy": 8.8,
+    "governance": 7.8,
+    "learning": 8.8,
+    "influence": 8.5,
+    "overall": 8.51,
+    "grade": "A",
+    "rationale": "外交辞令与讽谏智慧突出，博闻强记；不任实职，治理功业有限。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "隐语谏齐威王",
+     "counterpart": "齐威王",
+     "place": "齐",
+     "year": "威王时",
+     "result": "成功",
+     "original_text": "国中有大鸟，止王之庭，三年不蜚又不鸣，不知此鸟何也？",
+     "source_chapter": "史记·滑稽列传",
+     "citation": "《史记·滑稽列传》"
+    },
+    {
+     "category": "外交",
+     "event": "数使诸侯未尝屈辱",
+     "counterpart": "诸侯",
+     "place": "齐",
+     "year": "威王时",
+     "result": "成功",
+     "original_text": "淳于髡者，齐之赘婿也。长不满七尺，滑稽多辩，数使诸侯，未尝屈辱。",
+     "source_chapter": "史记·滑稽列传",
+     "citation": "《史记·滑稽列传》"
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "name": "孟尝君",
+   "aliases": "田文、薛公",
+   "era": "战国",
+   "state": "齐",
+   "role": "相国/封君",
+   "office": "相",
+   "bio": "齐威王少子田婴之子，封于薛。招致诸侯宾客数千人，食客无贵贱一与文等，以养士倾天下。",
+   "famous_deed": "养士三千、鸡鸣狗盗脱秦",
+   "ending": "卒于薛，诸子争立，薛遂亡",
+   "source_chapter": "史记·孟尝君列传;战国策·齐策",
+   "note": "战国四公子",
+   "general_name": "孟尝君",
+   "rating": {
+    "politics": 8.9,
+    "diplomacy": 8.8,
+    "strategy": 8.6,
+    "governance": 8.4,
+    "learning": 8.2,
+    "influence": 9.0,
+    "overall": 8.67,
+    "grade": "A",
+    "rationale": "养士与外交声名极盛，善借宾客之力脱难；内政治理与结局稍逊。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "招致宾客数千人",
+     "counterpart": "",
+     "place": "薛",
+     "year": "战国中期",
+     "result": "成功",
+     "original_text": "孟尝君在薛，招致诸侯宾客及亡人有罪者，皆归孟尝君。孟尝君舍业厚遇之，以故倾天下之士。食客数千人，无贵贱一与文等。",
+     "source_chapter": "史记·孟尝君列传",
+     "citation": "《史记·孟尝君列传》"
+    },
+    {
+     "category": "外交",
+     "event": "鸡鸣狗盗脱秦",
+     "counterpart": "秦昭王",
+     "place": "秦",
+     "year": "前299",
+     "result": "成功",
+     "original_text": "最下坐有能为狗盗者，曰：臣能得狐白裘。",
+     "source_chapter": "史记·孟尝君列传",
+     "citation": "《史记·孟尝君列传》"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "name": "冯谖",
+   "aliases": "冯驩、冯煖",
+   "era": "战国",
+   "state": "齐",
+   "role": "门客/谋士",
+   "office": "食客",
+   "bio": "孟尝君门客，初以“长铗归来”歌求待遇。为孟尝君焚券市义、营三窟，使孟尝君相齐数十年无祸。",
+   "famous_deed": "焚券市义、狡兔三窟",
+   "ending": "事迹不祥",
+   "source_chapter": "战国策·齐策四;史记·孟尝君列传",
+   "note": "战国奇客",
+   "general_name": "",
+   "rating": {
+    "politics": 8.2,
+    "diplomacy": 8.6,
+    "strategy": 9.2,
+    "governance": 8.8,
+    "learning": 8.0,
+    "influence": 8.3,
+    "overall": 8.57,
+    "grade": "A",
+    "rationale": "谋略与政治经营极强，三窟之计兼顾民心与权位；无独立执政地位。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "焚券市义",
+     "counterpart": "薛民",
+     "place": "薛",
+     "year": "战国中期",
+     "result": "成功",
+     "original_text": "驱而之薛，使吏召诸民当偿者，悉来合券。券遍合，起，矫命以责赐诸民，因烧其券，民称万岁。",
+     "source_chapter": "战国策·齐策四",
+     "citation": "《战国策·齐策四》"
+    },
+    {
+     "category": "谋略",
+     "event": "狡兔三窟",
+     "counterpart": "孟尝君",
+     "place": "齐",
+     "year": "战国中期",
+     "result": "成功",
+     "original_text": "狡兔有三窟，仅得免其死耳。今君有一窟，未得高枕而卧也。请为君复凿二窟。",
+     "source_chapter": "战国策·齐策四",
+     "citation": "《战国策·齐策四》"
+    },
+    {
+     "category": "政治",
+     "event": "营复相位",
+     "counterpart": "梁惠王、齐王",
+     "place": "齐、梁",
+     "year": "战国中期",
+     "result": "成功",
+     "original_text": "孟尝君为相数十年，无纤介之祸者，冯谖之计也。",
+     "source_chapter": "战国策·齐策四",
+     "citation": "《战国策·齐策四》"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "name": "苏秦",
+   "aliases": "苏季子、武安君",
+   "era": "战国",
+   "state": "东周→燕→赵",
+   "role": "纵横家",
+   "office": "相",
+   "bio": "东周洛阳人，师事鬼谷。以合纵说六国，佩六国相印，约从摈秦，使秦兵不敢窥函谷关十五年。",
+   "famous_deed": "合纵六国、佩六国相印",
+   "ending": "在齐被车裂",
+   "source_chapter": "史记·苏秦列传;战国策·秦策",
+   "note": "合纵领袖",
+   "general_name": "",
+   "rating": {
+    "politics": 9.0,
+    "diplomacy": 9.6,
+    "strategy": 9.3,
+    "governance": 8.0,
+    "learning": 8.8,
+    "influence": 9.5,
+    "overall": 9.01,
+    "grade": "A+",
+    "rationale": "合纵操盘与外交辞令顶级，一度改变战国格局；内政治理与个人信誉争议较大。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "合纵六国",
+     "counterpart": "六国诸侯",
+     "place": "中原",
+     "year": "前333",
+     "result": "成功",
+     "original_text": "苏秦既约六国从亲，归赵，赵肃侯封为武安君，乃投从约书於秦。秦兵不敢闚函谷关十五年。",
+     "source_chapter": "史记·苏秦列传",
+     "citation": "《史记·苏秦列传》"
+    },
+    {
+     "category": "政治",
+     "event": "刺股苦读",
+     "counterpart": "",
+     "place": "东周",
+     "year": "早年",
+     "result": "典故",
+     "original_text": "读书欲睡，引锥自刺其股，血流至足。",
+     "source_chapter": "史记·苏秦列传",
+     "citation": "《史记·苏秦列传》"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "name": "张仪",
+   "aliases": "武信君",
+   "era": "战国",
+   "state": "魏→秦",
+   "role": "相国/纵横家",
+   "office": "相",
+   "bio": "魏人，与苏秦同学纵横。入秦为相，以连横破合纵，欺楚绝齐、取商於之地，佐秦东出。",
+   "famous_deed": "连横破纵、欺楚绝齐",
+   "ending": "秦武王即位后失宠，去秦相魏，卒于魏",
+   "source_chapter": "史记·张仪列传;史记·楚世家",
+   "note": "连横代表",
+   "general_name": "",
+   "rating": {
+    "politics": 9.1,
+    "diplomacy": 9.5,
+    "strategy": 9.4,
+    "governance": 8.2,
+    "learning": 8.5,
+    "influence": 9.2,
+    "overall": 9.0,
+    "grade": "A+",
+    "rationale": "连横与外交欺诈运用纯熟，直接服务秦国扩张；治理与道德评价较低。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "以商於六百里欺楚",
+     "counterpart": "楚怀王",
+     "place": "秦、楚",
+     "year": "前313",
+     "result": "成功",
+     "original_text": "大王诚能听臣，闭关绝约於齐，臣请献商於之地六百里。",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    },
+    {
+     "category": "外交",
+     "event": "连横说魏",
+     "counterpart": "魏襄王",
+     "place": "魏",
+     "year": "前317",
+     "result": "成功",
+     "original_text": "大王不事秦，秦下兵攻河外，据卷衍、酸枣，劫卫，取阳晋，则赵不南。",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    },
+    {
+     "category": "政治",
+     "event": "封武信君",
+     "counterpart": "秦惠王",
+     "place": "秦",
+     "year": "前311",
+     "result": "成功",
+     "original_text": "张仪归报，秦惠王封仪五邑，号曰武信君。",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "name": "陈轸",
+   "aliases": "陈子",
+   "era": "战国",
+   "state": "齐→楚→秦",
+   "role": "纵横家/谋士",
+   "office": "大夫",
+   "bio": "游说之士，历仕齐、楚、秦。以画蛇添足止昭阳攻齐，以利害谏楚怀王勿绝齐，善用寓言说理。",
+   "famous_deed": "画蛇添足、谏楚勿绝齐",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·张仪列传;史记·楚世家;战国策·齐策二",
+   "note": "寓言说客",
+   "general_name": "",
+   "rating": {
+    "politics": 8.5,
+    "diplomacy": 9.2,
+    "strategy": 9.0,
+    "governance": 7.8,
+    "learning": 8.6,
+    "influence": 8.4,
+    "overall": 8.56,
+    "grade": "A",
+    "rationale": "外交洞察与寓言说理极强，多次预判秦楚局势；无长期执政实绩。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "画蛇添足止昭阳攻齐",
+     "counterpart": "昭阳",
+     "place": "楚、齐",
+     "year": "前323",
+     "result": "成功",
+     "original_text": "蛇固无足，今为之足，是非蛇也。",
+     "source_chapter": "史记·楚世家",
+     "citation": "《史记·楚世家》"
+    },
+    {
+     "category": "外交",
+     "event": "谏楚王勿绝齐",
+     "counterpart": "楚怀王",
+     "place": "楚",
+     "year": "前313",
+     "result": "失败",
+     "original_text": "商於之地不可得而齐秦合，齐秦合则患必至矣。",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "name": "甘茂",
+   "aliases": "甘子",
+   "era": "战国",
+   "state": "楚→秦",
+   "role": "相国/将军",
+   "office": "相",
+   "bio": "下蔡人，事秦惠王、武王。以息壤之盟取宜阳，佐秦东出；后遭谗奔齐，卒于魏。",
+   "famous_deed": "息壤之盟、攻取宜阳",
+   "ending": "奔齐、卒于魏",
+   "source_chapter": "史记·樗里子甘茂列传",
+   "note": "秦之客相",
+   "general_name": "甘茂",
+   "rating": {
+    "politics": 8.8,
+    "diplomacy": 8.4,
+    "strategy": 9.0,
+    "governance": 8.2,
+    "learning": 8.5,
+    "influence": 8.6,
+    "overall": 8.6,
+    "grade": "A",
+    "rationale": "战略谋划与攻取宜阳之功显著，政治自保亦见机敏；晚年去秦，影响受限。"
+   },
+   "deeds": [
+    {
+     "category": "军事",
+     "event": "论宜阳难攻",
+     "counterpart": "秦武王",
+     "place": "秦",
+     "year": "前308",
+     "result": "成功",
+     "original_text": "宜阳，大县也，上党、南阳积之久矣。名曰县，其实郡也。今王倍数险，行千里攻之，难。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    },
+    {
+     "category": "政治",
+     "event": "息壤之盟",
+     "counterpart": "秦武王",
+     "place": "秦",
+     "year": "前308",
+     "result": "成功",
+     "original_text": "甘茂曰：息壤在彼。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "name": "甘罗",
+   "aliases": "甘罗子",
+   "era": "战国",
+   "state": "秦",
+   "role": "上卿",
+   "office": "上卿",
+   "bio": "甘茂之孙，年十二事吕不韦。出使赵国，说赵割五城以广河间，秦不费一兵而得地，拜为上卿。",
+   "famous_deed": "十二岁使赵，不战得五城",
+   "ending": "拜上卿，事迹不祥",
+   "source_chapter": "史记·樗里子甘茂列传",
+   "note": "少年外交家",
+   "general_name": "",
+   "rating": {
+    "politics": 7.8,
+    "diplomacy": 9.4,
+    "strategy": 8.8,
+    "governance": 7.2,
+    "learning": 8.4,
+    "influence": 8.0,
+    "overall": 8.21,
+    "grade": "B+",
+    "rationale": "外交胆识与辞令极佳，少年成名；执政与治理经验不足。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "十二岁使赵",
+     "counterpart": "赵王",
+     "place": "赵",
+     "year": "前244",
+     "result": "成功",
+     "original_text": "甘罗年十二，事秦相文信侯吕不韦。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    },
+    {
+     "category": "外交",
+     "event": "说赵割五城",
+     "counterpart": "赵王",
+     "place": "赵",
+     "year": "前244",
+     "result": "成功",
+     "original_text": "赵王立自割五城以广河间。秦归燕太子。赵攻燕，得上谷三十城，令秦有十一。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "name": "樗里子",
+   "aliases": "嬴疾、严君",
+   "era": "战国",
+   "state": "秦",
+   "role": "相国/王族",
+   "office": "相",
+   "bio": "秦惠王异母弟，滑稽多智，秦人号曰智囊。事惠王、武王、昭王，为秦相，佐取汉中、定巴蜀。",
+   "famous_deed": "秦人号曰智囊",
+   "ending": "卒于秦",
+   "source_chapter": "史记·樗里子甘茂列传",
+   "note": "秦国智囊",
+   "general_name": "樗里子",
+   "rating": {
+    "politics": 8.6,
+    "diplomacy": 8.2,
+    "strategy": 8.9,
+    "governance": 8.4,
+    "learning": 8.3,
+    "influence": 8.7,
+    "overall": 8.54,
+    "grade": "A",
+    "rationale": "王族重臣，智谋与行政稳健，长期稳定秦国中枢；外交锋芒不及纵横家。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "秦人号曰智囊",
+     "counterpart": "",
+     "place": "秦",
+     "year": "惠王时",
+     "result": "成功",
+     "original_text": "樗里子滑稽多智，秦人号曰智囊。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    },
+    {
+     "category": "政治",
+     "event": "为秦相定巴蜀",
+     "counterpart": "秦惠王",
+     "place": "秦",
+     "year": "惠王时",
+     "result": "成功",
+     "original_text": "樗里子者，名疾，秦惠王之弟也，与惠王异母。母，韩女也。",
+     "source_chapter": "史记·樗里子甘茂列传",
+     "citation": "《史记·樗里子甘茂列传》"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "name": "魏冉",
+   "aliases": "穰侯",
+   "era": "战国",
+   "state": "秦",
+   "role": "相国/封君",
+   "office": "相",
+   "bio": "秦昭王母宣太后之弟，封穰侯。四任秦相，荐白起为将，南取鄢郢、东属齐，使秦益强。",
+   "famous_deed": "四任秦相、荐白起",
+   "ending": "被范雎排挤，罢相出关，卒于陶",
+   "source_chapter": "史记·穰侯列传;资治通鉴·周纪",
+   "note": "外戚强相",
+   "general_name": "",
+   "rating": {
+    "politics": 8.9,
+    "diplomacy": 8.3,
+    "strategy": 9.0,
+    "governance": 8.8,
+    "learning": 8.0,
+    "influence": 8.8,
+    "overall": 8.71,
+    "grade": "A",
+    "rationale": "长期执政、举贤任能，使秦持续扩张；专权骄贪，终致身退。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "四任秦相",
+     "counterpart": "秦昭王",
+     "place": "秦",
+     "year": "前300—前266",
+     "result": "成功",
+     "original_text": "魏冉最贤，自惠王、武王时，任职用事。",
+     "source_chapter": "资治通鉴·周纪三",
+     "citation": "《资治通鉴·周纪三》"
+    },
+    {
+     "category": "军事",
+     "event": "荐白起为将",
+     "counterpart": "白起",
+     "place": "秦",
+     "year": "昭王时",
+     "result": "成功",
+     "original_text": "秦宣太后异父弟曰穰侯魏冉，同父弟曰华阳君羋戎。",
+     "source_chapter": "资治通鉴·周纪三",
+     "citation": "《资治通鉴·周纪三》"
+    },
+    {
+     "category": "政治",
+     "event": "专权被罢",
+     "counterpart": "范雎",
+     "place": "秦",
+     "year": "前266",
+     "result": "失败",
+     "original_text": "穰侯越韩、魏而攻齐纲寿，非计也。",
+     "source_chapter": "史记·范雎蔡泽列传",
+     "citation": "《史记·范雎蔡泽列传》"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "name": "范雎",
+   "aliases": "范睢、应侯",
+   "era": "战国",
+   "state": "魏→秦",
+   "role": "相国",
+   "office": "相",
+   "bio": "魏人，受辱几死，逃入秦。说昭王远交近攻、强公室杜私门，废穰侯、逐华阳，为秦统一定策。",
+   "famous_deed": "远交近攻、废穰侯",
+   "ending": "失势后称病归相印，卒于秦",
+   "source_chapter": "史记·范雎蔡泽列传",
+   "note": "战略家",
+   "general_name": "",
+   "rating": {
+    "politics": 9.2,
+    "diplomacy": 8.8,
+    "strategy": 9.6,
+    "governance": 8.6,
+    "learning": 8.5,
+    "influence": 9.2,
+    "overall": 9.03,
+    "grade": "A+",
+    "rationale": "“远交近攻”是中国战略史级贡献，直接塑造秦统一路线；个人恩怨与专权为短板。"
+   },
+   "deeds": [
+    {
+     "category": "谋略",
+     "event": "远交近攻",
+     "counterpart": "秦昭王",
+     "place": "秦",
+     "year": "前270",
+     "result": "成功",
+     "original_text": "王不如远交而近攻，得寸则王之寸也，得尺亦王之尺也。",
+     "source_chapter": "史记·范雎蔡泽列传",
+     "citation": "《史记·范雎蔡泽列传》"
+    },
+    {
+     "category": "政治",
+     "event": "废穰侯、强公室",
+     "counterpart": "秦昭王",
+     "place": "秦",
+     "year": "前266",
+     "result": "成功",
+     "original_text": "废穰侯，逐华阳，彊公室，杜私门。",
+     "source_chapter": "史记·范雎蔡泽列传",
+     "citation": "《史记·范雎蔡泽列传》"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "name": "吕不韦",
+   "aliases": "文信侯",
+   "era": "战国末",
+   "state": "卫→秦",
+   "role": "相国/商人",
+   "office": "相国",
+   "bio": "阳翟大贾，以奇货可居立子楚为秦王，封文信侯。相秦十余年，招宾客著《吕氏春秋》，灭东周。",
+   "famous_deed": "奇货可居、相秦灭东周、编《吕氏春秋》",
+   "ending": "受嫪毐案牵连，罢相徙蜀，饮鸩死",
+   "source_chapter": "史记·吕不韦列传;史记·秦本纪",
+   "note": "商人相国",
+   "general_name": "",
+   "rating": {
+    "politics": 9.0,
+    "diplomacy": 8.6,
+    "strategy": 9.0,
+    "governance": 8.8,
+    "learning": 9.2,
+    "influence": 9.0,
+    "overall": 8.92,
+    "grade": "A+",
+    "rationale": "政治投资与相秦功业巨大，兼有文化集成；后期专权与宫闱之乱为污点。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "奇货可居",
+     "counterpart": "子楚",
+     "place": "赵、秦",
+     "year": "前260",
+     "result": "成功",
+     "original_text": "吕不韦者，阳翟大贾人也。往来贩贱卖贵，家累千金。",
+     "source_chapter": "史记·吕不韦列传",
+     "citation": "《史记·吕不韦列传》"
+    },
+    {
+     "category": "政治",
+     "event": "相秦灭东周",
+     "counterpart": "东周君",
+     "place": "秦",
+     "year": "前249",
+     "result": "成功",
+     "original_text": "东周君与诸侯谋秦，秦使相国吕不韦诛之，尽入其国。",
+     "source_chapter": "史记·秦本纪",
+     "citation": "《史记·秦本纪》"
+    },
+    {
+     "category": "文化",
+     "event": "编《吕氏春秋》",
+     "counterpart": "宾客",
+     "place": "秦",
+     "year": "前239",
+     "result": "成功",
+     "original_text": "吕不韦乃使其客人人著所闻，集论以为八览、六论、十二纪，二十余万言。",
+     "source_chapter": "史记·吕不韦列传",
+     "citation": "《史记·吕不韦列传》"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "name": "李斯",
+   "aliases": "李通古",
+   "era": "战国末",
+   "state": "楚→秦",
+   "role": "丞相",
+   "office": "丞相",
+   "bio": "楚上蔡人，从荀卿学帝王术。入秦佐始皇统一，任丞相，定郡县、书同文、车同轨，后为赵高所害。",
+   "famous_deed": "谏逐客书、佐秦统一、定郡县制度",
+   "ending": "被赵高诬陷，腰斩于咸阳",
+   "source_chapter": "史记·李斯列传;史记·秦始皇本纪",
+   "note": "秦制设计师",
+   "general_name": "",
+   "rating": {
+    "politics": 9.4,
+    "diplomacy": 8.5,
+    "strategy": 9.2,
+    "governance": 9.5,
+    "learning": 9.3,
+    "influence": 9.6,
+    "overall": 9.27,
+    "grade": "A+",
+    "rationale": "秦帝国制度的主要设计者，政治与治理顶级；晚年阿顺二世，结局悲惨。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "谏逐客书",
+     "counterpart": "秦王政",
+     "place": "秦",
+     "year": "前237",
+     "result": "成功",
+     "original_text": "臣闻吏议逐客，窃以为过矣。",
+     "source_chapter": "史记·李斯列传",
+     "citation": "《史记·李斯列传》"
+    },
+    {
+     "category": "治理",
+     "event": "分天下为三十六郡",
+     "counterpart": "秦始皇",
+     "place": "秦",
+     "year": "前221",
+     "result": "成功",
+     "original_text": "分天下以为三十六郡，郡置守、尉、监。",
+     "source_chapter": "史记·秦始皇本纪",
+     "citation": "《史记·秦始皇本纪》"
+    },
+    {
+     "category": "文化",
+     "event": "书同文、平度量",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前221",
+     "result": "成功",
+     "original_text": "更剋画，平斗斛度量文章，布之天下，以树秦之名。",
+     "source_chapter": "史记·李斯列传",
+     "citation": "《史记·李斯列传》"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "name": "尉缭",
+   "aliases": "缭、国尉缭",
+   "era": "战国末",
+   "state": "魏→秦",
+   "role": "国尉/谋臣",
+   "office": "国尉",
+   "bio": "大梁人，入秦说秦王以财物赂诸侯豪臣、乱其谋，秦王用其计，拜为国尉，佐秦并天下。",
+   "famous_deed": "以金帛离间六国",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·秦始皇本纪",
+   "note": "秦之谋臣",
+   "general_name": "",
+   "rating": {
+    "politics": 8.4,
+    "diplomacy": 8.8,
+    "strategy": 9.4,
+    "governance": 8.0,
+    "learning": 8.8,
+    "influence": 8.7,
+    "overall": 8.67,
+    "grade": "A",
+    "rationale": "以情报与离间战略服务秦统一，谋略极高；内政治理记载少。"
+   },
+   "deeds": [
+    {
+     "category": "谋略",
+     "event": "以三十万金离间诸侯",
+     "counterpart": "秦王政",
+     "place": "秦",
+     "year": "前237",
+     "result": "成功",
+     "original_text": "原大王毋爱财物，赂其豪臣，以乱其谋，不过亡三十万金，则诸侯可尽。",
+     "source_chapter": "史记·秦始皇本纪",
+     "citation": "《史记·秦始皇本纪》"
+    },
+    {
+     "category": "政治",
+     "event": "论秦王为人",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前237",
+     "result": "判断",
+     "original_text": "秦王为人，蜂准，长目，挚鸟膺，豺声，少恩而虎狼心。",
+     "source_chapter": "史记·秦始皇本纪",
+     "citation": "《史记·秦始皇本纪》"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "name": "韩非",
+   "aliases": "韩非子",
+   "era": "战国末",
+   "state": "韩",
+   "role": "公子/法家",
+   "office": "使秦",
+   "bio": "韩之诸公子，喜刑名法术之学。著《孤愤》《五蠹》十余万言，秦王读其书叹服；使秦后为李斯所害。",
+   "famous_deed": "著《孤愤》《五蠹》，集法家大成",
+   "ending": "被李斯、姚贾谗害，死于秦狱",
+   "source_chapter": "史记·老子韩非列传",
+   "note": "法家集大成者",
+   "general_name": "",
+   "rating": {
+    "politics": 8.8,
+    "diplomacy": 7.8,
+    "strategy": 9.5,
+    "governance": 8.9,
+    "learning": 9.8,
+    "influence": 9.3,
+    "overall": 8.99,
+    "grade": "A+",
+    "rationale": "法家理论集大成，学识与谋略顶级；缺乏实际执政机会，外交与治理未经检验。"
+   },
+   "deeds": [
+    {
+     "category": "文化",
+     "event": "著《孤愤》《五蠹》",
+     "counterpart": "",
+     "place": "韩",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "非见韩之削弱，数以书谏韩王，韩王不能用。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "文化",
+     "event": "秦王读其书而叹",
+     "counterpart": "秦王政",
+     "place": "秦",
+     "year": "前233",
+     "result": "成功",
+     "original_text": "秦王见孤愤、五蠹之书，曰：嗟乎，寡人得见此人与之游，死不恨矣！",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "政治",
+     "event": "使秦被谗",
+     "counterpart": "李斯、姚贾",
+     "place": "秦",
+     "year": "前233",
+     "result": "失败",
+     "original_text": "韩非，韩之诸公子也。今王欲并诸侯，非终为韩不为秦，此人之情也。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "name": "蔺相如",
+   "aliases": "蔺相如",
+   "era": "战国",
+   "state": "赵",
+   "role": "上卿",
+   "office": "上卿",
+   "bio": "赵宦者令缪贤舍人，以完璧归赵拜上大夫，渑池之会拜上卿。以国事为重，与廉颇成刎颈之交。",
+   "famous_deed": "完璧归赵、渑池会、将相和",
+   "ending": "卒于赵",
+   "source_chapter": "史记·廉颇蔺相如列传",
+   "note": "外交名臣",
+   "general_name": "蔺相如",
+   "rating": {
+    "politics": 8.6,
+    "diplomacy": 9.5,
+    "strategy": 9.0,
+    "governance": 8.0,
+    "learning": 8.5,
+    "influence": 8.9,
+    "overall": 8.73,
+    "grade": "A",
+    "rationale": "外交胆识与辞令顶级，完璧归赵、渑池抗秦皆以弱赵折强秦；内政治理实绩较少。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "完璧归赵",
+     "counterpart": "秦昭王",
+     "place": "秦",
+     "year": "前283",
+     "result": "成功",
+     "original_text": "臣愿奉璧而往；使秦城不入，臣请完璧而归之。",
+     "source_chapter": "史记·廉颇蔺相如列传",
+     "citation": "《史记·廉颇蔺相如列传》"
+    },
+    {
+     "category": "外交",
+     "event": "渑池之会折秦王",
+     "counterpart": "秦昭王",
+     "place": "渑池",
+     "year": "前279",
+     "result": "成功",
+     "original_text": "五步之内，相如请得以颈血溅大王矣！",
+     "source_chapter": "史记·廉颇蔺相如列传",
+     "citation": "《史记·廉颇蔺相如列传》"
+    },
+    {
+     "category": "政治",
+     "event": "先国家之急而后私雠",
+     "counterpart": "廉颇",
+     "place": "赵",
+     "year": "前279",
+     "result": "成功",
+     "original_text": "今两虎共斗，其势不俱生。吾所以为此者，以先国家之急而後私雠也。",
+     "source_chapter": "史记·廉颇蔺相如列传",
+     "citation": "《史记·廉颇蔺相如列传》"
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "name": "平原君",
+   "aliases": "赵胜",
+   "era": "战国",
+   "state": "赵",
+   "role": "相国/封君",
+   "office": "相",
+   "bio": "赵惠文王弟，封于东武城。三任赵相，养士数千。邯郸之围中散家财飨士，用毛遂定从，借信陵君救赵。",
+   "famous_deed": "邯郸之围、毛遂自荐",
+   "ending": "卒于赵",
+   "source_chapter": "史记·平原君虞卿列传",
+   "note": "战国四公子",
+   "general_name": "平原君",
+   "rating": {
+    "politics": 8.5,
+    "diplomacy": 8.6,
+    "strategy": 8.2,
+    "governance": 8.3,
+    "learning": 8.1,
+    "influence": 8.8,
+    "overall": 8.42,
+    "grade": "A",
+    "rationale": "养士与外交声名显赫，邯郸存赵之功大；决策偶有失误，治理非其最长。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "纳赵奢奉公守法之谏",
+     "counterpart": "赵奢",
+     "place": "赵",
+     "year": "惠文王时",
+     "result": "成功",
+     "original_text": "君於赵为贵公子，今纵君家而不奉公则法削，法削则国弱，国弱则诸侯加兵。",
+     "source_chapter": "史记·廉颇蔺相如列传",
+     "citation": "《史记·廉颇蔺相如列传》"
+    },
+    {
+     "category": "外交",
+     "event": "邯郸之围求救",
+     "counterpart": "楚、魏",
+     "place": "赵",
+     "year": "前258",
+     "result": "成功",
+     "original_text": "胜也何敢言事！前亡四十万之众於外，今又内围邯郸而不能去。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "name": "虞卿",
+   "aliases": "虞卿",
+   "era": "战国",
+   "state": "赵",
+   "role": "上卿/谋士",
+   "office": "上卿",
+   "bio": "游说之士，一见赵孝成王赐黄金白璧，再见拜上卿。长平战后力主联齐抗秦，后弃相印救魏齐，著《虞氏春秋》。",
+   "famous_deed": "联齐抗秦、弃相印救友、著《虞氏春秋》",
+   "ending": "困于梁，著书以终",
+   "source_chapter": "史记·平原君虞卿列传",
+   "note": "游说名卿",
+   "general_name": "",
+   "rating": {
+    "politics": 8.4,
+    "diplomacy": 9.0,
+    "strategy": 9.0,
+    "governance": 7.8,
+    "learning": 8.8,
+    "influence": 8.3,
+    "overall": 8.52,
+    "grade": "A",
+    "rationale": "外交与谋略敏锐，长平战后对策见远见；重义气，政治结局坎坷。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "联齐抗秦",
+     "counterpart": "赵孝成王",
+     "place": "赵、齐",
+     "year": "前260",
+     "result": "成功",
+     "original_text": "秦索六城於王，而王以六城赂齐。齐，秦之深雠也，得王之六城，并力西击秦。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    },
+    {
+     "category": "政治",
+     "event": "弃相印救魏齐",
+     "counterpart": "魏齐",
+     "place": "赵、魏",
+     "year": "前259",
+     "result": "成功",
+     "original_text": "虞卿既以魏齐之故，不重万户侯卿相之印，与魏齐间行，卒去赵。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    },
+    {
+     "category": "文化",
+     "event": "著《虞氏春秋》",
+     "counterpart": "",
+     "place": "梁",
+     "year": "晚年",
+     "result": "成功",
+     "original_text": "乃著书，上采春秋，下观近世，曰节义、称号、揣摩、政谋，凡八篇。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "name": "毛遂",
+   "aliases": "毛先生",
+   "era": "战国",
+   "state": "赵",
+   "role": "门客/使节",
+   "office": "食客",
+   "bio": "平原君门下食客，三年无名。邯郸之围时自荐随行，至楚按剑陈利害，定合纵而还，平原君尊为上客。",
+   "famous_deed": "毛遂自荐、按剑定从",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·平原君虞卿列传",
+   "note": "自荐典范",
+   "general_name": "",
+   "rating": {
+    "politics": 7.8,
+    "diplomacy": 9.3,
+    "strategy": 8.8,
+    "governance": 7.0,
+    "learning": 7.8,
+    "influence": 8.2,
+    "overall": 8.12,
+    "grade": "B+",
+    "rationale": "临机外交胆识极强，一席话定楚赵之从；无长期执政与治理记录。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "自荐随行",
+     "counterpart": "平原君",
+     "place": "赵",
+     "year": "前258",
+     "result": "成功",
+     "original_text": "臣乃今日请处囊中耳。使遂蚤得处囊中，乃颖脱而出，非特其末见而已。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    },
+    {
+     "category": "外交",
+     "event": "按剑定从",
+     "counterpart": "楚王",
+     "place": "楚",
+     "year": "前258",
+     "result": "成功",
+     "original_text": "毛先生以三寸之舌，强于百万之师。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "name": "鲁仲连",
+   "aliases": "鲁连",
+   "era": "战国",
+   "state": "齐",
+   "role": "高士/说客",
+   "office": "布衣",
+   "bio": "齐之高士，终身不仕。邯郸之围义不帝秦，以言辞折新垣衍；后又射书聊城，助田单下齐城而不受封。",
+   "famous_deed": "义不帝秦、射书聊城",
+   "ending": "逃隐海上，不知所终",
+   "source_chapter": "史记·鲁仲连邹阳列传;战国策·赵策",
+   "note": "义士说客",
+   "general_name": "",
+   "rating": {
+    "politics": 8.0,
+    "diplomacy": 9.4,
+    "strategy": 9.2,
+    "governance": 7.2,
+    "learning": 9.0,
+    "influence": 8.6,
+    "overall": 8.48,
+    "grade": "A",
+    "rationale": "外交辞令与道义感召力极强，功成不受赏；不任官职，治理实绩为零。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "义不帝秦",
+     "counterpart": "新垣衍",
+     "place": "赵",
+     "year": "前258",
+     "result": "成功",
+     "original_text": "彼秦者，弃礼义而上首功之国也，权使其士，虏使其民。彼即肆然而为帝，过而为政於天下，则连有蹈东海而死耳，吾不忍为之民也。",
+     "source_chapter": "史记·鲁仲连邹阳列传",
+     "citation": "《史记·鲁仲连邹阳列传》"
+    },
+    {
+     "category": "政治",
+     "event": "功成不受封",
+     "counterpart": "平原君",
+     "place": "赵",
+     "year": "前258",
+     "result": "成功",
+     "original_text": "所贵于天下之士者，为人排患释难解纷乱而无取也。即有取者，是商贾之事也，而连不忍为也。",
+     "source_chapter": "史记·鲁仲连邹阳列传",
+     "citation": "《史记·鲁仲连邹阳列传》"
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "name": "屈原",
+   "aliases": "屈平、三闾大夫",
+   "era": "战国",
+   "state": "楚",
+   "role": "左徒/大夫",
+   "office": "左徒",
+   "bio": "楚之同姓，为楚怀王左徒。博闻强志，明于治乱，娴于辞令。主张联齐抗秦、举贤授能，遭谗被疏，作《离骚》，自沉汨罗。",
+   "famous_deed": "作《离骚》、自沉汨罗",
+   "ending": "郢都陷落后自沉汨罗江",
+   "source_chapter": "史记·屈原贾生列传",
+   "note": "辞赋之祖",
+   "general_name": "",
+   "rating": {
+    "politics": 8.4,
+    "diplomacy": 8.8,
+    "strategy": 8.6,
+    "governance": 8.0,
+    "learning": 9.8,
+    "influence": 9.5,
+    "overall": 8.73,
+    "grade": "A",
+    "rationale": "文学与政治理想影响极深远，外交主张联齐抗秦有战略眼光；实际执政受排挤。"
+   },
+   "deeds": [
+    {
+     "category": "政治",
+     "event": "为楚怀王左徒",
+     "counterpart": "楚怀王",
+     "place": "楚",
+     "year": "怀王时",
+     "result": "成功",
+     "original_text": "屈原者，名平，楚之同姓也。为楚怀王左徒。博闻彊志，明於治乱，嫺於辞令。",
+     "source_chapter": "史记·屈原贾生列传",
+     "citation": "《史记·屈原贾生列传》"
+    },
+    {
+     "category": "政治",
+     "event": "遭谗被疏",
+     "counterpart": "上官大夫",
+     "place": "楚",
+     "year": "怀王时",
+     "result": "失败",
+     "original_text": "屈平疾王听之不聪也，谗谄之蔽明也，邪曲之害公也，方正之不容也。",
+     "source_chapter": "史记·屈原贾生列传",
+     "citation": "《史记·屈原贾生列传》"
+    },
+    {
+     "category": "文化",
+     "event": "自沉汨罗",
+     "counterpart": "",
+     "place": "楚",
+     "year": "前278",
+     "result": "殉国",
+     "original_text": "於是怀石遂自汨罗以死。",
+     "source_chapter": "史记·屈原贾生列传",
+     "citation": "《史记·屈原贾生列传》"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "name": "春申君",
+   "aliases": "黄歇",
+   "era": "战国末",
+   "state": "楚",
+   "role": "令尹/封君",
+   "office": "令尹",
+   "bio": "楚人，游学博闻。使秦说昭王归楚太子，后为楚令尹，封春申君。相楚二十余年，北伐灭鲁，合纵攻秦。",
+   "famous_deed": "相楚二十余年、北伐灭鲁",
+   "ending": "被李园伏兵刺杀",
+   "source_chapter": "史记·春申君列传",
+   "note": "战国四公子",
+   "general_name": "春申君",
+   "rating": {
+    "politics": 8.8,
+    "diplomacy": 8.9,
+    "strategy": 8.6,
+    "governance": 8.7,
+    "learning": 8.2,
+    "influence": 8.9,
+    "overall": 8.71,
+    "grade": "A",
+    "rationale": "长期执楚政，灭鲁、合纵，政治与外交均有大功；晚年昏聩，死于宫闱之变。"
+   },
+   "deeds": [
+    {
+     "category": "外交",
+     "event": "说秦归楚太子",
+     "counterpart": "秦昭王",
+     "place": "秦、楚",
+     "year": "前272",
+     "result": "成功",
+     "original_text": "春申君者，楚人也，名歇，姓黄氏。游学博闻，事楚顷襄王。",
+     "source_chapter": "史记·春申君列传",
+     "citation": "《史记·春申君列传》"
+    },
+    {
+     "category": "军事",
+     "event": "相楚北伐灭鲁",
+     "counterpart": "鲁",
+     "place": "楚",
+     "year": "前256",
+     "result": "成功",
+     "original_text": "春申君相楚八年，为楚北伐灭鲁。",
+     "source_chapter": "史记·春申君列传",
+     "citation": "《史记·春申君列传》"
+    },
+    {
+     "category": "政治",
+     "event": "合纵攻秦",
+     "counterpart": "诸侯",
+     "place": "楚",
+     "year": "前241",
+     "result": "失败",
+     "original_text": "当是时，齐有孟尝，赵有平原，楚有春申，魏有信陵。",
+     "source_chapter": "史记·秦始皇本纪",
+     "citation": "《史记·秦始皇本纪》"
+    }
+   ]
+  }
+ ]
+}

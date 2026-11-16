@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="164" viewBox="0 0 150 164">
+<rect width="150" height="164" fill="#ffffff"/>
+<text x="75" y="17" text-anchor="middle" font-size="14" font-family="Microsoft YaHei,sans-serif" font-weight="bold" fill="#222">公仲</text>
+<text x="75" y="33" text-anchor="middle" font-size="10" fill="#666" font-family="sans-serif">战国 · 韩</text>
+
+<polygon points="75.0,52.0 109.6,72.0 109.6,112.0 75.0,132.0 40.4,112.0 40.4,72.0" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<polygon points="75.0,68.0 95.8,80.0 95.8,104.0 75.0,116.0 54.2,104.0 54.2,80.0" fill="none" stroke="#e6eaee" stroke-width="0.7"/>
+<polygon points="75.0,80.0 85.4,86.0 85.4,98.0 75.0,104.0 64.6,98.0 64.6,86.0" fill="none" stroke="#eef1f4" stroke-width="0.5"/>
+<line x1="75" y1="92" x2="75.0" y2="52.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="109.6" y2="72.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="109.6" y2="112.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="75.0" y2="132.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="40.4" y2="112.0" stroke="#eef1f4" stroke-width="0.7"/>
+<line x1="75" y1="92" x2="40.4" y2="72.0" stroke="#eef1f4" stroke-width="0.7"/>
+<polygon points="75.0,84.0 92.3,82.0 85.4,98.0 75.0,92.6 68.1,96.0 68.1,88.0" fill="#7f8c8d" fill-opacity="0.28" stroke="#7f8c8d" stroke-width="2"/>
+<circle cx="75.0" cy="84.0" r="2.2" fill="#7f8c8d"/>
+<circle cx="92.3" cy="82.0" r="2.2" fill="#7f8c8d"/>
+<circle cx="85.4" cy="98.0" r="2.2" fill="#7f8c8d"/>
+<circle cx="75.0" cy="92.6" r="2.2" fill="#7f8c8d"/>
+<circle cx="68.1" cy="96.0" r="2.2" fill="#7f8c8d"/>
+<circle cx="68.1" cy="88.0" r="2.2" fill="#7f8c8d"/>
+<text x="75.0" y="46.0" text-anchor="middle" font-size="9.5" fill="#555" font-family="sans-serif">勇武 2</text>
+<text x="119.2" y="69.5" text-anchor="start" font-size="9.5" fill="#555" font-family="sans-serif">谋略 5</text>
+<text x="119.2" y="120.5" text-anchor="start" font-size="9.5" fill="#555" font-family="sans-serif">统兵 3</text>
+<text x="75.0" y="146.0" text-anchor="middle" font-size="9.5" fill="#555" font-family="sans-serif">规模 0</text>
+<text x="30.8" y="120.5" text-anchor="end" font-size="9.5" fill="#555" font-family="sans-serif">质量 2</text>
+<text x="30.8" y="69.5" text-anchor="end" font-size="9.5" fill="#555" font-family="sans-serif">影响 2</text>
+<rect x="46" y="83.5" width="58" height="17" rx="5" fill="#ffffff" opacity="0.92"/>
+<text x="75" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#7f8c8d" font-family="sans-serif">2.44 D</text>
+</svg>

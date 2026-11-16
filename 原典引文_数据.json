@@ -1,0 +1,1312 @@
+{
+ "works": [
+  {
+   "id": 1,
+   "title": "论语",
+   "school": "儒家",
+   "thinker": "孔子",
+   "source_file": "诸子文献/论语.txt",
+   "quote_count": 32,
+   "quotes": [
+    {
+     "category": "教育",
+     "chapter": "学而第一",
+     "quote": "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？",
+     "quote_trad": "學而時習之，不亦說乎？有朋自遠方來，不亦樂乎？",
+     "interpretation": "学习并按时实践，朋友远来相会，都是乐事。",
+     "citation": "《论语·学而第一》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "学而第一",
+     "quote": "巧言令色，鲜矣仁。",
+     "quote_trad": "巧言令色，鮮矣仁。",
+     "interpretation": "花言巧语、和颜悦色的人，少有真正的仁德。",
+     "citation": "《论语·学而第一》"
+    },
+    {
+     "category": "修养",
+     "chapter": "学而第一",
+     "quote": "吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？",
+     "quote_trad": "吾日三省吾身：爲人謀而不忠乎？與朋友交而不信乎？傳不習乎？",
+     "interpretation": "曾子每日反省：忠、信、习三事。",
+     "citation": "《论语·学而第一》"
+    },
+    {
+     "category": "政治",
+     "chapter": "学而第一",
+     "quote": "道千乘之国，敬事而信，节用而爱人，使民以时。",
+     "quote_trad": "道千乘之國，敬事而信，節用而愛人，使民以時。",
+     "interpretation": "治理大国要敬事守信、节用爱人、不违农时。",
+     "citation": "《论语·学而第一》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "学而第一",
+     "quote": "弟子入则孝，出则弟，谨而信，泛爱众，而亲仁。",
+     "quote_trad": "弟子入則孝，出則弟，謹而信，泛愛衆，而親仁。",
+     "interpretation": "年轻人在家孝亲、在外敬长，谨慎守信，博爱而亲近仁者。",
+     "citation": "《论语·学而第一》"
+    },
+    {
+     "category": "教育",
+     "chapter": "为政第二",
+     "quote": "温故而知新，可以为师矣。",
+     "quote_trad": "溫故而知新，可以爲師矣。",
+     "interpretation": "温习旧知识而能获得新理解，就可以做老师了。",
+     "citation": "《论语·为政第二》"
+    },
+    {
+     "category": "政治",
+     "chapter": "为政第二",
+     "quote": "为政以德，譬如北辰，居其所而众星共之。",
+     "quote_trad": "爲政以德，譬如北辰，居其所而衆星共之。",
+     "interpretation": "以德治国，君主如北极星，众星自然环绕。",
+     "citation": "《论语·为政第二》"
+    },
+    {
+     "category": "教育",
+     "chapter": "为政第二",
+     "quote": "学而不思则罔，思而不学则殆。",
+     "quote_trad": "學而不思則罔，思而不學則殆。",
+     "interpretation": "只学不思会迷惘，只思不学会危险。",
+     "citation": "《论语·为政第二》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "为政第二",
+     "quote": "知之为知之，不知为不知，是知也。",
+     "quote_trad": "知之爲知之，不知爲不知，是知也。",
+     "interpretation": "知道就是知道，不知道就是不知道，这才是真正的智慧。",
+     "citation": "《论语·为政第二》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "为政第二",
+     "quote": "人而无信，不知其可也。",
+     "quote_trad": "人而無信，不知其可也。",
+     "interpretation": "人没有信用，不知道还能做什么。",
+     "citation": "《论语·为政第二》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "里仁第四",
+     "quote": "朝闻道，夕死可矣。",
+     "quote_trad": "朝聞道，夕死可矣。",
+     "interpretation": "早晨领悟道，晚上死去也值得。",
+     "citation": "《论语·里仁第四》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "里仁第四",
+     "quote": "君子喻于义，小人喻于利。",
+     "quote_trad": "君子喻於義，小人喻於利。",
+     "interpretation": "君子明白义，小人只明白利。",
+     "citation": "《论语·里仁第四》"
+    },
+    {
+     "category": "修养",
+     "chapter": "里仁第四",
+     "quote": "见贤思齐焉，见不贤而内自省也。",
+     "quote_trad": "見賢思齊焉，見不賢而內自省也。",
+     "interpretation": "见到贤人想向他看齐，见到不贤的人要反省自己。",
+     "citation": "《论语·里仁第四》"
+    },
+    {
+     "category": "教育",
+     "chapter": "公冶长第五",
+     "quote": "朽木不可雕也，粪土之墙不可杇也。",
+     "quote_trad": "朽木不可雕也，糞土之牆不可杇也。",
+     "interpretation": "朽木无法雕刻，粪土墙无法粉刷；喻人不可教。",
+     "citation": "《论语·公冶长第五》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "子路第十三",
+     "quote": "君子和而不同，小人同而不和。",
+     "quote_trad": "君子和而不同，小人同而不和。",
+     "interpretation": "君子能和谐相处而不盲从，小人表面相同却不能和谐。",
+     "citation": "《论语·子路第十三》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "颜渊第十二",
+     "quote": "己所不欲，勿施于人。",
+     "quote_trad": "己所不欲，勿施於人。",
+     "interpretation": "自己不愿承受的，不要施加给别人。",
+     "citation": "《论语·颜渊第十二》"
+    },
+    {
+     "category": "修养",
+     "chapter": "述而第七",
+     "quote": "君子坦荡荡，小人长戚戚。",
+     "quote_trad": "君子坦蕩蕩，小人長慼慼。",
+     "interpretation": "君子心胸平坦宽广，小人经常忧愁。",
+     "citation": "《论语·述而第七》"
+    },
+    {
+     "category": "政治",
+     "chapter": "泰伯第八",
+     "quote": "不在其位，不谋其政。",
+     "quote_trad": "不在其位，不謀其政。",
+     "interpretation": "不在那个职位上，就不去谋划那个职位的政事。",
+     "citation": "《论语·泰伯第八》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "子罕第九",
+     "quote": "逝者如斯夫，不舍昼夜。",
+     "quote_trad": "逝者如斯夫，不捨晝夜。",
+     "interpretation": "时光像河水一样流逝，昼夜不停。",
+     "citation": "《论语·子罕第九》"
+    },
+    {
+     "category": "修养",
+     "chapter": "子罕第九",
+     "quote": "三军可夺帅也，匹夫不可夺志也。",
+     "quote_trad": "三軍可奪帥也，匹夫不可奪志也。",
+     "interpretation": "军队可以被夺去主帅，普通人不可被夺去志向。",
+     "citation": "《论语·子罕第九》"
+    },
+    {
+     "category": "修养",
+     "chapter": "子罕第九",
+     "quote": "岁寒，然后知松柏之后凋也。",
+     "quote_trad": "歲寒，然後知松柏之後凋也。",
+     "interpretation": "天气寒冷，才知道松柏最后凋零。",
+     "citation": "《论语·子罕第九》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "雍也第六",
+     "quote": "己欲立而立人，己欲达而达人。",
+     "quote_trad": "己欲立而立人，己欲達而達人。",
+     "interpretation": "自己想立身，也让别人立身；自己想通达，也让别人通达。",
+     "citation": "《论语·雍也第六》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "述而第七",
+     "quote": "不义而富且贵，于我如浮云。",
+     "quote_trad": "不義而富且貴，於我如浮雲。",
+     "interpretation": "不合义的富贵，对我来说像浮云。",
+     "citation": "《论语·述而第七》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "衞灵公第十五",
+     "quote": "工欲善其事，必先利其器。",
+     "quote_trad": "工欲善其事，必先利其器。",
+     "interpretation": "工匠要做好工作，必须先磨利工具。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "衞灵公第十五",
+     "quote": "人无远虑，必有近忧。",
+     "quote_trad": "人無遠慮，必有近憂。",
+     "interpretation": "人没有长远考虑，必有眼前忧患。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "修养",
+     "chapter": "衞灵公第十五",
+     "quote": "过而不改，是谓过矣。",
+     "quote_trad": "過而不改，是謂過矣。",
+     "interpretation": "有了过错而不改，这才叫过错。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "衞灵公第十五",
+     "quote": "当仁，不让于师。",
+     "quote_trad": "當仁，不讓於師。",
+     "interpretation": "面对仁德，不必谦让于老师。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "修养",
+     "chapter": "衞灵公第十五",
+     "quote": "君子求诸己，小人求诸人。",
+     "quote_trad": "君子求諸己，小人求諸人。",
+     "interpretation": "君子要求自己，小人要求别人。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "政治",
+     "chapter": "衞灵公第十五",
+     "quote": "小不忍则乱大谋。",
+     "quote_trad": "小不忍則亂大謀。",
+     "interpretation": "小处不能忍耐，就会败坏大计划。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "衞灵公第十五",
+     "quote": "道不同，不相为谋。",
+     "quote_trad": "道不同，不相爲謀。",
+     "interpretation": "志向不同，不能一起谋划。",
+     "citation": "《论语·衞灵公第十五》"
+    },
+    {
+     "category": "修养",
+     "chapter": "里仁第四",
+     "quote": "君子欲讷于言而敏于行。",
+     "quote_trad": "君子欲訥於言而敏於行。",
+     "interpretation": "君子说话要迟钝谨慎，做事要勤快敏捷。",
+     "citation": "《论语·里仁第四》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "为政第二",
+     "quote": "见义不为，无勇也。",
+     "quote_trad": "見義不爲，無勇也。",
+     "interpretation": "见到该做的事却不做，就是没有勇气。",
+     "citation": "《论语·为政第二》"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "title": "道德经",
+   "school": "道家",
+   "thinker": "老子",
+   "source_file": "诸子文献/道德经.txt",
+   "quote_count": 32,
+   "quotes": [
+    {
+     "category": "宇宙观",
+     "chapter": "一章",
+     "quote": "道可道，非常道；名可名，非常名。",
+     "quote_trad": "道可道，非常道；名可名，非常名。",
+     "interpretation": "可以言说的道，不是恒常的道；可以命名的名，不是恒常的名。",
+     "citation": "《道德经·一章》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "一章",
+     "quote": "无名，天地之始；有名，万物之母。",
+     "quote_trad": "無名，天地之始；有名，萬物之母。",
+     "interpretation": "无名是天地的开端，有名是万物的根源。",
+     "citation": "《道德经·一章》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "二章",
+     "quote": "天下皆知美之为美，斯恶已；皆知善之为善，斯不善已。",
+     "quote_trad": "天下皆知美之爲美，斯惡已；皆知善之爲善，斯不善已。",
+     "interpretation": "天下都知道美之为美，就有丑了；都知道善之为善，就有不善了。",
+     "citation": "《道德经·二章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "二章",
+     "quote": "是以圣人处无为之事，行不言之教。",
+     "quote_trad": "是以聖人處無爲之事，行不言之教。",
+     "interpretation": "圣人以无为处事，以不言教化。",
+     "citation": "《道德经·二章》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "八章",
+     "quote": "上善若水。水善利万物而不争。",
+     "quote_trad": "上善若水。水善利萬物而不爭。",
+     "interpretation": "最高的善像水，利万物而不争。",
+     "citation": "《道德经·八章》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "九章",
+     "quote": "功遂身退，天之道。",
+     "quote_trad": "功遂身退，天之道。",
+     "interpretation": "功成之后身退，符合天道。",
+     "citation": "《道德经·九章》"
+    },
+    {
+     "category": "修养",
+     "chapter": "十二章",
+     "quote": "五色令人目盲，五音令人耳聋，五味令人口爽。",
+     "quote_trad": "五色令人目盲，五音令人耳聾，五味令人口爽。",
+     "interpretation": "过度的声色滋味使人感官失守。",
+     "citation": "《道德经·十二章》"
+    },
+    {
+     "category": "修养",
+     "chapter": "十三章",
+     "quote": "宠辱若惊，贵大患若身。",
+     "quote_trad": "寵辱若驚，貴大患若身。",
+     "interpretation": "得宠受辱都像受惊，重视大患如同重视自身。",
+     "citation": "《道德经·十三章》"
+    },
+    {
+     "category": "修养",
+     "chapter": "十六章",
+     "quote": "致虚极，守静笃。",
+     "quote_trad": "致虛極，守靜篤。",
+     "interpretation": "使心虚空到极点，守静到笃实。",
+     "citation": "《道德经·十六章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "十八章",
+     "quote": "大道废，有仁义；智慧出，有大伪。",
+     "quote_trad": "大道廢，有仁義；智慧出，有大僞。",
+     "interpretation": "大道废弃才提倡仁义，智巧出现才有大伪。",
+     "citation": "《道德经·十八章》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "二十五章",
+     "quote": "人法地，地法天，天法道，道法自然。",
+     "quote_trad": "人法地，地法天，天法道，道法自然。",
+     "interpretation": "人取法地，地取法天，天取法道，道取法自然。",
+     "citation": "《道德经·二十五章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "三十七章",
+     "quote": "道常无为而无不为。",
+     "quote_trad": "道常無爲而無不爲。",
+     "interpretation": "道常无为，却没有什么不能成就。",
+     "citation": "《道德经·三十七章》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "三十八章",
+     "quote": "上德不德，是以有德；下德不失德，是以无德。",
+     "quote_trad": "上德不德，是以有德；下德不失德，是以無德。",
+     "interpretation": "上德不自居德，所以有德；下德唯恐失德，所以无德。",
+     "citation": "《道德经·三十八章》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "四十章",
+     "quote": "反者道之动；弱者道之用。",
+     "quote_trad": "反者道之動；弱者道之用。",
+     "interpretation": "返回是道的运动，柔弱是道的作用。",
+     "citation": "《道德经·四十章》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "四十章",
+     "quote": "天下万物生于有，有生于无。",
+     "quote_trad": "天下萬物生於有，有生於無。",
+     "interpretation": "万物从有产生，有从无产生。",
+     "citation": "《道德经·四十章》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "四十一章",
+     "quote": "大器晚成，大音希声，大象无形。",
+     "quote_trad": "大器晚成，大音希聲，大象無形。",
+     "interpretation": "大器晚成，大音无声，大象无形。",
+     "citation": "《道德经·四十一章》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "四十二章",
+     "quote": "道生一，一生二，二生三，三生万物。",
+     "quote_trad": "道生一，一生二，二生三，三生萬物。",
+     "interpretation": "道生一，一生二，二生三，三生万物。",
+     "citation": "《道德经·四十二章》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "五十八章",
+     "quote": "祸兮福之所倚，福兮祸之所伏。",
+     "quote_trad": "禍兮福之所倚，福兮禍之所伏。",
+     "interpretation": "祸是福所依靠的，福是祸所潜伏的。",
+     "citation": "《道德经·五十八章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "六十章",
+     "quote": "治大国若烹小鲜。",
+     "quote_trad": "治大國若烹小鮮。",
+     "interpretation": "治理大国像煎小鱼，不可频繁翻动。",
+     "citation": "《道德经·六十章》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "六十三章",
+     "quote": "图难于其易，为大于其细。",
+     "quote_trad": "圖難於其易，爲大於其細。",
+     "interpretation": "处理难事从易处入手，做大事从细处开始。",
+     "citation": "《道德经·六十三章》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "六十四章",
+     "quote": "合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下。",
+     "quote_trad": "合抱之木，生於毫末；九層之臺，起於累土；千里之行，始於足下。",
+     "interpretation": "合抱大树生于毫末，九层高台起于累土，千里远行始于足下。",
+     "citation": "《道德经·六十四章》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "三十三章",
+     "quote": "知人者智，自知者明。",
+     "quote_trad": "知人者智，自知者明。",
+     "interpretation": "了解别人是智慧，了解自己才是明澈。",
+     "citation": "《道德经·三十三章》"
+    },
+    {
+     "category": "修养",
+     "chapter": "三十三章",
+     "quote": "胜人者有力，自胜者强。",
+     "quote_trad": "勝人者有力，自勝者強。",
+     "interpretation": "战胜别人是有力，战胜自己才是刚强。",
+     "citation": "《道德经·三十三章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "七十三章",
+     "quote": "天网恢恢，疏而不失。",
+     "quote_trad": "天網恢恢，疏而不失。",
+     "interpretation": "天道之网宽广，稀疏却不漏失。",
+     "citation": "《道德经·七十三章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "七十四章",
+     "quote": "民不畏死，奈何以死惧之？",
+     "quote_trad": "民不畏死，奈何以死懼之？",
+     "interpretation": "百姓不怕死，怎么能用死来恐吓他们？",
+     "citation": "《道德经·七十四章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "八十章",
+     "quote": "小国寡民。",
+     "quote_trad": "小國寡民。",
+     "interpretation": "国家小、人口少，是老子理想的政治尺度。",
+     "citation": "《道德经·八十章》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "八十一章",
+     "quote": "信言不美，美言不信。",
+     "quote_trad": "信言不美，美言不信。",
+     "interpretation": "真实的话不漂亮，漂亮的话不真实。",
+     "citation": "《道德经·八十一章》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "八十一章",
+     "quote": "善者不辩，辩者不善。",
+     "quote_trad": "善者不辯，辯者不善。",
+     "interpretation": "善良的人不巧辩，巧辩的人不善良。",
+     "citation": "《道德经·八十一章》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "八十一章",
+     "quote": "知者不博，博者不知。",
+     "quote_trad": "知者不博，博者不知。",
+     "interpretation": "真正知道的人不炫耀广博，炫耀广博的人未必真知。",
+     "citation": "《道德经·八十一章》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "八十一章",
+     "quote": "圣人不积，既以为人己愈有，既以与人己愈多。",
+     "quote_trad": "聖人不積，既以爲人己愈有，既以與人己愈多。",
+     "interpretation": "圣人不私积，尽力助人自己反而更充实，给予别人自己反而更多。",
+     "citation": "《道德经·八十一章》"
+    },
+    {
+     "category": "政治",
+     "chapter": "七十四章",
+     "quote": "民不畏死，奈何以死惧之？",
+     "quote_trad": "民不畏死，奈何以死懼之？",
+     "interpretation": "百姓不怕死，用死吓唬他们没有用；警告高压统治的极限。",
+     "citation": "《道德经·七十四章》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "六十章",
+     "quote": "治大国若烹小鲜。",
+     "quote_trad": "治大國若烹小鮮。",
+     "interpretation": "治理大国像煎小鱼，不可频频翻动——政令宜简宜静。",
+     "citation": "《道德经·六十章》"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "title": "墨子",
+   "school": "墨家",
+   "thinker": "墨子",
+   "source_file": "诸子文献/墨子.txt",
+   "quote_count": 12,
+   "quotes": [
+    {
+     "category": "伦理",
+     "chapter": "兼爱中",
+     "quote": "兼相爱，交相利。",
+     "quote_trad": "兼相愛，交相利。",
+     "interpretation": "彼此相爱，互相得利，是墨家伦理的总纲。",
+     "citation": "《墨子·兼爱中》"
+    },
+    {
+     "category": "政治",
+     "chapter": "兼爱上",
+     "quote": "天下兼相爱则治，交相恶则乱。",
+     "quote_trad": "天下兼相愛則治，交相惡則亂。",
+     "interpretation": "天下人彼此相爱就治，彼此憎恶就乱。",
+     "citation": "《墨子·兼爱上》"
+    },
+    {
+     "category": "政治",
+     "chapter": "尚贤上",
+     "quote": "尚贤者，政之本也。",
+     "quote_trad": "尚賢者，政之本也。",
+     "interpretation": "崇尚贤能，是政治的根本。",
+     "citation": "《墨子·尚贤上》"
+    },
+    {
+     "category": "经济",
+     "chapter": "节用上",
+     "quote": "去无用之务，行圣王之道，天下之大利也。",
+     "quote_trad": "去無用之務，行聖王之道，天下之大利也。",
+     "interpretation": "去除无用的事务，实行圣王之道，是天下的大利。",
+     "citation": "《墨子·节用上》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "天志上",
+     "quote": "顺天意者，兼相爱，交相利，必得赏；反天意者，别相恶，交相贼，必得罚。",
+     "quote_trad": "順天意者，兼相愛，交相利，必得賞；反天意者，別相惡，交相賊，必得罰。",
+     "interpretation": "顺天意者兼爱交利得赏，逆天意者相恶相贼受罚。",
+     "citation": "《墨子·天志上》"
+    },
+    {
+     "category": "军事",
+     "chapter": "非攻上",
+     "quote": "今至大为不义攻国，则弗知而非，从而誉之，谓之义。",
+     "quote_trad": "今至大爲不義攻國，則弗知而非，從而譽之，謂之義。",
+     "interpretation": "最大的不义是攻国，人们却不知批评，反而称赞为义。",
+     "citation": "《墨子·非攻上》"
+    },
+    {
+     "category": "经济",
+     "chapter": "非乐上",
+     "quote": "民有三患：饥者不得食，寒者不得衣，劳者不得息。",
+     "quote_trad": "民有三患：飢者不得食，寒者不得衣，勞者不得息。",
+     "interpretation": "百姓有三患：饿不得食、寒不得衣、劳不得息。",
+     "citation": "《墨子·非乐上》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "修身",
+     "quote": "君子战虽有陈，而勇为本焉；丧虽有礼，而哀为本焉；士虽有学，而行为本焉。",
+     "quote_trad": "君子戰雖有陳，而勇爲本焉；喪雖有禮，而哀爲本焉；士雖有學，而行爲本焉。",
+     "interpretation": "作战以勇为本，丧礼以哀为本，士人以行为本。",
+     "citation": "《墨子·修身》"
+    },
+    {
+     "category": "修养",
+     "chapter": "所染",
+     "quote": "染于苍则苍，染于黄则黄。",
+     "quote_trad": "染於蒼則蒼，染於黃則黃。",
+     "interpretation": "丝染于青色就变青，染于黄色就变黄；喻环境熏陶。",
+     "citation": "《墨子·所染》"
+    },
+    {
+     "category": "政治",
+     "chapter": "七患",
+     "quote": "仓无备粟，不可以待凶饥；库无备兵，虽有义不能征无义。",
+     "quote_trad": "倉無備粟，不可以待兇飢；庫無備兵，雖有義不能徵無義。",
+     "interpretation": "仓无存粮不能备荒，库无兵器虽有义也不能征无义。",
+     "citation": "《墨子·七患》"
+    },
+    {
+     "category": "政治",
+     "chapter": "尚贤上",
+     "quote": "官无常贵，而民无终贱。",
+     "quote_trad": "官無常貴，而民無終賤。",
+     "interpretation": "官员不会永远尊贵，百姓也不会永远卑贱——尚贤的经典表述。",
+     "citation": "《墨子·尚贤上》"
+    },
+    {
+     "category": "教育",
+     "chapter": "所染",
+     "quote": "染于苍则苍，染于黄则黄。",
+     "quote_trad": "染於蒼則蒼，染於黃則黃。",
+     "interpretation": "丝放进什么染料就变成什么颜色——环境与交游决定人的品性。",
+     "citation": "《墨子·所染》"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "庄子",
+   "school": "道家",
+   "thinker": "庄子",
+   "source_file": "诸子文献/庄子.txt",
+   "quote_count": 12,
+   "quotes": [
+    {
+     "category": "人生论",
+     "chapter": "养生主",
+     "quote": "吾生也有涯，而知也无涯。",
+     "quote_trad": "吾生也有涯，而知也無涯。",
+     "interpretation": "生命有限，知识无限。",
+     "citation": "《庄子·养生主》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "齐物论",
+     "quote": "天地与我并生，而万物与我为一。",
+     "quote_trad": "天地與我並生，而萬物與我爲一。",
+     "interpretation": "天地与我共生，万物与我一体。",
+     "citation": "《庄子·齐物论》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "逍遥游",
+     "quote": "北冥有鱼，其名为鲲。鲲之大，不知其几千里也。",
+     "quote_trad": "北冥有魚，其名爲鯤。鯤之大，不知其幾千裏也。",
+     "interpretation": "北海有鱼名鲲，大到不知几千里。",
+     "citation": "《庄子·逍遥游》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "秋水",
+     "quote": "井蛙不可以语于海者，拘于虚也；夏虫不可以语于冰者，笃于时也。",
+     "quote_trad": "井蛙不可以語於海者，拘於虛也；夏蟲不可以語於冰者，篤於時也。",
+     "interpretation": "井蛙不能谈海，受限于空间；夏虫不能谈冰，受限于时令。",
+     "citation": "《庄子·秋水》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "秋水",
+     "quote": "子非鱼，安知鱼之乐？",
+     "quote_trad": "子非魚，安知魚之樂？",
+     "interpretation": "你不是鱼，怎么知道鱼的快乐？",
+     "citation": "《庄子·秋水》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "大宗师",
+     "quote": "相濡以沫，不如相忘于江湖。",
+     "quote_trad": "相濡以沫，不如相忘於江湖。",
+     "interpretation": "与其在困境中互相以唾沫润湿，不如各自在江湖中相忘。",
+     "citation": "《庄子·大宗师》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "知北游",
+     "quote": "人生天地之间，若白驹之过隙，忽然而已。",
+     "quote_trad": "人生天地之間，若白駒之過隙，忽然而已。",
+     "interpretation": "人生于天地之间，像白马掠过缝隙，转瞬即逝。",
+     "citation": "《庄子·知北游》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "养生主",
+     "quote": "以无厚入有间，恢恢乎其于游刃必有余地矣。",
+     "quote_trad": "以無厚入有間，恢恢乎其於遊刃必有餘地矣。",
+     "interpretation": "以无厚之刃进入有间隙之处，运刃自然宽绰有余。",
+     "citation": "《庄子·养生主》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "逍遥游",
+     "quote": "至人无己，神人无功，圣人无名。",
+     "quote_trad": "至人無己，神人無功，聖人無名。",
+     "interpretation": "至人无己，神人无功，圣人无名。",
+     "citation": "《庄子·逍遥游》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "齐物论",
+     "quote": "彼亦一是非，此亦一是非。",
+     "quote_trad": "彼亦一是非，此亦一是非。",
+     "interpretation": "彼有彼的是非，此有此的是非。",
+     "citation": "《庄子·齐物论》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "养生主",
+     "quote": "吾生也有涯，而知也无涯。",
+     "quote_trad": "吾生也有涯，而知也無涯。",
+     "interpretation": "生命有限而知识无穷，以有限逐无穷是危险的。",
+     "citation": "《庄子·养生主》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "山木",
+     "quote": "君子之交淡若水，小人之交甘若醴。",
+     "quote_trad": "君子之交淡若水，小人之交甘若醴。",
+     "interpretation": "君子之交清淡如水而长久，小人之交甜蜜如甜酒而易断。",
+     "citation": "《庄子·山木》"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "孟子",
+   "school": "儒家",
+   "thinker": "孟子",
+   "source_file": "诸子文献/孟子.txt",
+   "quote_count": 12,
+   "quotes": [
+    {
+     "category": "政治",
+     "chapter": "14",
+     "quote": "民为贵，社稷次之，君为轻。",
+     "quote_trad": "民爲貴，社稷次之，君爲輕。",
+     "interpretation": "百姓最贵，国家次之，君主最轻。",
+     "citation": "《孟子·14》"
+    },
+    {
+     "category": "政治",
+     "chapter": "1",
+     "quote": "得道者多助，失道者寡助。",
+     "quote_trad": "得道者多助，失道者寡助。",
+     "interpretation": "得道的人帮助多，失道的人帮助少。",
+     "citation": "《孟子·1》"
+    },
+    {
+     "category": "修养",
+     "chapter": "2",
+     "quote": "富贵不能淫，贫贱不能移，威武不能屈。",
+     "quote_trad": "富貴不能淫，貧賤不能移，威武不能屈。",
+     "interpretation": "富贵不能使他放纵，贫贱不能使他改变，威武不能使他屈服。",
+     "citation": "《孟子·2》"
+    },
+    {
+     "category": "修养",
+     "chapter": "15",
+     "quote": "天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身。",
+     "quote_trad": "天將降大任於是人也，必先苦其心志，勞其筋骨，餓其體膚，空乏其身。",
+     "interpretation": "天将赋予大任，必先磨炼其心志、筋骨、体肤。",
+     "citation": "《孟子·15》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "7",
+     "quote": "老吾老，以及人之老；幼吾幼，以及人之幼。",
+     "quote_trad": "老吾老，以及人之老；幼吾幼，以及人之幼。",
+     "interpretation": "敬爱自己的长辈，也推及别人的长辈；爱护自己的孩子，也推及别人的孩子。",
+     "citation": "《孟子·7》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "9",
+     "quote": "穷则独善其身，达则兼善天下。",
+     "quote_trad": "窮則獨善其身，達則兼善天下。",
+     "interpretation": "不得志时修养自身，得志时使天下同善。",
+     "citation": "《孟子·9》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "3",
+     "quote": "尽信书，则不如无书。",
+     "quote_trad": "盡信書，則不如無書。",
+     "interpretation": "完全相信书，不如没有书。",
+     "citation": "《孟子·3》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "10",
+     "quote": "生，亦我所欲也；义，亦我所欲也。二者不可得兼，舍生而取义者也。",
+     "quote_trad": "生，亦我所欲也；義，亦我所欲也。二者不可得兼，捨生而取義者也。",
+     "interpretation": "生命与义都是我所想要的；二者不能兼得，就舍生取义。",
+     "citation": "《孟子·10》"
+    },
+    {
+     "category": "教育",
+     "chapter": "2",
+     "quote": "人皆可以为尧舜。",
+     "quote_trad": "人皆可以爲堯舜。",
+     "interpretation": "人人都可以成为尧舜。",
+     "citation": "《孟子·2》"
+    },
+    {
+     "category": "政治",
+     "chapter": "4",
+     "quote": "乐民之乐者，民亦乐其乐；忧民之忧者，民亦忧其忧。",
+     "quote_trad": "樂民之樂者，民亦樂其樂；憂民之憂者，民亦憂其憂。",
+     "interpretation": "以百姓之乐为乐，百姓也以他的乐为乐；以百姓之忧为忧，百姓也以他的忧为忧。",
+     "citation": "《孟子·4》"
+    },
+    {
+     "category": "政治",
+     "chapter": "14",
+     "quote": "民为贵，社稷次之，君为轻。",
+     "quote_trad": "民爲貴，社稷次之，君爲輕。",
+     "interpretation": "民心最重，政权其次，君主最轻——孟子政治哲学的总纲。",
+     "citation": "《孟子·14》"
+    },
+    {
+     "category": "人生论",
+     "chapter": "15",
+     "quote": "然后知生于忧患而死于安乐也。",
+     "quote_trad": "然後知生於憂患而死於安樂也。",
+     "interpretation": "忧患使人生存，安乐使人灭亡——历经磨砺方成大器。",
+     "citation": "《孟子·15》"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "title": "荀子",
+   "school": "儒家",
+   "thinker": "荀子",
+   "source_file": "诸子文献/荀子.txt",
+   "quote_count": 12,
+   "quotes": [
+    {
+     "category": "教育",
+     "chapter": "劝学篇",
+     "quote": "学不可以已。青，取之于蓝而青于蓝；冰，水为之而寒于水。",
+     "quote_trad": "學不可以已。青，取之於藍而青於藍；冰，水爲之而寒於水。",
+     "interpretation": "学习不能停止；青出于蓝而胜于蓝，冰由水成而寒于水。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "教育",
+     "chapter": "劝学篇",
+     "quote": "不积跬步，无以至千里；不积小流，无以成江海。",
+     "quote_trad": "不積跬步，無以至千里；不積小流，無以成江海。",
+     "interpretation": "不积累半步，无法到达千里；不积累小流，无法形成江海。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "教育",
+     "chapter": "劝学篇",
+     "quote": "锲而不舍，金石可镂。",
+     "quote_trad": "鍥而不捨，金石可鏤。",
+     "interpretation": "持续雕刻不停止，金石也能雕穿。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "天论篇",
+     "quote": "天行有常，不为尧存，不为桀亡。",
+     "quote_trad": "天行有常，不爲堯存，不爲桀亡。",
+     "interpretation": "天道运行有常，不因尧而存，不因桀而亡。",
+     "citation": "《荀子·天论篇》"
+    },
+    {
+     "category": "政治",
+     "chapter": "王制篇",
+     "quote": "君者，舟也；庶人者，水也。水则载舟，水则覆舟。",
+     "quote_trad": "君者，舟也；庶人者，水也。水則載舟，水則覆舟。",
+     "interpretation": "君主是舟，百姓是水；水能载舟，也能覆舟。",
+     "citation": "《荀子·王制篇》"
+    },
+    {
+     "category": "伦理",
+     "chapter": "性恶篇",
+     "quote": "人之性恶，其善者伪也。",
+     "quote_trad": "人之性惡，其善者僞也。",
+     "interpretation": "人的本性是恶的，善是后天人为教养的结果。",
+     "citation": "《荀子·性恶篇》"
+    },
+    {
+     "category": "教育",
+     "chapter": "劝学篇",
+     "quote": "故不登高山，不知天之高也；不临深溪，不知地之厚也。",
+     "quote_trad": "故不登高山，不知天之高也；不臨深溪，不知地之厚也。",
+     "interpretation": "不登高山不知天高，不临深溪不知地厚。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "政治",
+     "chapter": "劝学篇",
+     "quote": "礼者，法之大分，类之纲纪也。",
+     "quote_trad": "禮者，法之大分，類之綱紀也。",
+     "interpretation": "礼是法的总纲，是各类事物的纲纪。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "宇宙观",
+     "chapter": "天论篇",
+     "quote": "大天而思之，孰与物畜而制之？从天而颂之，孰与制天命而用之？",
+     "quote_trad": "大天而思之，孰與物畜而制之？從天而頌之，孰與制天命而用之？",
+     "interpretation": "与其尊天思慕，不如蓄养万物而控制它；与其顺天赞颂，不如掌握天命而利用它。",
+     "citation": "《荀子·天论篇》"
+    },
+    {
+     "category": "教育",
+     "chapter": "劝学篇",
+     "quote": "君子生非异也，善假于物也。",
+     "quote_trad": "君子生非異也，善假於物也。",
+     "interpretation": "君子的天性并非异于常人，只是善于借助外物。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "劝学篇",
+     "quote": "锲而不舍，金石可镂。",
+     "quote_trad": "鍥而不捨，金石可鏤。",
+     "interpretation": "坚持雕刻不停，金石也能雕成花饰——积学积善在坚持。",
+     "citation": "《荀子·劝学篇》"
+    },
+    {
+     "category": "政治",
+     "chapter": "王制篇",
+     "quote": "水则载舟，水则覆舟。",
+     "quote_trad": "水則載舟，水則覆舟。",
+     "interpretation": "水能载船也能翻船——君与民的关系，民心向背决定存亡。",
+     "citation": "《荀子·王制篇》"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "title": "韩非子",
+   "school": "法家",
+   "thinker": "韩非",
+   "source_file": "诸子文献/韩非子.txt",
+   "quote_count": 13,
+   "quotes": [
+    {
+     "category": "历史观",
+     "chapter": "五蠹",
+     "quote": "世异则事异。",
+     "quote_trad": "世異則事異。",
+     "interpretation": "时代不同，事情就不同。",
+     "citation": "《韩非子·五蠹》"
+    },
+    {
+     "category": "历史观",
+     "chapter": "五蠹",
+     "quote": "事异则备变。",
+     "quote_trad": "事異則備變。",
+     "interpretation": "事情不同，应对措施就要变化。",
+     "citation": "《韩非子·五蠹》"
+    },
+    {
+     "category": "政治",
+     "chapter": "五蠹",
+     "quote": "故明主之国，无书简之文，以法为教；无先王之语，以吏为师。",
+     "quote_trad": "故明主之國，無書簡之文，以法爲教；無先王之語，以吏爲師。",
+     "interpretation": "明主之国不以典籍文辞教民，而以法令为教；不以先王之言为准，而以官吏为师。",
+     "citation": "《韩非子·五蠹》"
+    },
+    {
+     "category": "政治",
+     "chapter": "定法",
+     "quote": "君无术则弊于上，臣无法则乱于下。",
+     "quote_trad": "君無術則弊於上，臣無法則亂於下。",
+     "interpretation": "君主没有术就会在上受蒙蔽，臣子没有法就会在下作乱。",
+     "citation": "《韩非子·定法》"
+    },
+    {
+     "category": "法制",
+     "chapter": "有度",
+     "quote": "法不阿贵，绳不挠曲。",
+     "quote_trad": "法不阿貴，繩不撓曲。",
+     "interpretation": "法令不偏袒权贵，墨绳不迁就弯曲。",
+     "citation": "《韩非子·有度》"
+    },
+    {
+     "category": "法制",
+     "chapter": "有度",
+     "quote": "刑过不避大臣，赏善不遗匹夫。",
+     "quote_trad": "刑過不避大臣，賞善不遺匹夫。",
+     "interpretation": "惩罚过错不回避大臣，奖赏善行不遗漏平民。",
+     "citation": "《韩非子·有度》"
+    },
+    {
+     "category": "政治",
+     "chapter": "有度",
+     "quote": "国无常强，无常弱。奉法者强则国强，奉法者弱则国弱。",
+     "quote_trad": "國無常強，無常弱。奉法者強則國強，奉法者弱則國弱。",
+     "interpretation": "国家没有恒常的强弱；执法者强则国强，执法者弱则国弱。",
+     "citation": "《韩非子·有度》"
+    },
+    {
+     "category": "政治",
+     "chapter": "扬权",
+     "quote": "事在四方，要在中央；圣人执要，四方来效。",
+     "quote_trad": "事在四方，要在中央；聖人執要，四方來效。",
+     "interpretation": "政事分布于四方，权要在中央；圣人掌握枢要，四方来效力。",
+     "citation": "《韩非子·扬权》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "难一",
+     "quote": "不可陷之盾与无不陷之矛，不可同世而立。",
+     "quote_trad": "不可陷之盾與無不陷之矛，不可同世而立。",
+     "interpretation": "无坚不摧的矛与无物能陷的盾，不能同时成立。",
+     "citation": "《韩非子·难一》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "五蠹",
+     "quote": "因释其耒而守株，冀复得兔。兔不可复得，而身为宋国笑。",
+     "quote_trad": "因釋其耒而守株，冀復得兔。兔不可復得，而身爲宋國笑。",
+     "interpretation": "放下农具守树桩，希望再得兔子；兔不可再得，自己反成宋国笑柄。",
+     "citation": "《韩非子·五蠹》"
+    },
+    {
+     "category": "政治",
+     "chapter": "喻老",
+     "quote": "千丈之堤，以蝼蚁之穴溃；百尺之室，以突隙之烟焚。",
+     "quote_trad": "千丈之堤，以螻蟻之穴潰；百尺之室，以突隙之煙焚。",
+     "interpretation": "千丈长堤因蝼蚁小穴而溃，百尺高屋因烟囱缝隙而焚。",
+     "citation": "《韩非子·喻老》"
+    },
+    {
+     "category": "政治",
+     "chapter": "扬权",
+     "quote": "事在四方，要在中央；圣人执要，四方来效。",
+     "quote_trad": "事在四方，要在中央；聖人執要，四方來效。",
+     "interpretation": "事务分散在四方，权柄集中于中央——君主抓大纲，四方自效命。",
+     "citation": "《韩非子·扬权》"
+    },
+    {
+     "category": "方法论",
+     "chapter": "喻老",
+     "quote": "千丈之堤，以蝼蚁之穴溃。",
+     "quote_trad": "千丈之堤，以螻蟻之穴潰。",
+     "interpretation": "千丈大堤毁于蝼蚁小洞——小患不除，将倾大局。",
+     "citation": "《韩非子·喻老》"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "title": "孙子兵法",
+   "school": "兵家",
+   "thinker": "孙武",
+   "source_file": "诸子文献/孙子兵法.txt",
+   "quote_count": 12,
+   "quotes": [
+    {
+     "category": "军事",
+     "chapter": "始计第一",
+     "quote": "兵者，国之大事，死生之地，存亡之道，不可不察也。",
+     "quote_trad": "兵者，國之大事，死生之地，存亡之道，不可不察也。",
+     "interpretation": "战争是国家大事，关系生死存亡，不可不审察。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "军事",
+     "chapter": "始计第一",
+     "quote": "故经之以五事，校之以计，而索其情：一曰道，二曰天，三曰地，四曰将，五曰法。",
+     "quote_trad": "故經之以五事，校之以計，而索其情：一曰道，二曰天，三曰地，四曰將，五曰法。",
+     "interpretation": "以道、天、地、将、法五事为经，以七计校量，探求胜负之情。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "始计第一",
+     "quote": "兵者，诡道也。故能而示之不能，用而示之不用，近而示之远，远而示之近。",
+     "quote_trad": "兵者，詭道也。故能而示之不能，用而示之不用，近而示之遠，遠而示之近。",
+     "interpretation": "用兵是诡诈之道：能而示不能，用而示不用，近而示远，远而示近。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "始计第一",
+     "quote": "攻其无备，出其不意。",
+     "quote_trad": "攻其無備，出其不意。",
+     "interpretation": "攻击敌人没有防备之处，出击敌人意想不到之时。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "始计第一",
+     "quote": "夫未战而庙算胜者，得算多也；未战而庙算不胜者，得算少也。",
+     "quote_trad": "夫未戰而廟算勝者，得算多也；未戰而廟算不勝者，得算少也。",
+     "interpretation": "未战先在庙堂计算，算得周密者胜，算得不周者不胜。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "军事",
+     "chapter": "作战第二",
+     "quote": "兵闻拙速，未睹巧之久也。",
+     "quote_trad": "兵聞拙速，未睹巧之久也。",
+     "interpretation": "用兵只听说笨拙而迅速，没见过精巧而持久。",
+     "citation": "《孙子兵法·作战第二》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "谋攻第三",
+     "quote": "故上兵伐谋，其次伐交，其次伐兵，其下攻城。",
+     "quote_trad": "故上兵伐謀，其次伐交，其次伐兵，其下攻城。",
+     "interpretation": "上策伐谋，其次伐交，再次伐兵，最下攻城。",
+     "citation": "《孙子兵法·谋攻第三》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "谋攻第三",
+     "quote": "不战而屈人之兵，善之善者也。",
+     "quote_trad": "不戰而屈人之兵，善之善者也。",
+     "interpretation": "不战而使敌人屈服，是善中之善。",
+     "citation": "《孙子兵法·谋攻第三》"
+    },
+    {
+     "category": "谋略",
+     "chapter": "谋攻第三",
+     "quote": "知彼知己，百战不殆。",
+     "quote_trad": "知彼知己，百戰不殆。",
+     "interpretation": "了解敌人也了解自己，百战都不会危险。",
+     "citation": "《孙子兵法·谋攻第三》"
+    },
+    {
+     "category": "军事",
+     "chapter": "虚实第六",
+     "quote": "故善战者，致人而不致于人。",
+     "quote_trad": "故善戰者，致人而不致於人。",
+     "interpretation": "善战者调动敌人，而不被敌人调动。",
+     "citation": "《孙子兵法·虚实第六》"
+    },
+    {
+     "category": "军事",
+     "chapter": "始计第一",
+     "quote": "兵者，国之大事，死生之地，存亡之道，不可不察也。",
+     "quote_trad": "兵者，國之大事，死生之地，存亡之道，不可不察也。",
+     "interpretation": "战争是国家大事，关乎生死存亡，必须慎重审察。",
+     "citation": "《孙子兵法·始计第一》"
+    },
+    {
+     "category": "军事",
+     "chapter": "谋攻第三",
+     "quote": "知彼知己，百战不殆。",
+     "quote_trad": "知彼知己，百戰不殆。",
+     "interpretation": "既了解自己又了解敌人，百战都不会有危险。",
+     "citation": "《孙子兵法·谋攻第三》"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "title": "商君书",
+   "school": "法家",
+   "thinker": "商鞅",
+   "source_file": "诸子文献/商君书.txt",
+   "quote_count": 9,
+   "quotes": [
+    {
+     "category": "政治",
+     "chapter": "更法第一",
+     "quote": "治世不一道，便国不必法古。",
+     "quote_trad": "治世不一道，便國不必法古。",
+     "interpretation": "治理天下没有一成不变之道，只要有利于国家就不必效法古代。",
+     "citation": "《商君书·更法第一》"
+    },
+    {
+     "category": "法制",
+     "chapter": "更法第一",
+     "quote": "法者，所以爱民也；礼者，所以便事也。",
+     "quote_trad": "法者，所以愛民也；禮者，所以便事也。",
+     "interpretation": "法是为了爱护百姓，礼是为了便利政事。",
+     "citation": "《商君书·更法第一》"
+    },
+    {
+     "category": "经济",
+     "chapter": "农战第三",
+     "quote": "国之所以兴者，农战也。",
+     "quote_trad": "國之所以興者，農戰也。",
+     "interpretation": "国家之所以兴盛，在于农战。",
+     "citation": "《商君书·农战第三》"
+    },
+    {
+     "category": "政治",
+     "chapter": "更法第一",
+     "quote": "圣人苟可以强国，不法其故；苟可以利民，不循其礼。",
+     "quote_trad": "聖人苟可以強國，不法其故；苟可以利民，不循其禮。",
+     "interpretation": "圣人只要可以强国，就不效法旧制；只要可以利民，就不遵循旧礼。",
+     "citation": "《商君书·更法第一》"
+    },
+    {
+     "category": "法制",
+     "chapter": "去彊第四",
+     "quote": "以刑去刑，国治；以刑致刑，国乱。",
+     "quote_trad": "以刑去刑，國治；以刑致刑，國亂。",
+     "interpretation": "用刑罚消除刑罚，国家就治；用刑罚招致刑罚，国家就乱。",
+     "citation": "《商君书·去彊第四》"
+    },
+    {
+     "category": "政治",
+     "chapter": "弱民第二十",
+     "quote": "故有道之国，务在弱民。",
+     "quote_trad": "故有道之國，務在弱民。",
+     "interpretation": "有道之国，致力于使民弱而服从法令。",
+     "citation": "《商君书·弱民第二十》"
+    },
+    {
+     "category": "历史观",
+     "chapter": "更法第一",
+     "quote": "圣人苟可以强国，不法其故；苟可以利民，不循其礼。",
+     "quote_trad": "聖人苟可以強國，不法其故；苟可以利民，不循其禮。",
+     "interpretation": "只要能强国就不效法旧制，只要能利民就不遵循旧礼——变法的总根据。",
+     "citation": "《商君书·更法第一》"
+    },
+    {
+     "category": "经济",
+     "chapter": "去彊第四",
+     "quote": "民不逃粟，野无荒草，则国富，国富者强。",
+     "quote_trad": "民不逃粟，野無荒草，則國富，國富者強。",
+     "interpretation": "百姓安心务农、荒地尽垦则国家富，富则强——农战逻辑。",
+     "citation": "《商君书·去彊第四》"
+    },
+    {
+     "category": "政治",
+     "chapter": "弱民第二十",
+     "quote": "以强去强者弱，以弱去强者强。",
+     "quote_trad": "以強去強者弱，以弱去強者強。",
+     "interpretation": "用强力削除民之私勇则国反弱？错——用法治之弱去民之强暴，国才真正强。商君书著名的悖论式治术。",
+     "citation": "《商君书·弱民第二十》"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "title": "公孙龙子",
+   "school": "名家",
+   "thinker": "公孙龙",
+   "source_file": "诸子文献/公孙龙子.txt",
+   "quote_count": 5,
+   "quotes": [
+    {
+     "category": "逻辑",
+     "chapter": "1",
+     "quote": "白马非马。",
+     "quote_trad": "白馬非馬。",
+     "interpretation": "“白马”是颜色加形体，“马”只是形体，所以白马不等于马。",
+     "citation": "《公孙龙子·1》"
+    },
+    {
+     "category": "逻辑",
+     "chapter": "2",
+     "quote": "马者，所以命形也；白者，所以命色也。命色者非命形也，故曰白马非马。",
+     "quote_trad": "馬者，所以命形也；白者，所以命色也。命色者非命形也，故曰白馬非馬。",
+     "interpretation": "马是命形，白是命色；命色不等于命形，所以说白马非马。",
+     "citation": "《公孙龙子·2》"
+    },
+    {
+     "category": "逻辑",
+     "chapter": "5",
+     "quote": "坚、白、石，三，可乎？曰：不可。曰：二，可乎？曰：可。",
+     "quote_trad": "堅、白、石，三，可乎？曰：不可。曰：二，可乎？曰：可。",
+     "interpretation": "坚、白、石三者能否同时被感知？公孙龙认为只能得其二。",
+     "citation": "《公孙龙子·5》"
+    },
+    {
+     "category": "逻辑",
+     "chapter": "3",
+     "quote": "物莫非指，而指非指。",
+     "quote_trad": "物莫非指，而指非指。",
+     "interpretation": "万物没有不是由“指”所指认的，但“指”本身不是被指认的对象。",
+     "citation": "《公孙龙子·3》"
+    },
+    {
+     "category": "认识论",
+     "chapter": "1",
+     "quote": "白马为非马者，言白所以名色，言马所以名形也。",
+     "quote_trad": "白馬爲非馬者，言白所以名色，言馬所以名形也。",
+     "interpretation": "白马不是马：白是颜色，马是形体，名实相离——离坚白的辩学基础。",
+     "citation": "《公孙龙子·1》"
+    }
+   ]
+  }
+ ]
+}

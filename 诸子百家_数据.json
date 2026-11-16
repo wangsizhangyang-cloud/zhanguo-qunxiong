@@ -1,0 +1,2482 @@
+{
+ "schools": [
+  {
+   "id": 1,
+   "name": "儒家",
+   "aliases": "儒",
+   "founder": "孔子",
+   "era": "春秋末—战国",
+   "core_ideas": "仁、礼、德治、教化、中庸",
+   "representative_works": "论语、孟子、荀子",
+   "brief": "以孔子为宗，主张以仁礼修身、以德治国、以教化移风易俗；战国时分化为孟、荀两路。",
+   "source_chapter": "史记·孔子世家;史记·孟子荀卿列传;史记·太史公自序",
+   "note": "后世官学主流",
+   "thinkers": [
+    {
+     "name": "孔子",
+     "era": "春秋",
+     "state": "鲁",
+     "role": "思想家/教育家",
+     "main_thought": "仁、礼、德治、教化；以“君君、臣臣、父父、子子”正名分，以诗书礼乐养成人格。",
+     "famous_work": "论语（门人辑录）"
+    },
+    {
+     "name": "孟子",
+     "era": "战国",
+     "state": "邹→齐→梁",
+     "role": "思想家/游士",
+     "main_thought": "性善、仁政、民本、王道；以仁义反对功利与霸道。",
+     "famous_work": "孟子"
+    },
+    {
+     "name": "荀子",
+     "era": "战国末",
+     "state": "赵→齐→楚",
+     "role": "思想家/教育家",
+     "main_thought": "性恶、礼法并施、天人之分、劝学；以礼义矫治人性，以制度重建秩序。",
+     "famous_work": "荀子"
+    }
+   ],
+   "works": [
+    {
+     "title": "论语",
+     "author": "孔子弟子及再传弟子",
+     "era": "春秋末—战国初",
+     "summary": "孔子及门人言行汇编，二十篇，约一万二千字。",
+     "core_idea": "仁、礼、孝悌、忠恕、教育",
+     "note": "今本二十篇"
+    },
+    {
+     "title": "孟子",
+     "author": "孟子及其门人万章等",
+     "era": "战国",
+     "summary": "七篇，记孟子游说诸侯、论性善与仁政。",
+     "core_idea": "性善、仁政、民本、王道",
+     "note": "史记称“作孟子七篇”"
+    },
+    {
+     "title": "荀子",
+     "author": "荀子及其弟子",
+     "era": "战国末",
+     "summary": "三十余篇，论天人之分、性恶、礼法与教化。",
+     "core_idea": "性恶、礼法、天行有常、劝学",
+     "note": "史记称“序列著数万言”"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "道家",
+   "aliases": "道德家",
+   "founder": "老子",
+   "era": "春秋末—战国",
+   "core_ideas": "道法自然、无为而治、贵柔守静、齐物逍遥",
+   "representative_works": "道德经、庄子、列子",
+   "brief": "以“道”为天地本原，主张少私寡欲、因任自然；庄子发展出齐物、逍遥与寓言式批判。",
+   "source_chapter": "史记·老子韩非列传;史记·太史公自序",
+   "note": "与儒家并称显学",
+   "thinkers": [
+    {
+     "name": "老子",
+     "era": "春秋",
+     "state": "周",
+     "role": "史官/思想家",
+     "main_thought": "道法自然、无为而治、贵柔守静、反者道之动；以“无”与“柔”化解人为与强权。",
+     "famous_work": "道德经"
+    },
+    {
+     "name": "庄子",
+     "era": "战国",
+     "state": "宋",
+     "role": "思想家/隐士",
+     "main_thought": "齐物、逍遥、无用之用、养生；以寓言消解是非与功名，追求精神自由。",
+     "famous_work": "庄子"
+    },
+    {
+     "name": "列子",
+     "era": "战国",
+     "state": "郑",
+     "role": "思想家/隐士",
+     "main_thought": "贵虚、守静、安命；以“虚”观物，不以贫富生死累心。",
+     "famous_work": "列子"
+    },
+    {
+     "name": "杨朱",
+     "era": "战国",
+     "state": "魏",
+     "role": "思想家",
+     "main_thought": "贵己、重生、为我；反对以物累身，也反对兼爱对个体的吞没。",
+     "famous_work": "杨朱（佚）"
+    },
+    {
+     "name": "关尹",
+     "era": "春秋",
+     "state": "周",
+     "role": "关令/思想家",
+     "main_thought": "贵清、守一、因物之自然；以清静为道之门。",
+     "famous_work": "关尹子（佚/辑本）"
+    }
+   ],
+   "works": [
+    {
+     "title": "道德经",
+     "author": "老子",
+     "era": "春秋末",
+     "summary": "上下篇，五千余言，论道、德、无为、柔弱。",
+     "core_idea": "道法自然、无为而治、反者道之动",
+     "note": "史记称“言道德之意五千余言”"
+    },
+    {
+     "title": "庄子",
+     "author": "庄子及其后学",
+     "era": "战国",
+     "summary": "十余万言，多寓言，论齐物、逍遥、养生、应帝王。",
+     "core_idea": "齐物、逍遥、无用之用、养生",
+     "note": "今本三十三篇"
+    },
+    {
+     "title": "列子",
+     "author": "列御寇及其后学",
+     "era": "战国",
+     "summary": "多寓言与神话，论虚静、贵虚、生死。",
+     "core_idea": "贵虚、守静、安命",
+     "note": "今本八篇，有辑补"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "墨家",
+   "aliases": "墨",
+   "founder": "墨子",
+   "era": "战国",
+   "core_ideas": "兼爱、非攻、尚贤、节用、明鬼",
+   "representative_works": "墨子",
+   "brief": "墨翟所创，主张兼相爱、交相利，反对侵略战争与贵族奢靡；组织严密，善守御。",
+   "source_chapter": "史记·孟子荀卿列传;史记·太史公自序",
+   "note": "战国显学，秦汉后衰",
+   "thinkers": [
+    {
+     "name": "墨子",
+     "era": "战国",
+     "state": "宋→鲁",
+     "role": "思想家/工匠/守城家",
+     "main_thought": "兼爱、非攻、尚贤、节用、明鬼；以“交相利”重建社会合作。",
+     "famous_work": "墨子"
+    }
+   ],
+   "works": [
+    {
+     "title": "墨子",
+     "author": "墨子及其后学",
+     "era": "战国",
+     "summary": "五十三篇，论兼爱、非攻、尚贤、节用、守城。",
+     "core_idea": "兼爱、非攻、尚贤、节用",
+     "note": "墨家总集"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "法家",
+   "aliases": "刑名法术之学",
+   "founder": "管仲、李悝、商鞅、申不害、慎到",
+   "era": "战国",
+   "core_ideas": "以法治国、术势结合、奖励耕战、富国强兵",
+   "representative_works": "韩非子、商君书、申子、慎子",
+   "brief": "主张以法、术、势驭臣治民，强化君权与耕战；韩非集其大成，直接服务秦制。",
+   "source_chapter": "史记·商君列传;史记·老子韩非列传;史记·太史公自序",
+   "note": "秦制的思想基础",
+   "thinkers": [
+    {
+     "name": "韩非",
+     "era": "战国末",
+     "state": "韩",
+     "role": "思想家/公子",
+     "main_thought": "法、术、势三者合一；以法为教、以吏为师，奖励耕战，强化君主集权。",
+     "famous_work": "韩非子"
+    },
+    {
+     "name": "商鞅",
+     "era": "战国",
+     "state": "卫→秦",
+     "role": "改革家/大良造",
+     "main_thought": "以法治国、奖励耕战、刑赏必信、削弱贵族；以制度动员全国资源。",
+     "famous_work": "商君书"
+    },
+    {
+     "name": "申不害",
+     "era": "战国",
+     "state": "郑→韩",
+     "role": "相国/思想家",
+     "main_thought": "术治、循名责实、君主驭臣；以隐蔽的考核与控驭补法治之不足。",
+     "famous_work": "申子"
+    },
+    {
+     "name": "慎到",
+     "era": "战国",
+     "state": "赵→齐",
+     "role": "稷下学者",
+     "main_thought": "势治、尚法、去私；君主须据势行法，不以私意乱公器。",
+     "famous_work": "慎子"
+    }
+   ],
+   "works": [
+    {
+     "title": "韩非子",
+     "author": "韩非",
+     "era": "战国末",
+     "summary": "五十五篇，集法、术、势，论君主统治与富国强兵。",
+     "core_idea": "法、术、势、耕战",
+     "note": "史记称“十馀万言”"
+    },
+    {
+     "title": "商君书",
+     "author": "商鞅及其后学",
+     "era": "战国",
+     "summary": "论变法、农战、刑赏、县制。",
+     "core_idea": "农战、刑赏、弱民、变法",
+     "note": "今本二十四篇"
+    },
+    {
+     "title": "申子",
+     "author": "申不害",
+     "era": "战国",
+     "summary": "论“术”与君主驭臣之法，今多佚。",
+     "core_idea": "术治、循名责实",
+     "note": "原书已佚，有辑本"
+    },
+    {
+     "title": "慎子",
+     "author": "慎到",
+     "era": "战国",
+     "summary": "论“势”与法治，今存辑本。",
+     "core_idea": "势治、尚法、去私",
+     "note": "史记称“著十二论”"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "名家",
+   "aliases": "辩者、刑名家",
+   "founder": "惠施、公孙龙",
+   "era": "战国",
+   "core_ideas": "正名实、坚白同异、合同异、离坚白",
+   "representative_works": "公孙龙子、惠子",
+   "brief": "以逻辑与语言分析见长，讨论名实、同异、坚白等命题；被称为“辩者”。",
+   "source_chapter": "史记·孟子荀卿列传;史记·平原君虞卿列传;吕氏春秋·审应览",
+   "note": "中国古代逻辑学",
+   "thinkers": [
+    {
+     "name": "惠施",
+     "era": "战国",
+     "state": "宋→魏",
+     "role": "相国/辩者",
+     "main_thought": "合同异、历物十事、正名实；以相对性与整体性消解固定界限。",
+     "famous_work": "惠子（佚）"
+    },
+    {
+     "name": "公孙龙",
+     "era": "战国",
+     "state": "赵",
+     "role": "辩者/平原君客",
+     "main_thought": "离坚白、白马非马、正名实；以概念分析拆解常识语言。",
+     "famous_work": "公孙龙子"
+    }
+   ],
+   "works": [
+    {
+     "title": "公孙龙子",
+     "author": "公孙龙",
+     "era": "战国",
+     "summary": "今存六篇，论坚白、白马、名实。",
+     "core_idea": "离坚白、白马非马、正名实",
+     "note": "今本六篇"
+    },
+    {
+     "title": "惠子",
+     "author": "惠施",
+     "era": "战国",
+     "summary": "惠施著述，多佚；其“合同异”之说散见诸书。",
+     "core_idea": "合同异、历物十事",
+     "note": "原书已佚"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "阴阳家",
+   "aliases": "阴阳五行家",
+   "founder": "邹衍",
+   "era": "战国",
+   "core_ideas": "五德终始、阴阳消息、天人相应、大九州",
+   "representative_works": "邹子、邹奭子",
+   "brief": "以阴阳五行解释王朝更替与天地秩序，邹衍创“五德终始”说，影响秦汉政治与历法。",
+   "source_chapter": "史记·孟子荀卿列传;史记·封禅书",
+   "note": "秦汉受命改制的重要资源",
+   "thinkers": [
+    {
+     "name": "邹衍",
+     "era": "战国",
+     "state": "齐",
+     "role": "稷下学者/思想家",
+     "main_thought": "五德终始、阴阳消息、天人相应、大九州；以循环论解释王朝更替与天下格局。",
+     "famous_work": "邹子"
+    },
+    {
+     "name": "邹奭",
+     "era": "战国",
+     "state": "齐",
+     "role": "稷下学者",
+     "main_thought": "承邹衍阴阳之术，长于文饰与论说；体系性不及邹衍。",
+     "famous_work": "邹奭子"
+    }
+   ],
+   "works": [
+    {
+     "title": "邹子",
+     "author": "邹衍",
+     "era": "战国",
+     "summary": "论终始五德、大九州、阴阳消息，多佚。",
+     "core_idea": "五德终始、大九州",
+     "note": "史记称“终始、大圣之篇十馀万言”"
+    },
+    {
+     "title": "邹奭子",
+     "author": "邹奭",
+     "era": "战国",
+     "summary": "采邹衍之术以纪文，今佚。",
+     "core_idea": "阴阳、文饰",
+     "note": "史记称“颇采驺衍之术以纪文”"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "纵横家",
+   "aliases": "纵横、游说之士",
+   "founder": "鬼谷子",
+   "era": "战国",
+   "core_ideas": "合纵连横、揣摩辞令、因势利导",
+   "representative_works": "鬼谷子",
+   "brief": "以苏秦、张仪为代表，专攻国际结盟与游说；合纵弱国抗强，连横强国分化。",
+   "source_chapter": "史记·苏秦列传;史记·张仪列传",
+   "note": "战国国际政治的操盘手",
+   "thinkers": [
+    {
+     "name": "鬼谷子",
+     "era": "战国",
+     "state": "不详",
+     "role": "隐士/师",
+     "main_thought": "捭阖、反应、揣摩、因势；以语言与情报操纵国际关系。",
+     "famous_work": "鬼谷子"
+    },
+    {
+     "name": "苏秦",
+     "era": "战国",
+     "state": "东周洛阳",
+     "role": "纵横家（合纵长约）",
+     "main_thought": "合纵：约从散横，以抑强秦",
+     "famous_work": "《苏子》三十一篇（汉书·艺文志著录，佚）"
+    },
+    {
+     "name": "张仪",
+     "era": "战国",
+     "state": "魏",
+     "role": "纵横家（连横长约）、秦相",
+     "main_thought": "连横：事一强以攻众弱",
+     "famous_work": "《张子》十篇（汉书·艺文志著录，佚）"
+    }
+   ],
+   "works": [
+    {
+     "title": "鬼谷子",
+     "author": "鬼谷子及其后学",
+     "era": "战国",
+     "summary": "论捭阖、反应、揣摩、游说之术。",
+     "core_idea": "捭阖、揣摩、因势",
+     "note": "今本十四篇，部分为后学所附"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "杂家",
+   "aliases": "杂",
+   "founder": "吕不韦",
+   "era": "战国末",
+   "core_ideas": "兼儒墨、合名法、备万物古今之事",
+   "representative_works": "吕氏春秋",
+   "brief": "吕不韦集宾客编《吕氏春秋》，兼采诸家，试图为统一帝国提供综合治道。",
+   "source_chapter": "史记·吕不韦列传;汉书·艺文志",
+   "note": "诸子合流",
+   "thinkers": [
+    {
+     "name": "吕不韦",
+     "era": "战国末",
+     "state": "卫→秦",
+     "role": "相国/编书者",
+     "main_thought": "兼儒墨、合名法，备天地万物古今之事；以综合治道服务统一帝国。",
+     "famous_work": "吕氏春秋"
+    }
+   ],
+   "works": [
+    {
+     "title": "吕氏春秋",
+     "author": "吕不韦宾客",
+     "era": "战国末",
+     "summary": "八览、六论、十二纪，二十余万言，兼采诸家。",
+     "core_idea": "兼儒墨、合名法、备万物",
+     "note": "杂家总集"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "兵家",
+   "aliases": "兵家者流",
+   "founder": "孙武",
+   "era": "春秋末—战国",
+   "core_ideas": "知己知彼、因势利导、以法治军、不战而屈人之兵",
+   "representative_works": "孙子兵法、孙膑兵法、吴子、司马穰苴兵法",
+   "brief": "研究战争与治军，兼重战略、战术、军纪与后勤；与诸子共享“道、天、地、将、法”的分析框架。",
+   "source_chapter": "史记·孙子吴起列传;史记·司马穰苴列传",
+   "note": "先秦军事思想",
+   "thinkers": [
+    {
+     "name": "孙武",
+     "era": "春秋",
+     "state": "齐→吴",
+     "role": "将军/兵法家",
+     "main_thought": "知己知彼、庙算先胜、不战而屈人之兵、因敌制胜；以“道天地将法”为战争分析框架。",
+     "famous_work": "孙子兵法"
+    },
+    {
+     "name": "孙膑",
+     "era": "战国",
+     "state": "齐",
+     "role": "军师/兵法家",
+     "main_thought": "批亢捣虚、因势利导、示形诱敌；以机动与心理战瓦解强敌。",
+     "famous_work": "孙膑兵法"
+    },
+    {
+     "name": "吴起",
+     "era": "战国",
+     "state": "卫→鲁→魏→楚",
+     "role": "将军/改革家",
+     "main_thought": "内修文德、外治武备；以法治军、与士卒同甘苦，兼重政治与军事。",
+     "famous_work": "吴子"
+    },
+    {
+     "name": "司马穰苴",
+     "era": "春秋",
+     "state": "齐",
+     "role": "将军/大司马",
+     "main_thought": "以法治军、赏罚必信、与士卒同甘苦；将帅须“文能附众，武能威敌”。",
+     "famous_work": "司马穰苴兵法"
+    }
+   ],
+   "works": [
+    {
+     "title": "孙子兵法",
+     "author": "孙武",
+     "era": "春秋末",
+     "summary": "十三篇，论庙算、谋攻、形势、虚实、军争。",
+     "core_idea": "知己知彼、不战而屈人之兵",
+     "note": "史记称“子之十三篇”"
+    },
+    {
+     "title": "孙膑兵法",
+     "author": "孙膑",
+     "era": "战国",
+     "summary": "论因势利导、批亢捣虚、阵法与用间。",
+     "core_idea": "因势、批亢捣虚、示形",
+     "note": "史记称“世传其兵法”"
+    },
+    {
+     "title": "吴子",
+     "author": "吴起",
+     "era": "战国",
+     "summary": "论图国、料敌、治兵、论将、应变、励士。",
+     "core_idea": "内修文德、外治武备",
+     "note": "今本六篇"
+    },
+    {
+     "title": "司马穰苴兵法",
+     "author": "司马穰苴",
+     "era": "春秋末",
+     "summary": "论军纪、阵法、赏罚与将道。",
+     "core_idea": "以法治军、文能附众、武能威敌",
+     "note": "战国时齐人追论附益"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "农家",
+   "aliases": "农家者流",
+   "founder": "许行",
+   "era": "战国",
+   "core_ideas": "并耕而食、市贾不贰、君民并耕",
+   "representative_works": "神农之教（辑佚）",
+   "brief": "主张贤者当与民并耕而食、饔飧而治，市价划一、国中无伪；以神农为宗，反映战国小农的平均主义理想。",
+   "source_chapter": "孟子·滕文公上;汉书·艺文志",
+   "note": "托神农氏立言",
+   "thinkers": [
+    {
+     "name": "许行",
+     "era": "战国",
+     "state": "楚",
+     "role": "农家领袖",
+     "main_thought": "贤者与民并耕而食；市贾不贰、国中无伪",
+     "famous_work": "神农之教（托名）"
+    }
+   ],
+   "works": [
+    {
+     "title": "神农之教（辑佚）",
+     "author": "托名神农",
+     "era": "战国",
+     "summary": "农家托神农氏立言的教令辑本，主张君民并耕、正市价。",
+     "core_idea": "并耕而食，饔飧而治",
+     "note": "原书佚"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "小说家",
+   "aliases": "小说家者流",
+   "founder": "宋钘（一说）",
+   "era": "战国",
+   "core_ideas": "街谈巷语、道听涂说、禁攻寝兵、情欲寡浅",
+   "representative_works": "宋子（汉书·艺文志著录，佚）",
+   "brief": "《汉书·艺文志》列小说家为诸子十家之末，采街谈巷语以观风俗；宋钘一派以禁攻寝兵、情欲寡浅游说天下，常归入此流。",
+   "source_chapter": "庄子·天下;汉书·艺文志",
+   "note": "学派归属历代有异说",
+   "thinkers": [
+    {
+     "name": "宋钘",
+     "era": "战国",
+     "state": "宋",
+     "role": "游士、学者",
+     "main_thought": "见侮不辱以救斗，禁攻寝兵以救世；情欲寡浅",
+     "famous_work": "宋子（佚）"
+    }
+   ],
+   "works": [
+    {
+     "title": "宋子",
+     "author": "宋钘",
+     "era": "战国",
+     "summary": "《汉书·艺文志》小说家著录十八篇，佚；观街谈巷语而作。",
+     "core_idea": "禁攻寝兵，情欲寡浅",
+     "note": "原书佚"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "方技家",
+   "aliases": "医家、方技者流",
+   "founder": "扁鹊（代表）",
+   "era": "春秋末—战国",
+   "core_ideas": "切脉望色、随俗为变、六不治",
+   "representative_works": "扁鹊内经、外经（汉书·艺文志著录，佚）",
+   "brief": "以医药、诊籍、养生为主的技术之学；扁鹊创脉诊、随俗为变，提出「六不治」，为秦汉太医署之滥觞。",
+   "source_chapter": "史记·扁鹊仓公列传;汉书·艺文志",
+   "note": "重在技艺传承",
+   "thinkers": [
+    {
+     "name": "扁鹊",
+     "era": "春秋末—战国",
+     "state": "渤海郡郑（齐地）",
+     "role": "医家",
+     "main_thought": "切脉望色、听声写形；病有六不治",
+     "famous_work": "扁鹊内经、外经（佚）"
+    }
+   ],
+   "works": [
+    {
+     "title": "扁鹊内经、外经",
+     "author": "托名扁鹊",
+     "era": "战国",
+     "summary": "《汉书·艺文志》方技略医经家著录，佚；经脉诊法之书。",
+     "core_idea": "切脉、望色、听声、写形",
+     "note": "与今本《黄帝内经》非一书"
+    }
+   ]
+  }
+ ],
+ "thinkers": [
+  {
+   "id": 1,
+   "name": "孔子",
+   "aliases": "孔丘、仲尼、至圣先师",
+   "school": "儒家",
+   "era": "春秋",
+   "state": "鲁",
+   "role": "思想家/教育家",
+   "bio": "鲁昌平乡陬邑人，宋人之后。周游列国，晚年返鲁整理诗书礼乐，聚徒讲学，弟子三千，身通六艺者七十二人。",
+   "main_thought": "仁、礼、德治、教化；以“君君、臣臣、父父、子子”正名分，以诗书礼乐养成人格。",
+   "famous_work": "论语（门人辑录）",
+   "ending": "卒于鲁，年七十三",
+   "source_chapter": "史记·孔子世家;史记·太史公自序",
+   "note": "儒家宗师",
+   "rating": {
+    "depth": 9.5,
+    "originality": 9.3,
+    "system": 9.5,
+    "practice": 8.8,
+    "transmission": 9.8,
+    "influence": 9.9,
+    "overall": 9.43,
+    "grade": "S",
+    "rationale": "以仁礼重建秩序，开私人讲学与士人政治传统；思想深度、体系性与历史影响均属顶级。"
+   },
+   "doctrines": [
+    {
+     "category": "教育",
+     "proposition": "以诗书礼乐教弟子",
+     "counterpart": "",
+     "place": "鲁",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "孔子以诗书礼乐教，弟子盖三千焉，身通六艺者七十有二人。",
+     "source_chapter": "史记·孔子世家",
+     "citation": "《史记·孔子世家》"
+    },
+    {
+     "category": "伦理",
+     "proposition": "正名：君君臣臣父父子子",
+     "counterpart": "齐景公",
+     "place": "鲁、齐",
+     "year": "春秋末",
+     "result": "主张",
+     "original_text": "君君，臣臣，父父，子子。",
+     "source_chapter": "史记·孔子世家",
+     "citation": "《史记·孔子世家》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "布衣之业，学者宗之",
+     "counterpart": "",
+     "place": "鲁",
+     "year": "身后",
+     "result": "成功",
+     "original_text": "孔子布衣，传十馀世，学者宗之。自天子王侯，中国言六艺者折中於夫子，可谓至圣矣！",
+     "source_chapter": "史记·孔子世家",
+     "citation": "《史记·孔子世家》"
+    }
+   ],
+   "works": [
+    {
+     "title": "论语",
+     "author": "孔子弟子及再传弟子",
+     "era": "春秋末—战国初",
+     "summary": "孔子及门人言行汇编，二十篇，约一万二千字。",
+     "core_idea": "仁、礼、孝悌、忠恕、教育",
+     "note": "今本二十篇"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "孟子",
+   "aliases": "孟轲、亚圣",
+   "school": "儒家",
+   "era": "战国",
+   "state": "邹→齐→梁",
+   "role": "思想家/游士",
+   "bio": "邹人，受业子思之门人。游说齐宣王、梁惠王，主张仁政王道；不见用，退而与万章之徒著《孟子》七篇。",
+   "main_thought": "性善、仁政、民本、王道；以仁义反对功利与霸道。",
+   "famous_work": "孟子",
+   "ending": "退居著述，卒于邹",
+   "source_chapter": "史记·孟子荀卿列传;史记·魏世家",
+   "note": "儒家理想主义一脉",
+   "rating": {
+    "depth": 9.0,
+    "originality": 8.8,
+    "system": 8.9,
+    "practice": 8.2,
+    "transmission": 8.8,
+    "influence": 9.3,
+    "overall": 8.83,
+    "grade": "A+",
+    "rationale": "以性善与仁政建立道德政治学，民本思想影响深远；现实政治实践有限。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "述唐虞三代之德，作《孟子》七篇",
+     "counterpart": "",
+     "place": "邹",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "天下方务於合从连衡，以攻伐为贤，而孟轲乃述唐、虞、三代之德，是以所如者不合。退而与万章之徒序诗书，述仲尼之意，作孟子七篇。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "伦理",
+     "proposition": "对梁惠王言仁义而非利",
+     "counterpart": "梁惠王",
+     "place": "梁",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "君不可以言利若是。夫君欲利则大夫欲利，大夫欲利则庶人欲利，上下争利，国则危矣。为人君，仁义而已矣，何以利为！",
+     "source_chapter": "史记·魏世家",
+     "citation": "《史记·魏世家》"
+    },
+    {
+     "category": "生平",
+     "proposition": "受业子思之门人",
+     "counterpart": "",
+     "place": "邹",
+     "year": "战国",
+     "result": "师承",
+     "original_text": "孟轲，驺人也。受业子思之门人。道既通，游事齐宣王，宣王不能用。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "孟子",
+     "author": "孟子及其门人万章等",
+     "era": "战国",
+     "summary": "七篇，记孟子游说诸侯、论性善与仁政。",
+     "core_idea": "性善、仁政、民本、王道",
+     "note": "史记称“作孟子七篇”"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "荀子",
+   "aliases": "荀卿、孙卿",
+   "school": "儒家",
+   "era": "战国末",
+   "state": "赵→齐→楚",
+   "role": "思想家/教育家",
+   "bio": "赵人，年五十游学于齐，三为稷下祭酒。后适楚为兰陵令，废而家兰陵，著书数万言，李斯、韩非皆其弟子。",
+   "main_thought": "性恶、礼法并施、天人之分、劝学；以礼义矫治人性，以制度重建秩序。",
+   "famous_work": "荀子",
+   "ending": "废居兰陵，著书以终",
+   "source_chapter": "史记·孟子荀卿列传",
+   "note": "儒家制度主义一脉",
+   "rating": {
+    "depth": 9.2,
+    "originality": 8.7,
+    "system": 9.2,
+    "practice": 8.4,
+    "transmission": 8.6,
+    "influence": 8.8,
+    "overall": 8.88,
+    "grade": "A+",
+    "rationale": "以性恶论与礼法论补足儒家制度面，体系严整、教育影响巨大；其法家弟子分流，评价复杂。"
+   },
+   "doctrines": [
+    {
+     "category": "教育",
+     "proposition": "年五十游学于齐，三为祭酒",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "荀卿，赵人。年五十始来游学於齐。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "思想",
+     "proposition": "推儒墨道德之行事，著书数万言",
+     "counterpart": "",
+     "place": "楚",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "荀卿嫉浊世之政，亡国乱君相属，不遂大道而营於巫祝，信禨祥，鄙儒小拘，如庄周等又猾稽乱俗，於是推儒、墨、道德之行事兴坏，序列著数万言而卒。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "教育",
+     "proposition": "三为稷下祭酒",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "田骈之属皆已死齐襄王时，而荀卿最为老师。齐尚脩列大夫之缺，而荀卿三为祭酒焉。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "荀子",
+     "author": "荀子及其弟子",
+     "era": "战国末",
+     "summary": "三十余篇，论天人之分、性恶、礼法与教化。",
+     "core_idea": "性恶、礼法、天行有常、劝学",
+     "note": "史记称“序列著数万言”"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "老子",
+   "aliases": "李耳、老聃、太上老君",
+   "school": "道家",
+   "era": "春秋",
+   "state": "周",
+   "role": "史官/思想家",
+   "bio": "楚苦县厉乡曲仁里人，周守藏室之史。见周衰西去，应关令尹喜之请著书上下篇，言道德之意五千余言。",
+   "main_thought": "道法自然、无为而治、贵柔守静、反者道之动；以“无”与“柔”化解人为与强权。",
+   "famous_work": "道德经",
+   "ending": "西出关，莫知所终",
+   "source_chapter": "史记·老子韩非列传",
+   "note": "道家宗师",
+   "rating": {
+    "depth": 9.7,
+    "originality": 9.6,
+    "system": 9.2,
+    "practice": 8.5,
+    "transmission": 9.0,
+    "influence": 9.7,
+    "overall": 9.33,
+    "grade": "S",
+    "rationale": "以“道”重建宇宙论与政治哲学，思想深度与原创性极高；实践路径隐微，传承靠注疏。"
+   },
+   "doctrines": [
+    {
+     "category": "宇宙观",
+     "proposition": "修道德，以自隐无名为务",
+     "counterpart": "",
+     "place": "周",
+     "year": "春秋末",
+     "result": "主张",
+     "original_text": "老子脩道德，其学以自隐无名为务。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "著述",
+     "proposition": "著书上下篇，言道德之意五千余言",
+     "counterpart": "关令尹喜",
+     "place": "周",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "关令尹喜曰：子将隐矣，强为我著书。於是老子乃著书上下篇，言道德之意五千余言而去，莫知其所终。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "无为自化，清静自正",
+     "counterpart": "",
+     "place": "周",
+     "year": "春秋末",
+     "result": "主张",
+     "original_text": "李耳无为自化，清静自正。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "道德经",
+     "author": "老子",
+     "era": "春秋末",
+     "summary": "上下篇，五千余言，论道、德、无为、柔弱。",
+     "core_idea": "道法自然、无为而治、反者道之动",
+     "note": "史记称“言道德之意五千余言”"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "庄子",
+   "aliases": "庄周、南华真人",
+   "school": "道家",
+   "era": "战国",
+   "state": "宋",
+   "role": "思想家/隐士",
+   "bio": "蒙人，尝为蒙漆园吏。著书十余万言，多寓言；诋訿孔子之徒，以明老子之术，终身不仕。",
+   "main_thought": "齐物、逍遥、无用之用、养生；以寓言消解是非与功名，追求精神自由。",
+   "famous_work": "庄子",
+   "ending": "隐终",
+   "source_chapter": "史记·老子韩非列传",
+   "note": "道家浪漫主义一脉",
+   "rating": {
+    "depth": 9.6,
+    "originality": 9.7,
+    "system": 8.8,
+    "practice": 7.5,
+    "transmission": 8.6,
+    "influence": 9.4,
+    "overall": 9.02,
+    "grade": "A+",
+    "rationale": "以寓言与齐物论开出中国式的自由哲学，原创性与文学性极高；政治实践性弱。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "其学无所不窥，要本归于老子之言",
+     "counterpart": "",
+     "place": "宋",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "其学无所不闚，然其要本归於老子之言。故其著书十馀万言，大抵率寓言也。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "方法论",
+     "proposition": "以寓言诋訿孔子之徒，明老子之术",
+     "counterpart": "",
+     "place": "宋",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "作渔父、盗跖、胠箧，以诋訿孔子之徒，以明老子之术。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "人生论",
+     "proposition": "洸洋自恣以适己",
+     "counterpart": "",
+     "place": "宋",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "其言洸洋自恣以適己，故自王公大人不能器之。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "庄子",
+     "author": "庄子及其后学",
+     "era": "战国",
+     "summary": "十余万言，多寓言，论齐物、逍遥、养生、应帝王。",
+     "core_idea": "齐物、逍遥、无用之用、养生",
+     "note": "今本三十三篇"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "列子",
+   "aliases": "列御寇、子列子",
+   "school": "道家",
+   "era": "战国",
+   "state": "郑",
+   "role": "思想家/隐士",
+   "bio": "郑人，道家前辈。家贫而不受郑子阳之粟，以“贵虚”著称，多寓言传世。",
+   "main_thought": "贵虚、守静、安命；以“虚”观物，不以贫富生死累心。",
+   "famous_work": "列子",
+   "ending": "事迹不祥",
+   "source_chapter": "吕氏春秋·不二;吕氏春秋·观世;吕氏春秋·审己",
+   "note": "道家隐逸一脉",
+   "rating": {
+    "depth": 8.4,
+    "originality": 8.2,
+    "system": 8.0,
+    "practice": 7.2,
+    "transmission": 7.8,
+    "influence": 7.8,
+    "overall": 7.98,
+    "grade": "B+",
+    "rationale": "以贵虚与安命见长，寓言丰富；体系性与政治影响不及老庄。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "子列子贵虚",
+     "counterpart": "",
+     "place": "郑",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "子列子贵虚。",
+     "source_chapter": "吕氏春秋·不二",
+     "citation": "《吕氏春秋·不二》"
+    },
+    {
+     "category": "人生论",
+     "proposition": "辞郑子阳之粟",
+     "counterpart": "郑子阳",
+     "place": "郑",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "子列子出见使者，再拜而辞。",
+     "source_chapter": "吕氏春秋·观世",
+     "citation": "《吕氏春秋·观世》"
+    },
+    {
+     "category": "认识论",
+     "proposition": "守其所以中，非独射也",
+     "counterpart": "关尹子",
+     "place": "郑",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "非独射也，国之存也，国之亡也，身之贤也，身之不肖也，亦皆有以。",
+     "source_chapter": "吕氏春秋·审己",
+     "citation": "《吕氏春秋·审己》"
+    }
+   ],
+   "works": []
+  },
+  {
+   "id": 7,
+   "name": "杨朱",
+   "aliases": "杨子、阳生、杨子居",
+   "school": "道家",
+   "era": "战国",
+   "state": "魏",
+   "role": "思想家",
+   "bio": "战国初期思想家，主张“贵己”“为我”，与墨家并称显学；其书不传，学说散见诸子。",
+   "main_thought": "贵己、重生、为我；反对以物累身，也反对兼爱对个体的吞没。",
+   "famous_work": "杨朱（佚）",
+   "ending": "事迹不祥",
+   "source_chapter": "吕氏春秋·不二",
+   "note": "贵己学派",
+   "rating": {
+    "depth": 8.5,
+    "originality": 8.8,
+    "system": 7.8,
+    "practice": 7.0,
+    "transmission": 7.2,
+    "influence": 7.6,
+    "overall": 7.97,
+    "grade": "B+",
+    "rationale": "以贵己重生提出个体价值问题，原创性强；文献散佚，体系与传承受限。"
+   },
+   "doctrines": [
+    {
+     "category": "人生论",
+     "proposition": "阳生贵己",
+     "counterpart": "",
+     "place": "魏",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "阳生贵己。",
+     "source_chapter": "吕氏春秋·不二",
+     "citation": "《吕氏春秋·不二》"
+    }
+   ],
+   "works": []
+  },
+  {
+   "id": 8,
+   "name": "关尹",
+   "aliases": "关令尹喜、尹喜",
+   "school": "道家",
+   "era": "春秋",
+   "state": "周",
+   "role": "关令/思想家",
+   "bio": "周函谷关令。老子西去时，请其著书；《庄子》《吕氏春秋》多载其“贵清”之说。",
+   "main_thought": "贵清、守一、因物之自然；以清静为道之门。",
+   "famous_work": "关尹子（佚/辑本）",
+   "ending": "与老子俱隐",
+   "source_chapter": "史记·老子韩非列传;吕氏春秋·不二;吕氏春秋·审己",
+   "note": "道家先驱",
+   "rating": {
+    "depth": 8.2,
+    "originality": 8.2,
+    "system": 7.8,
+    "practice": 7.0,
+    "transmission": 7.0,
+    "influence": 7.2,
+    "overall": 7.72,
+    "grade": "B+",
+    "rationale": "以贵清与守一著称，是老子出关故事的关键人物；独立著述不传。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "关尹贵清",
+     "counterpart": "",
+     "place": "周",
+     "year": "春秋末",
+     "result": "主张",
+     "original_text": "关尹贵清。",
+     "source_chapter": "吕氏春秋·不二",
+     "citation": "《吕氏春秋·不二》"
+    },
+    {
+     "category": "著述",
+     "proposition": "请老子著书",
+     "counterpart": "老子",
+     "place": "周",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "关令尹喜曰：子将隐矣，强为我著书。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "认识论",
+     "proposition": "知所以中，守而勿失",
+     "counterpart": "列子",
+     "place": "周",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "关尹子曰：可矣，守而勿失。",
+     "source_chapter": "吕氏春秋·审己",
+     "citation": "《吕氏春秋·审己》"
+    }
+   ],
+   "works": []
+  },
+  {
+   "id": 9,
+   "name": "墨子",
+   "aliases": "墨翟、墨子",
+   "school": "墨家",
+   "era": "战国",
+   "state": "宋→鲁",
+   "role": "思想家/工匠/守城家",
+   "bio": "宋大夫，善守御，为节用。创立墨家，组织严密，主张兼爱非攻，与儒家并称显学。",
+   "main_thought": "兼爱、非攻、尚贤、节用、明鬼；以“交相利”重建社会合作。",
+   "famous_work": "墨子",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·孟子荀卿列传;史记·太史公自序;吕氏春秋·不二",
+   "note": "墨家宗师",
+   "rating": {
+    "depth": 9.0,
+    "originality": 9.2,
+    "system": 9.0,
+    "practice": 8.8,
+    "transmission": 8.8,
+    "influence": 9.0,
+    "overall": 8.99,
+    "grade": "A+",
+    "rationale": "以兼爱非攻与严密组织开平民学派，逻辑、工学与守城术兼备；秦汉后传承中断。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "善守御，为节用",
+     "counterpart": "",
+     "place": "宋",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "盖墨翟，宋之大夫，善守御，为节用。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "伦理",
+     "proposition": "墨者俭而难遵，然强本节用不可废",
+     "counterpart": "",
+     "place": "",
+     "year": "战国",
+     "result": "评价",
+     "original_text": "墨者俭而难遵，是以其事不可遍循；然其彊本节用，不可废也。",
+     "source_chapter": "史记·太史公自序",
+     "citation": "《史记·太史公自序》"
+    },
+    {
+     "category": "伦理",
+     "proposition": "墨翟贵廉",
+     "counterpart": "",
+     "place": "",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "墨翟贵廉。",
+     "source_chapter": "吕氏春秋·不二",
+     "citation": "《吕氏春秋·不二》"
+    }
+   ],
+   "works": [
+    {
+     "title": "墨子",
+     "author": "墨子及其后学",
+     "era": "战国",
+     "summary": "五十三篇，论兼爱、非攻、尚贤、节用、守城。",
+     "core_idea": "兼爱、非攻、尚贤、节用",
+     "note": "墨家总集"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "韩非",
+   "aliases": "韩非子",
+   "school": "法家",
+   "era": "战国末",
+   "state": "韩",
+   "role": "思想家/公子",
+   "bio": "韩之诸公子，喜刑名法术之学，归本于黄老。见韩削弱，数上书不用，乃著《孤愤》《五蠹》等十余万言。使秦，为李斯所害。",
+   "main_thought": "法、术、势三者合一；以法为教、以吏为师，奖励耕战，强化君主集权。",
+   "famous_work": "韩非子",
+   "ending": "死于秦狱",
+   "source_chapter": "史记·老子韩非列传",
+   "note": "法家集大成者",
+   "rating": {
+    "depth": 9.2,
+    "originality": 9.0,
+    "system": 9.5,
+    "practice": 8.8,
+    "transmission": 8.5,
+    "influence": 9.2,
+    "overall": 9.09,
+    "grade": "A+",
+    "rationale": "把法、术、势整合为完整君主论，体系严密、实践性强；秦亡后其学背负苛政之名。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "喜刑名法术之学，归本于黄老",
+     "counterpart": "",
+     "place": "韩",
+     "year": "战国末",
+     "result": "主张",
+     "original_text": "韩非者，韩之诸公子也。喜刑名法术之学，而其归本於黄老。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "著述",
+     "proposition": "著《孤愤》《五蠹》等十余万言",
+     "counterpart": "",
+     "place": "韩",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "故作孤愤、五蠹、内外储、说林、说难十馀万言。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "秦王读其书而叹",
+     "counterpart": "秦王政",
+     "place": "秦",
+     "year": "前233",
+     "result": "成功",
+     "original_text": "秦王见孤愤、五蠹之书，曰：嗟乎，寡人得见此人与之游，死不恨矣！",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "韩非子",
+     "author": "韩非",
+     "era": "战国末",
+     "summary": "五十五篇，集法、术、势，论君主统治与富国强兵。",
+     "core_idea": "法、术、势、耕战",
+     "note": "史记称“十馀万言”"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "商鞅",
+   "aliases": "卫鞅、公孙鞅",
+   "school": "法家",
+   "era": "战国",
+   "state": "卫→秦",
+   "role": "改革家/大良造",
+   "bio": "卫国公族，少好刑名之学。入秦说孝公变法，废井田、开阡陌、行县制、明军功，使秦富强；孝公死后被车裂。",
+   "main_thought": "以法治国、奖励耕战、刑赏必信、削弱贵族；以制度动员全国资源。",
+   "famous_work": "商君书",
+   "ending": "被车裂",
+   "source_chapter": "史记·商君列传",
+   "note": "秦制奠基者",
+   "rating": {
+    "depth": 8.8,
+    "originality": 8.6,
+    "system": 9.0,
+    "practice": 9.5,
+    "transmission": 8.5,
+    "influence": 9.0,
+    "overall": 8.89,
+    "grade": "A+",
+    "rationale": "变法实践性与制度设计极强，直接塑造秦制；思想原创性稍逊于韩非，个人结局悲惨。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "少好刑名之学",
+     "counterpart": "",
+     "place": "卫",
+     "year": "战国",
+     "result": "师承",
+     "original_text": "鞅少好刑名之学，事魏相公叔座为中庶子。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "令民什伍、连坐告奸",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前356",
+     "result": "成功",
+     "original_text": "令民为什伍，而相牧司连坐。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    },
+    {
+     "category": "史评",
+     "proposition": "天资刻薄，然其书与行事相类",
+     "counterpart": "",
+     "place": "秦",
+     "year": "身后",
+     "result": "评价",
+     "original_text": "商君，其天资刻薄人也。迹其欲干孝公以帝王术，挟持浮说，非其质矣。",
+     "source_chapter": "史记·商君列传",
+     "citation": "《史记·商君列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "商君书",
+     "author": "商鞅及其后学",
+     "era": "战国",
+     "summary": "论变法、农战、刑赏、县制。",
+     "core_idea": "农战、刑赏、弱民、变法",
+     "note": "今本二十四篇"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "申不害",
+   "aliases": "申子",
+   "school": "法家",
+   "era": "战国",
+   "state": "郑→韩",
+   "role": "相国/思想家",
+   "bio": "郑之贱臣，学术以干韩昭侯，用为相十五年，国治兵强。其学本于黄老而主刑名，尤重“术”。",
+   "main_thought": "术治、循名责实、君主驭臣；以隐蔽的考核与控驭补法治之不足。",
+   "famous_work": "申子",
+   "ending": "卒于韩",
+   "source_chapter": "史记·老子韩非列传",
+   "note": "术治代表",
+   "rating": {
+    "depth": 8.5,
+    "originality": 8.4,
+    "system": 8.6,
+    "practice": 8.8,
+    "transmission": 8.0,
+    "influence": 8.3,
+    "overall": 8.48,
+    "grade": "A",
+    "rationale": "以“术”补“法”，行政控制成效显著；韩国地小，思想影响不及韩非。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "学本黄老而主刑名，著书二篇",
+     "counterpart": "",
+     "place": "韩",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "申子之学本於黄老而主刑名。著书二篇，号曰申子。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "相韩十五年，国治兵强",
+     "counterpart": "韩昭侯",
+     "place": "韩",
+     "year": "前351—前337",
+     "result": "成功",
+     "original_text": "内脩政教，外应诸侯，十五年。终申子之身，国治兵彊，无侵韩者。",
+     "source_chapter": "史记·老子韩非列传",
+     "citation": "《史记·老子韩非列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "申子",
+     "author": "申不害",
+     "era": "战国",
+     "summary": "论“术”与君主驭臣之法，今多佚。",
+     "core_idea": "术治、循名责实",
+     "note": "原书已佚，有辑本"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "慎到",
+   "aliases": "慎子",
+   "school": "法家",
+   "era": "战国",
+   "state": "赵→齐",
+   "role": "稷下学者",
+   "bio": "赵人，稷下先生，学黄老道德之术，著《十二论》，重“势”与法治。",
+   "main_thought": "势治、尚法、去私；君主须据势行法，不以私意乱公器。",
+   "famous_work": "慎子",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·孟子荀卿列传",
+   "note": "势治代表",
+   "rating": {
+    "depth": 8.4,
+    "originality": 8.4,
+    "system": 8.5,
+    "practice": 8.0,
+    "transmission": 7.8,
+    "influence": 8.0,
+    "overall": 8.26,
+    "grade": "B+",
+    "rationale": "以“势”补法家理论，稷下学术背景使其兼采道家；著作残缺，影响有限。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "学黄老道德之术，著十二论",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "慎到，赵人。田骈、接子，齐人。环渊，楚人。皆学黄老道德之术，因发明序其指意。故慎到著十二论，环渊著上下篇，而田骈、接子皆有所论焉。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "稷下先生，不治而议论",
+     "counterpart": "齐宣王",
+     "place": "齐",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "宣王喜文学游说之士，自如驺衍、淳于髡、田骈、接予、慎到、环渊之徒七十六人，皆赐列第，为上大夫，不治而议论。",
+     "source_chapter": "史记·田敬仲完世家",
+     "citation": "《史记·田敬仲完世家》"
+    }
+   ],
+   "works": [
+    {
+     "title": "慎子",
+     "author": "慎到",
+     "era": "战国",
+     "summary": "论“势”与法治，今存辑本。",
+     "core_idea": "势治、尚法、去私",
+     "note": "史记称“著十二论”"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "惠施",
+   "aliases": "惠子",
+   "school": "名家",
+   "era": "战国",
+   "state": "宋→魏",
+   "role": "相国/辩者",
+   "bio": "宋人，魏惠王相，名家代表。主张“合同异”，为魏惠王制法；与庄子辩论，其书多佚。",
+   "main_thought": "合同异、历物十事、正名实；以相对性与整体性消解固定界限。",
+   "famous_work": "惠子（佚）",
+   "ending": "事迹不祥",
+   "source_chapter": "吕氏春秋·审应览;史记·孟子荀卿列传",
+   "note": "名家合同异派",
+   "rating": {
+    "depth": 8.6,
+    "originality": 8.8,
+    "system": 8.2,
+    "practice": 8.2,
+    "transmission": 7.5,
+    "influence": 7.8,
+    "overall": 8.31,
+    "grade": "A",
+    "rationale": "以合同异与逻辑思辨著称，兼具政治实践；著作散佚，体系难考。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "为魏惠王制法",
+     "counterpart": "魏惠王",
+     "place": "魏",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "惠子为魏惠王为法。为法已成，以示诸民人，民人皆善之。",
+     "source_chapter": "吕氏春秋·审应览",
+     "citation": "《吕氏春秋·审应览》"
+    },
+    {
+     "category": "思想",
+     "proposition": "其学去尊",
+     "counterpart": "匡章",
+     "place": "魏",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "匡章谓惠子曰：公之学去尊，今又王齐王，何其到也？",
+     "source_chapter": "吕氏春秋·审应览",
+     "citation": "《吕氏春秋·审应览》"
+    },
+    {
+     "category": "政治",
+     "proposition": "治魏为本，其治不治",
+     "counterpart": "",
+     "place": "魏",
+     "year": "战国",
+     "result": "评价",
+     "original_text": "惠子之治魏为本，其治不治。",
+     "source_chapter": "吕氏春秋·审应览",
+     "citation": "《吕氏春秋·审应览》"
+    }
+   ],
+   "works": [
+    {
+     "title": "惠子",
+     "author": "惠施",
+     "era": "战国",
+     "summary": "惠施著述，多佚；其“合同异”之说散见诸书。",
+     "core_idea": "合同异、历物十事",
+     "note": "原书已佚"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "公孙龙",
+   "aliases": "公孙龙子",
+   "school": "名家",
+   "era": "战国",
+   "state": "赵",
+   "role": "辩者/平原君客",
+   "bio": "赵人，平原君门客。以“坚白同异”“白马非马”之辩闻名，著《公孙龙子》。",
+   "main_thought": "离坚白、白马非马、正名实；以概念分析拆解常识语言。",
+   "famous_work": "公孙龙子",
+   "ending": "邹衍过赵后被绌",
+   "source_chapter": "史记·孟子荀卿列传;史记·平原君虞卿列传;吕氏春秋·审应览",
+   "note": "名家离坚白派",
+   "rating": {
+    "depth": 8.5,
+    "originality": 8.8,
+    "system": 8.4,
+    "practice": 7.5,
+    "transmission": 8.0,
+    "influence": 7.8,
+    "overall": 8.27,
+    "grade": "B+",
+    "rationale": "概念分析与逻辑思辨极强，是中国古代逻辑学高峰；现实政治影响有限。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "为坚白同异之辩",
+     "counterpart": "",
+     "place": "赵",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "而赵亦有公孙龙为坚白同异之辩，剧子之言。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "思想",
+     "proposition": "善为坚白之辩，后被邹衍所绌",
+     "counterpart": "邹衍",
+     "place": "赵",
+     "year": "战国",
+     "result": "失败",
+     "original_text": "公孙龙善为坚白之辩，及邹衍过赵言至道，乃绌公孙龙。",
+     "source_chapter": "史记·平原君虞卿列传",
+     "citation": "《史记·平原君虞卿列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "说燕昭王以偃兵",
+     "counterpart": "燕昭王",
+     "place": "燕",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "公孙龙之说燕昭王以偃兵及应空洛之遇也。",
+     "source_chapter": "吕氏春秋·审应览",
+     "citation": "《吕氏春秋·审应览》"
+    }
+   ],
+   "works": [
+    {
+     "title": "公孙龙子",
+     "author": "公孙龙",
+     "era": "战国",
+     "summary": "今存六篇，论坚白、白马、名实。",
+     "core_idea": "离坚白、白马非马、正名实",
+     "note": "今本六篇"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "邹衍",
+   "aliases": "驺衍、谈天衍",
+   "school": "阴阳家",
+   "era": "战国",
+   "state": "齐",
+   "role": "稷下学者/思想家",
+   "bio": "齐人，稷下先生。深观阴阳消息，作终始、大圣之篇十余万言，创五德终始与大九州说，显于诸侯。",
+   "main_thought": "五德终始、阴阳消息、天人相应、大九州；以循环论解释王朝更替与天下格局。",
+   "famous_work": "邹子",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·孟子荀卿列传;史记·封禅书",
+   "note": "阴阳家宗师",
+   "rating": {
+    "depth": 8.6,
+    "originality": 9.0,
+    "system": 8.8,
+    "practice": 7.8,
+    "transmission": 8.2,
+    "influence": 8.6,
+    "overall": 8.56,
+    "grade": "A",
+    "rationale": "以五德终始为大一统提供宇宙论依据，原创性与影响巨大；方术化后受批评。"
+   },
+   "doctrines": [
+    {
+     "category": "宇宙观",
+     "proposition": "深观阴阳消息，作终始、大圣之篇",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "乃深观阴阳消息而作怪迂之变，终始、大圣之篇十馀万言。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "历史观",
+     "proposition": "称引五德转移，治各有宜",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "主张",
+     "original_text": "称引天地剖判以来，五德转移，治各有宜，而符应若兹。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "方法论",
+     "proposition": "其术迂大而闳辩",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "评价",
+     "original_text": "驺衍之术迂大而闳辩；奭也文具难施；淳于髡久与处，时有得善言。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "邹子",
+     "author": "邹衍",
+     "era": "战国",
+     "summary": "论终始五德、大九州、阴阳消息，多佚。",
+     "core_idea": "五德终始、大九州",
+     "note": "史记称“终始、大圣之篇十馀万言”"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "name": "邹奭",
+   "aliases": "驺奭、雕龙奭",
+   "school": "阴阳家",
+   "era": "战国",
+   "state": "齐",
+   "role": "稷下学者",
+   "bio": "齐诸邹子，采邹衍之术以纪文，文饰繁富，齐人称为“雕龙奭”。",
+   "main_thought": "承邹衍阴阳之术，长于文饰与论说；体系性不及邹衍。",
+   "famous_work": "邹奭子",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·孟子荀卿列传",
+   "note": "阴阳家文饰一脉",
+   "rating": {
+    "depth": 7.8,
+    "originality": 7.6,
+    "system": 7.8,
+    "practice": 7.0,
+    "transmission": 7.2,
+    "influence": 7.2,
+    "overall": 7.52,
+    "grade": "B+",
+    "rationale": "以文采承阴阳家余绪，独立思想有限；主要价值在文献传承。"
+   },
+   "doctrines": [
+    {
+     "category": "思想",
+     "proposition": "采邹衍之术以纪文",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "驺奭者，齐诸驺子，亦颇采驺衍之术以纪文。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    },
+    {
+     "category": "史评",
+     "proposition": "文具难施",
+     "counterpart": "",
+     "place": "齐",
+     "year": "战国",
+     "result": "评价",
+     "original_text": "奭也文具难施。",
+     "source_chapter": "史记·孟子荀卿列传",
+     "citation": "《史记·孟子荀卿列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "邹奭子",
+     "author": "邹奭",
+     "era": "战国",
+     "summary": "采邹衍之术以纪文，今佚。",
+     "core_idea": "阴阳、文饰",
+     "note": "史记称“颇采驺衍之术以纪文”"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "name": "鬼谷子",
+   "aliases": "鬼谷先生、王禅",
+   "school": "纵横家",
+   "era": "战国",
+   "state": "不详",
+   "role": "隐士/师",
+   "bio": "隐于鬼谷，授苏秦、张仪纵横之术。其书《鬼谷子》论捭阖、反应、揣摩，为游说术之祖。",
+   "main_thought": "捭阖、反应、揣摩、因势；以语言与情报操纵国际关系。",
+   "famous_work": "鬼谷子",
+   "ending": "事迹不祥",
+   "source_chapter": "史记·苏秦列传;史记·张仪列传",
+   "note": "纵横家之祖",
+   "rating": {
+    "depth": 8.4,
+    "originality": 8.6,
+    "system": 8.0,
+    "practice": 8.6,
+    "transmission": 7.8,
+    "influence": 8.2,
+    "overall": 8.31,
+    "grade": "A",
+    "rationale": "以游说术与情报分析开纵横一派，实践性强；思想深度与体系性稍逊。"
+   },
+   "doctrines": [
+    {
+     "category": "教育",
+     "proposition": "苏秦师事鬼谷先生",
+     "counterpart": "苏秦",
+     "place": "齐",
+     "year": "战国",
+     "result": "师承",
+     "original_text": "苏秦者，东周雒阳人也。东事师於齐，而习之於鬼谷先生。",
+     "source_chapter": "史记·苏秦列传",
+     "citation": "《史记·苏秦列传》"
+    },
+    {
+     "category": "教育",
+     "proposition": "张仪与苏秦俱事鬼谷先生",
+     "counterpart": "张仪",
+     "place": "魏",
+     "year": "战国",
+     "result": "师承",
+     "original_text": "张仪者，魏人也。始尝与苏秦俱事鬼谷先生，学术，苏秦自以不及张仪。",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "鬼谷子",
+     "author": "鬼谷子及其后学",
+     "era": "战国",
+     "summary": "论捭阖、反应、揣摩、游说之术。",
+     "core_idea": "捭阖、揣摩、因势",
+     "note": "今本十四篇，部分为后学所附"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "name": "吕不韦",
+   "aliases": "文信侯",
+   "school": "杂家",
+   "era": "战国末",
+   "state": "卫→秦",
+   "role": "相国/编书者",
+   "bio": "阳翟大贾，以奇货可居立子楚，相秦封文信侯。招宾客三千，编《吕氏春秋》，兼采诸家。",
+   "main_thought": "兼儒墨、合名法，备天地万物古今之事；以综合治道服务统一帝国。",
+   "famous_work": "吕氏春秋",
+   "ending": "罢相徙蜀，饮鸩死",
+   "source_chapter": "史记·吕不韦列传;史记·秦始皇本纪",
+   "note": "杂家代表",
+   "rating": {
+    "depth": 8.8,
+    "originality": 8.5,
+    "system": 9.2,
+    "practice": 8.6,
+    "transmission": 8.4,
+    "influence": 8.8,
+    "overall": 8.75,
+    "grade": "A",
+    "rationale": "以国家力量组织综合学术，体系宏大；个人思想原创性不及所编之书。"
+   },
+   "doctrines": [
+    {
+     "category": "著述",
+     "proposition": "集宾客著八览、六论、十二纪",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前239",
+     "result": "成功",
+     "original_text": "吕不韦乃使其客人人著所闻，集论以为八览、六论、十二纪，二十馀万言。",
+     "source_chapter": "史记·吕不韦列传",
+     "citation": "《史记·吕不韦列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "招致宾客游士，欲以并天下",
+     "counterpart": "",
+     "place": "秦",
+     "year": "战国末",
+     "result": "成功",
+     "original_text": "吕不韦为相，封十万户，号曰文信侯。招致宾客游士，欲以并天下。",
+     "source_chapter": "史记·秦始皇本纪",
+     "citation": "《史记·秦始皇本纪》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "布咸阳市门，悬千金求增损一字",
+     "counterpart": "",
+     "place": "秦",
+     "year": "前239",
+     "result": "成功",
+     "original_text": "布咸阳市门，悬千金其上，延诸侯游士宾客有能增损一字者予千金。",
+     "source_chapter": "史记·吕不韦列传",
+     "citation": "《史记·吕不韦列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "吕氏春秋",
+     "author": "吕不韦宾客",
+     "era": "战国末",
+     "summary": "八览、六论、十二纪，二十余万言，兼采诸家。",
+     "core_idea": "兼儒墨、合名法、备万物",
+     "note": "杂家总集"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "name": "孙武",
+   "aliases": "孙子、孙武子",
+   "school": "兵家",
+   "era": "春秋",
+   "state": "齐→吴",
+   "role": "将军/兵法家",
+   "bio": "齐人，以兵法十三篇见吴王阖庐。吴宫教战斩宠姬立威，后与伍子胥佐吴破楚入郢，北威齐晋。",
+   "main_thought": "知己知彼、庙算先胜、不战而屈人之兵、因敌制胜；以“道天地将法”为战争分析框架。",
+   "famous_work": "孙子兵法",
+   "ending": "事迹不祥，书传后世",
+   "source_chapter": "史记·孙子吴起列传",
+   "note": "兵圣",
+   "rating": {
+    "depth": 9.0,
+    "originality": 9.2,
+    "system": 9.0,
+    "practice": 9.2,
+    "transmission": 9.0,
+    "influence": 9.4,
+    "overall": 9.11,
+    "grade": "A+",
+    "rationale": "以十三篇建立中国兵学体系，战略、战术、治军兼备；超越军事，成为普遍竞争哲学。"
+   },
+   "doctrines": [
+    {
+     "category": "军事",
+     "proposition": "以兵法十三篇见吴王",
+     "counterpart": "吴王阖庐",
+     "place": "吴",
+     "year": "前512",
+     "result": "成功",
+     "original_text": "孙子武者，齐人也。以兵法见於吴王阖庐。阖庐曰：子之十三篇，吾尽观之矣，可以小试勒兵乎？",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "将在军，君命有所不受",
+     "counterpart": "吴王阖庐",
+     "place": "吴",
+     "year": "前512",
+     "result": "成功",
+     "original_text": "臣既已受命为将，将在军，君命有所不受。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "西破强楚，北威齐晋",
+     "counterpart": "",
+     "place": "吴",
+     "year": "前506",
+     "result": "成功",
+     "original_text": "西破彊楚，入郢，北威齐晋，显名诸侯，孙子与有力焉。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "孙子兵法",
+     "author": "孙武",
+     "era": "春秋末",
+     "summary": "十三篇，论庙算、谋攻、形势、虚实、军争。",
+     "core_idea": "知己知彼、不战而屈人之兵",
+     "note": "史记称“子之十三篇”"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "name": "孙膑",
+   "aliases": "孙膑、孙子",
+   "school": "兵家",
+   "era": "战国",
+   "state": "齐",
+   "role": "军师/兵法家",
+   "bio": "孙武之后，与庞涓同学兵法，被膑刑。后为齐军师，桂陵、马陵两败魏军，杀庞涓，名显天下。",
+   "main_thought": "批亢捣虚、因势利导、示形诱敌；以机动与心理战瓦解强敌。",
+   "famous_work": "孙膑兵法",
+   "ending": "事迹不祥，兵法传世",
+   "source_chapter": "史记·孙子吴起列传",
+   "note": "围魏救赵",
+   "rating": {
+    "depth": 8.5,
+    "originality": 8.6,
+    "system": 8.4,
+    "practice": 9.0,
+    "transmission": 8.2,
+    "influence": 8.5,
+    "overall": 8.54,
+    "grade": "A",
+    "rationale": "以围魏救赵、马陵设伏展现极高战术与心理战水平；理论体系不如孙武完整。"
+   },
+   "doctrines": [
+    {
+     "category": "军事",
+     "proposition": "批亢捣虚，围魏救赵",
+     "counterpart": "庞涓",
+     "place": "魏",
+     "year": "前354",
+     "result": "成功",
+     "original_text": "夫解杂乱纷纠者不控卷，救斗者不搏撠，批亢捣虚，形格势禁，则自为解耳。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "因势利导，减灶诱敌",
+     "counterpart": "庞涓",
+     "place": "魏",
+     "year": "前342",
+     "result": "成功",
+     "original_text": "彼三晋之兵素悍勇而轻齐，齐号为怯，善战者因其势而利导之。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "马陵设伏，庞涓自刭",
+     "counterpart": "庞涓",
+     "place": "马陵",
+     "year": "前342",
+     "result": "成功",
+     "original_text": "乃斫大树白而书之曰“庞涓死于此树之下”。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "孙膑兵法",
+     "author": "孙膑",
+     "era": "战国",
+     "summary": "论因势利导、批亢捣虚、阵法与用间。",
+     "core_idea": "因势、批亢捣虚、示形",
+     "note": "史记称“世传其兵法”"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "name": "吴起",
+   "aliases": "吴子",
+   "school": "兵家",
+   "era": "战国",
+   "state": "卫→鲁→魏→楚",
+   "role": "将军/改革家",
+   "bio": "卫人，好用兵，尝学于曾子。为鲁将破齐，为魏守西河，秦兵不敢东向；后相楚变法，被贵族射杀。",
+   "main_thought": "内修文德、外治武备；以法治军、与士卒同甘苦，兼重政治与军事。",
+   "famous_work": "吴子",
+   "ending": "楚悼王死后被贵族射杀",
+   "source_chapter": "史记·孙子吴起列传",
+   "note": "军政全才",
+   "rating": {
+    "depth": 8.6,
+    "originality": 8.4,
+    "system": 8.8,
+    "practice": 9.3,
+    "transmission": 8.4,
+    "influence": 8.8,
+    "overall": 8.71,
+    "grade": "A",
+    "rationale": "战国最全面的军政改革者之一，西河守与楚变政均见实效；杀妻求将等行为争议大。"
+   },
+   "doctrines": [
+    {
+     "category": "军事",
+     "proposition": "学于曾子，为鲁将破齐",
+     "counterpart": "",
+     "place": "鲁",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "吴起者，卫人也，好用兵。尝学於曾子，事鲁君。齐人攻鲁，鲁欲将吴起。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "守西河，秦兵不敢东向",
+     "counterpart": "",
+     "place": "魏",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "吴起为西河守，甚有声名。",
+     "source_chapter": "史记·孙子吴起列传",
+     "citation": "《史记·孙子吴起列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "相楚变法，南平百越",
+     "counterpart": "楚悼王",
+     "place": "楚",
+     "year": "战国",
+     "result": "成功",
+     "original_text": "吴起为楚悼罢无能，废无用，损不急之官，塞私门之请，壹楚国之俗，南攻扬越，北并陈、蔡。",
+     "source_chapter": "战国策·秦策三",
+     "citation": "《战国策·秦策三》"
+    }
+   ],
+   "works": [
+    {
+     "title": "吴子",
+     "author": "吴起",
+     "era": "战国",
+     "summary": "论图国、料敌、治兵、论将、应变、励士。",
+     "core_idea": "内修文德、外治武备",
+     "note": "今本六篇"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "name": "司马穰苴",
+   "aliases": "田穰苴、司马穰苴",
+   "school": "兵家",
+   "era": "春秋",
+   "state": "齐",
+   "role": "将军/大司马",
+   "bio": "田完苗裔，齐景公时晏婴荐为将。斩违期监军庄贾立威，击退晋燕之师，尊为大司马。",
+   "main_thought": "以法治军、赏罚必信、与士卒同甘苦；将帅须“文能附众，武能威敌”。",
+   "famous_work": "司马穰苴兵法",
+   "ending": "遭鲍氏谮害，发疾而死",
+   "source_chapter": "史记·司马穰苴列传",
+   "note": "以军纪立威",
+   "rating": {
+    "depth": 8.2,
+    "originality": 8.2,
+    "system": 8.4,
+    "practice": 8.8,
+    "transmission": 7.8,
+    "influence": 8.2,
+    "overall": 8.29,
+    "grade": "B+",
+    "rationale": "以严明军纪与抚循士卒并重，实践性突出；理论著作多经后人附益。"
+   },
+   "doctrines": [
+    {
+     "category": "军事",
+     "proposition": "文能附众，武能威敌",
+     "counterpart": "齐景公",
+     "place": "齐",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "穰苴虽田氏庶孽，然其人文能附众，武能威敌，原君试之。",
+     "source_chapter": "史记·司马穰苴列传",
+     "citation": "《史记·司马穰苴列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "斩庄贾以立军威",
+     "counterpart": "庄贾",
+     "place": "齐",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "将受命之日则忘其家，临军约束则忘其亲，援枹鼓之急则忘其身。",
+     "source_chapter": "史记·司马穰苴列传",
+     "citation": "《史记·司马穰苴列传》"
+    },
+    {
+     "category": "军事",
+     "proposition": "将在军，君令有所不受",
+     "counterpart": "齐景公使者",
+     "place": "齐",
+     "year": "春秋末",
+     "result": "成功",
+     "original_text": "将在军，君令有所不受。",
+     "source_chapter": "史记·司马穰苴列传",
+     "citation": "《史记·司马穰苴列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "司马穰苴兵法",
+     "author": "司马穰苴",
+     "era": "春秋末",
+     "summary": "论军纪、阵法、赏罚与将道。",
+     "core_idea": "以法治军、文能附众、武能威敌",
+     "note": "战国时齐人追论附益"
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "name": "许行",
+   "aliases": "",
+   "school": "农家",
+   "era": "战国",
+   "state": "楚",
+   "role": "农家领袖",
+   "bio": "楚人，率数十徒自楚至滕，「衣褐、捆屦、织席」以自给，托神农之道游说滕文公，其说盛行一时，儒家陈相弃学从之。",
+   "main_thought": "贤者与民并耕而食；市贾不贰、国中无伪",
+   "famous_work": "神农之教（托名）",
+   "ending": "其学为孟子所驳，「从许子之道，相率而为伪者也」；门人散，学不传。",
+   "source_chapter": "孟子·滕文公上",
+   "note": "事迹仅见《孟子》",
+   "rating": {
+    "depth": 5.5,
+    "originality": 6.5,
+    "system": 4.5,
+    "practice": 7.5,
+    "transmission": 4.0,
+    "influence": 5.5,
+    "overall": 5.65,
+    "grade": "C",
+    "rationale": "一派宗师而记载单薄：思想直面君民分工之辩，实践性强；体系与传承均弱，为孟子所破后无嗣响。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "贤者与民并耕而食，饔飧而治，不应厉民自养",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "贤者与民并耕而食，饔飧而治。今也滕有仓廪府库，则是厉民而以自养也",
+     "source_chapter": "孟子·滕文公上",
+     "citation": "《孟子·滕文公上》"
+    },
+    {
+     "category": "经济",
+     "proposition": "市贾不贰、国中无伪，一市同价",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "从许子之道，则市贾不贰，国中无伪；虽使五尺之童适市，莫之或欺",
+     "source_chapter": "孟子·滕文公上",
+     "citation": "《孟子·滕文公上》"
+    },
+    {
+     "category": "史评",
+     "proposition": "百工分工不可废，并耕之说不通",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "百工之事，固不可耕且为也",
+     "source_chapter": "孟子·滕文公上",
+     "citation": "《孟子·滕文公上》"
+    }
+   ],
+   "works": []
+  },
+  {
+   "id": 25,
+   "name": "宋钘",
+   "aliases": "宋荣子、宋牼、宋轻",
+   "school": "小说家",
+   "era": "战国",
+   "state": "宋",
+   "role": "游士、学者",
+   "bio": "宋人，与尹文同游稷下，《庄子·天下》列其为「古之道术」一支；周行天下、上说下教，力主止兵息斗。",
+   "main_thought": "见侮不辱以救斗，禁攻寝兵以救世；情欲寡浅",
+   "famous_work": "宋子（佚）",
+   "ending": "受天下之厌而强聒不舍；著《宋子》十八篇，汉后佚。",
+   "source_chapter": "庄子·天下;孟子·告子下;汉书·艺文志",
+   "note": "学派归属有小说家/墨家别派诸说",
+   "rating": {
+    "depth": 7.0,
+    "originality": 6.5,
+    "system": 6.0,
+    "practice": 8.0,
+    "transmission": 5.0,
+    "influence": 6.5,
+    "overall": 6.6,
+    "grade": "B",
+    "rationale": "有独立宗旨与救世实践，荀孟皆有回应；原著佚失，学派归属成疑，体系不及儒墨道法。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "禁攻寝兵为外，情欲寡浅为内",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "以禁攻寝兵为外，以情欲寡浅为内，其小大精粗，其行适至是而止",
+     "source_chapter": "庄子·天下",
+     "citation": "《庄子·天下》"
+    },
+    {
+     "category": "伦理",
+     "proposition": "见侮不辱，以救民之斗",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "见侮不辱，救民之斗；禁攻寝兵，救世之战",
+     "source_chapter": "庄子·天下",
+     "citation": "《庄子·天下》"
+    },
+    {
+     "category": "方法论",
+     "proposition": "不累于俗、别宥为始，愿天下安宁以活民命",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "不累于俗，不饰于物，不苟于人，不忮于众，愿天下之安宁，以活民命",
+     "source_chapter": "庄子·天下",
+     "citation": "《庄子·天下》"
+    }
+   ],
+   "works": [
+    {
+     "title": "宋子",
+     "author": "宋钘",
+     "era": "战国",
+     "summary": "《汉书·艺文志》小说家著录十八篇，佚；观街谈巷语而作。",
+     "core_idea": "禁攻寝兵，情欲寡浅",
+     "note": "原书佚"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "name": "扁鹊",
+   "aliases": "秦越人",
+   "school": "方技家",
+   "era": "春秋末—战国",
+   "state": "渤海郡郑（齐地）",
+   "role": "医家",
+   "bio": "姓秦氏，名越人。从长桑君受禁方，诊籍遍赵、周、秦；随俗为变，过邯郸为带下医，过雒阳为耳目痹医，入咸阳为小儿医。",
+   "main_thought": "切脉望色、听声写形；病有六不治",
+   "famous_work": "扁鹊内经、外经（佚）",
+   "ending": "秦太医令李醯自知伎不如，使人刺杀之；「至今天下言脉者，由扁鹊也」。",
+   "source_chapter": "史记·扁鹊仓公列传",
+   "note": "事迹有层累，姑系于战国",
+   "rating": {
+    "depth": 6.0,
+    "originality": 8.0,
+    "system": 6.5,
+    "practice": 9.0,
+    "transmission": 8.5,
+    "influence": 9.0,
+    "overall": 7.5,
+    "grade": "B+",
+    "rationale": "以技艺立派而影响千年：脉诊与「六不治」皆开风气；理论体系存于佚书，深度评估受限。"
+   },
+   "doctrines": [
+    {
+     "category": "方法论",
+     "proposition": "人之所病病疾多，医之所病病道少",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "人之所病，病疾多；而医之所病，病道少",
+     "source_chapter": "史记·扁鹊仓公列传",
+     "citation": "《史记·扁鹊仓公列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "病有六不治：骄恣不论于理居其一",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "骄恣不论于理，一不治也；轻身重财，二不治也；衣食不能适，三不治也",
+     "source_chapter": "史记·扁鹊仓公列传",
+     "citation": "《史记·扁鹊仓公列传》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "信巫不信医为六不治之末，巫医分途",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "信巫不信医，六不治也",
+     "source_chapter": "史记·扁鹊仓公列传",
+     "citation": "《史记·扁鹊仓公列传》"
+    }
+   ],
+   "works": [
+    {
+     "title": "扁鹊内经、外经",
+     "author": "托名扁鹊",
+     "era": "战国",
+     "summary": "《汉书·艺文志》方技略医经家著录，佚；经脉诊法之书。",
+     "core_idea": "切脉、望色、听声、写形",
+     "note": "与今本《黄帝内经》非一书"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "name": "苏秦",
+   "aliases": "季子",
+   "school": "纵横家",
+   "era": "战国",
+   "state": "东周洛阳",
+   "role": "纵横家（合纵长约）",
+   "bio": "东周洛阳人，师事鬼谷先生；先说秦不用，发愤揣摩《太公阴符》，后以合纵说燕、赵、韩、魏、齐、楚，佩六国相印。",
+   "main_thought": "合纵：约从散横，以抑强秦",
+   "famous_work": "《苏子》三十一篇（汉书·艺文志著录，佚）",
+   "ending": "为燕间于齐，事泄车裂于齐（《史记》本传作被刺死；帛书《战国纵横家书》记苏秦死于燕王之世）。",
+   "source_chapter": "史记·苏秦列传;战国策·秦策一;马王堆帛书《战国纵横家书》",
+   "note": "《史记》本传年代多误，帛书为正",
+   "rating": {
+    "depth": 7.5,
+    "originality": 8.0,
+    "system": 7.0,
+    "practice": 9.0,
+    "transmission": 6.0,
+    "influence": 9.0,
+    "overall": 7.72,
+    "grade": "B+",
+    "rationale": "合纵的总设计师，事功与言辩俱绝；然史事真伪层累（《史记》与帛书相抵），体系性弱于法儒。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "合纵：约从散横，以抑强秦",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "约从散横，以抑强秦",
+     "source_chapter": "战国策·秦策一",
+     "citation": "《战国策·秦策一》"
+    },
+    {
+     "category": "方法论",
+     "proposition": "揣摩之术：读书欲睡，引锥自刺其股",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "安有说人主不能出其金玉锦绣、取卿相之尊者乎",
+     "source_chapter": "战国策·秦策一",
+     "citation": "《战国策·秦策一》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "从亲之约成而「天下为一」，强秦不出函谷",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "凡天下之战国七，而燕处弱焉。独战则不能，有所附则无不重",
+     "source_chapter": "战国策·燕策一",
+     "citation": "《战国策·燕策一》"
+    }
+   ],
+   "works": []
+  },
+  {
+   "id": 28,
+   "name": "张仪",
+   "aliases": "",
+   "school": "纵横家",
+   "era": "战国",
+   "state": "魏",
+   "role": "纵横家（连横长约）、秦相",
+   "bio": "魏人，与苏秦俱事鬼谷先生。相秦惠王，以连横破从约；欺楚绝齐、取汉中，历相秦、魏、楚。",
+   "main_thought": "连横：事一强以攻众弱",
+   "famous_work": "《张子》十篇（汉书·艺文志著录，佚）",
+   "ending": "秦武王元年，群臣谗之，仪出相魏岁余而卒，曰「视仪之所智，非仪之罪也」。",
+   "source_chapter": "史记·张仪列传;战国策",
+   "note": "与苏秦并称纵横两极",
+   "rating": {
+    "depth": 7.0,
+    "originality": 8.0,
+    "system": 6.5,
+    "practice": 9.0,
+    "transmission": 5.5,
+    "influence": 9.0,
+    "overall": 7.45,
+    "grade": "B",
+    "rationale": "连横破纵，直接改写战国格局；诈骗之术毁誉参半，传承与体系弱，影响极大。"
+   },
+   "doctrines": [
+    {
+     "category": "政治",
+     "proposition": "连横：事强秦而破从约",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "秦地半天下，兵敌四国，被险带河，四塞以为固",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    },
+    {
+     "category": "政治",
+     "proposition": "商于六百里之欺：绝齐以破齐楚从亲",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "大王诚能听臣，闭关绝约于齐，臣请献商于之地六百里",
+     "source_chapter": "史记·张仪列传",
+     "citation": "《史记·张仪列传》"
+    },
+    {
+     "category": "历史影响",
+     "proposition": "「横则秦帝」：连横终成帝业之基",
+     "counterpart": "",
+     "place": "",
+     "year": "",
+     "result": "",
+     "original_text": "苏秦为从，张仪为横；横则秦帝，从则楚王",
+     "source_chapter": "战国策·刘向书录",
+     "citation": "《战国策·刘向书录》"
+    }
+   ],
+   "works": []
+  }
+ ]
+}

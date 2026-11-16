@@ -1,0 +1,233 @@
+[2026-10-27T17:40:50.462Z] MODE=siliconflow model=Kwai-Kolors/Kolors 512x640 throttle=20000ms
+[2026-10-27T17:40:50.468Z] START total=190 todo=140 (already=50)
+[2026-10-27T17:41:04.014Z] OK 1/140 孙膑 [zhanguo/warrior] 409763B
+[2026-10-27T17:41:06.814Z] OK 24/163 孙膑 [zhanguo/warrior] 504958B
+[2026-10-27T17:41:38.931Z] OK 2/140 田忌 [zhanguo/warrior] 537514B
+[2026-10-27T17:41:46.298Z] OK 25/163 田忌 [zhanguo/warrior] 454253B
+[2026-10-27T17:42:14.444Z] OK 3/140 庞涓 [zhanguo/warrior] 545394B
+[2026-10-27T17:42:15.805Z] OK 26/163 庞涓 [zhanguo/warrior] 389107B
+[2026-10-27T17:42:41.979Z] OK 27/163 太子申 [zhanguo/warrior] 543493B
+[2026-10-27T17:42:42.113Z] OK 4/140 太子申 [zhanguo/warrior] 518102B
+[2026-10-27T17:43:09.513Z] OK 5/140 商鞅 [qin/advisor] 391686B
+[2026-10-27T17:43:10.913Z] OK 28/163 商鞅 [qin/advisor] 430709B
+[2026-10-27T17:43:32.726Z] RETRY(1/8) 吴起 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:43:39.218Z] OK 29/163 吴起 [zhanguo/warrior] 416151B
+[2026-10-27T17:43:52.905Z] RETRY(2/8) 吴起 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:44:03.819Z] OK 30/163 乐羊 [zhanguo/warrior] 512123B
+[2026-10-27T17:44:13.143Z] RETRY(3/8) 吴起 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:44:33.311Z] RETRY(4/8) 吴起 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:45:04.395Z] RETRY(5/8) 吴起 getaddrinfo ENOTFOUND api.siliconflow.cn -> wait 20s
+[2026-10-27T17:45:06.600Z] RETRY(1/8) 庞暖 read ECONNRESET -> wait 20s
+[2026-10-27T17:45:48.753Z] RETRY(6/8) 吴起 AggregateError -> wait 20s
+[2026-10-27T17:46:02.804Z] OK 31/163 庞暖 [zhanguo/warrior] 489344B
+[2026-10-27T17:46:19.690Z] OK 6/140 吴起 [zhanguo/warrior] 444357B
+[2026-10-27T17:46:46.934Z] RETRY(1/8) 剧辛 read ECONNRESET -> wait 20s
+[2026-10-27T17:47:06.558Z] RETRY(1/8) 乐羊 read ECONNRESET -> wait 20s
+[2026-10-27T17:47:29.489Z] RETRY(2/8) 剧辛 read ECONNRESET -> wait 20s
+[2026-10-27T17:47:39.453Z] OK 7/140 乐羊 [zhanguo/warrior] 324883B
+[2026-10-27T17:48:22.153Z] RETRY(3/8) 剧辛 read ECONNRESET -> wait 20s
+[2026-10-27T17:48:32.653Z] RETRY(1/8) 庞暖 read ECONNRESET -> wait 20s
+[2026-10-27T17:48:52.796Z] RETRY(2/8) 庞暖 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:48:58.737Z] OK 32/163 剧辛 [zhanguo/warrior] 445382B
+[2026-10-27T17:49:18.884Z] RETRY(1/8) 乐毅 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:49:49.744Z] RETRY(3/8) 庞暖 read ECONNRESET -> wait 20s
+[2026-10-27T17:50:00.213Z] RETRY(2/8) 乐毅 AggregateError -> wait 20s
+[2026-10-27T17:50:20.801Z] OK 8/140 庞暖 [zhanguo/warrior] 526183B
+[2026-10-27T17:50:39.786Z] RETRY(3/8) 乐毅 read ECONNRESET -> wait 20s
+[2026-10-27T17:50:48.983Z] OK 9/140 剧辛 [zhanguo/warrior] 443776B
+[2026-10-27T17:51:09.211Z] RETRY(1/8) 乐毅 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:51:22.111Z] RETRY(4/8) 乐毅 read ECONNRESET -> wait 20s
+[2026-10-27T17:51:49.328Z] RETRY(5/8) 乐毅 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:52:03.105Z] RETRY(2/8) 乐毅 read ECONNRESET -> wait 20s
+[2026-10-27T17:52:18.115Z] OK 33/163 乐毅 [zhanguo/warrior] 378199B
+[2026-10-27T17:52:23.264Z] RETRY(3/8) 乐毅 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:52:43.614Z] RETRY(4/8) 乐毅 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:53:09.447Z] OK 10/140 乐毅 [zhanguo/warrior] 384009B
+[2026-10-27T17:53:17.910Z] RETRY(1/8) 乐间 read ECONNRESET -> wait 20s
+[2026-10-27T17:53:38.036Z] RETRY(2/8) 乐间 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:53:38.305Z] OK 11/140 乐间 [zhanguo/warrior] 438271B
+[2026-10-27T17:53:58.826Z] RETRY(3/8) 乐间 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:54:11.385Z] OK 12/140 乐乘 [zhanguo/warrior] 359739B
+[2026-10-27T17:54:19.810Z] RETRY(4/8) 乐间 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:54:45.507Z] RETRY(5/8) 乐间 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:55:10.066Z] RETRY(1/8) 骑劫 read ECONNRESET -> wait 20s
+[2026-10-27T17:55:13.940Z] OK 34/163 乐间 [zhanguo/warrior] 516998B
+[2026-10-27T17:55:54.433Z] RETRY(1/8) 乐乘 read ECONNRESET -> wait 20s
+[2026-10-27T17:56:08.615Z] RETRY(2/8) 骑劫 read ECONNRESET -> wait 20s
+[2026-10-27T17:56:21.343Z] OK 35/163 乐乘 [zhanguo/warrior] 410056B
+[2026-10-27T17:56:41.510Z] RETRY(1/8) 骑劫 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:56:48.567Z] OK 13/140 骑劫 [zhanguo/warrior] 434446B
+[2026-10-27T17:57:07.601Z] OK 36/163 骑劫 [zhanguo/warrior] 423957B
+[2026-10-27T17:57:08.708Z] RETRY(1/8) 栗腹 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:57:28.823Z] RETRY(2/8) 栗腹 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:57:49.037Z] RETRY(3/8) 栗腹 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T17:58:23.646Z] RETRY(4/8) 栗腹 read ECONNRESET -> wait 20s
+[2026-10-27T17:58:57.815Z] OK 14/140 栗腹 [zhanguo/warrior] 356339B
+[2026-10-27T17:59:23.546Z] OK 15/140 将渠 [zhanguo/advisor] 316111B
+[2026-10-27T17:59:52.099Z] OK 16/140 市被 [zhanguo/warrior] 436274B
+[2026-10-27T18:00:49.141Z] RETRY(1/8) 子之 read ECONNRESET -> wait 20s
+[2026-10-27T18:01:13.794Z] OK 17/140 子之 [zhanguo/advisor] 357660B
+[2026-10-27T18:01:47.927Z] OK 18/140 田单 [zhanguo/warrior] 405452B
+[2026-10-27T18:02:34.343Z] OK 19/140 淖齿 [zhanguo/warrior] 522863B
+[2026-10-27T18:03:00.071Z] OK 20/140 孟尝君 [zhanguo/advisor] 492496B
+[2026-10-27T18:03:27.041Z] OK 21/140 平原君 [zhanguo/advisor] 396208B
+[2026-10-27T18:03:53.768Z] OK 22/140 信陵君 [zhanguo/warrior] 432672B
+[2026-10-27T18:04:20.848Z] OK 23/140 春申君 [zhanguo/advisor] 441723B
+[2026-10-27T18:04:44.542Z] OK 24/140 李同 [zhanguo/warrior] 373411B
+[2026-10-27T18:05:16.183Z] OK 25/140 郑安平 [qin/warrior] 396727B
+[2026-10-27T18:05:47.257Z] OK 26/140 胡阳 [qin/advisor] 437419B
+[2026-10-27T18:06:27.063Z] RETRY(1/8) 白起 read ECONNRESET -> wait 20s
+[2026-10-27T18:06:51.620Z] OK 27/140 白起 [qin/warrior] 343457B
+[2026-10-27T18:07:15.119Z] OK 28/140 王龁 [qin/warrior] 375206B
+[2026-10-27T18:07:42.440Z] OK 29/140 王陵 [qin/warrior] 475214B
+[2026-10-27T18:08:20.966Z] OK 30/140 公孙喜 [zhanguo/warrior] 479149B
+[2026-10-27T18:08:47.930Z] OK 31/140 司马梗 [qin/warrior] 530965B
+[2026-10-27T18:09:36.639Z] OK 32/140 赵括 [zhanguo/warrior] 489189B
+[2026-10-27T18:10:15.567Z] OK 33/140 赵奢 [zhanguo/warrior] 507814B
+[2026-10-27T18:11:03.180Z] OK 34/140 许历 [zhanguo/warrior] 494057B
+[2026-10-27T18:11:29.344Z] OK 35/140 廉颇 [zhanguo/warrior] 426615B
+[2026-10-27T18:12:00.066Z] OK 36/140 蔺相如 [zhanguo/advisor] 340425B
+[2026-10-27T18:12:45.044Z] OK 37/140 李牧 [zhanguo/warrior] 522996B
+[2026-10-27T18:13:12.561Z] OK 38/140 司马尚 [zhanguo/warrior] 452230B
+[2026-10-27T18:13:36.664Z] OK 39/140 赵葱 [zhanguo/warrior] 482056B
+[2026-10-27T18:14:02.738Z] OK 40/140 颜聚 [zhanguo/warrior] 464206B
+[2026-10-27T18:14:52.310Z] OK 41/140 扈辄 [zhanguo/warrior] 480723B
+[2026-10-27T18:15:23.109Z] OK 42/140 桓齮 [qin/warrior] 415205B
+[2026-10-27T18:15:48.349Z] OK 43/140 燕周 [zhanguo/warrior] 395759B
+[2026-10-27T18:16:25.775Z] RETRY(1/8) 楼昌 read ECONNRESET -> wait 20s
+[2026-10-27T18:16:58.533Z] OK 44/140 楼昌 [zhanguo/warrior] 360050B
+[2026-10-27T18:17:41.096Z] RETRY(1/8) 赵袑 read ECONNRESET -> wait 20s
+[2026-10-27T18:18:30.068Z] RETRY(2/8) 赵袑 read ECONNRESET -> wait 20s
+[2026-10-27T18:20:12.886Z] OK 45/140 赵袑 [zhanguo/warrior] 536598B
+[2026-10-27T18:20:38.867Z] OK 46/140 许钧 [zhanguo/warrior] 528827B
+[2026-10-27T18:21:08.887Z] OK 47/140 牛翦 [zhanguo/warrior] 380650B
+[2026-10-27T18:21:34.432Z] OK 48/140 赵希 [zhanguo/warrior] 402441B
+[2026-10-27T18:22:01.488Z] OK 49/140 楼缓 [qin/advisor] 497733B
+[2026-10-27T18:22:30.971Z] OK 50/140 赵武灵王 [zhanguo/king] 496546B
+[2026-10-27T18:23:16.674Z] RETRY(1/8) 公子成 read ECONNRESET -> wait 20s
+[2026-10-27T18:23:40.600Z] OK 51/140 公子成 [zhanguo/warrior] 499805B
+[2026-10-27T18:24:08.225Z] OK 52/140 李兑 [zhanguo/advisor] 472801B
+[2026-10-27T18:24:33.049Z] OK 53/140 田儋 [zhanguo/king] 476054B
+[2026-10-27T18:24:56.583Z] OK 54/140 田荣 [zhanguo/advisor] 410285B
+[2026-10-27T18:25:24.236Z] OK 55/140 田横 [zhanguo/warrior] 592081B
+[2026-10-27T18:25:48.749Z] OK 56/140 项燕 [zhanguo/warrior] 558216B
+[2026-10-27T18:26:13.986Z] OK 57/140 项梁 [zhanguo/warrior] 390571B
+[2026-10-27T18:26:38.659Z] OK 58/140 项籍 [zhanguo/warrior] 572311B
+[2026-10-27T18:27:04.980Z] OK 59/140 项伯 [zhanguo/advisor] 427958B
+[2026-10-27T18:27:29.541Z] OK 60/140 项庄 [zhanguo/warrior] 454318B
+[2026-10-27T18:27:52.870Z] OK 61/140 龙且 [zhanguo/warrior] 388221B
+[2026-10-27T18:28:16.991Z] OK 62/140 宋义 [zhanguo/warrior] 542236B
+[2026-10-27T18:28:41.954Z] OK 63/140 范增 [zhanguo/warrior] 478825B
+[2026-10-27T18:29:09.621Z] OK 64/140 蒲将军 [zhanguo/warrior] 605290B
+[2026-10-27T18:29:37.098Z] OK 65/140 章邯 [qin/warrior] 539688B
+[2026-10-27T18:30:03.388Z] OK 66/140 王离 [qin/warrior] 443499B
+[2026-10-27T18:30:29.025Z] OK 67/140 苏角 [qin/warrior] 379910B
+[2026-10-27T18:30:53.925Z] OK 68/140 涉间 [qin/warrior] 300854B
+[2026-10-27T18:31:20.561Z] OK 69/140 司马欣 [qin/warrior] 527945B
+[2026-10-27T18:31:45.897Z] OK 70/140 董翳 [qin/warrior] 534051B
+[2026-10-27T18:32:13.471Z] OK 71/140 曹咎 [zhanguo/warrior] 480016B
+[2026-10-27T18:32:42.039Z] OK 72/140 李由 [qin/warrior] 433391B
+[2026-10-27T18:33:08.629Z] OK 73/140 韩信 [han/warrior] 544569B
+[2026-10-27T18:33:32.123Z] OK 74/140 彭越 [han/advisor] 425073B
+[2026-10-27T18:34:00.123Z] OK 75/140 黥布 [han/king] 446755B
+[2026-10-27T18:34:25.608Z] OK 76/140 田都 [zhanguo/warrior] 411034B
+[2026-10-27T18:34:50.250Z] OK 77/140 田安 [zhanguo/king] 461059B
+[2026-10-27T18:35:17.067Z] OK 78/140 臧荼 [han/warrior] 426189B
+[2026-10-27T18:35:42.733Z] OK 79/140 张耳 [han/advisor] 390598B
+[2026-10-27T18:36:07.798Z] OK 80/140 陈馀 [han/warrior] 413143B
+[2026-10-27T18:36:31.749Z] OK 81/140 陈胜 [zhanguo/king] 563997B
+[2026-10-27T18:36:55.886Z] OK 82/140 吴广 [zhanguo/warrior] 531737B
+[2026-10-27T18:37:20.307Z] OK 83/140 周文 [zhanguo/warrior] 481918B
+[2026-10-27T18:37:49.716Z] OK 84/140 吕臣 [zhanguo/warrior] 369294B
+[2026-10-27T18:38:16.764Z] OK 85/140 秦嘉 [zhanguo/warrior] 511292B
+[2026-10-27T18:38:36.930Z] RETRY(1/8) 景驹 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:39:03.220Z] OK 86/140 景驹 [zhanguo/king] 473410B
+[2026-10-27T18:39:29.978Z] OK 87/140 田臧 [zhanguo/warrior] 418904B
+[2026-10-27T18:39:56.132Z] OK 88/140 李归 [zhanguo/warrior] 570386B
+[2026-10-27T18:40:21.494Z] OK 89/140 武臣 [zhanguo/king] 475662B
+[2026-10-27T18:40:48.267Z] OK 90/140 周市 [zhanguo/warrior] 527016B
+[2026-10-27T18:41:15.245Z] OK 91/140 庄蹻 [zhanguo/warrior] 510591B
+[2026-10-27T18:41:35.406Z] RETRY(1/8) 屠睢 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:42:00.152Z] OK 92/140 屠睢 [qin/warrior] 494019B
+[2026-10-27T18:42:25.178Z] OK 93/140 任嚣 [qin/warrior] 392162B
+[2026-10-27T18:42:49.826Z] OK 94/140 赵佗 [han/king] 440472B
+[2026-10-27T18:43:14.898Z] OK 95/140 麃公 [qin/warrior] 461005B
+[2026-10-27T18:43:35.065Z] RETRY(1/8) 杨端和 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:43:59.183Z] OK 96/140 杨端和 [qin/warrior] 441835B
+[2026-10-27T18:44:23.775Z] OK 97/140 羌瘣 [qin/warrior] 479351B
+[2026-10-27T18:44:48.190Z] OK 98/140 辛胜 [qin/warrior] 487662B
+[2026-10-27T18:45:13.199Z] OK 99/140 内史腾 [qin/warrior] 463491B
+[2026-10-27T18:45:33.361Z] RETRY(1/8) 李信 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:45:57.835Z] OK 100/140 李信 [qin/warrior] 367285B
+[2026-10-27T18:46:22.135Z] OK 101/140 蒙骜 [qin/warrior] 413594B
+[2026-10-27T18:46:45.744Z] OK 102/140 蒙武 [qin/warrior] 366697B
+[2026-10-27T18:47:06.008Z] RETRY(1/8) 蒙恬 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:47:30.171Z] OK 103/140 蒙恬 [qin/warrior] 391649B
+[2026-10-27T18:47:54.907Z] OK 104/140 司马错 [qin/warrior] 409799B
+[2026-10-27T18:48:18.575Z] OK 105/140 樗里子 [qin/warrior] 397574B
+[2026-10-27T18:48:43.396Z] OK 106/140 甘茂 [qin/warrior] 442367B
+[2026-10-27T18:49:03.543Z] RETRY(1/8) 魏章 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:49:27.284Z] OK 107/140 魏章 [qin/warrior] 358319B
+[2026-10-27T18:49:51.564Z] OK 108/140 犀首 [qin/warrior] 457695B
+[2026-10-27T18:50:16.028Z] OK 109/140 荆轲 [zhanguo/assassin] 433465B
+[2026-10-27T18:50:36.164Z] RETRY(1/8) 聂政 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:51:01.231Z] OK 110/140 聂政 [zhanguo/assassin] 461133B
+[2026-10-27T18:51:31.078Z] OK 111/140 豫让 [zhanguo/assassin] 416570B
+[2026-10-27T18:51:54.705Z] OK 112/140 樊於期 [qin/warrior] 295828B
+[2026-10-27T18:52:18.819Z] OK 113/140 晋鄙 [zhanguo/warrior] 382729B
+[2026-10-27T18:52:45.297Z] OK 114/140 硃亥 [zhanguo/assassin] 491560B
+[2026-10-27T18:53:05.454Z] RETRY(1/8) 公孙痤 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:53:29.475Z] OK 115/140 公孙痤 [zhanguo/warrior] 476231B
+[2026-10-27T18:53:55.710Z] OK 116/140 芒卯 [zhanguo/warrior] 363174B
+[2026-10-27T18:54:19.095Z] OK 117/140 龙贾 [zhanguo/warrior] 441119B
+[2026-10-27T18:54:42.911Z] OK 118/140 申差 [zhanguo/warrior] 565544B
+[2026-10-27T18:55:03.102Z] RETRY(1/8) 公仲 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:55:27.037Z] OK 119/140 公仲 [zhanguo/warrior] 609317B
+[2026-10-27T18:55:51.067Z] OK 120/140 向寿 [qin/warrior] 469106B
+[2026-10-27T18:56:15.299Z] OK 121/140 屈丐 [zhanguo/warrior] 393478B
+[2026-10-27T18:56:35.434Z] RETRY(1/8) 逢侯丑 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:57:00.331Z] OK 122/140 逢侯丑 [zhanguo/warrior] 523866B
+[2026-10-27T18:57:23.993Z] OK 123/140 景缺 [zhanguo/warrior] 431353B
+[2026-10-27T18:57:48.192Z] OK 124/140 唐眛 [zhanguo/warrior] 427982B
+[2026-10-27T18:58:13.589Z] OK 125/140 景阳 [zhanguo/warrior] 428203B
+[2026-10-27T18:58:33.771Z] RETRY(1/8) 王翦 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T18:58:57.198Z] OK 126/140 王翦 [qin/warrior] 343951B
+[2026-10-27T18:59:21.003Z] OK 127/140 王贲 [qin/warrior] 406675B
+[2026-10-27T18:59:45.753Z] OK 128/140 司马靳 [qin/warrior] 515980B
+[2026-10-27T19:00:06.680Z] RETRY(1/8) 李广利 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:00:30.343Z] OK 129/140 李广利 [han/warrior] 433244B
+[2026-10-27T19:00:54.667Z] OK 130/140 曹参 [han/warrior] 551125B
+[2026-10-27T19:01:18.653Z] OK 131/140 樊哙 [han/warrior] 551356B
+[2026-10-27T19:01:42.146Z] OK 132/140 灌婴 [han/warrior] 523270B
+[2026-10-27T19:02:02.315Z] RETRY(1/8) 周勃 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:02:26.384Z] OK 133/140 周勃 [han/warrior] 365302B
+[2026-10-27T19:02:50.811Z] OK 134/140 周亚夫 [han/warrior] 495547B
+[2026-10-27T19:03:15.549Z] OK 135/140 郦商 [han/warrior] 471247B
+[2026-10-27T19:03:35.688Z] RETRY(1/8) 刘贾 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:04:00.136Z] OK 136/140 刘贾 [han/warrior] 472813B
+[2026-10-27T19:04:27.263Z] OK 137/140 靳歙 [han/warrior] 387967B
+[2026-10-27T19:04:51.582Z] OK 138/140 卫青 [han/warrior] 515961B
+[2026-10-27T19:05:15.684Z] OK 139/140 霍去病 [han/warrior] 524514B
+[2026-10-27T19:05:35.814Z] RETRY(1/8) 李广 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:06:00.485Z] OK 140/140 李广 [han/warrior] 375061B
+[2026-10-27T19:06:20.496Z] DONE total=190 done=140 fail=0
+[2026-10-27T19:06:20.498Z] UNITS total=15 todo=15 (already=0)
+[2026-10-27T19:06:26.729Z] U-OK 1/15 车兵(戎车一乘) 513183B
+[2026-10-27T19:06:50.916Z] U-OK 2/15 轻车(驰车/阙车) 551387B
+[2026-10-27T19:07:15.065Z] U-OK 3/15 车下属徒(春秋徒兵) 457579B
+[2026-10-27T19:07:35.209Z] U-RETRY(1/8) 齐技击 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:07:59.620Z] U-OK 4/15 齐技击 538310B
+[2026-10-27T19:08:24.115Z] U-OK 5/15 魏武卒 521988B
+[2026-10-27T19:08:47.353Z] U-OK 6/15 秦锐士 424614B
+[2026-10-27T19:09:12.144Z] U-OK 7/15 魏武士 419067B
+[2026-10-27T19:09:32.304Z] U-RETRY(1/8) 魏苍头军 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:09:56.655Z] U-OK 8/15 魏苍头军 507641B
+[2026-10-27T19:10:21.416Z] U-OK 9/15 魏奋击 442023B
+[2026-10-27T19:10:45.801Z] U-OK 10/15 魏厮徒 506843B
+[2026-10-27T19:11:05.956Z] U-RETRY(1/8) 胡服骑兵(赵骑射) 429 {"code":50604,"message":"Request was rejected due to rate limiting. Details: IPM limit reached.","data":null} -> wait 20s
+[2026-10-27T19:11:29.952Z] U-OK 11/15 胡服骑兵(赵骑射) 438579B
+[2026-10-27T19:11:54.930Z] U-OK 12/15 韩国强弩兵(弩兵) 409674B
+[2026-10-27T19:12:20.472Z] U-OK 13/15 舟师水军(吴越楚巴蜀) 482131B
+[2026-10-27T19:12:46.785Z] U-OK 14/15 越君子军(亲军/死士) 493976B
+[2026-10-27T19:13:13.960Z] U-OK 15/15 工兵器械兵(云梯/灌城/地道) 555203B
+[2026-10-27T19:13:33.971Z] DONE units total=15 done=15 fail=0
