@@ -1,0 +1,7 @@
+/*.wasm
+  Content-Type: application/wasm
+  Content-Encoding: gzip
+
+/*.pck
+  Content-Type: application/octet-stream
+  Content-Encoding: gzip
