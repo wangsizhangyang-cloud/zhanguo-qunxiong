@@ -18,6 +18,12 @@ _tools/
 Thumbs.db
 .DS_Store
 
+# 独立推送目录（gh-pages）
+zhanguo-godot/deploy-gh/
+
+# Playwright 截图
+zhanguo-godot/e2e/screenshots/
+
 # Node / 测试
 node_modules/
 test-results/
