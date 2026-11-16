@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>战国群雄 v3.6 · 史记兵种历史模拟（自绘地理·城邑级省份）</title>
+<style>
+:root{
+  --bg0:#0e1318; --bg1:#161d24; --bg2:#1e2731; --bg3:#26313c;
+  --line:#37474f; --txt:#cfd8dc; --dim:#8fa3ad;
+  --gold:#ffd54f; --food:#a5d6a7; --red:#ef5350; --grn:#66bb6a; --blu:#42a5f5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg0);color:var(--txt);font-family:'Microsoft YaHei',sans-serif;font-size:13px;overflow:hidden;user-select:none}
+#top{height:46px;background:var(--bg1);display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:2px solid var(--line)}
+#top .logo{font-size:17px;font-weight:bold;color:var(--gold);letter-spacing:2px}
+#top .sub{color:var(--dim);font-size:10.5px;margin-right:6px}
+.res{background:var(--bg3);padding:4px 10px;border-radius:4px;border:1px solid var(--line);display:flex;align-items:center;gap:5px}
+.res b{font-size:14px}
+.res .lbl{font-size:10px;color:var(--dim)}
+#turnBadge{background:var(--bg3);border:1px solid var(--line);border-radius:4px;padding:4px 12px;font-size:12px;color:#b0bec5}
+#top .spacer{flex:1}
+button{background:#2e4a5a;color:var(--txt);border:1px solid #455a64;padding:5px 10px;border-radius:4px;cursor:pointer;font-size:12px;transition:.15s}
+button:hover{background:#37617a;border-color:#5a7a8c}
+button.primary{background:#3d6a3a;border-color:#7cb342}
+button.primary:hover{background:#4b7a46}
+button.danger{background:#6a3e3e;border-color:#a1887f}
+button.gold{background:#6a5a2e;border-color:#ffd54f}
+button:disabled{opacity:.35;cursor:default}
+#main{display:flex;height:calc(100vh - 46px)}
+#mapPanel{flex:1.6;position:relative;background:var(--bg0);overflow:hidden}
+#mapSvg{width:100%;height:100%}
+#rightPanel{width:400px;background:var(--bg1);border-left:2px solid var(--line);overflow-y:auto;padding:12px}
+h3{color:#80cbc4;margin:10px 0 6px;font-size:13.5px;border-bottom:1px dashed var(--line);padding-bottom:4px;display:flex;align-items:center;gap:6px}
+h3 .mini{font-weight:normal;font-size:10px;color:var(--dim);margin-left:auto}
+table{width:100%;border-collapse:collapse;font-size:11.5px}
+td,th{padding:3px 5px;border-bottom:1px solid var(--bg3)}
+th{color:var(--dim);font-weight:normal;text-align:left;font-size:10.5px}
+tr:hover td{background:var(--bg3)}
+#log{height:150px;overflow-y:auto;background:var(--bg0);border:1px solid var(--line);padding:6px;font-size:11px;border-radius:4px}
+#log p{margin:2px 0;color:#9fb3bf;padding-left:6px;border-left:2px solid transparent}
+#log .sys{color:var(--gold);border-left-color:var(--gold)}
+#log .good{color:#81c784;border-left-color:#4caf50}
+#log .bad{color:#ef9a9a;border-left-color:#e57373}
+#log .dip{color:#90caf9;border-left-color:#42a5f5}
+#log .tech{color:#ce93d8;border-left-color:#ab47bc}
+select,input{background:var(--bg3);color:var(--txt);border:1px solid #455a64;padding:4px;border-radius:3px;font-size:12px}
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(4,8,12,.78);display:flex;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(2px)}
+.modal .box{background:var(--bg1);border:2px solid #455a64;padding:20px;max-width:640px;border-radius:8px;max-height:86%;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,.6)}
+.modal h2{color:var(--gold);margin-bottom:12px;font-size:17px}
+.hidden{display:none !important}
+.heroCard{border:1px solid var(--line);border-left:3px solid #f48fb1;border-radius:4px;padding:6px 8px;margin:5px 0;background:var(--bg2);font-size:11.5px;cursor:pointer}
+.heroCard:hover{background:var(--bg3)}
+.heroCard .ttl{color:#f48fb1;font-weight:bold}
+.heroCard .tech{color:#ce93d8;font-size:10.5px;margin-top:2px}
+.heroCard .bio{color:#90a4ae;font-size:10.5px;margin-top:2px}
+.tag{display:inline-block;background:var(--bg3);border-radius:3px;padding:1px 6px;margin:1px 2px;font-size:10px;color:#b0bec5}
+.provCard{border:1px solid var(--line);border-radius:5px;padding:8px;background:var(--bg2);margin-bottom:10px}
+.kv{display:flex;gap:8px;align-items:center;margin:2px 0;font-size:12px}
+.kv .k{color:var(--dim);min-width:52px}
+.bar{height:10px;background:var(--bg0);border:1px solid var(--line);border-radius:2px;overflow:hidden;flex:1}
+.bar i{display:block;height:100%}
+section.nowrap{white-space:nowrap}
+.nationRow{display:flex;align-items:center;gap:8px;padding:5px;border:1px solid var(--line);border-radius:4px;margin:4px 0;background:var(--bg2);cursor:pointer}
+.nationRow:hover{background:var(--bg3)}
+.nationRow .nc{width:16px;height:16px;border-radius:3px;border:1px solid #666}
+.nationRow .nm{font-weight:bold;min-width:20px}
+.nationRow .st{color:var(--dim);font-size:10.5px}
+.dipBtns{margin-left:auto;display:flex;gap:4px}
+.dipBtns button{padding:2px 6px;font-size:10.5px}
+.msgAtk{background:#3c1f1f;border:1px solid #8b2020;border-radius:5px;padding:10px;margin:8px 0;font-size:12.5px}
+#hintBar{position:absolute;bottom:8px;left:8px;font-size:10.5px;color:#607d8b;background:rgba(14,19,24,.85);padding:4px 10px;border-radius:4px;border:1px solid #263238}
+#tutBox{position:absolute;top:8px;right:8px;width:300px;background:rgba(14,19,24,.94);border:1px solid #6a5a2e;border-radius:6px;padding:10px;font-size:11.5px;z-index:20;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+.tutTitle{color:var(--gold);font-weight:bold;margin-bottom:4px}
+.tutGoal{color:#c5e1a5;line-height:1.55}
+.tutQuote{color:#90a4ae;border-left:2px solid #6a5a2e;padding-left:6px;margin-top:8px;line-height:1.65;font-size:10.5px}
+.tutCite{color:#607d8b;text-align:right;font-size:9.5px}
+.tutProg{margin-top:6px;color:#546e7a;font-size:10px;text-align:right}
+.tutLore{color:#b0bec5;font-size:11px;line-height:1.7;margin:6px 0}
+.tutQuoteBlock{background:var(--bg2);border:1px solid #37474f;border-left:3px solid #6a5a2e;border-radius:4px;padding:8px 10px;margin:8px 0;color:#cfd8dc;line-height:1.8}
+.peoCard{border:1px solid var(--line);border-left:3px solid #ffd54f;border-radius:4px;padding:6px 8px;margin:5px 0;background:var(--bg2);font-size:11.5px}
+.peoCard .ttl{color:var(--gold);font-weight:bold}
+.peoCard .rel{color:#90caf9;font-size:10.5px;margin-top:2px;line-height:1.6}
+.peoCard .end{color:#ef9a9a;font-size:10.5px;margin-top:2px}
+.peoCard .cit{color:#607d8b;font-size:9.5px;margin-top:2px;text-align:right}
+#tooltip{position:absolute;pointer-events:none;background:#0e1318;border:1px solid #455a64;border-radius:4px;padding:6px 8px;font-size:11px;z-index:50;display:none;max-width:250px}
+#tooltip .tdim{color:var(--dim);font-size:10px}
+.flash{animation:fl .6s ease}
+@keyframes fl{from{background:#ffd54f44}to{background:transparent}}
+kbd{background:var(--bg3);border:1px solid #455a64;border-radius:3px;padding:0 5px;font-size:10px}
+/* ===== v3 历史模拟 ===== */
+.agentBox{display:flex;flex-direction:column;gap:6px}
+.agentMsg{max-width:90%;padding:6px 9px;border-radius:8px;line-height:1.7;font-size:12px}
+.agentMsg.me{align-self:flex-end;background:#2e4a5a;border:1px solid #455a64}
+.agentMsg.npc{align-self:flex-start;background:var(--bg2);border:1px solid #455a64;border-left:3px solid #ffd54f}
+.agentMsg.sys{align-self:center;background:transparent;color:#607d8b;font-size:10.5px;border:none}
+.agentMsg.world{align-self:flex-start;background:rgba(42,74,90,.35);border:1px solid #455a64;color:#90caf9;font-size:11px;border-left:3px solid #42a5f5}
+.beacon{display:inline-block;animation:beac 1.1s infinite}
+@keyframes beac{0%,100%{opacity:.25}50%{opacity:1}}
+.cineStep{margin:8px 0;padding:8px 10px;border-left:3px solid #6a5a2e;background:var(--bg2);border-radius:4px;line-height:1.85;font-size:12.5px}
+.cineStep b{color:var(--gold)}
+.yearChip b{color:#ffd54f}
+</style>
+</head>
+<body>
+<!-- ===== 顶栏 ===== -->
+<div id="top">
+  <span class="logo">战国群雄</span><span class="sub">v3.5 · 真实地图</span>
+  <span id="turnBadge">🏛 回合 <b id="turnNum">1</b> / 100</span>
+  <span class="res yearChip" id="yearChip" style="display:none">📅 <b id="yearTxt"></b></span>
+  <span class="res">💰<b id="resGold">0</b><span class="lbl">(+<span id="goldRate">0</span>/回合)</span></span>
+  <span class="res">🌾<b id="resFood">0</b><span class="lbl">(+<span id="foodRate">0</span> 已扣军粮)</span></span>
+  <span class="res" title="占有城数 / 总城数">🏛<b id="resProv">0</b>/<span id="provTotal">15</span></span>
+  <span class="spacer"></span>
+  <button id="btnShijian" style="display:none" onclick="showShijian()">📜 史鉴·周亡人物</button>
+  <button id="btnAgent" style="display:none" onclick="showAgent()">👑 周幽王</button>
+  <button id="btnUndo" onclick="undo()" title="Ctrl+Z" disabled>↩ 撤销</button>
+  <button class="gold" onclick="showDip()">🤝 外交</button>
+  <button onclick="saveGame()">💾 存档</button>
+  <button onclick="loadGame()">📂 读档</button>
+  <button class="primary" id="btnEnd" onclick="endTurn()">▶ 结束回合</button>
+  <button onclick="showHelp()">❓</button>
+  <button onclick="openSettings()" title="设置 · 简／繁切换">⚙</button>
+</div>
+
+<div id="main">
+  <div id="mapPanel"><svg id="mapSvg" viewBox="0 0 912 560" preserveAspectRatio="xMidYMid meet"></svg>
+    <div id="hintBar">点城池看详情 · 调兵/进攻都是下令，<kbd>空格</kbd>或「▶结束回合」统一开打 · <kbd>Ctrl+Z</kbd> 撤销</div>
+    <div id="tutBox" style="display:none"></div>
+  </div>
+  <div id="rightPanel">
+    <div id="startScreen">
+      <h3 style="border:none">🏺 选择你的国家</h3>
+      <div id="nationPick"></div>
+      <button class="gold" style="width:100%;margin-top:12px;padding:9px" onclick="startTutorial()">📜 史鉴教学关 · 骊山之难（西周灭亡→春秋形成）</button>
+      <p style="color:var(--dim);font-size:11px;margin-top:10px;line-height:1.6">
+      目标：统一全国。到第100回合还没打完的，按占的城计分。<br>
+      兵种和将领都有史料来历，游戏里随时可查；玩法要点点右上「❓」。</p>
+    </div>
+    <div id="gamePanel" style="display:none">
+      <div id="provCard"></div>
+      <h3>📋 待结算命令 <span class="mini" id="ordersCount">无</span></h3>
+      <div id="ordersBox" style="max-height:110px;overflow-y:auto"></div>
+      <h3>⚔️ 驻军 <span class="mini" id="garrisonSum"></span></h3>
+      <div id="garrisonBox" style="max-height:170px;overflow-y:auto"></div>
+      <h3>📜 招募 <span class="mini" id="recruitHint"></span></h3>
+      <div id="recruitBox" style="max-height:210px;overflow-y:auto"></div>
+      <h3>🏰 会议室 · 外交态势（<span id="dipMini">…</span>）</h3>
+      <div id="dipPanel" style="max-height:180px;overflow-y:auto"></div>
+      <h3>🕰️ 战报 <span class="mini"><kbd>Ctrl+Z</kbd> 撤销</span></h3>
+      <div id="log"></div>
+    </div>
+  </div>
+</div>
+<div id="tooltip"></div>
+
+<div class="modal hidden" id="tutModal"><div class="box">
+  <h2 id="tutMTitle"></h2><div id="tutMBody" style="font-size:12.5px;line-height:1.8"></div>
+  <div style="text-align:right;margin-top:14px"><button class="primary" onclick="closeModal()">知道了</button></div>
+</div></div>
+<div class="modal hidden" id="shijianModal"><div class="box" style="max-width:620px">
+  <h2>📜 史鉴 · 周朝滅亡人物</h2>
+  <p style="color:var(--dim);font-size:11px;margin-bottom:8px">人物与结局均出自《史记》《国语》。</p>
+  <div id="shijianList" style="max-height:62vh;overflow-y:auto"></div>
+  <div style="text-align:right;margin-top:12px"><button onclick="closeShijian()">关闭</button></div>
+</div></div>
+<div class="modal hidden" id="agentModal"><div class="box" style="max-width:620px">
+  <h2>👑 周幽王 · 殿上對話</h2>
+  <div id="agentHead" style="font-size:11.5px;color:var(--dim);margin-bottom:8px"></div>
+  <div id="agentChat" class="agentBox" style="max-height:44vh;overflow-y:auto;background:var(--bg0);border:1px solid var(--line);border-radius:6px;padding:10px"></div>
+  <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap" id="agentActs"></div>
+  <div style="display:flex;gap:6px;margin-top:6px">
+    <input id="agentInput" placeholder="对周幽王说话（Enter 发送）…" style="flex:1">
+    <button class="primary" id="agentSendBtn" onclick="agentSend()">送</button>
+  </div>
+  <div style="display:flex;gap:6px;margin-top:8px;font-size:10.5px;color:#546e7a;align-items:center;justify-content:flex-end">
+    <button onclick="agentSettings()" title="配置对话模型 / API">🔑 模型</button>
+    <button onclick="agentDownloadLog()" title="导出对话调用记录（TSV）">📥 记录</button>
+  </div>
+  <div style="text-align:right;margin-top:10px"><button onclick="document.getElementById('agentModal').classList.add('hidden')">关闭</button></div>
+</div></div>
+<div class="modal hidden" id="keyModal"><div class="box" style="max-width:560px">
+  <h2>🔑 对话模型 API</h2>
+  <p style="color:var(--dim);font-size:11px;line-height:1.7">推荐「本地代理」：先在游戏目录运行 <code>node _server.mjs</code>（或双击 <code>run_serve.bat</code>），它会自动读取本机 <code>战国图鉴\siliconflow_key.txt</code>，浏览器就不会被跨域拦。<br>也可以直接填 Key 连硅基流动、DeepSeek 或 OpenRouter；Key 只存本机 localStorage。不填 Key 时，幽王按脚本应对。</p>
+  <div style="display:grid;gap:8px;margin-top:8px">
+    <label style="font-size:11.5px">服务商
+      <select id="keyProvider" style="width:100%">
+        <option value="local">本地代理（推荐 · 免跨域，自动读本机 Key）</option>
+        <option value="siliconflow">硅基流动 SiliconFlow（需 Key）</option>
+        <option value="deepseek">DeepSeek 官方（需 Key）</option>
+        <option value="openrouter">OpenRouter（需 Key）</option>
+      </select></label>
+    <label style="font-size:11.5px">接口地址 <input id="keyBase" style="width:100%"></label>
+    <label style="font-size:11.5px">模型 <input id="keyModel" style="width:100%"></label>
+    <label style="font-size:11.5px">API Key <input id="keySecret" type="password" style="width:100%" placeholder="sk-…（仅存本机）"></label>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap">
+    <button onclick="agentTest()">🔌 测试连接</button>
+    <span id="keyTestOut" style="font-size:11px;color:#90a4ae"></span>
+    <span style="flex:1"></span>
+    <button class="primary" onclick="saveKeys()">保存</button>
+    <button onclick="document.getElementById('keyModal').classList.add('hidden')">关闭</button>
+  </div>
+</div></div>
+<div class="modal hidden" id="settingsModal"><div class="box" style="max-width:480px">
+  <h2>⚙ 设置</h2>
+  <div style="display:grid;gap:10px;margin-top:8px">
+    <div>
+      <div style="font-size:12px;color:var(--txt);margin-bottom:6px">🌐 界面字形</div>
+      <select id="langSelect" style="width:100%" onchange="onLangPick(this)">
+        <option value="s">简体中文（原文）</option>
+        <option value="t">繁體中文（轉換顯示）</option>
+      </select>
+      <div style="font-size:10.5px;color:var(--dim);margin-top:4px;line-height:1.6">只换显示字形，原文和存档不受影响，随时可切回。</div>
+    </div>
+    <div>
+      <div style="font-size:12px;color:var(--txt);margin-bottom:6px">👑 周幽王 · 对话模型</div>
+      <button onclick="agentSettings()">🔑 对话模型 API（本地代理 / 硅基流动 / DeepSeek / OpenRouter）</button>
+    </div>
+  </div>
+  <div style="text-align:right;margin-top:14px"><button class="primary" onclick="closeSettings()">完成</button></div>
+</div></div>
+<div class="modal hidden" id="battleModal"><div class="box">
+  <h2 id="btTitle">战报</h2><div id="resultBox" style="font-size:13px;line-height:1.7"></div>
+  <div style="text-align:right;margin-top:14px"><button class="primary" onclick="closeModal()">确定</button></div>
+</div></div>
+<div class="modal hidden" id="dipModal"><div class="box" style="max-width:520px">
+  <h2>🤝 外交（合纵连横）</h2>
+  <p style="color:var(--dim);font-size:11.5px;margin-bottom:8px">互不侵犯：8回合互不攻打。同盟：12回合，打共同敌人时盟国会来帮忙。</p>
+  <div id="dipList"></div>
+  <div style="text-align:right;margin-top:12px"><button onclick="closeModal()">关闭</button></div>
+</div></div>
+<div class="modal hidden" id="helpModal"><div class="box">
+  <h2>规则总览</h2>
+  <div style="font-size:12.5px;line-height:1.75">
+   <p><b>1. 选国</b>：从七国中选一国开始。</p>
+   <p><b>2. 每回合</b>：金粮自动入账，军队按规模扣维持费。可做四件事：① <b>招募</b>——选兵种花金粮，训练数回合后成军（急用可花2倍金加急训完；资源不足按钮置灰）；② <b>下令</b>——🚚调兵与⚔进攻都只对相邻城池下令，可调派出比例、可带主将随军；③ <b>外交</b>——互不侵犯100金/8回合，同盟200金/12回合（别国按利益决定接不接受）；④ 点「▶结束回合」统一结算。</p>
+   <p><b>3. 打仗</b>：进攻前从16位名将中选一名带兵，开战时可发动其<b>技卡</b>（每战限用一次，攻守皆可）。一战未克即转<b>围城</b>——大军扎营城外，每回合与守军互耗；攻军打光或围满7回合断粮即撤围；守军邻城有概率自动驰援，守军被消灭或投降则城陷。</p>
+   <p><b>4. 胜利</b>：统一全国。</p>
+  </div>
+  <div style="text-align:right;margin-top:14px"><button class="primary" onclick="closeModal()">开始</button></div>
+</div></div>
+
+<script src="game_data.js"></script>
+<script src="map_data.js"></script>
+<script>
+/* ================= 基础数据 ================= */
+const U = GAMEDATA.units, C = GAMEDATA.counters, H = GAMEDATA.heroes;
+const UMAP = {}; U.forEach(u => UMAP[u.name] = u);
+const CATICO = {'车战':'🛞','步战':'🛡','步战·精锐':'🛡','步战·敢死':'🗡','辎重·杂役':'📦','骑战':'🐎','远程':'🏹','水战':'🛶','特种':'💥','技术':'⛏'};
+
+const NATIONS = {
+  /* HOI4式低饱和国色（地形透出） */
+  QIN: {id:'QIN',name:'秦',color:'#9e4a3f',cap:'咸阳',   trait:'耕战（秦锐士-15%钱）'},
+  ZHAO:{id:'ZHAO',name:'赵',color:'#4f7396',cap:'邯郸', trait:'胡服骑射（骑兵-25%钱攻+5%）'},
+  QI:  {id:'QI',name:'齐',color:'#7d5f9e',cap:'临淄',   trait:'技击之乡（技击-30%钱攻+5%）'},
+  CHU: {id:'CHU',name:'楚',color:'#4f7d4f',cap:'郢都·江汉', trait:'广地粟支十年（粮产+30%）'},
+  WEI: {id:'WEI',name:'魏',color:'#b3803e',cap:'大梁',   trait:'武卒精锐（武卒/武士-15%钱）'},
+  HAN: {id:'HAN',name:'韩',color:'#a89a4f',cap:'新郑',   trait:'天下劲弩（弩-20%钱远程+4%）'},
+  YAN: {id:'YAN',name:'燕',color:'#3f8a8a',cap:'蓟',     trait:'辽东壁垒（金产+25%）'},
+  /* 中原小国与附庸 */
+  ZHOU:{id:'ZHOU',name:'周',color:'#8a7aa0',cap:'雒邑', trait:'天下共主（静守王畿不出兵）'},
+  YUE: {id:'YUE',name:'越',color:'#7a7f4f',cap:'吴墟', trait:'故吳越之地（靜守江東）'},
+  SONG:{id:'SONG',name:'宋',color:'#9a9060',cap:'睢阳', trait:'殷商遗民（静守商丘）'},
+  LU:  {id:'LU',name:'鲁',color:'#a08050',cap:'曲阜',  trait:'周公之后（静守泗曲）'},
+  W:   {id:'W',name:'卫',color:'#8a8a70',cap:'帝丘',   trait:'康叔之后（静守河内）'},
+  ZS:  {id:'ZS',name:'中山',color:'#9a7080',cap:'灵寿',trait:'白狄别种（静守恒山）'}
+};
+/* 静守小国（不主动出兵）、开场即孤儿位 */
+const MINORS = ['ZHOU','YUE','SONG','LU','W','ZS'];
+
+/* ================= 地图（钢铁雄心4式·城邑级省份·自绘地理） =================
+   地块定义与“大小史据”全部在 map_data.js：87 块城邑级省份铺整幅地图，
+   每省以一史载城邑为锚点（真实经纬），《史记》《战国策》引文见 vol/cite。
+   地图本体（海岸线/大河/山脉/湖泽/北徼）由 map_data.js 的自绘矢量场景画出。
+   rebuildMap() 依格子相接自动生成各省与邻接（ADJ）；
+   教学关再调 rebuildMap(['haojing','quanrong']) 割出镐京、犬丘并接回主图。 */
+let PROVINCES = [];
+let ADJ = {};
+
+function provinceFromDef(d, g){
+  return {id:d.id, name:d.name, owner:d.owner, isCap:d.cap||false, terrain:d.terrain,
+    prod:d.prod, vol:d.vol, cite:d.cite, x:g.x, y:g.y, cells:g.cells};
+}
+function rebuildMap(provActive){
+  const built = MAP.buildCells(provActive);
+  const adj = MAP.buildAdj(built.grid);
+  const geom = MAP.buildGeom(built.grid);
+  const list = MAP.DEFS.concat((provActive||[]).map(pid=>({id:pid,name:pid==='haojing'?'镐京':'犬丘',
+    owner:pid==='haojing'?'ZHOU':'RONG', cap:true, terrain:pid==='haojing'?'平原':'山地',
+    prod:pid==='haojing'?{gold:4,food:4}:{gold:2,food:3},
+    vol:pid==='haojing'?'宗周镐京，幽王崩于此':'秦人故地、犬戎戎穴',
+    cite:pid==='haojing'?'《史记·周本纪》《国语·周语上》':'《史记·秦本纪》“戎无道，侵夺我岐、豐之地”'})));
+  PROVINCES = [];
+  for (const d of list){
+    const g = geom[d.id];
+    if (!g || !g.cells.length) continue;
+    PROVINCES.push(provinceFromDef(d, g));
+  }
+  ADJ = {}; for (const k in adj) ADJ[k]=adj[k].slice();
+  PROVINCES.forEach(p=>{ if (!ADJ[p.id]) ADJ[p.id]=[]; });
+}
+rebuildMap(); // 默认（非教学关）地图：87 块城邑级省份
+document.getElementById('provTotal').textContent = PROVINCES.length;
+
+/* ================= 将领技卡（附史记依据） ================= */
+const HERO_TECH = {
+  '吴起':    {name:'励士', desc:'全军攻+25%，损耗-15%', cite:'《吴子·励士》"兼车五百乘，骑三千匹，而破秦五十万众"'},
+  '白起':    {name:'歼灭', desc:'本战敌兵损耗×1.45', cite:'《白起王翦列传》"挟诈而尽阬杀之"（长平坑45万）'},
+  '孙膑':    {name:'减灶', desc:'攻城/伏击攻+40%', cite:'《孙子吴起列传》马陵"齐军万弩齐发……庞涓自刭"'},
+  '廉颇':    {name:'坚壁', desc:'守军防+35%', cite:'《廉蔺列传》长平"廉颇坚壁不战，秦数挑战不肯"'},
+  '李牧':    {name:'奇阵', desc:'对骑兵攻+35%，并使敌先锋损失', cite:'大破匈奴"多为奇陈，张左右翼"'},
+  '乐毅':    {name:'连横', desc:'同盟国相邻时攻+30%', cite:'《乐毅列传》总五国伐齐下七十余城'},
+  '田单':    {name:'火牛', desc:'围城战中攻方：立即减守军30%', cite:'《田单列传》火牛破骑劫复齐七十余城'},
+  '王翦':    {name:'持重', desc:'攻+18%，自损-20%', cite:'《白起王翦列传》"王翦至，坚壁而守之……士卒可用矣"'},
+  '赵奢':    {name:'狭路', desc:'山地/险地攻+35%', cite:'《廉蔺列传》阏与"譬之犹两鼠斗于穴中，将勇者胜"'},
+  '信陵君':  {name:'窃符', desc:'偷袭型攻+40%', cite:'《魏公子列传》窃符救赵，八万人却秦存赵'},
+  '项燕':    {name:'抗秦', desc:'对秦国防+40%', cite:'《项羽本纪》"项燕为楚将……破李信二十万"'},
+  '蒙恬':    {name:'北逐', desc:'对骑兵攻+40%，围城攻+15%', cite:'《蒙恬列传》"将三十万众北逐戎狄，却匈奴七百余里"'},
+  '赵武灵王':{name:'胡服', desc:'骑兵攻+30%，机动+1', cite:'《赵世家》"胡服骑射以教百姓"'},
+  '樗里子':  {name:'智囊', desc:'先手：本战首轮敌战力-10%', cite:'《樗里子甘茂列传》秦人称智囊'},
+  '司马错':  {name:'得蜀', desc:'本战抢得粮草（+150粮）', cite:'《张仪列传》"得蜀则得楚，得其地足以广国"'},
+  '庞涓':    {name:'轻锐', desc:'急行军攻+25%，但被伏风险（若敌有孙膑则反被敌+30%）', cite:'马陵中伏，"智穷兵败自刭"'},
+};
+
+/* ================= 游戏状态 ================= */
+let G = null, selProv = null, playerN = 'QIN';
+let snapStack = [];   // 撤回栈
+
+function blankUnits(cls){ return {__unused:true}; }
+
+function startGame(natId, restored){
+  playerN = natId;
+  G = {turn:1, over:false, nations:{}, provinces:{}, sieges:{}, dip:{}, proposals:[], techUsed:{}, siegeTurns:{}, orders:[], log:[]};
+  for (const nid in NATIONS){ G.nations[nid] = {gold:350, food:400, alive:true}; }
+  /* 周室静守王畿（AI 关闭）——《战国策·西周策》：周分东西，地小民寡 */
+  G.nations.ZHOU.passive = true; G.nations.ZHOU.gold = 260; G.nations.ZHOU.food = 260;
+  /* 越国（前350年尚存，后为楚所灭）——《史记·越王句践世家》 */
+  G.nations.YUE.passive = true; G.nations.YUE.gold = 220; G.nations.YUE.food = 260;
+  /* 中原小国（宋·鲁·卫·中山）静守，可被二吞并——目标统一含之 */
+  for (const mid of ['SONG','LU','W','ZS']){ G.nations[mid].passive = true; G.nations[mid].gold = 220; G.nations[mid].food = 240; }
+  /* 各国初始军力：国都厚重，郡县薄弱（钢铁雄心4式“前线—纵深”分布）。
+     总额与 v3 各国约等（每省稀薄一点，人均更少——郡县制之实感） */
+  const CAP_UNITS = {'车下属徒(春秋徒兵)':55,'韩国强弩兵(弩兵)':25};
+  const CAP_ELITE = {'QIN':'秦锐士','ZHAO':'胡服骑兵(赵骑射)','QI':'齐技击','CHU':'车下属徒(春秋徒兵)','WEI':'魏武卒','HAN':'韩国强弩兵(弩兵)','YAN':'魏武士','ZHOU':'车下属徒(春秋徒兵)'};
+  const CAP_ELITE_N = {'QIN':35,'ZHAO':20,'QI':35,'CHU':35,'WEI':35,'HAN':35,'YAN':30,'ZHOU':20};
+  const MINOR_UNITS = {'车下属徒(春秋徒兵)':22,'魏苍头军':14};
+  const NONCAP = {
+    QIN:{'车下属徒(春秋徒兵)':6,'魏苍头军':4},
+    ZHAO:{'车下属徒(春秋徒兵)':8,'魏苍头军':6},
+    QI:{'车下属徒(春秋徒兵)':12,'魏苍头军':9},
+    CHU:{'车下属徒(春秋徒兵)':10,'魏苍头军':7},
+    WEI:{'车下属徒(春秋徒兵)':22,'魏苍头军':16},
+    HAN:{'车下属徒(春秋徒兵)':14,'魏苍头军':10},
+    YAN:{'车下属徒(春秋徒兵)':16,'魏苍头军':12},
+    ZHOU:{'车下属徒(春秋徒兵)':20,'魏苍头军':14},
+    YUE:{'越君子军(亲军/死士)':20,'车下属徒(春秋徒兵)':16},
+  };
+  PROVINCES.forEach(p=>{
+    const g = {};
+    if (p.owner==='ZHOU'){ g.units = {'车下属徒(春秋徒兵)':30,'魏苍头军':20}; }
+    else if (MINORS.includes(p.owner)){ g.units = p.isCap? Object.assign({}, MINOR_UNITS) : {'车下属徒(春秋徒兵)':12,'魏苍头军':8}; }
+    else if (p.isCap){ g.units = Object.assign({}, CAP_UNITS); g.units[CAP_ELITE[p.owner]] = CAP_ELITE_N[p.owner]; }
+    else g.units = Object.assign({}, NONCAP[p.owner]||{'车下属徒(春秋徒兵)':10});
+    G.provinces[p.id] = {id:p.id, owner:p.owner, isCap:p.isCap, ...g, hero:null, training:{}};
+  });
+  const PRE = {'QIN':'白起','ZHAO':'李牧','QI':'孙膑','CHU':'项燕','WEI':'吴起','HAN':'樗里子','YAN':'乐毅'};
+  for (const pid in PRE){
+    const capP = PROVINCES.find(p=>p.owner===pid && p.isCap);
+    G.provinces[capP.id].hero = PRE[pid];
+  }
+  document.getElementById('startScreen').style.display='none';
+  document.getElementById('gamePanel').style.display='';
+  log(`【开局】你执 ${NATIONS[natId].name} 国 · 国策：${NATIONS[natId].trait}`,'sys');
+  log(`💡 前4回合为休战期，AI不会主动进攻——抓紧招兵练兵`,'sys');
+  selectProv(PROVINCES.find(p=>p.owner===natId&&p.isCap).id);
+  refresh();
+}
+
+/* ================= 撤回系统 ================= */
+function snapshot(){
+  snapStack.push(JSON.stringify({G:{...G, log:G.log.slice(-6)}, sel:selProv}));
+  if (snapStack.length>8) snapStack.shift();
+  document.getElementById('btnUndo').disabled = false;
+}
+function undo(){
+  if (!snapStack.length){ log('↩ 没有可撤销的操作','sys'); return; }
+  const s = JSON.parse(snapStack.pop());
+  const keepLog = G.log;
+  G = s.G; G.log = keepLog.concat(G.log.slice(-2));
+  selProv = s.sel;
+  document.getElementById('btnUndo').disabled = snapStack.length===0;
+  log('↩ 已撤销上一步操作','dip');
+  refresh();
+}
+document.addEventListener('keydown', e=>{
+  if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==='z' && G && !G.over){ e.preventDefault(); undo(); }
+  if (e.code==='Space' && G && !G.over && document.activeElement.tagName!=='SELECT'&&document.activeElement.tagName!=='INPUT'){ e.preventDefault(); endTurn(); }
+});
+
+/* ================= 地图绘制（自绘矢量地理 · 无底图） =================
+   地图本体由 map_data.js 的 sceneSvg() 自绘：海/陆/大河/山脉/湖泽/北徼。
+   游戏层只叠加：半透明归属填色（一国一色，仅七雄）· 围城旗 · 点选高亮；
+   其余信息（地形/产出/驻军/规模引据）点击省份后在右侧面板详示。 */
+let _hexSig = '', _hexWorld = null, _hexTopo = null, _hexStatic = '';
+let _hexFill = {};
+
+function rebuildHexCaches(){
+  _hexSig = '';
+  const knownIds = new Set(MAP.DEFS.map(d=>d.id));
+  const extra = PROVINCES.map(p=>p.id).filter(x=>!knownIds.has(x));
+  const world = MAP.buildHexWorld(extra);
+  const topo = MAP.hexTopology(world);
+  _hexWorld = world; _hexTopo = topo; _hexFill = {};
+  for (const p of PROVINCES) _hexFill[p.id] = MAP.regionFillPath(topo, p.id);
+  /* 静态层 = 自绘矢量地理场景（海/陆/大河/山脉/湖泽/北徼） */
+  const st = MAP.sceneSvg();
+  _hexStatic = st;
+}
+function drawMap(){
+  if (!G) return;
+  const sig = PROVINCES.map(p=>p.id).join('|')+'#'+PROVINCES.length;
+  let dynEl = document.getElementById('gDyn');
+  if (sig !== _hexSig || !dynEl){
+    rebuildHexCaches();
+    _hexSig = sig;
+    dynEl = null;
+  }
+  const dyn = buildHexDyn();
+  const mapSvg = document.getElementById('mapSvg');
+  if (!dynEl){ mapSvg.innerHTML = `<g id="gStatic">${_hexStatic}</g><g id="gDyn">${dyn}</g>`; }
+  else dynEl.innerHTML = dyn;
+}
+function buildHexDyn(){
+  let s = '';
+  /* 政治色罩：一国一色（半透明，地形透出——HOI4式） */
+  for (const p of PROVINCES){
+    if (!_hexFill[p.id]) continue;
+    const nN = NATIONS[p.owner]; const col = nN ? nN.color : '#9a8f78';
+    s += `<path d="${_hexFill[p.id]}" fill="${col}" fill-opacity="0.72" fill-rule="nonzero" stroke="none" data-prov="${p.id}"
+      onclick="selectProv('${p.id}')" onmousemove="provHover(event,'${p.id}')" onmouseleave="provLeave()" style="cursor:pointer"/>`;
+  }
+  /* 省界（细）与国界（粗）：piece 曲线，填与描完全贴合 */
+  let bIn = '', bNat = '';
+  for (const pc of _hexTopo.pieces){
+    if (pc.b==='SEA'){ bNat += pc.path; continue; }
+    const oa = G.provinces[pc.a] && G.provinces[pc.a].owner;
+    const ob = G.provinces[pc.b] && G.provinces[pc.b].owner;
+    if (!oa || !ob) continue;
+    if (oa===ob) bIn += pc.path; else bNat += pc.path;
+  }
+  if (bIn) s += `<path d="${bIn}" fill="none" stroke="#1a2026" stroke-opacity="0.38" stroke-width="1" stroke-linejoin="round" pointer-events="none"/>`;
+  if (bNat) s += `<path d="${bNat}" fill="none" stroke="#151a1f" stroke-opacity="0.92" stroke-width="2.6" stroke-linejoin="round" pointer-events="none"/>`;
+  /* 国都 ★（HOI4式星标） */
+  const cent = _hexTopo.centroid;
+  const capDone = {};
+  for (const p of PROVINCES){
+    const g = G.provinces[p.id];
+    if (!g || !g.isCap || capDone[g.owner]) continue;
+    capDone[g.owner] = true;
+    const pos = cent[p.id] || [p.x||100, p.y||100];
+    s += `<text x="${pos[0].toFixed(1)}" y="${(pos[1]+4.6).toFixed(1)}" text-anchor="middle" font-size="13" fill="#efe6c0" stroke="#1a2026" stroke-width="1" paint-order="stroke" pointer-events="none">★</text>`;
+  }
+  /* 国名大字（弧形 textPath —— HOI4式随势压印） */
+  const byOwner = {};
+  for (const p of PROVINCES) (byOwner[p.owner] = byOwner[p.owner] || []).push(p);
+  let lid = 0;
+  for (const oid in byOwner){
+    const provs = byOwner[oid];
+    const nN = NATIONS[oid]; if (!nN) continue;
+    let cx = 0, cy = 0, cells = 0;
+    for (const p of provs){ const c = cent[p.id]; if (c){ cx += c[0]; cy += c[1]; cells++; } }
+    if (!cells) continue;
+    cx /= cells; cy /= cells;
+    const big = cells >= 6 ? 30 : (cells >= 3 ? 22 : 15);
+    const w = big * (nN.name.length * 0.9);
+    const ida = 'wzxLbl' + (lid++);
+    s += `<path id="${ida}" d="M ${(cx - w/2).toFixed(1)} ${(cy + big*0.28).toFixed(1)} Q ${cx.toFixed(1)} ${(cy - big*0.62).toFixed(1)} ${(cx + w/2).toFixed(1)} ${(cy + big*0.28).toFixed(1)}" fill="none" pointer-events="none"/>`;
+    s += `<text font-size="${big}" font-weight="600" fill="#efe8d2" fill-opacity="0.6" stroke="#141a1f" stroke-opacity="0.42" stroke-width="1" paint-order="stroke" letter-spacing="6" pointer-events="none"><textPath href="#${ida}" startOffset="50%" text-anchor="middle">${nN.name}</textPath></text>`;
+  }
+  /* 攻击目标高亮 */
+  if (selProv && ADJ[selProv]){
+    const atkTargets = ADJ[selProv].filter(x=>G.provinces[x] && G.provinces[x].owner!==playerN && G.provinces[selProv] && G.provinces[selProv].owner===playerN);
+    for (const t of atkTargets){
+      if (!_hexFill[t]) continue;
+      s += `<path d="${_hexFill[t]}" fill="rgba(239,83,80,.30)" fill-rule="nonzero" pointer-events="none"/>`;
+      s += `<path d="${_hexFill[t]}" fill="none" stroke="#ef5350" stroke-width="2.6" stroke-dasharray="6,5" stroke-linejoin="round" pointer-events="none">
+        <animate attributeName="stroke-opacity" values="1;.35;1" dur="1.4s" repeatCount="indefinite"/></path>`;
+    }
+  }
+  /* 选中省高亮 */
+  if (selProv && _hexFill[selProv]){
+    s += `<path d="${_hexFill[selProv]}" fill="rgba(255,255,255,.18)" fill-rule="nonzero" stroke="#f3edda" stroke-width="2" stroke-linejoin="round" pointer-events="none"/>`;
+  }
+  /* 围城旗 */
+  for (const p of PROVINCES){
+    if (!G.provinces[p.id] || !G.sieges[p.id]) continue;
+    const pos = cent[p.id] || [p.x||100, p.y||100];
+    s += `<text x="${pos[0].toFixed(1)}" y="${(pos[1]+14).toFixed(1)}" text-anchor="middle" font-size="10" fill="#ffb3ab" stroke="#172029" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" pointer-events="none">🚩${G.sieges[p.id].rounds}</text>`;
+  }
+  return s;
+}
+function hexA(hex, a){
+  if (hex.startsWith('rgba')) return hex;
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${a})`;
+}
+function provHover(ev, pid){
+  /* 地名隐藏、悬停显名：只显示省名+归属（详情仍点击后在右侧面板） */
+  const P = PROVINCES.find(p=>p.id===pid), g = G && G.provinces[pid];
+  if (!P || !g) return;
+  const tip = document.getElementById('tooltip');
+  if (!tip) return;
+  const nN = NATIONS[g.owner];
+  tip.innerHTML = `<b style="color:${nN.color}">${P.name}</b><span class="tdim"> · ${nN.name}${g.isCap?' · 👑都':''}</span>`;
+  tip.style.display = 'block';
+  tip.style.left = Math.min(ev.pageX+14, window.innerWidth-220) + 'px';
+  tip.style.top  = (ev.pageY+10) + 'px';
+}
+function provLeave(){ hideTip(); }
+function incomeOf(nid){
+  let gold=0, food=0;
+  for (const p of PROVINCES){
+    if (G.provinces[p.id].owner!==nid) continue;
+    gold += Math.round(p.prod.gold*1.8); food += Math.round(p.prod.food*1.8);
+  }
+  if (nid==='CHU') food = Math.round(food*1.3);
+  if (nid==='YAN') gold = Math.round(gold*1.25);
+  return {gold, food, upkeep: upkeepOf(nid)};
+}
+function upkeepOf(nid){
+  let g=0, f=0;
+  for (const pid in G.provinces){
+    const pr = G.provinces[pid];
+    if (pr.owner!==nid) continue;
+    for (const name in pr.units){
+      const u = UMAP[name]; if (!u) continue;
+      g += pr.units[name]*u.cost_money*0.03;
+      f += pr.units[name]*u.cost_grain*0.05;
+    }
+  }
+  return {gold:Math.round(g), food:Math.round(f)};
+}
+function sumTroops(o){ let s=0; for (const k in o) s+=o[k]; return s; }
+function refresh(){
+  if (!G) return;
+  const inc = incomeOf(playerN);
+  document.getElementById('turnNum').textContent = G.turn;
+  document.getElementById('resGold').textContent = Math.floor(G.nations[playerN].gold);
+  document.getElementById('resFood').textContent = Math.floor(G.nations[playerN].food);
+  document.getElementById('resProv').textContent = PROVINCES.filter(p=>G.provinces[p.id].owner===playerN).length;
+  document.getElementById('goldRate').textContent = `+${inc.gold}−${inc.upkeep.gold}`;
+  document.getElementById('foodRate').textContent = `+${inc.food}−${inc.upkeep.food}`;
+  if (selProv) showProv(selProv);
+  drawMap(); renderDipMini(); renderOrders();
+}
+
+/* ================= 省份面板 ================= */
+function showProv(pid){
+  const P = PROVINCES.find(p=>p.id===pid), g = G.provinces[pid];
+  const mine = g.owner===playerN;
+  const tc = {'山地':'#a1887f','平原':'#a5d6a7','水乡':'#4fc3f7'}[P.terrain]||'#fff';
+  let s = `<div class="provCard">
+    <div class="kv"><span class="k">城名</span><b style="font-size:15px;color:${NATIONS[g.owner].color}">${P.name}</b>
+      ${g.isCap?'<span class="tag">👑 都城</span>':''}
+      ${G.sieges[pid]?`<span class="tag" style="color:#ef9a9a">🚩 围城第${G.sieges[pid].rounds}回合</span>`:''}
+      ${mine?'<span class="tag" style="color:#81c784">我方</span>':''}</div>
+    <div class="kv"><span class="k">归属</span>${NATIONS[g.owner].name}</div>
+    <div class="kv"><span class="k">地形</span><b style="color:${tc}">${P.terrain}</b>
+      <span style="color:var(--dim);font-size:10.5px">${P.terrain==='山地'?'山地：骑兵、战车吃亏':P.terrain==='水乡'?'水乡：战车吃亏，舟师占便宜':'平原通衢'}</span></div>
+    <div class="kv"><span class="k">产出</span>金${Math.round(P.prod.gold*1.8)} / 粮${Math.round(P.prod.food*1.8)} 每回合</div>
+    <div class="kv" style="border-left:3px solid #3f4a54;padding-left:6px"><span class="k">地块</span>${P.vol||''}
+      <div style="color:#7f95a3;font-size:9.5px;margin-top:1px">—— ${P.cite||''}</div></div>`;
+  if (G.sieges[pid]){
+    const sg = G.sieges[pid];
+    s += `<div class="kv" style="color:#ef9a9a"><span class="k">围城</span>${NATIONS[sg.by].name}军${sg.troops}人围城，攻守每回合互耗</div>`;
+  }
+  if (mine){
+    s += `<div style="margin:8px 0;display:flex;gap:6px;flex-wrap:wrap">
+      <div style="flex:1">{$DYN$}</div></div>`;
+  }
+  s += '</div>';
+  // 动态按钮组
+  let dyn = '';
+  if (mine){
+    const adjFriendly = ADJ[pid].filter(x=>G.provinces[x].owner===playerN);
+    const adjEnemy  = ADJ[pid].filter(x=>G.provinces[x].owner!==playerN);
+    if (adjEnemy.length){
+      dyn += `⚔ 进攻：<select id="atkTarget" style="max-width:110px">${adjEnemy.map(x=>`<option value="${x}">${PROVINCES.find(p=>p.id===x).name}</option>`).join('')}</select>
+              <button class="danger" onclick="startAttack('${pid}')">攻</button>`;
+    }
+    if (adjFriendly.length){
+      dyn += ` 🚚 调往：<select id="mvTarget" style="max-width:110px">${adjFriendly.map(x=>`<option value="${x}">${PROVINCES.find(p=>p.id===x).name}</option>`).join('')}</select>
+              <button onclick="doMove('${pid}')">移</button>`;
+    }
+    if (Object.keys(g.training||{}).length) dyn += ` ⏳<button onclick="finishTrainingNow('${pid}')">加急训完(花2倍金)</button>`;
+    if (mine) dyn += ` <button onclick="recruitPanel('${pid}')">📜 招募</button>`;
+  } else {
+    const adjMine = ADJ[pid].filter(x=>G.provinces[x].owner===playerN);
+    s += `<div class="kv"><span class="k">邻我城</span>${adjMine.length?adjMine.map(x=>PROVINCES.find(p=>p.id===x).name).join('、'):'<span class="count0">无</span>'}</div>`;
+    dyn = '';
+  }
+  s = s.replace('{$DYN$}', dyn);
+  document.getElementById('provCard').innerHTML = s;
+  document.getElementById('garrisonBox').innerHTML = unitsTable(g.units, true) + (g.training&&Object.keys(g.training).length? '<p style="color:#87b5a8;font-size:10.5px;margin:4px 0">⏳ 在训：'+Object.entries(g.training).map(([k,v])=>`${k}×${v.count}(${v.left})`).join('；')+'</p>':'');
+  document.getElementById('garrisonSum').textContent = `共${sumTroops(g.units)}人` + (g.hero?` · ★${g.hero}`:'');
+  /* 招募面板 */
+  if (mine){
+    const rec = document.getElementById('recruitBox');
+    let rh = '<table><tr><th></th><th>兵种</th><th>费金/粮</th><th>回合</th><th></th></tr>';
+    const traits = [ [playerN==='QIN'&&'秦锐士', .85], [playerN==='ZHAO'&&'胡服骑兵(赵骑射)', .75], [playerN==='QI'&&'齐技击', .7], [playerN==='WEI'&&'魏武卒', .85], [playerN==='HAN'&&'韩国强弩兵(弩兵)', .8] ];
+    for (const u of U){
+      if (u.name==='魏厮徒') continue;
+      let mul = 1; for (const [nm,m] of traits) if (nm && u.name===nm) mul = m;
+      const gm = Math.round(u.cost_money*20*mul), gd = Math.round(u.cost_grain*12), tt = Math.max(1,u.train_time-2);
+      rh += `<tr><td>${CATICO[u.category]}</td>
+        <td title="${(u.rationale||'').slice(0,140).replace(/"/g,'&quot;')}">${u.name}<br><span style="color:#78909c;font-size:10px">攻${u.attack} 防${u.defense} 机${u.mobility} 远${u.ranged}</span></td>
+        <td>${gm}/${gd}</td><td>${tt}</td>
+        <td><button ${gm>G.nations[playerN].gold?'disabled title="金不足"':''} onclick="recruit('${pid}','${u.name.replace(/'/g,'\\x27')}',${gm},${gd},${tt})">招×30</button></td></tr>`;
+    }
+    rh += '</table>';
+    rec.innerHTML = rh;
+    document.getElementById('recruitHint').textContent = `现有金${Math.floor(G.nations[playerN].gold)}`;
+  } else {
+    document.getElementById('recruitBox').innerHTML = '<p class="count0" style="color:#546e7a;font-size:11px">敌城不能招人</p>';
+    document.getElementById('recruitHint').textContent='';
+  }
+  /* 将领 */
+  const box = document.getElementById('dipMini');
+  /* 将领展示放到招募框下（provCard内简化） */
+}
+
+function unitsTable(units, withMeta){
+  let h = '<table><tr><th></th><th>兵种</th><th>数量</th>' + (withMeta?'<th>档案</th>':'') + '</tr>';
+  for (const n in units){
+    if (!units[n]) continue;
+    const u = UMAP[n]; if (!u) continue;
+    h += `<tr><td>${CATICO[u.category]}</td><td>${n}<div style="color:#78909c;font-size:10px">攻${u.attack}防${u.defense}机${u.mobility}远${u.ranged}</div></td><td><b>${units[n]}</b></td>${withMeta?`<td style="color:#78909c;font-size:10px">${(u.org_note||'').slice(0,36)}…</td>`:''}</tr>`;
+  }
+  h += '</table>';
+  return h;
+}
+function recruitPanel(){}
+
+/* ================= 玩家操作（均先 snapshot） ================= */
+function recruit(pid, unitName, costG, costF, turns){
+  snapshot();
+  const n = G.nations[playerN];
+  if (n.gold<costG || n.food<costF){ log('💰 资源不足','bad'); return; }
+  n.gold-=costG; n.food-=costF;
+  const t = G.provinces[pid].training;
+  if (!t[unitName]) t[unitName] = {count:0,left:turns};
+  t[unitName].count += 30;
+  log(`📜 ${PROVINCES.find(p=>p.id===pid).name} 开训 ${unitName}×30（需${turns}回合）`,'good');
+  refresh();
+}
+function finishTrainingNow(pid){
+  snapshot();
+  const t = G.provinces[pid].training, n = G.nations[playerN];
+  let cost=0; for (const u in t) cost += (UMAP[u]?.cost_money||0)*8*t[u].left;
+  if (n.gold<cost){ log(`💰 加急需${Math.round(cost)}金，不足`,'bad'); return; }
+  n.gold-=cost;
+  for (const u in t){ g0UnitsAdd(pid,u,t[u].count); }
+  G.provinces[pid].training={};
+  log(`⏩ 加急完成训练（花${Math.round(cost)}金）`,'good'); refresh();
+}
+function g0UnitsAdd(pid, name, cnt){
+  const g = G.provinces[pid];
+  g.units[name] = (g.units[name]||0)+cnt;
+}
+function assignHero(pid, name){
+  snapshot();
+  const used = Object.values(G.provinces).filter(x=>x.hero && x.hero===name);
+  if (used.length){ log(`⚠ ${name} 已在别处驻防`,'bad'); return; }
+  G.provinces[pid].hero = name;
+  log(`★ ${name} 赴任 ${PROVINCES.find(p=>p.id===pid).name}`,'good'); refresh();
+}
+function doMove(pid){
+  const target = document.getElementById('mvTarget').value;
+  if (!target) return;
+  const n = prompt('调动比例%（50=一半, 100=全部）：','100');
+  if (!n) return;
+  const pct = Math.max(10,Math.min(100,parseInt(n)||50))/100;
+  const src = G.provinces[pid];
+  let withHero = false;
+  if (src.hero) withHero = prompt(`让 ${src.hero} 随军吗？(y/n)`,'y').toLowerCase()==='y';
+  snapshot();
+  const Pf = PROVINCES.find(p=>p.id===pid), Pt = PROVINCES.find(p=>p.id===target);
+  G.orders.push({type:'move', from:pid, to:target, pct, withHero});
+  log(`📋 下令：${Pf.name} ➤ ${Pt.name}（${Math.round(pct*100)}%${withHero?'·主将随军':''}）——回合结束时开拔`,'good');
+  refresh();
+}
+function startAttack(fromPid, targetPid, opts){
+  if (targetPid===undefined){ targetPid = document.getElementById('atkTarget')?.value; }
+  if (!targetPid) return;
+  snapshot();
+  const PfO = PROVINCES.find(p=>p.id===fromPid), PdO = PROVINCES.find(p=>p.id===targetPid);
+  G.orders.push({type:'attack', from:fromPid, target:targetPid});
+  log(`⚔ 下令进攻：${PfO.name} ➤ ${PdO.name}——回合结束时开战`,'sys');
+  refresh();
+  return;
+}
+function resolveAttack(fromPid, targetPid, silent){
+  const from = G.provinces[fromPid], target = G.provinces[targetPid];
+  const Pd = PROVINCES.find(p=>p.id===targetPid), Pf = PROVINCES.find(p=>p.id===fromPid);
+  if (!sumTroops(from.units)){ log('⚠ 无可出战之兵','bad'); return; }
+  const atkHeroName = from.hero, defHeroName = target.hero;
+  const atkTech = G.techUsed[atkHeroName] || HERO_TECH[atkHeroName];
+  const defTech  = G.techUsed[defHeroName] || HERO_TECH[defHeroName];
+  useTech(atkTech, atkHeroName, '攻'); useTech(defTech, defHeroName, '守');
+  let A=0, D=0, detail={};
+  for (const name in from.units){
+    const u = UMAP[name]; if (!u) continue;
+    const cnt = from.units[name];
+    const m = counterMult(name, target.units);
+    const tm = terrainMult(u, Pd.terrain);
+    const v = cnt*(u.attack*0.55+u.ranged*0.25+u.mobility*0.2)*m*tm;
+    A += v; detail[name] = v;
+  }
+  let techTxt = [];
+  if (atkTech && atkHeroName){
+    const t = HERO_TECH[atkHeroName];
+    let boost = 1;
+    if (['减灶','火牛','窃符'].includes(t.name)) boost = 1.4;
+    else if (['歼灭','出奇'].includes(t.name)) boost = 1.25;
+    else if (['励士','北逐','得蜀','胡服','智囊','连横','狭路','轻锐'].includes(t.name)) boost = 1.3;
+    A *= boost;
+    if (t.name==='持重') A *= 1.18;
+    techTxt.push(`⚙️【${atkHeroName}·${t.name}】${t.desc}`);
+    G.techUsed[atkHeroName] = true;
+  }
+  /* v3 修复：守方技卡原在此处应用，但此时守战力 D 尚未累加（=0），乘数全部失效——
+     已整体移至守战力计算之后生效（见下方 defTech 块）。 */
+  if (atkHeroName){ A *= heroBonus(atkHeroName).atk; }
+  const wall = target.isCap?1.3:1.15;
+  for (const name in target.units){
+    const u = UMAP[name]; if (!u) continue;
+    D += target.units[name]*(u.defense*0.65+u.endurance*0.35)*wall;
+  }
+  if (defHeroName){ D *= heroBonus(defHeroName).def; }
+  /* v3 修复：守方技卡在 D 累加完成后再生效（原位置 D=0，从未生效） */
+  if (defTech && defHeroName){
+    const t = HERO_TECH[defHeroName];
+    if (t.name==='坚壁'){ D *= 1.35; techTxt.push(`⚙️【${defHeroName}·${t.name}】守军防+35%`); G.techUsed[defHeroName]=true; }
+    if (t.name==='抗秦' && G.provinces[fromPid].owner==='QIN'){ D *= 1.4; techTxt.push(`⚙️【${defHeroName}·${t.name}】对秦 防+40%`); G.techUsed[defHeroName]=true; }
+    if (t.name==='智囊'){ A *= 0.9; techTxt.push(`⚙️【${defHeroName}·${t.name}】先手：攻方-10%`); G.techUsed[defHeroName]=true; }
+  }
+  /* 同盟助战 */
+  const allyAdj = ADJ[targetPid].find(x=>G.provinces[x].owner!==G.provinces[targetPid].owner && G.provinces[x].owner!==G.provinces[fromPid].owner && isAlliedWith(G.provinces[x].owner, G.provinces[fromPid].owner));
+  if (allyAdj && atkHeroName==='乐毅'){ A*=1.25; techTxt.push(`⚙️【乐毅·连横】同盟随军+25%`); }
+  A *= (0.9+Math.random()*0.2); D *= (0.9+Math.random()*0.2);
+  let aT = sumTroops(from.units), dT = sumTroops(target.units);
+  let aLost = Math.round(aT*(D/(A+D))*0.55), dLost = Math.round(dT*(A/(A+D))*0.6);
+  if (atkTech && atkHeroName && HERO_TECH[atkHeroName].name==='歼灭') dLost = Math.round(dLost*1.45);
+  if (atkTech && atkHeroName && HERO_TECH[atkHeroName].name==='持重') aLost = Math.round(aLost*0.8);
+  if (atkTech && atkHeroName && HERO_TECH[atkHeroName].name==='励士') aLost = Math.round(aLost*0.85);
+  if (atkTech && atkHeroName && HERO_TECH[atkHeroName].name==='火牛'){ dLost = Math.round(dLost + dT*0.3); }
+  const win = A >= D;
+  let msg = '';
+  const atkN = NATIONS[G.provinces[fromPid].owner].name, defN = NATIONS[G.provinces[targetPid].owner].name;
+  msg += `<div class="msgAtk" style="border-left:4px solid ${win?'#66bb6a':'#ef5350'}">`;
+  msg += `<b style="font-size:15px">${win?'⚔ 破城！':'🛡 攻势受挫'}</b><br>
+    <span style="color:var(--dim)">${Pf.name}(${atkN}) ➤ ${Pd.name}(${defN})</span><br><br>
+    攻势战力 <b style="color:#ffd54f">${Math.round(A)}</b> vs 守势战力 <b style="color:#ffd54f">${Math.round(D)}</b><br>
+    攻方折损 <b style="color:#ef9a9a">${aLost}</b> · 守方折损 <b style="color:#ef9a9a">${dLost}</b>`;
+  techTxt.forEach(t=> { msg += `<div style="color:#ce93d8;font-size:11px;margin-top:4px">${t}</div>`; });
+  const _top = Object.entries(detail).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  if (_top.length) msg += `<div style="color:#8fa3ad;font-size:10.5px;margin-top:4px">⚔ 攻方战力构成：${_top.map(([n,v])=>`${n}≈${Math.round(v)}`).join(' · ')}</div>`;
+  msg += '</div>';
+  /* 兵力写回 */
+  const aKeep = {}; for (const k in from.units){ const keep = Math.max(0, from.units[k]-Math.round(aLost*from.units[k]/aT)); if (keep>0) aKeep[k]=keep; }
+  const dKeep = {}; for (const k in target.units){ const keep = Math.max(0, target.units[k]-Math.round(dLost*target.units[k]/dT)); if (keep>0) dKeep[k]=keep; }
+  for (const k in from.units) delete from.units[k];
+  Object.assign(from.units, aKeep);
+  for (const k in target.units) delete target.units[k];
+  Object.assign(target.units, dKeep);
+  if (win){
+    G.provinces[targetPid].owner = G.provinces[fromPid].owner;
+    G.provinces[targetPid].hero = atkHeroName; from.hero=null;
+    for (const k in from.units) delete from.units[k];
+    log(`⚔ ${atkN} 攻占 ${Pd.name}！（折损${aLost}）`,'sys');
+    delete G.sieges[targetPid];
+    if (target.isCap){ const owner=NATIONS[G.provinces[fromPid].owner].name; log(`👑 ${owner} 攻克${NATIONS[G.provinces[targetPid].owner].name}国都！`,'sys'); }
+  } else {
+    G.provinces[targetPid].siege = {by:G.provinces[fromPid].owner, rounds:1, troops:aT-aLost, hero:atkHeroName};
+    G.sieges[targetPid] = {by:G.provinces[fromPid].owner, rounds:1, troops:aT-aLost, hero:atkHeroName, aLostPer:Math.round(aLost*0.6)};
+    from.hero = null;
+    log(`🚩 ${Pd.name} 围城开始（第1回合）—— 攻军${sumTroops(aKeep)}人阵于城外`,'bad');
+  }
+  msg += `<p style="color:var(--dim);font-size:11px;margin-top:6px">${win?'城已易主':'没打下就转入围城，之后每回合自动接着打'}</p>`;
+  if (silent){
+    const _top3 = Object.entries(detail).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([n,v])=>`${n}≈${Math.round(v)}`).join(' · ');
+    log(`⚔ 战报：${Pf.name}➤${Pd.name} ${win?'破城！':'攻势受挫'}（攻${Math.round(A)} 守${Math.round(D)}，折损 ${aLost}/${dLost}${_top3?'；构成 '+_top3:''}）` + (techTxt.length? ' · '+techTxt.map(t=>t.replace(/<[^>]*>/g,'')).join('；') : ''), win?'good':'bad');
+  } else showResult(msg);
+  refresh();
+}
+function executeOrders(){
+  if (!G.orders) G.orders=[];
+  if (!G.orders.length) return;
+  const moves = G.orders.filter(o=>o.type==='move'), atks = G.orders.filter(o=>o.type==='attack');
+  G.orders = [];
+  log('📋 结算本回合命令……','dip');
+  for (const o of moves){
+    const src = G.provinces[o.from], dst = G.provinces[o.to];
+    const Pf = PROVINCES.find(p=>p.id===o.from), Pt = PROVINCES.find(p=>p.id===o.to);
+    if (!src || !dst || src.owner!==playerN || o.from===o.to){ log('📋 调兵令作废（形势已变）','dip'); continue; }
+    let moved=0;
+    for (const k in src.units){
+      const mv = Math.floor(src.units[k]*o.pct);
+      if (mv>0){ src.units[k]-=mv; dst.units[k]=(dst.units[k]||0)+mv; moved+=mv; if (src.units[k]<=0) delete src.units[k]; }
+    }
+    if (o.withHero && src.hero){ dst.hero=src.hero; src.hero=null; }
+    if (moved) log(`🚚 ${Pf.name} ➤ ${Pt.name} 开拔（${Math.round(o.pct*100)}%${o.withHero?'·主将随军':''}）`,'good');
+    else log(`📋 调兵令作废（${Pf.name} 无兵可调）`,'dip');
+  }
+  for (const o of atks){
+    const src = G.provinces[o.from], tgt = G.provinces[o.target];
+    const Pf = PROVINCES.find(p=>p.id===o.from), Pd = PROVINCES.find(p=>p.id===o.target);
+    if (!src || src.owner!==playerN || !tgt || tgt.owner===playerN){ log('📋 进攻令作废（形势已变）','dip'); continue; }
+    if (!sumTroops(src.units)){ log(`📋 进攻令作废（${Pf.name} 无兵可战）`,'bad'); continue; }
+    resolveAttack(o.from, o.target, true);
+  }
+  G.orders = [];
+}
+function counterMult(atkUnitName, defUnits){
+  let m = 1;
+  for (const c of C){
+    if (c.unit_a===atkUnitName && defUnits && defUnits[c.unit_b]){
+      if (c.direction==='A克B') m = Math.max(m, 1.3);
+      else if (c.direction==='B克A') m = Math.min(m, 0.75);
+    }
+  }
+  return m;
+}
+function terrainMult(u, terr){
+  if (u.category==='车战'){ if (terr==='山地') return 0.8; if (terr==='水乡') return 0.7; }
+  if (u.category==='骑战' && terr==='山地') return 0.8;
+  if (u.category==='水战'){ if (terr==='水乡') return 1.3; return 0.8; }
+  if (u.category!=='水战' && terr==='水乡' && u.category!=='特种') return 0.9;
+  return 1;
+}
+function heroBonus(heroName){
+  const h = H.find(x=>x.name===heroName);
+  if (!h) return {atk:1, def:1};
+  return {atk:1+h.command/28, def:1+h.strategy/30};
+}
+
+/* ================= 围城系统 ================= */
+function siegeTick(){
+  for (const pid in G.sieges){
+    const sg = G.sieges[pid];
+    const def = G.provinces[pid];
+    const Pd = PROVINCES.find(p=>p.id===pid);
+    sg.rounds++;
+    const atkUnits = {era:'camped'};
+    /* 攻守互耗，根据围城战力 */
+    const atkP = sg.troops*(0.65), defP = sumTroops(def.units)*1.15*(def.isCap?1.35:1.15);
+    const defLoss = Math.round(sumTroops(def.units)*(atkP/(atkP+defP)*0.55));
+    const atkLoss = Math.round(sg.troops*(defP/(atkP+defP)*0.45));
+    sg.troops = Math.max(0, sg.troops-atkLoss);
+    /* 减守军 */
+    let removed=0;
+    for (const k in def.units){
+      const ratio = def.units[k]/sumTroops(def.units);
+      const sub = Math.min(def.units[k], Math.round(defLoss*ratio));
+      def.units[k]-=sub; removed+=sub;
+      if (def.units[k]<=0) delete def.units[k];
+    }
+    /* 守方邻省自动增援 */
+    const friendlyAdj = ADJ[pid].filter(x=>G.provinces[x].owner===def.owner);
+    if (friendlyAdj.length && Math.random()<0.4){
+      const fp = G.provinces[friendlyAdj[0]];
+      const t = Math.round(sumTroops(fp.units)*0.4);
+      for (const k in fp.units){
+        const mv = Math.round(fp.units[k]*0.4);
+        fp.units[k]-=mv; def.units[k]=(def.units[k]||0)+mv;
+        if (fp.units[k]<=0) delete fp.units[k];
+      }
+      log(`🛡 ${PROVINCES.find(p=>p.id===friendlyAdj[0]).name} 派 ${t} 人驰援 ${Pd.name}`,'good');
+    }
+    /* 攻方破城或撤退 */
+    if (sg.troops<=0){
+      log(`🛡 ${Pd.name} 围城解除：攻军力尽，撤围`,'good');
+      delete G.sieges[pid]; def.siege=null;
+      continue;
+    }
+    if (sumTroops(def.units)===0){
+      const fromOwner = sg.by;
+      log(`⚔ ${NATIONS[fromOwner].name} 攻陷已空之 ${Pd.name}（围城第${sg.rounds}回合）！`,'sys');
+      G.provinces[pid].owner = fromOwner;
+      if (sg.hero){ G.provinces[pid].hero = sg.hero; }
+      /* 迁入围城军 */
+      g0UnitsAdd(pid, '车下属徒(春秋徒兵)', Math.max(10,Math.round(sg.troops*0.5)));
+      delete G.sieges[pid]; def.siege=null;
+      continue;
+    }
+    if (sg.rounds>7){ log(`⌛ ${Pd.name} 围城第${sg.rounds}回合，攻方粮尽撤围`,'good'); delete G.sieges[pid]; def.siege=null; }
+  }
+}
+
+/* ================= 回合 ================= */
+function endTurn(){
+  if (!G || G.over) return;
+  snapStack = []; document.getElementById('btnUndo').disabled = true;
+  /* NaN 防护 */
+  for (const nid in NATIONS){
+    if (isNaN(G.nations[nid].gold)) G.nations[nid].gold = 0;
+    if (isNaN(G.nations[nid].food)) G.nations[nid].food = 0;
+  }
+  /* 1 收入 */
+  for (const nid in NATIONS){
+    if (!G.nations[nid].alive) continue;
+    const inc = incomeOf(nid);
+    G.nations[nid].gold += inc.gold; G.nations[nid].food += inc.food;
+  }
+  /* 2 训练倒计 */
+  for (const pid in G.provinces){
+    const t = G.provinces[pid].training;
+    for (const u in t) t[u].left--;
+    for (const u in t){
+      if (t[u].left<=0){ g0UnitsAdd(pid,u,t[u].count); 
+        if (G.provinces[pid].owner===playerN) log(`⏳ ${PROVINCES.find(p=>p.id===pid).name} · ${u} 成军`,'good');
+        delete t[u]; }
+    }
+  }
+  /* 3 围城前：结算玩家命令（调兵→进攻） */
+  executeOrders();
+  /* 4 围城 */
+  siegeTick();
+  /* 4 军队维持 */
+  for (const nid in NATIONS){
+    if (!G.nations[nid].alive) continue;
+    const uk = upkeepOf(nid);
+    G.nations[nid].gold -= uk.gold; G.nations[nid].food -= uk.food;
+  }
+  /* 5 粮尽兵溃 */
+  for (const pid in G.provinces){
+    const pr = G.provinces[pid];
+    const n = G.nations[pr.owner]; if (!n||!n.alive) continue;
+    if (n.food<0){
+      for (const k in pr.units) pr.units[k]=Math.max(0,Math.floor(pr.units[k]*0.9));
+    }
+  }
+  for (const nid in NATIONS) if (G.nations[nid].food<0) G.nations[nid].food = 0;
+  /* 6 技卡冷却 */
+  G.techUsed = {};
+  /* 7 AI */
+  aiTurn();
+  /* 8 外交 & 亡国 */
+  for (const key in G.dip){ let d=G.dip[key]; d.turns--; if (d.turns<=0) delete G.dip[key]; }
+  for (const nid in NATIONS){
+    const owns = PROVINCES.filter(p=>G.provinces[p.id].owner===nid);
+    if (owns.length===0 && G.nations[nid].alive){
+      G.nations[nid].alive=false; G.annals = G.annals||[]; G.annals.push({turn:G.turn, nation:nid}); log(`☠️ ${NATIONS[nid].name} 国祚断绝！`,'sys');
+    }
+  }
+  G.turn++;
+  checkGameEnd();
+  refresh();
+}
+function isAlliedWith(a, b){
+  return G.dip['ally:'+a+':'+b] || G.dip['ally:'+b+':'+a];
+}
+function hasTruce(a, b){
+  return G.dip['truce:'+a+':'+b] || G.dip['truce:'+b+':'+a];
+}
+function checkGameEnd(){
+  if (TUT){ /* 教学关：只判失败，胜利由教学步控制 */
+    const mine0 = PROVINCES.filter(p=>G.provinces[p.id].owner===playerN).length;
+    if (mine0===0){ G.over=true; showResult('☠️ 教学关失败：秦师尽丧。点击「重新开始」再来。'); }
+    return;
+  }
+  const mine = PROVINCES.filter(p=>G.provinces[p.id].owner===playerN).length;
+  if (mine===0){ G.over=true; showEnding(false); return; }
+  if (mine===PROVINCES.length){ G.over=true; showEnding(true); return; }
+  if (G.turn>100){
+    G.over=true;
+    showResult(`⌛ 100回合终局。你占${mine}城，总得${mine*10+Math.floor(G.nations[playerN].gold/10)}分。`);
+  }
+}
+/* ================= AI ================= */
+function aiTurn(){
+  for (const nid in NATIONS){
+    if (nid===playerN || !G.nations[nid].alive) continue;
+    if (G.nations[nid].passive) continue; /* 教学关：周室不出兵（诸侯约从未至） */
+    const myProvs = PROVINCES.filter(p=>G.provinces[p.id].owner===nid);
+    if (!myProvs.length) continue;
+    const home = myProvs.find(p=>p.isCap)||myProvs[0];
+    const g0 = G.provinces[home.id];
+    const n = G.nations[nid];
+    const picks = nid==='QIN'?['秦锐士','韩国强弩兵(弩兵)','车下属徒(春秋徒兵)']:
+                  nid==='ZHAO'?['胡服骑兵(赵骑射)','车下属徒(春秋徒兵)','韩国强弩兵(弩兵)']:
+                  nid==='QI'?['齐技击','车下属徒(春秋徒兵)','韩国强弩兵(弩兵)']:
+                  nid==='WEI'?['魏武卒','魏武士','韩国强弩兵(弩兵)']:
+                  nid==='CHU'?['车下属徒(春秋徒兵)','魏武士','舟师水军(吴越楚巴蜀)']:
+                  nid==='HAN'?['韩国强弩兵(弩兵)','车下属徒(春秋徒兵)','魏武士']:
+                  ['车下属徒(春秋徒兵)','韩国强弩兵(弩兵)','胡服骑兵(赵骑射)'];
+    for (const uname of picks){
+      const u = UMAP[uname];
+      const gm = Math.round(u.cost_money*20), gd = Math.round(u.cost_grain*12);
+      const t = Math.max(1,u.train_time-2);
+      if (n.gold>gm*2 && n.food>gd*2){
+        if (!g0.training[uname]) g0.training[uname]={count:0,left:t};
+        g0.training[uname].count += 30;
+        n.gold-=gm; n.food-=gd;
+      }
+    }
+    if (G.turn>4 && Math.random()<0.32){
+      for (const mp of myProvs){
+        const adjE = ADJ[mp.id].filter(x=>{
+          const o = G.provinces[x].owner;
+          return o!==nid && !hasTruce(nid, o) && !isAlliedWith(nid, o) && !(o===playerN && G.dip['truce:'+playerN+':'+nid]);
+        });
+        for (const tid of adjE){
+          const Pd = PROVINCES.find(p=>p.id===tid);
+          const atkP = sumTroops(G.provinces[mp.id].units)*1.15 + (G.provinces[mp.id].hero?30:0);
+          const defP = sumTroops(G.provinces[tid].units)*1.25*(Pd.isCap?1.3:1.15);
+          if (atkP > defP*1.3 && sumTroops(G.provinces[mp.id].units)>=60){
+            // AI围城（不即时战）
+            if (G.sieges[tid]){ 
+              const s = G.sieges[tid]; if (s.by===nid) s.troops*=1.1; continue;
+            }
+            const troops = sumTroops(G.provinces[mp.id].units)*0.85;
+            G.sieges[tid] = {by:nid, rounds:0, troops:Math.round(troops), hero:G.provinces[mp.id].hero};
+            log(`🚩【${NATIONS[nid].name}】起兵围 ${PROVINCES.find(p=>p.id===tid).name}`,'bad');
+            break;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================= 外交 ================= */
+function renderDipMini(){
+  if (!G) return;
+  const c = Object.keys(G.dip).length;
+  document.getElementById('dipMini').textContent = c?`活跃条约 ${c} 项`:'无条约';
+}
+function renderOrders(){
+  const box = document.getElementById('ordersBox');
+  if (!box) return;
+  if (!G){ box.innerHTML=''; return; }
+  const os = G.orders||[];
+  const cnt = document.getElementById('ordersCount');
+  if (cnt) cnt.textContent = os.length?`${os.length} 道·回合末结算`:'无';
+  if (!os.length){ box.innerHTML='<p style="color:#546e7a;font-size:10.5px">还没有命令——在地图上点「攻」或「移」，结束回合时统一执行</p>'; return; }
+  box.innerHTML = os.map((o,i)=>{
+    const Pf = PROVINCES.find(p=>p.id===o.from), Pt = PROVINCES.find(p=>p.id===(o.to||o.target));
+    return `<div class="nationRow"><span class="nc" style="background:${o.type==='attack'?'#ef5350':'#a5d6a7'}"></span>
+      <span class="nm">${o.type==='attack'?'⚔':'🚚'}</span><span class="st">${Pf?Pf.name:'?'} ➤ ${Pt?Pt.name:'?'}${o.type==='move'?`（${Math.round(o.pct*100)}%${o.withHero?'·主将随军':''}）`:''}</span>
+      <div class="dipBtns"><button onclick="cancelOrder(${i})">取消</button></div></div>`;
+  }).join('');
+}
+function cancelOrder(i){
+  snapshot();
+  G.orders.splice(i,1);
+  log('📋 命令已取消','dip');
+  refresh();
+}
+function showDip(){
+  if (!G) return;
+  const L = document.getElementById('dipList');
+  let h = '';
+  for (const nid in NATIONS){
+    if (nid===playerN || !G.nations[nid].alive) continue;
+    const n = G.nations[nid];
+    const myP = PROVINCES.filter(p=>G.provinces[p.id].owner===playerN).length;
+    const hisP = PROVINCES.filter(p=>G.provinces[p.id].owner===nid).length;
+    const allied = isAlliedWith(playerN,nid), truce = hasTruce(playerN,nid);
+    h += `<div class="nationRow">
+      <span class="nc" style="background:${NATIONS[nid].color}"></span>
+      <span class="nm" style="color:${NATIONS[nid].color}">${NATIONS[nid].name}</span>
+      <span class="st">占${hisP}城 · 强度${(n.gold+n.food).toFixed(0)}</span>
+      <div class="dipBtns">
+        ${allied?'<span class="tag" style="color:#66bb6a">✦ 同盟中</span>':`<button ${truce?'disabled':''} onclick="propose('alliance','${nid}')">结盟(200金)</button>`}
+        ${truce?'<span class="tag" style="color:#42a5f5">互不侵犯中</span>':`<button ${allied?'disabled':''} onclick="propose('truce','${nid}')">互不侵犯(100金)</button>`}
+      </div></div>`;
+  }
+  if (Object.keys(G.dip).length){
+    h += '<h3 style="border:none">📋 生效条约</h3>';
+    for (const key in G.dip){
+      h += `<p style="font-size:11.5px;color:#90caf9">· ${key.startsWith('ally')?'⚔同盟':'🕊互不侵犯'}（剩${G.dip[key].turns}回合）</p>`;
+    }
+  }
+  L.innerHTML = h;
+  document.getElementById('dipModal').classList.remove('hidden');
+}
+function propose(kind, nid){
+  snapshot();
+  const cost = kind==='alliance'?200:100;
+  const n = G.nations[playerN];
+  if (n.gold<cost){ log(`💰 金不足(${cost})`,'bad'); return; }
+  n.gold -= cost;
+  const hisP = PROVINCES.filter(p=>G.provinces[p.id].owner===nid).length;
+  const myP  = PROVINCES.filter(p=>G.provinces[p.id].owner===playerN).length;
+  const hisStr = G.nations[nid].gold+G.nations[nid].food+hisP*45;
+  const myStr  = G.nations[playerN].gold+G.nations[playerN].food+myP*45;
+  let chance = 0.45 + (kind==='truce'? -0.05 : (hisStr>myStr?0.3:0.05));
+  if (kind==='alliance' && hisP>=myP) chance += 0.15;
+  if (Math.random() < chance){
+    if (kind==='alliance') G.dip['ally:'+playerN+':'+nid]={turns:12};
+    else G.dip['truce:'+playerN+':'+nid]={turns:8};
+    log(`🤝 ${NATIONS[nid].name}应允${kind==='alliance'?'结盟，共击强邻':'互不侵犯'}！`,'dip');
+  } else {
+    log(`❄ ${NATIONS[nid].name} 婉拒外交（战国策：利与势不合则难约）`,'dip');
+  }
+  showDip(); refresh();
+}
+function closeDip(){ document.getElementById('dipModal').classList.add('hidden'); }
+
+/* ================= 通用 ================= */
+function selectProv(pid){ selProv = pid; if (G) {/* no-op */} refresh(); }
+function log(msg, cls){
+  const d = document.getElementById('log');
+  const p = document.createElement('p'); p.className = cls||''; p.textContent = msg;
+  d.appendChild(p); while(d.children.length>140) d.removeChild(d.firstChild); d.scrollTop = d.scrollHeight;
+}
+function showResult(html){
+  document.getElementById('resultBox').innerHTML = html;
+  document.getElementById('battleModal').classList.remove('hidden');
+}
+/* 结算画面（史证版）：win=true 天下一统 / false 社稷倾覆 */
+function showEnding(win){
+  const annals = (G.annals||[]).map(a=>`第 ${a.turn} 回合，灭 ${NATIONS[a.nation]?NATIONS[a.nation].name:a.nation}`).join('<br>') || '（无灭国记录）';
+  let h;
+  if (win){
+    h = `<h2 style="color:#e8c56a;margin:0 0 10px">初并天下</h2>
+      <p class="mini">秦王政立二十六年，初并天下为三十六郡，号为始皇帝。<br><i>——《史记·秦本纪》</i></p>
+      <p class="mini">寡人以眇眇之身，兴兵诛暴乱，赖宗庙之灵，六王咸伏其辜，天下大定。<br><i>——《史记·秦始皇本纪》</i></p>
+      <p style="color:#e8c56a"><b>灭国编年</b></p><p class="mini">${annals}</p>
+      <p style="color:#e8c56a"><b>功业</b></p><p class="mini">　· 用时 ${G.turn} 回合<br>　· 得城 ${PROVINCES.length} 座</p>
+      <p class="mini"><i>海内为郡县，法令由一统，自上古以来未尝有。</i></p>`;
+  } else {
+    h = `<h2 style="color:#ef9a9a;margin:0 0 10px">社稷倾覆</h2>
+      <p class="mini">一夫作难而七庙堕，身死人手，为天下笑者，何也？<br>仁义不施而攻守之势异也。<br><i>——《史记·秦始皇本纪》载《过秦论》</i></p>
+      <p class="mini">功隳身戮，社稷为墟，不亦悲哉！<br><i>——《资治通鉴·周纪》</i></p>
+      <p style="color:#e8c56a"><b>此前功业</b></p><p class="mini">${annals}</p>
+      <p class="mini">　· 历时 ${G.turn} 回合</p>
+      <p class="mini"><i>前事之不忘，后事之师也。</i></p>`;
+  }
+  document.getElementById('resultBox').innerHTML = h;
+  document.getElementById('battleModal').classList.remove('hidden');
+}
+function closeModal(){
+  document.getElementById('battleModal').classList.add('hidden');
+  document.getElementById('helpModal').classList.add('hidden');
+}
+function showDipPanel(){ showDip(); }
+function saveGame(){
+  if (!G){ return; }
+  if (TUT){ log('📜 教学关不能存档，正式对局才可以','dip'); return; }
+  localStorage.setItem('wzq_save', JSON.stringify(G));
+  log('💾 已存档（本机）','dip');
+}
+function loadGame(){
+  const s = localStorage.getItem('wzq_save');
+  if (!s){ log('📂 没有存档','sys'); return; }
+  let restored=null; try{ restored=JSON.parse(s); }catch(err){ log('📂 存档已损坏，无法读取','bad'); return; }
+  if(!restored || !restored.provinces){ log('📂 存档不完整，无法读取','bad'); return; }
+  const _ids = Object.keys(restored.provinces||{});
+  if (_ids.length < 30){ log('📂 旧版存档读不了，请重新开局','bad'); return; }
+  G = restored;
+  if (!G.orders) G.orders=[];
+  snapStack = [];
+  log('📂 已读档','dip');
+  refresh();
+}
+function useTech(t, heroName, side){
+  // 已在 startAttack 内处理（防止重复调用）
+}
+function assignHeroPanel(pid){
+  const owned = Object.values(G.provinces).filter(x=>x.owner===playerN&&x.hero).map(x=>x.hero);
+  const avail = H.filter(x=>!owned.includes(x.name)).map(x=>x.name);
+  const g = G.provinces[pid];
+  let hb = '';
+  if (g.hero){
+    const hd = H.find(x=>x.name===g.hero);
+    const t = HERO_TECH[g.hero];
+    hb += `<div class="heroCard" onclick="unassignHero('${pid}')">
+      <div class="ttl">★ ${hd.name} <span style="font-size:10px;color:#a0b0b8">(${hd.grade} ${hd.overall})</span></div>
+      <div class="bio">${hd.role} · ${hd.famous_battle}</div>
+      <div class="tech">⚡ 技·${t.name}：${t.desc}<div style="color:#7a6a8a;font-size:9.5px">——${t.cite}</div></div>
+      <div style="color:#546e7a;font-size:10px;margin-top:2px">点击撤回</div></div>`;
+  } else {
+    hb += `<select id="heroPick"><option>— 派遣将领 —</option>${avail.map(n=>`<option>${n}</option>`).join('')}</select>
+           <button onclick="assignHero('${pid}', document.getElementById('heroPick').value)">派</button>`;
+  }
+  return hb;
+}
+function unassignHero(pid){ snapshot(); G.provinces[pid].hero=null; refresh(); }
+function showHelp(){ document.getElementById('helpModal').classList.remove('hidden'); }
+function renderNationPick(){
+  document.getElementById('nationPick').innerHTML = Object.values(NATIONS).map(n=>
+    `<div class="nationRow" style="border-left:5px solid ${n.color}" onclick="startGame('${n.id}')">
+      <span class="nc" style="background:${n.color}"></span><span class="nm">${n.name}</span>
+      <span class="st">都${n.cap} · ${n.trait}</span>
+    </div>`).join('');
+}
+renderNationPick();
+/* 省份卡片里显示将领 */
+const _origShowProv = showProv;
+showProv = function(pid){
+  _origShowProv(pid);
+  /* 附加将领区 */
+  const P = PROVINCES.find(p=>p.id===pid);
+  const g = G.provinces[pid];
+  if (g.owner===playerN){
+    if (!document.getElementById('heroSlot')){
+      const div = document.createElement('div');
+      div.id = 'heroSlot';
+      document.getElementById('provCard').after?.(div) || document.getElementById('provCard').parentNode.insertBefore(div, document.getElementById('provCard').nextSibling);
+    }
+    document.getElementById('heroSlot').innerHTML = '<h3>🛡 驻将 / 技卡</h3>' + assignHeroPanel(pid);
+  }
+};
+
+/* ================= 教学关 · 骊山之难（西周灭亡→春秋形成） ================= */
+/* 史源：E:\508fp\周朝滅亡文獻\（《史记·周本纪/秦本纪》《国语·周语上/郑语》维基文库权威本） */
+let TUT = null;
+
+const TUT_STEPS = [
+ {key:'view', title:'第一課 · 觀其國',
+  goal:'點擊我方省份「咸陽」（地圖左側），查看產出、駐軍與鄰接。',
+  lore:'你執秦（秦襄公）。秦本為周室附庸，世在西陲為王室養馬。此刻宗周鎬京尚在王室，幽王在位，褒姒方寵——大亂將至。',
+  quote:'幽王二年，西周三川皆震。伯陽甫曰：「周將亡矣。夫天地之氣，不失其序……山崩川竭，亡國之徵也。……若國亡不過十年，數之紀也。」是歲也，三川竭，岐山崩。',
+  cite:'《史記·卷004·周本紀》／《國語·卷01·周語上》'},
+ {key:'recruit', title:'第二課 · 動員',
+  goal:'在咸陽或函谷招募任意一支部隊（📜 招募 → 招×30）。',
+  lore:'天變已應，讖言在耳。申侯、繒與犬戎將入寇——趁兵禍未至，先擴軍備戰。',
+  quote:'三年，幽王嬖愛褒姒。褒姒生子伯服，幽王欲廢太子。……以褒姒為后，伯服為太子。太史伯陽曰：「禍成矣，無可奈何！」',
+  cite:'《史記·卷004·周本紀》'},
+ {key:'move', title:'第三課 · 骊山之難',
+  goal:'🚚 調往：把咸陽部隊調動至相鄰省份（下令後，回合結束時開拔；推薦先至函谷）。',
+  lore:'幽王十一年（前771）：申侯聯合繒國、犬戎攻殺幽王於驪山下，虜褒姒，盡取周賂——西周亡。諸侯即申侯共立太子宜臼，是為平王，東遷雒邑。犬戎已僭據宗周鎬京！勤王、逐戎、護社稷——秦人的時代從此開始。',
+  quote:'申侯怒，與繒、西夷犬戎攻幽王。幽王舉烽火徵兵，兵莫至。遂殺幽王驪山下，虜褒姒，盡取周賂而去。於是諸侯乃即申侯而共立故幽王太子宜臼，是為平王，以奉周祀。',
+  cite:'《史記·卷004·周本紀》',
+  onEnter:'shanEast'},
+ {key:'attack', title:'第四課 · 救周逐戎',
+  goal:'自咸陽 ⚔下令進攻 鎐京（其西即镐京地塊，犬戎僭據之宗周）——回合結束時開戰。',
+  lore:'平王之命：「戎無道，侵奪我岐、豐之地，秦能攻逐戎，即有其地。」——攻下鎬京，為秦取岐西立基。圍城之中犬戎攜賂自散，亦可趁虛而入。',
+  quote:'而秦襄公將兵救周，戰甚力，有功。周避犬戎難，東徙雒邑，襄公以兵送周平王。',
+  cite:'《史記·卷005·秦本紀》'},
+ {key:'fenghou', title:'第五課 · 封侯建國',
+  goal:'自镐京（復土後）或陇西 ⚔下令進攻 犬丘，逐戎出境（「秦能攻逐戎，即有其地」）——結束回合開戰。',
+  lore:'鎬京復定，王室東遷之局已成。',
+  quote:'平王封襄公為諸侯，賜之岐以西之地。……與誓，封爵之。襄公於是始國，與諸侯通使聘享之禮。',
+  cite:'《史記·卷005·秦本紀》',
+  onEnter:'fengHou'},
+];
+
+/* 课程判定条件 */
+TUT_STEPS[0].done = ev => ev.type==='select' && ev.mine && !TUT.autoSel;
+TUT_STEPS[1].done = ev => ev.type==='recruit';
+TUT_STEPS[2].done = ev => ev.type==='move' && !!ev.to;
+TUT_STEPS[3].done = ev => ev.type==='attack' && ev.target==='haojing';
+TUT_STEPS[3].poll = () => G && G.provinces.haojing && G.provinces.haojing.owner==='QIN';
+TUT_STEPS[4].poll = () => G && G.provinces.quanrong && G.provinces.quanrong.owner==='QIN';
+
+const ZHOU_PEOPLE = [
+ ['周幽王','宮𣵀（又作湦）· 西周末代王','寵褒姒、廢嫡立庶、舉烽火失信——亡國之主','前771年殺於驪山下','《史記·卷004·周本紀》'],
+ ['褒姒','幽王寵妃 · 伯服之母','廢嫡導火線；「烽火戲諸侯」主角','驪山之難被犬戎虜去','《史記·卷004·周本紀》'],
+ ['申侯','申國國君（申后之父）','怒而聯繒、犬戎攻殺幽王；立宜臼為平王','擁立平王，奉周祀','《史記·卷004·周本紀》'],
+ ['伯服','褒姒之子 · 被立太子','取代宜臼，引發兩王並立之局','與幽王同死於驪山','《史記·卷004·周本紀》'],
+ ['宜臼','周平王 · 東遷後首王','被廢出奔申；即位後東遷雒邑，開啟春秋','前770—前720在位；「政由方伯」','《史記·卷004·周本紀》'],
+ ['伯陽甫','伯陽父 · 周大夫','藉「三川皆震」預言「周將亡矣」「不過十年」','前771年應驗','《史記·周本紀》《國語·周語上》'],
+ ['虢石父','幽王卿士','佞巧善諛好利，用事致國人皆怨','史無詳載','《史記·卷004·周本紀》'],
+ ['鄭桓公','姬友 · 王室司徒','問計史伯，東徙其民於虢鄶之間','死於驪山之難（「桓公死之」）','《國語·卷16·鄭語》'],
+ ['秦襄公','秦國國君','將兵救周、以兵送平王；受封諸侯賜岐西','伐戎至岐而卒','《史記·卷005·秦本紀》'],
+ ['犬戎','西戎部族','殺幽王、虜褒姒、盡取周賂——西周武力終結者','後為秦所逐','《史記·卷004·周本紀》'],
+ ['太史伯陽','周太史','讀史記曰「周亡矣」；斷言「禍成矣，無可奈何」','史無詳載','《史記·卷004·周本紀》'],
+ ['史伯','周太史','為鄭桓公論興衰：「王室將卑，戎、狄必昌」','史無詳載','《國語·卷16·鄭語》'],
+];
+
+function shanEast(){
+  const hj = G.provinces.haojing;
+  if (hj.owner==='ZHOU'){
+    hj.owner='RONG'; hj.hero=null;
+    hj.units={'车下属徒(春秋徒兵)':110,'魏苍头军':50};
+    log('🔥 骊山之難：幽王、伯服殞於驪山，褒姒被虜——犬戎僭據宗周鎬京！','bad');
+  }
+  log('👑 諸侯立太子宜臼是為平王，東遷雒邑，以奉周祀','sys');
+}
+function fengHou(){
+  G.nations.QIN.gold += 200;
+  log('👑 平王封襄公為諸侯，賜岐以西之地——秦始列於諸侯（+200金）','sys');
+}
+
+function startTutorial(){
+  if (TUT) return;
+  TUT = {idx:0, done:false, modalOpen:false, autoSel:false, lootGone:false, stats:{}};
+  NATIONS.RONG = {id:'RONG',name:'犬戎',color:'#6d4c41',cap:'犬丘',trait:'剽疾野戰（不能久驻）'};
+  /* 西周割地：镐京（王畿关中西缘）・犬丘（陇西东缘）从普通地塊切出 */
+  rebuildMap(['haojing','quanrong']);
+  document.getElementById('provTotal').textContent = PROVINCES.length;
+  playerN='QIN';
+  G = {turn:1, over:false, tutorial:true, nations:{}, provinces:{}, sieges:{}, dip:{}, proposals:[], techUsed:{}, siegeTurns:{}, orders:[], log:[]};
+  for (const nid in NATIONS) G.nations[nid]={gold:350,food:400,alive:true,passive:!(nid==='QIN'||nid==='RONG')};
+  G.nations.QIN.gold=600; G.nations.QIN.food=650;
+  G.nations.RONG.gold=200; G.nations.RONG.food=200; G.nations.RONG.passive=false;
+  PROVINCES.forEach(p=>{
+    let g={units:{},hero:null,training:{}};
+    if (p.id==='xianyang') g.units={'秦锐士':80,'车下属徒(春秋徒兵)':40};
+    else if (p.id==='hangu') g.units={'车下属徒(春秋徒兵)':45,'韩国强弩兵(弩兵)':25};
+    else if (p.id==='haojing'){ g.units={'车下属徒(春秋徒兵)':70,'魏苍头军':30}; g.hero='周幽王'; }
+    else if (p.id==='luoyi'){ g.units={'车下属徒(春秋徒兵)':60,'魏苍头军':30}; g.hero='周平王'; }
+    else if (p.id==='quanrong'){ g.units={'车下属徒(春秋徒兵)':80,'魏苍头军':30}; }
+    else if (p.isCap){ const e=p.owner==='CHU'?'车下属徒(春秋徒兵)':'魏武士'; g.units={'车下属徒(春秋徒兵)':55,'韩国强弩兵(弩兵)':25,[e]:35}; }
+    else g.units={'车下属徒(春秋徒兵)':35,'魏苍头军':25};
+    G.provinces[p.id]={id:p.id,owner:p.owner,isCap:p.isCap,units:g.units,hero:g.hero,training:{}};
+  });
+  document.getElementById('startScreen').style.display='none';
+  document.getElementById('gamePanel').style.display='';
+  document.getElementById('btnShijian').style.display='';
+  log('【史鉴教学关】前781—前770 · 你执秦（秦襄公）· 宗周将倾','sys');
+  log('📜 跟随右下「史鉴」任务栏推进：观国→动员→骊山之难→救周→封侯→春秋之局','sys');
+  TUT.autoSel=true; selectProv('xianyang'); TUT.autoSel=false;
+  refresh();
+  tutShow(TUT_STEPS[0]);
+}
+
+function tutShow(st){
+  if (!st || !st.title) return;
+  document.getElementById('tutMTitle').textContent = st.title;
+  let h = '';
+  if (st.lore) h += `<div class="tutLore">${st.lore}</div>`;
+  h += `<p style="color:#c5e1a5">📌 目标：${st.goal}</p>`;
+  h += `<div class="tutQuoteBlock">「${st.quote}」<div class="tutCite">——${st.cite}</div></div>`;
+  document.getElementById('tutMBody').innerHTML = h;
+  document.getElementById('tutModal').classList.remove('hidden');
+  TUT.modalOpen = true;
+}
+function tutNotify(ev){
+  if (!TUT || TUT.done || TUT.modalOpen) return;
+  const st = TUT_STEPS[TUT.idx];
+  if (!st || !st.done || !st.done(ev)) return;
+  tutAdvance();
+}
+function tutPoll(){
+  if (!TUT || TUT.done || TUT.modalOpen) return;
+  const st = TUT_STEPS[TUT.idx];
+  if (!st) return;
+  if (st.poll && st.poll()) tutAdvance();
+}
+function tutAdvance(){
+  TUT.idx++;
+  if (TUT.idx>=TUT_STEPS.length){ tutFinish(); return; }
+  const st = TUT_STEPS[TUT.idx];
+  if (st.onEnter){ const f=window[st.onEnter]; if (f) f(); }
+  refresh();
+  tutShow(st);
+}
+function tutFinish(){
+  TUT.done=true;
+  document.getElementById('tutMTitle').textContent='🏆 終課 · 春秋局面已成';
+  document.getElementById('tutMBody').innerHTML = `
+   <p>幽王既死，平王東遷，秦襄公始國——西周之亡，春秋之始。</p>
+   <div class="tutQuoteBlock">「平王立，東遷于雒邑，辟戎寇。平王之時，周室衰微，諸侯彊并弱，齊、楚、秦、晉始大，政由方伯。」<div class="tutCite">——《史記·卷004·周本紀》</div></div>
+   <div class="tutQuoteBlock">「西戎犬戎與申侯伐周，殺幽王酈山下。而秦襄公將兵救周，戰甚力，有功。周避犬戎難，東徙雒邑，襄公以兵送周平王。平王封襄公為諸侯，賜之岐以西之地。……襄公於是始國。」<div class="tutCite">——《史記·卷005·秦本紀》</div></div>
+   <p style="color:#90caf9">本局用時 ${Math.max(0,(G?G.turn:1)-1)} 回合。五霸將興，七雄未形——戰國的大幕自此刻拉開。</p>
+   <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+     <button class="primary" onclick="closeModal()">✦ 繼續自由對局（春秋開局）</button>
+     <button onclick="exitTutorial()">🏛 返回選國界面</button>
+   </div>`;
+  document.getElementById('tutModal').classList.remove('hidden');
+  TUT.modalOpen = true;
+  refresh();
+}
+function exitTutorial(){
+  TUT=null; G=null; selProv=null; snapStack=[];
+  _hexSig=''; _hexWorld=null; _hexTopo=null; _hexFill={}; _hexStatic='';
+  document.getElementById('btnUndo').disabled=true;
+  rebuildMap();
+  document.getElementById('provTotal').textContent = PROVINCES.length;
+  delete NATIONS.RONG;
+  document.getElementById('tutBox').style.display='none';
+  document.getElementById('gamePanel').style.display='none';
+  document.getElementById('startScreen').style.display='';
+  document.getElementById('btnShijian').style.display='none';
+  document.getElementById('mapSvg').innerHTML='';
+  renderNationPick();
+}
+function showShijian(){
+  document.getElementById('shijianList').innerHTML = ZHOU_PEOPLE.map(p=>
+    `<div class="peoCard"><div class="ttl">${p[0]} <span style="font-size:10px;color:#90a4ae">${p[1]}</span></div>
+     <div class="rel">🔗 ${p[2]}</div><div class="end">⚰ 結局：${p[3]}</div><div class="cit">——${p[4]}</div></div>`).join('');
+  document.getElementById('shijianModal').classList.remove('hidden');
+}
+function closeShijian(){ document.getElementById('shijianModal').classList.add('hidden'); }
+
+function renderTut(){
+  const box = document.getElementById('tutBox');
+  if (!TUT){ box.style.display='none'; return; }
+  if (TUT.done){
+    box.style.display='block';
+    box.innerHTML = `<div class="tutTitle">🏆 教学关完成</div>
+      <div class="tutGoal">春秋之局已定。可继续自由对局，或：</div>
+      <button style="width:100%;margin-top:6px" onclick="exitTutorial()">⏏ 返回选国界面</button>`;
+    return;
+  }
+  const st = TUT_STEPS[TUT.idx];
+  if (!st){ box.style.display='none'; return; }
+  let h = `<div class="tutTitle">${st.title}</div><div class="tutGoal">📌 ${st.goal}</div>`;
+  h += `<div class="tutQuote">「${st.quote}」<div class="tutCite">——${st.cite}</div></div>`;
+  h += `<div class="tutProg">第 ${TUT.idx+1} / ${TUT_STEPS.length} 課 · 骊山之難</div>`;
+  box.innerHTML = h; box.style.display='block';
+}
+
+/* 挂钩：行动完成后推进课程 */
+const _refreshTut = refresh;
+refresh = function(){ _refreshTut(); if (TUT && G){ renderTut(); tutPoll(); } };
+const _selectProvTut = selectProv;
+selectProv = function(pid){ _selectProvTut(pid); tutNotify({type:'select', prov:pid, mine:!!(G&&G.provinces[pid]&&G.provinces[pid].owner===playerN)}); };
+const _recruitTut = recruit;
+recruit = function(pid,u,g,f,t){
+  const pre = G? G.nations[playerN].gold : 0;
+  _recruitTut(pid,u,g,f,t);
+  if (G && G.nations[playerN].gold < pre) tutNotify({type:'recruit'});
+};
+const _doMoveTut = doMove;
+doMove = function(pid){
+  const tgt = document.getElementById('mvTarget') ? document.getElementById('mvTarget').value : null;
+  const n0 = (G && G.orders) ? G.orders.length : 0;
+  _doMoveTut(pid);
+  if (G && G.orders && G.orders.length > n0) tutNotify({type:'move', to:tgt});
+};
+const _startAttackTut = startAttack;
+startAttack = function(fromPid, targetPid, opts){
+  if (targetPid===undefined) targetPid = document.getElementById('atkTarget') ? document.getElementById('atkTarget').value : undefined;
+  _startAttackTut(fromPid, targetPid, opts);
+  tutNotify({type:'attack', target:targetPid, from:fromPid});
+};
+const _endTurnTut = endTurn;
+endTurn = function(){
+  _endTurnTut();
+  if (TUT && G && !G.over){
+    TUT.stats.turnsUsed = Math.max(0,G.turn-1);
+    if (G.sieges.haojing && G.sieges.haojing.by==='QIN' && G.sieges.haojing.rounds>=2 && !TUT.lootGone){
+      TUT.lootGone=true;
+      const def = G.provinces.haojing;
+      for (const k in def.units) def.units[k]=Math.floor(def.units[k]*0.5);
+      log('🚩 犬戎虜褒姒、盡取周賂，部眾漸散西去（守军折半）','bad');
+      showResult('🚩 犬戎虜褒姒，盡取周賂而去——宗周守备遂薄。<br><div class="tutQuoteBlock">「遂殺幽王驪山下，虜褒姒，盡取周賂而去。」<div class="tutCite">——《史記·卷004·周本紀》</div></div><p style="color:#90caf9">提示：围城消耗下攻方亦可趁虚再攻。</p>');
+    }
+  }
+};
+const _closeModalTut = closeModal;
+closeModal = function(){
+  _closeModalTut();
+  document.getElementById('tutModal').classList.add('hidden');
+  if (TUT){ TUT.modalOpen=false; refresh(); }
+};
+
+showHelp();
+</script>
+<script src="sim_layer.js"></script>
+<script src="i18n.js"></script>
+<script src="statecraft_data.js"></script>
+<script src="statecraft.js"></script>
+</body>
+</html>

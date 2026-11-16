@@ -1,0 +1,337 @@
+// >>> statecraft_data (auto) >>>
+const SC_LAWS = {
+	"shang_nong": {
+		"id": "shang_nong",
+		"name": "耕战之法",
+		"school": "法家",
+		"desc": "废井田、奖耕战，以农养战、以战劝农。粮食大增，征兵略廉，但民心偏紧。",
+		"effects": {
+			"food": 1.2,
+			"gold": 1.1,
+			"recruit": 0.9,
+			"upkeep": 1.05,
+			"stabilityTurn": -0.3,
+			"corruptionTurn": 0.15
+		},
+		"cite": "《商君书·农战》“国之所以兴者，农战也。”"
+	},
+	"li_zhi": {
+		"id": "li_zhi",
+		"name": "礼乐教化",
+		"school": "儒家",
+		"desc": "以礼齐民、以德化俗。稳定与外交见长，征兵与军费略高。",
+		"effects": {
+			"gold": 1.05,
+			"food": 1.05,
+			"recruit": 1.05,
+			"upkeep": 1.0,
+			"stabilityTurn": 0.6,
+			"corruptionTurn": -0.2,
+			"diplomacy": 5
+		},
+		"cite": "《论语·为政》“道之以德，齐之以礼，有耻且格。”"
+	},
+	"wu_wei": {
+		"id": "wu_wei",
+		"name": "无为而治",
+		"school": "道家",
+		"desc": "清静省事，与民休息。金粮俱增、军费下降，但征兵稍慢。",
+		"effects": {
+			"gold": 1.15,
+			"food": 1.1,
+			"recruit": 1.08,
+			"upkeep": 0.9,
+			"stabilityTurn": 0.3,
+			"corruptionTurn": 0.1
+		},
+		"cite": "《道德经》“道常无为而无不为。”"
+	},
+	"jie_yong": {
+		"id": "jie_yong",
+		"name": "节用尚贤",
+		"school": "墨家",
+		"desc": "去无用之费，尚贤使能。军费大减、粮食略增，征兵稍廉。",
+		"effects": {
+			"gold": 1.0,
+			"food": 1.1,
+			"recruit": 0.95,
+			"upkeep": 0.85,
+			"stabilityTurn": 0.2,
+			"corruptionTurn": -0.1
+		},
+		"cite": "《墨子·节用》“去无用之务，行圣王之道，天下之大利也。”"
+	},
+	"jun_gong": {
+		"id": "jun_gong",
+		"name": "军功爵制",
+		"school": "法家",
+		"desc": "以首级授爵、以军功授田。征兵极廉，军费与民力压力大，外交偏硬。",
+		"effects": {
+			"gold": 0.95,
+			"food": 1.0,
+			"recruit": 0.8,
+			"upkeep": 1.1,
+			"stabilityTurn": -0.4,
+			"diplomacy": -3
+		},
+		"cite": "《史记·商君列传》“有军功者，各以率受上爵。”"
+	},
+	"zong_heng": {
+		"id": "zong_heng",
+		"name": "纵横捭阖",
+		"school": "纵横家",
+		"desc": "以辞令与间谍立国。外交行动成功率大增，内政生产力平平。",
+		"effects": {
+			"gold": 1.0,
+			"food": 1.0,
+			"recruit": 1.0,
+			"upkeep": 1.0,
+			"diplomacy": 15,
+			"stabilityTurn": -0.1
+		},
+		"cite": "《鬼谷子·捭阖》“捭阖者，道之大化，说之变也。”"
+	}
+};
+
+const SC_POLICIES = {
+	"light_tax": {
+		"id": "light_tax",
+		"name": "轻徭薄赋",
+		"cost": 80,
+		"turns": 4,
+		"desc": "减徭役、薄赋敛。粮食与民心上升，金收入略降。",
+		"effects": {
+			"food": 1.15,
+			"gold": 0.9,
+			"stabilityTurn": 0.8
+		},
+		"cite": "《论语·学而》“节用而爱人，使民以时。”"
+	},
+	"agriculture": {
+		"id": "agriculture",
+		"name": "重农抑商",
+		"cost": 100,
+		"turns": 5,
+		"desc": "尽地力、禁游食。粮食大增，商税与民心略降。",
+		"effects": {
+			"food": 1.25,
+			"gold": 0.9,
+			"stabilityTurn": -0.2
+		},
+		"cite": "《商君书·农战》“国之所以兴者，农战也。”"
+	},
+	"recruit_sages": {
+		"id": "recruit_sages",
+		"name": "招贤纳士",
+		"cost": 120,
+		"turns": 4,
+		"desc": "卑身厚币以招贤者。征兵略廉、外交加分。",
+		"effects": {
+			"recruit": 0.9,
+			"diplomacy": 10,
+			"stabilityTurn": 0.2
+		},
+		"cite": "《史记·燕召公世家》“卑身厚币以招贤者。”"
+	},
+	"anti_corruption": {
+		"id": "anti_corruption",
+		"name": "整肃吏治",
+		"cost": 150,
+		"turns": 3,
+		"desc": "循名责实、严查贪墨。腐败大降、金收入上升。",
+		"effects": {
+			"gold": 1.1,
+			"corruptionTurn": -3.0,
+			"stabilityTurn": 0.3
+		},
+		"cite": "《韩非子·有度》“法不阿贵，绳不挠曲。”"
+	},
+	"war_reward": {
+		"id": "war_reward",
+		"name": "奖励军功",
+		"cost": 120,
+		"turns": 4,
+		"desc": "重赏战功、宽征兵。征兵大廉，军费与民力压力上升。",
+		"effects": {
+			"recruit": 0.8,
+			"upkeep": 1.1,
+			"stabilityTurn": -0.4
+		},
+		"cite": "《商君书·农战》“国之所以兴者，农战也。”"
+	},
+	"rest": {
+		"id": "rest",
+		"name": "与民休息",
+		"cost": 80,
+		"turns": 3,
+		"desc": "省刑薄敛、不夺农时。民心大升、军费下降。",
+		"effects": {
+			"food": 1.1,
+			"upkeep": 0.9,
+			"stabilityTurn": 1.0
+		},
+		"cite": "《道德经》“道常无为而无不为。”"
+	},
+	"irrigation": {
+		"id": "irrigation",
+		"name": "修渠垦荒",
+		"cost": 200,
+		"turns": 6,
+		"desc": "引水溉田、开垦荒地。粮食与金收入俱增。",
+		"effects": {
+			"food": 1.2,
+			"gold": 1.05,
+			"stabilityTurn": 0.2
+		},
+		"cite": "《史记·河渠书》“西门豹引漳水溉邺，以富魏之河内。”"
+	},
+	"commerce": {
+		"id": "commerce",
+		"name": "通商宽农",
+		"cost": 150,
+		"turns": 5,
+		"desc": "开关梁、弛山泽之禁。金收入大增、粮食略增。",
+		"effects": {
+			"gold": 1.2,
+			"food": 1.05,
+			"stabilityTurn": 0.1
+		},
+		"cite": "《史记·货殖列传》“待农而食之，虞而出之，工而成之，商而通之。”"
+	},
+	"marriage_policy": {
+		"id": "marriage_policy",
+		"name": "联姻结好",
+		"cost": 100,
+		"turns": 4,
+		"desc": "以婚姻结诸侯。外交成功率上升，民心略安。",
+		"effects": {
+			"diplomacy": 15,
+			"stabilityTurn": 0.2
+		},
+		"cite": "《史记·张仪列传》“秦楚娶妇嫁女，长为兄弟之国。”"
+	},
+	"espionage": {
+		"id": "espionage",
+		"name": "刺探敌情",
+		"cost": 120,
+		"turns": 3,
+		"desc": "遣间入敌，离间其君臣。策反与离间成功率上升。",
+		"effects": {
+			"diplomacy": 5,
+			"corruptionTurn": 0.1,
+			"espionage": 1
+		},
+		"cite": "《孙子兵法·用间》“先知者，必取于人，知敌之情者也。”"
+	}
+};
+
+const SC_DEFAULT_LAW = {
+	"QIN": "shang_nong",
+	"ZHAO": "jun_gong",
+	"QI": "wu_wei",
+	"CHU": "wu_wei",
+	"WEI": "li_zhi",
+	"HAN": "shang_nong",
+	"YAN": "jie_yong",
+	"ZHOU": "li_zhi",
+	"YUE": "wu_wei",
+	"SONG": "li_zhi",
+	"LU": "li_zhi",
+	"W": "li_zhi",
+	"ZS": "jie_yong"
+};
+
+const SC_START_REALM = {
+	"QIN": {
+		"stability": 58,
+		"corruption": 8
+	},
+	"ZHAO": {
+		"stability": 55,
+		"corruption": 10
+	},
+	"QI": {
+		"stability": 60,
+		"corruption": 8
+	},
+	"CHU": {
+		"stability": 52,
+		"corruption": 12
+	},
+	"WEI": {
+		"stability": 50,
+		"corruption": 14
+	},
+	"HAN": {
+		"stability": 48,
+		"corruption": 16
+	},
+	"YAN": {
+		"stability": 55,
+		"corruption": 10
+	},
+	"ZHOU": {
+		"stability": 48,
+		"corruption": 14
+	},
+	"YUE": {
+		"stability": 50,
+		"corruption": 12
+	},
+	"SONG": {
+		"stability": 46,
+		"corruption": 16
+	},
+	"LU": {
+		"stability": 48,
+		"corruption": 14
+	},
+	"W": {
+		"stability": 45,
+		"corruption": 16
+	},
+	"ZS": {
+		"stability": 44,
+		"corruption": 18
+	}
+};
+
+const SC_REL0 = {
+	"QIN|ZHAO": -25,
+	"QIN|CHU": -20,
+	"QIN|WEI": -15,
+	"QIN|HAN": -20,
+	"QIN|QI": -10,
+	"QIN|YAN": -10,
+	"ZHAO|QI": -10,
+	"ZHAO|YAN": 10,
+	"ZHAO|WEI": -10,
+	"ZHAO|HAN": 5,
+	"ZHAO|CHU": -5,
+	"CHU|QI": 0,
+	"CHU|WEI": -5,
+	"CHU|HAN": -5,
+	"CHU|YAN": 0,
+	"WEI|HAN": -15,
+	"WEI|QI": -5,
+	"WEI|YAN": -5,
+	"HAN|QI": -5,
+	"HAN|YAN": 0,
+	"QI|YAN": 0
+};
+
+const SC_ACTION_COST = {
+	"gift": 100,
+	"marriage": 150,
+	"tribute": 0,
+	"surrender": 250,
+	"defect_prov": 180,
+	"defect_hero": 150,
+	"sow": 80,
+	"aid": 50,
+	"alliance": 200,
+	"truce": 100,
+	"mediate": 120,
+	"passage": 150
+};
+// <<< statecraft_data (auto) <<<

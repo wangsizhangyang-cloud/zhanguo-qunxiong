@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="utf-8"><title>战国政治地图 · HOI4式预览</title>
+<style>body{background:#10181c;color:#cfd8dc;font-family:system-ui;margin:0;padding:12px} h3{margin:6px 0}
+svg text{font-family:system-ui}
+small{color:#78909c}</style>
+</head><body>
+<h3>自绘地形底图（v3.6）· HOI4式政治叠层预览</h3>
+<svg id="m" viewBox="0 0 912 560" width="1400" height="860" style="background:#161e23;display:block;max-width:100%"></svg>
+<div id="msg"></div>
+<script src="map_data.js"></script>
+<script>
+const world = MAP.buildHexWorld();
+const topo  = MAP.hexTopology(world);
+/* 与游戏内一致的 HOI4 式渲染：一国一色半透明（地形透出）· 粗国界/细省界 · 都城★ · 弧形国名 */
+const NATIONCOL = {QIN:'#9e4a3f',ZHAO:'#4f7396',QI:'#7d5f9e',CHU:'#4f7d4f',WEI:'#b3803e',HAN:'#a89a4f',YAN:'#3f8a8a',
+  ZHOU:'#8a7aa0',YUE:'#7a7f4f',SONG:'#9a9060',LU:'#a08050',W:'#8a8a70',ZS:'#9a7080',RONG:'#6d4c41'};
+const NAME = {QIN:'秦',ZHAO:'赵',QI:'齐',CHU:'楚',WEI:'魏',HAN:'韩',YAN:'燕',ZHOU:'周',YUE:'越',SONG:'宋',LU:'鲁',W:'卫',ZS:'中山',RONG:'犬戎'};
+let s = MAP.sceneSvg();
+let filled = 0;
+for (const d of MAP.DEFS){
+  const col = NATIONCOL[d.owner]; if (!col) continue;
+  const cp = MAP.regionFillPath(topo, d.id);
+  if (!cp) continue;
+  filled++;
+  s += `<path d="${cp}" fill="${col}" fill-opacity="0.72" fill-rule="nonzero" stroke="none"/>`;
+}
+let bIn = '', bNat = '';
+for (const pc of topo.pieces){
+  if (pc.b === 'SEA'){ bNat += pc.path; continue; }
+  const oa = NATIONCOL[pc.a] ? pc.a : null;
+  const ob = NATIONCOL[pc.b] ? pc.b : null;
+  if (!oa || !ob) continue;
+  if (oa === ob) bIn += pc.path; else bNat += pc.path;
+}
+s += `<path d="${bIn}" fill="none" stroke="#1a2026" stroke-opacity="0.38" stroke-width="1" stroke-linejoin="round"/>`;
+s += `<path d="${bNat}" fill="none" stroke="#151a1f" stroke-opacity="0.92" stroke-width="2.6" stroke-linejoin="round"/>`;
+/* 国都★ */
+const capOf = {};
+for (const d of MAP.DEFS){ if (d.cap && !capOf[d.owner]) capOf[d.owner] = d; }
+const cent = topo.centroid;
+for (const oid in capOf){
+  const d = capOf[oid]; const pos = cent[d.id]; if (!pos) continue;
+  s += `<text x="${pos[0].toFixed(1)}" y="${(pos[1]+4.6).toFixed(1)}" text-anchor="middle" font-size="13" fill="#efe6c0" stroke="#1a2026" stroke-width="1" paint-order="stroke">★</text>`;
+}
+/* 弧形国名 */
+const byOwner = {};
+for (const d of MAP.DEFS) (byOwner[d.owner] = byOwner[d.owner] || []).push(d);
+let lid = 0;
+for (const oid in byOwner){
+  const provs = byOwner[oid];
+  let cx = 0, cy = 0, cells = 0;
+  for (const p of provs){ const c = cent[p.id]; if (c){ cx += c[0]; cy += c[1]; cells++; } }
+  if (!cells) continue;
+  cx /= cells; cy /= cells;
+  const big = cells >= 6 ? 30 : (cells >= 3 ? 22 : 15);
+  const w = big * (NAME[oid].length * 0.9);
+  const ida = 'wzxLbl' + (lid++);
+  s += `<path id="${ida}" d="M ${(cx - w/2).toFixed(1)} ${(cy + big*0.28).toFixed(1)} Q ${cx.toFixed(1)} ${(cy - big*0.62).toFixed(1)} ${(cx + w/2).toFixed(1)} ${(cy + big*0.28).toFixed(1)}" fill="none"/>`;
+  s += `<text font-size="${big}" font-weight="600" fill="#efe8d2" fill-opacity="0.6" stroke="#141a1f" stroke-opacity="0.42" stroke-width="1" paint-order="stroke" letter-spacing="6"><textPath href="#${ida}" startOffset="50%" text-anchor="middle">${NAME[oid]}</textPath></text>`;
+}
+document.getElementById('m').innerHTML = s;
+document.getElementById('msg').innerHTML = `<small>地形底图（生境/山脉/大河+颗粒噪点）· 一国一色半透明罩 · 粗国界/细省界 · 国都★ · 弧形国名 · ${filled} 省拼接</small>`;
+</script></body></html>
